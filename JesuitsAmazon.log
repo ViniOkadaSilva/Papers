@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.8)  26 OCT 2022 12:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.8)  26 OCT 2022 14:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/JesuitsAmazon"
-(/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/JesuitsAmazon.tex
+**"/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/JesuitsAmazon"
+(/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/JesuitsAmazon.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
@@ -946,7 +946,7 @@ File: biblatex.cfg
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 110.
- (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/JesuitsAmazon.aux)
+ (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/JesuitsAmazon.aux)
 \openout1 = `JesuitsAmazon.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
@@ -1070,7 +1070,7 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'JesuitsAmazon.bbl' found.
- (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/JesuitsAmazon.bbl)
+ (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/JesuitsAmazon.bbl)
 Package biblatex Info: Reference section=0 on input line 110.
 Package biblatex Info: Reference segment=0 on input line 110.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 113.
@@ -1093,7 +1093,7 @@ Overfull \hbox (3.28796pt too wide) in paragraph at lines 743--743
 [][]\OT1/cmr/m/n/10 Arenz, Karl Heinz (2012). \OT1/cmr/m/it/10 Fazer sair da selva: as miss~oes jesu^^P^^Setas na Amaz^onia\OT1/cmr/m/n/10 . Ed-i-tora Es-tu-dos Amaz^onicos. 
  []
 
-[24] [25] [26] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/Maps.tex
+[24] [25] [26] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/Maps.tex
 
 pdfTeX warning: pdflatex (file /Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//SerafimLeite.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 <~/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//SerafimLeite.pdf, id=503, 743.71492pt x 358.53957pt>
@@ -1145,7 +1145,7 @@ File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year 
 <use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//PlaceboMissionsRiverRandom.png>
 Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//PlaceboMissionsRiverRandom.png  used on input line 83.
 (pdftex.def)             Requested size: 522.1545pt x 435.12677pt.
- [34 </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//PlaceboMissionsRiverRandom.png>]) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/Graphs.tex
+ [34 </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//PlaceboMissionsRiverRandom.png>]) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/Graphs.tex
 <~/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//LiteracyRateParishesJesuits1872.png, id=572, 3613.5pt x 2409.0pt>
 File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//LiteracyRateParishesJesuits1872.png Graphic file (type png)
 <use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Pictures//LiteracyRateParishesJesuits1872.png>
@@ -1246,21 +1246,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Tables/placebo_results_1872.tex [52
 
-] [53]) (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Tables/placebo_results_2010.tex [54]) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/JesuitsAmazon.aux)
+] [53]) (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Third Year Paper/Tables/placebo_results_2010.tex [54]) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/JesuitsAmazon.aux)
 Package logreq Info: Writing requests to 'JesuitsAmazon.run.xml'.
 \openout1 = `JesuitsAmazon.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  36398 strings out of 478599
- 728260 string characters out of 5854086
- 1435584 words of memory out of 5000000
+ 728290 string characters out of 5854086
+ 1436582 words of memory out of 5000000
  53410 multiletter control sequences out of 15000+600000
  416851 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,20n,97p,2067b,2209s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,20n,97p,2069b,2209s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/ThirdRevision/JesuitsAmazon.pdf" (55 pages, 9023661 bytes).
+Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Third Year Paper/LaTeX/Fourth Revision/JesuitsAmazon.pdf" (55 pages, 9023296 bytes).
 PDF statistics:
  962 PDF objects out of 1000 (max. 8388607)
  800 compressed objects within 8 object streams
