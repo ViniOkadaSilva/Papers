@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.8)  28 OCT 2022 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.8)  28 OCT 2022 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV
-(/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV.tex
+**/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva
+(/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
@@ -494,8 +494,8 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box100
-) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV.aux)
-\openout1 = `CV.aux'.
+) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.aux)
+\openout1 = `CV_OkadadaSilva.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
@@ -548,9 +548,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
 LaTeX Info: Redefining \nameref on input line 70.
- (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV.out) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV.out)
+ (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.out) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.out)
 \@outlinefile=\write3
-\openout3 = `CV.out'.
+\openout3 = `CV_OkadadaSilva.out'.
 
 \c@mv@tabular=\count295
 \c@mv@boldtabular=\count296
@@ -588,20 +588,20 @@ LaTeX Font Info:    Font shape `TS1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 110.
  [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV.aux)
-Package rerunfilecheck Info: File `CV.out' has not changed.
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.aux)
+Package rerunfilecheck Info: File `CV_OkadadaSilva.out' has not changed.
 (rerunfilecheck)             Checksum: 8F0A7EBD10ACA775ACD500BADAB3B9AE;844.
  ) 
 Here is how much of TeX's memory you used:
  11742 strings out of 478599
- 178445 string characters out of 5854086
- 513575 words of memory out of 5000000
+ 178666 string characters out of 5854086
+ 513640 words of memory out of 5000000
  29416 multiletter control sequences out of 15000+600000
  534328 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,69p,1027b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,69p,1042b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/baskervillef/zba_qiwnw4.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb>
-Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV.pdf (1 page, 88794 bytes).
+Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.pdf (1 page, 88791 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
