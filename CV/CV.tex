@@ -12,6 +12,8 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{changepage}
 \input{glyphtounicode}
 
 \usepackage{baskervillef}
@@ -69,122 +71,52 @@
 
 {\LARGE Vinicius Okada da Silva} \\ \vspace{0pt}
 
-\begin{center}
-    \begin{multicols}{2}
-    \begin{flushleft}
-    \large{111 Street Ave} \\
-    \large{City, State, optional Country, Postal Code} \\
-    \end{flushleft}
-    
-    \begin{flushright}
+\rule{\textwidth}{1.5pt}
 
-    \href{{https://sites.google.com/view/viniciusokadadasilva/}} \large{Website} \\
+\begin{flushleft}
+    \footnotesize \textbf{Phone:} (301) 502-631 \\
+    \footnotesize \textbf{E-mail:} vo10@illinois.edu \\
+    \footnotesize \textbf{Website:} \textcolor{blue}{\url{https://sites.google.com/view/viniciusokadadasilva/}} 
+\end{flushleft}
 
-    \href{mailto:{vo10@illinois.edu}} \large{email address}
-    \end{flushright}
-    \end{multicols}
-\end{center}
-
-
-%-----------EDUCATION-----------
-% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
 \section{Education}
 \resumeSubHeadingListStart
-
     \resumeSubheading
-        {College Univeristy Name}{Month Year studies began -- Present}
-        {degree and major you are pursuing}{City, State, optional Country}
-      \resumeSubheading
-        {Other School attended}{Month Year studies began -- Month Year studies ended}
-        {degree and major or coursework you pursued}{City, State, optional Country}
-
+        {University of Illinois Urbana-Champaign}{2019 -- Present}
+        {Ph.D.}{}
+    \resumeSubheading
+        {Case Western Reserve University}{2015 -- 2019}
+        {BA Economics, BS Math and Physics}{}
 \resumeSubHeadingListEnd
 
-
-%-----------RESEARCH EXPERIENCE-----------
-\section{Research Experience}
-
-\resumeSubHeadingListStart
-
-\resumeSubheading
-        {Research experience title}{Month, Year started -- Month, Year ended or "Present" if ongoing}
-        {University, Company or Organization}{City, State, optional Country}
-      \resumeItemListStart
-        \small\resumeItem{very short description of one thing you did}
-        \resumeItem{very short description of another thing you did}
-        \resumeItem{very short description if there was another thing you did}
-    \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-\section{Other Experience}
-\resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Position title}{Month, Year started -- Month, Year ended or "Present" if ongoing}
-      {University, Company or Organization}{City, State, optional Country}
-      \resumeItemListStart
-        \small\resumeItem{very short description of one thing you did}
-        \resumeItem{very short description of another thing you did}
-        \resumeItem{very short description if there was another thing you did}
-        \resumeItemListEnd
-
-    \resumeSubheading
-      {Another job title}{Month, Year started -- Month, Year ended or "Present" if ongoing}
-      {University, Company or Organization}{City, State, optional Country}
-      \resumeItemListStart
-        \small\resumeItem{very short description of one thing you did}
-        \resumeItem{very short description of another thing you did}
-        \resumeItem{very short description if there was another thing you did}
-        \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-%-----------RESEARCH PRESENTATIONS-----------
-\section{Research Presentations} 
-% It is not expected that applicants will have items for this section, but if you have presented or published research findings at, for example, a student research conference, please list those here.
+\section{Research Interests}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \normalsize{\item{
-    {citation in your preferred format -- include all authors who contributed}{} \\
-    {citation in your preferred format -- include all authors who contributed}{} 
-}}
- \end{itemize}
-
-%-----------AWARDS & HONORS-----------
-\section{Awards \& Honors} 
-% This section can include academic achievements – things like scholarships, Dean's list, honors societies – as well as recognition in your community - community service, religious study, volunteerism, military service, or anything else. You can remove or add sections as needed.
-\resumeSubHeadingListStart
-    \resumeSubheading
-    {Title or brief description of the award}{}
-    {University, Sponsor or Organization}{year(s)}
-    \resumeSubheading
-    {Title or brief description of the award}{}
-    {University, Sponsor or Organization}{year(s)}
-    \resumeSubheading
-    {Title or brief description of the award}{}
-    {University, Sponsor or Organization}{year(s)}
-\resumeSubHeadingListEnd
-
-%-----------SKILLS-----------
-\section{Specialized Skills}
-% This section can include programming or spoken languages, text editing and general software knowledge, certifications, version control or project management tools, or other skills that might be relevant. You can include as many or as few as you like: delete or add as needed.  
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \normalsize{\item{
-     \textbf{Heading, eg. "Programming Languages"}{: Python (beginner), R (intermediate)} \\
-     \textbf{Other topics}{: your skills}\\
-     \textbf{Other topics}{: your skills} \\
-     \textbf{Other topics}{: your skills} \\
+     \textbf{Economic History}, \textbf{Development Economics}
     }}
  \end{itemize}
 
-%-----------OTHER INTERESTS-----------
-\section{Other Interests}
-% Also an optional section, for any hobbies, sports, artistic and musical pursuits, etc. that you would like to include. You can include as many or as few as you like: delete or add as needed. 
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \normalsize{\item{
-     \textbf{Heading, eg. "Athletics"}{: {tennis (club team captain)} } \\
-      \textbf{Other heading}{: {the thing you want to include} } \\
-    }}    
- \end{itemize}
+ \section{Working Papers}
+    \hspace{3mm}
+    \textbf{"Jesuit Missionaries in the Colonial Amazon: Long-term effects on Human Capital."} 
+    \justify{
+    \begin{adjustwidth}{3mm}{0mm}
+    \textit{Abstract:} This paper aims to identify Jesuit missions' long-term impact on human capital and development in the Brazilian Amazon. Using Brazilian census data from 1872 and 2010 combined with a novel dataset on the location of Jesuit missions in the Brazilian Amazon, I find that places closer to the former missions had higher literacy rates in both periods. To estimate the causal effect, I compare the impacts of the Jesuits against other missionary orders, the nearby Jesuit missions in the state of Maranhão, and I use an instrumental variable approach that considers the locations of Tupi-speaking tribes in the region. Further, demographic differences, the number of schools, or school attendance do not explain the results. This paper extends and reinforces the literature analyzing the positive effects of missionaries' transmission of human capital in the colonial period.
+    \end{adjustwidth}}
+
+\section{Work in Progress}
+
+\begin{itemize}
+    \item \textbf{"Staple Crop Pest Damage and Natural Resources Exploitation: Fall Army Worm Infestation and Charcoal Production in Zambia}  with Protensia Hadunka and Kathy Baylis
+    \item \textbf{"Long-Lasting Effects of Bible Translation on Literacy: Evidence from Uganda"} with Noelia Romero, Abigail Stocker, and Rebecca Thornton
+\end{itemize}
+
+\section{Teaching Experience}
+
+\section{Presentations}
+
+\section{Referee Services}
 
 \end{document}
+
+
