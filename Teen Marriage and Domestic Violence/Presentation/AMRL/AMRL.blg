@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Teen Marriage and Domestic Violence/Presentation/AMRL/AMRL.blg'
+[65] biber-darwin:340> INFO - === Fri Nov 25, 2022, 10:21:20
+[79] Biber.pm:415> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Teen Marriage and Domestic Violence/Presentation/AMRL/AMRL.bcf'
+[165] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[171] Utils.pm:395> WARN - The file '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Teen Marriage and Domestic Violence/Presentation/AMRL/AMRL.bcf' does not contain any citations!
+[179] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Teen Marriage and Domestic Violence/Presentation/AMRL/AMRL.bbl' with encoding 'UTF-8'
+[179] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Teen Marriage and Domestic Violence/Presentation/AMRL/AMRL.bbl
+[179] Biber.pm:128> INFO - WARNINGS: 1
