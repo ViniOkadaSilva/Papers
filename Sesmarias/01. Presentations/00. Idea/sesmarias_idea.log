@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.8)  7 FEB 2023 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.8)  7 FEB 2023 13:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/01. Presentations/00. Idea/sesmarias_idea"
-(/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.tex
+**"/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea"
+(/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27> (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2021/05/26 v3.63 A class for typesetting presentations
@@ -1214,7 +1214,7 @@ LaTeX Warning: Citation 'Da_Costa_Porto1979-dz' on page 2 undefined on input lin
 
 ]
 
-/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.tex:116: Package pdftex.def Error: File `\unhbox\voidb@x \penalty\@M \ {}/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/00. Pictures/Pictures/0167f614a7c3b3fd38127f1545dbee7c.pdf' not found: using draft setting.
+/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.tex:116: Package pdftex.def Error: File `\unhbox\voidb@x \penalty\@M \ {}/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/00. Pictures/Pictures/0167f614a7c3b3fd38127f1545dbee7c.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -1226,8 +1226,8 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (48.524pt too wide) in paragraph at lines 116--116
- \OT1/cmss/m/n/10.95 Urbana/Research/Writing/Sesmarias/00. 
+Overfull \hbox (66.044pt too wide) in paragraph at lines 116--116
+ \OT1/cmss/m/n/10.95 Urbana/Research/Writing/git/Sesmarias/00. 
  []
 
 
@@ -1236,7 +1236,7 @@ Overfull \hbox (121.52403pt too wide) in paragraph at lines 116--116
  []
 
 
-/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.tex:116: Package pdftex.def Error: File `\unhbox\voidb@x \penalty\@M \ {}/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/00. Pictures/Pictures/ea71ea6ac7c5ec3cefa24ded60ac6438.pdf' not found: using draft setting.
+/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.tex:116: Package pdftex.def Error: File `\unhbox\voidb@x \penalty\@M \ {}/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/00. Pictures/Pictures/ea71ea6ac7c5ec3cefa24ded60ac6438.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -1248,8 +1248,8 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (28.61194pt too wide) in paragraph at lines 116--116
- \OT1/cmss/m/n/10.95 Urbana/Research/Writing/Sesmarias/00. 
+Overfull \hbox (46.13194pt too wide) in paragraph at lines 116--116
+ \OT1/cmss/m/n/10.95 Urbana/Research/Writing/git/Sesmarias/00. 
  []
 
 
@@ -1287,7 +1287,7 @@ LaTeX Warning: Empty bibliography on input line 137.
 \tf@snm=\write9
 \openout9 = `sesmarias_idea.snm'.
 
- (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.aux)
+ (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1309,15 +1309,15 @@ Package logreq Info: Writing requests to 'sesmarias_idea.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34554 strings out of 478599
- 663044 string characters out of 5854086
- 1358858 words of memory out of 5000000
- 51756 multiletter control sequences out of 15000+600000
+ 34553 strings out of 478599
+ 663360 string characters out of 5854086
+ 1359084 words of memory out of 5000000
+ 51755 multiletter control sequences out of 15000+600000
  415548 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,11n,124p,873b,2086s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,11n,124p,877b,2086s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.pdf" (8 pages, 101154 bytes).
+Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.pdf" (8 pages, 101157 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream

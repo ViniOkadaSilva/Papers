@@ -78,8 +78,5 @@
     <requires type="dynamic">
       <file>sesmarias_idea.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>../../../citations_sesmarias.bib</file>
-    </requires>
   </external>
 </requests>
