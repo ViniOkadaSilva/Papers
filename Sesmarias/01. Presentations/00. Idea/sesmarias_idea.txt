@@ -1,0 +1,120 @@
+\documentclass[aspectratio=1610]{beamer}
+%\linespread{1.5}\selectfont
+
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{lscape} 
+\usepackage{tikz}
+\usepackage[export]{adjustbox}
+\usepackage{ragged2e}
+\justifying
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{hyperref}	
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{caption}
+%\captionsetup{font=footnotesize}
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+%\usepackage{caption}
+%\captionsetup{labelformat=empty}
+\usepackage{appendixnumberbeamer}
+\DeclareUnicodeCharacter{2212}{-}
+
+\usepackage[backend = biber, style=authoryear, sorting = nty, maxnames=1]{biblatex}
+
+\addbibresource{citations_sesmarias.bib}
+
+\usepackage{setspace}
+
+\DeclareUnicodeCharacter{0301}{\'{e}}
+\usepackage{graphicx}
+
+\newcommand{\tinytable}[1]{\textcolor{black}{\tiny \input{#1}}}
+
+\graphicspath{{~/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/04. Pictures/}}
+
+\beamertemplatenavigationsymbolsempty
+
+%Information to be included in the title page:
+\title{Sesmaria Land Grants and the Origins of Brazilian Inequality}
+\author{Vinicius Okada da Silva}
+\institute{University of Illinois at Urbana-Champaign}
+\date{}
+
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+
+
+\begin{frame}[plain, noframenumbering]
+	\titlepage
+\end{frame}
+
+\begin{frame}{History}
+    \begin{outline}
+        \1 Originally a Portuguese Law used to grant lands to be used and developed.
+        \1 First mention of it in Brazil was 1530, and it often favored the aristocracy \cite{}
+    \end{outline}    
+\end{frame}
+
+\begin{frame}{Research Question}
+    \begin{outline}
+        \1 
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Data}
+    \begin{outline}
+        \1 Brazilian Censuses (1872-2010)
+        \1 Location of \textit{sesmarias}
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Example of Document}
+    \begin{figure}
+        \centering
+        \begin{subfigure}[t]{0.35\textwidth}
+        \centering
+        \vspace{-7.4cm}
+        \includegraphics[width = \textwidth]
+        {Pictures/0167f614a7c3b3fd38127f1545dbee7c.pdf}
+        \end{subfigure}
+        \hspace{0.2cm}
+        \qquad\tikz[baseline=-\baselineskip]\draw[ultra thick,->] (0,4) -- ++ (1,0);\qquad
+        \hspace{-0.25cm}
+        \begin{subfigure}[t]{0.4\textwidth}
+        \centering
+        \includegraphics[page = 1, width = \textwidth]
+        {Pictures/ea71ea6ac7c5ec3cefa24ded60ac6438.pdf}
+        \end{subfigure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Possible Sources of Variation}
+    \begin{outline}
+        \1 Geographical Variation
+        \1 Time Variation
+        \1 Type of Settler to whom it was granted
+        \1 Concessions vs. Applications
+    \end{outline}
+\end{frame}
+
+\end{document}
