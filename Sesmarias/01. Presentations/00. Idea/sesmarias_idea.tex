@@ -14,7 +14,6 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{float}
-\usepackage{hyperref}	
 \usepackage{dcolumn}
 \usepackage{longtable}
 \usepackage{array}
@@ -32,6 +31,9 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks = true, linkcolor = red, urlcolor = teal, citecolor = blue}
+
 %\usepackage{caption}
 %\captionsetup{labelformat=empty}
 \usepackage{appendixnumberbeamer}
@@ -40,6 +42,40 @@
 \usepackage[backend = biber, style=authoryear, sorting = nty, maxnames=1]{biblatex}
 
 \addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
 
 % \addbibresource[glob]{~/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/citations_sesmarias.bib}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
@@ -51,7 +87,7 @@
 
 \newcommand{\tinytable}[1]{\textcolor{black}{\tiny \input{#1}}}
 
-\graphicspath{{~/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/00. Pictures/}}
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures/}}
 
 \beamertemplatenavigationsymbolsempty
 
@@ -74,7 +110,7 @@
     \begin{outline}
         \1 Originally a medieval Portuguese Law used to grant lands to be used and developed.
         \1 First mention of it in Brazil was in 1530, and it often favored the Portuguese aristocracy \parencite{Lobb1976-mc}
-            \2 It led to the development of the ``economic aristocracy of the colonial society'' and the ``principal cause of the \textit{latifundio}'' in Brazil \parencites[p.~36]{Lima2002-kd}[p.~48]{Da_Costa_Porto1979-dz}.
+            \2 Early studies argued it led to the development of the ``economic aristocracy of the colonial society'' and the ``principal cause of the \textit{latifundio}'' in Brazil \parencites[p.~36]{Lima2002-kd}[p.~48]{Da_Costa_Porto1979-dz}.
             \2 Officially stopped being granted in 1822, however, \textit{sesmeiro} who had owned land and had developed it would be able to retain their lands.
     \end{outline}    
 \end{frame}
@@ -91,7 +127,7 @@
 \begin{frame}{Data}
     \begin{outline}
         \1 Brazilian Censuses (1872-2010)
-        \1 Location of \textit{sesmarias} from SILB.
+        \1 Location of \textit{sesmarias} from \href{http://plataformasilb.cchla.ufrn.br/}{SILB}.
     \end{outline}
 \end{frame}
 
@@ -102,7 +138,7 @@
         \centering
         \vspace{-7.4cm}
         \includegraphics[width = \textwidth]
-        {Pictures/0167f614a7c3b3fd38127f1545dbee7c.pdf}
+        {0167f614a7c3b3fd38127f1545dbee7c.pdf}
         \end{subfigure}
         \hspace{0.2cm}
         \qquad\tikz[baseline=-\baselineskip]\draw[ultra thick,->] (0,4) -- ++ (1,0);\qquad
@@ -110,11 +146,10 @@
         \begin{subfigure}[t]{0.4\textwidth}
         \centering
         \includegraphics[page = 1, width = \textwidth]
-        {Pictures/ea71ea6ac7c5ec3cefa24ded60ac6438.pdf}
+        {ea71ea6ac7c5ec3cefa24ded60ac6438.pdf}
         \end{subfigure}
     \end{figure}
 \end{frame}
-
 
 \begin{frame}{Possible Sources of Variation}
     \begin{outline}
@@ -122,13 +157,13 @@
         \1 Time Variation
         \1 Type of Settler to whom it was granted
         \1 Concessions vs. Applications
+        \1 What purpose was the land requested?
     \end{outline}
 \end{frame}
 
 \begin{frame}{Other Relevant (?) Information to Add}
     \begin{outline}
         \1 Sesmarias caused land uncertainty in colonial times as often poor people would settle, develop land, and then lose the right of the land because a richer person would claim it \parencite[p.~142]{Da_Costa_Porto1979-dz}.
-
     \end{outline}
 \end{frame}
 

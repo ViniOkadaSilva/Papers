@@ -27,7 +27,13 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {7}{7}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {0}{0}{8}{8/8}{}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {1}{7}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {1}{References}{8}{References}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {1}{0}{0}{8/8}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\beamer@partpages {1}{8}}
