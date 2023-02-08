@@ -1,16 +1,15 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.blg'
-[67] biber-darwin:340> INFO - === Tue Feb  7, 2023, 14:47:40
-[81] Biber.pm:415> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bcf'
-[168] Biber.pm:952> INFO - Found 3 citekeys in bib section 0
-[180] Biber.pm:4340> INFO - Processing section 0
-[190] Biber.pm:4531> INFO - Looking for bibtex format file 'https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib' for section 0
-[190] Utils.pm:167> INFO - Data source 'https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib' is a remote BibTeX data source - fetching ...
-[393] bibtex.pm:1689> INFO - LaTeX decoding ...
-[422] bibtex.pm:1494> INFO - Found BibTeX data source '/var/folders/wb/k6hcjmfs2l32cf9hnwq9gw6c0000gn/T/biber_tmp_Dm5P/biber_remote_data_source_cySpD.bib'
-[464] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[464] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[464] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[464] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[467] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl' with encoding 'UTF-8'
-[468] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.blg'
+[72] biber-darwin:340> INFO - === Wed Feb  8, 2023, 00:50:53
+[89] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bcf'
+[175] Biber.pm:972> INFO - Found 4 citekeys in bib section 0
+[188] Biber.pm:4383> INFO - Processing section 0
+[197] Biber.pm:4574> INFO - Looking for bibtex file 'citations_sesmarias.bib' for section 0
+[330] bibtex.pm:1713> INFO - LaTeX decoding ...
+[354] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/vinicius/Library/texmf/bibtex/bib/citations_sesmarias.bib'
+[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[397] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[397] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[401] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl' with encoding 'UTF-8'
+[403] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl

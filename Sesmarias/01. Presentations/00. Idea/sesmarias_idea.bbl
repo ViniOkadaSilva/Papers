@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -115,6 +115,46 @@
       \field{pages}{49\bibrangedash 63}
       \range{pages}{15}
       \keyw{Sesmarias}
+    \endentry
+    \entry{Silva2019-vj}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a2e6a592b12c6da23630a57e80729909}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Karla\bibnamedelimb Karoline\bibnamedelima Rodrigues},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d232ee0c660ae26bdee51953681f1826}{%
+           family={Lopes\bibnamedelima Maia},
+           familyi={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Cláudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Tutor Desenvolvimento e Publicacoes Ltda.}%
+      }
+      \strng{namehash}{23134053551c504c21d6eb830763304c}
+      \strng{fullhash}{b53976b7e09d25c32c2405862adabe57}
+      \strng{bibnamehash}{23134053551c504c21d6eb830763304c}
+      \strng{authorbibnamehash}{23134053551c504c21d6eb830763304c}
+      \strng{authornamehash}{23134053551c504c21d6eb830763304c}
+      \strng{authorfullhash}{b53976b7e09d25c32c2405862adabe57}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Accession Number: 139757311; Silva, Karla Karoline Rodrigues 1; Email Address: karla.s.rodrigues@hotmail.com Lopes Maia, Cláudio 2; Email Address: maiaclaudio@yahoo.com.br; Affiliation: 1: Mestranda em Direito Agrário pela Universidade Federal de Goiás (UFG) 2: Doutor em História pela Universidade Federal de Goiás, UFG (2008); Source Info: jan-jun2019, Vol. 5 Issue 1, p1; Author-Supplied Keyword: legal-normative model; Author-Supplied Keyword: legislation; Author-Supplied Keyword: possession; Author-Supplied Keyword: conflito agrário; Author-Supplied Keyword: latifúndio; Author-Supplied Keyword: modelo jurı́dico-normativo; Author-Supplied Keyword: posse; Author-Supplied Keyword: regime de sesmarias; Language of Keywords: English; Language of Keywords: Portuguese; Number of Pages: 17p; Document Type: Article; Language: Portuguese}
+      \field{journaltitle}{Revista de Direito Agrário e Agroambiental}
+      \field{number}{1}
+      \field{title}{{LATIFÚNDIO}: {UMA} {ANÁLISE} A {PARTIR} {DO} {ARCABOU{}̧ {C}O} {NORMATIVO} {DO} {REGIME} {DE} {SESMARIAS} {NO} {BRASIL}}
+      \field{volume}{5}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \keyw{legal-normative model; legislation; possession; conflito agrário; latifúndio; modelo jurı́dico-normativo; posse; regime de sesmarias;Sesmarias}
     \endentry
   \enddatalist
 \endrefsection

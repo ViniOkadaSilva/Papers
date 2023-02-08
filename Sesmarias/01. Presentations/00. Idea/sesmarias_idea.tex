@@ -37,11 +37,15 @@
 %\usepackage{caption}
 %\captionsetup{labelformat=empty}
 \usepackage{appendixnumberbeamer}
+
 \DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{0327}{\c}
 
 \usepackage[backend = biber, style=authoryear, sorting = nty, maxnames=1]{biblatex}
 
-\addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
+\addbibresource{citations_sesmarias.bib}
+
+%\addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
 
 \DeclareFieldFormat{citehyperref}{%
   \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
@@ -77,7 +81,6 @@
     \restorebibmacro{textcite}%
     \usebibmacro{textcite}}}
 
-% \addbibresource[glob]{~/OneDrive-UniversityofIllinois-Urbana/Research/Writing/Sesmarias/citations_sesmarias.bib}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 
 \usepackage{setspace}
@@ -94,7 +97,7 @@
 %Information to be included in the title page:
 \title{Sesmaria Land Grants and the Origins of Brazilian Inequality}
 \author{Vinicius Okada da Silva}
-\institute{University of Illinois at Urbana-Champaign}
+\institute{The University of Illinois at Urbana-Champaign}
 \date{}
 
 \setbeamertemplate{footline}[frame number]
@@ -111,7 +114,9 @@
         \1 Originally a medieval Portuguese Law used to grant lands to be used and developed.
         \1 First mention of it in Brazil was in 1530, and it often favored the Portuguese aristocracy \parencite{Lobb1976-mc}
             \2 Early studies argued it led to the development of the ``economic aristocracy of the colonial society'' and the ``principal cause of the \textit{latifundio}'' in Brazil \parencites[p.~36]{Lima2002-kd}[p.~48]{Da_Costa_Porto1979-dz}.
-            \2 Officially stopped being granted in 1822, however, \textit{sesmeiro} who had owned land and had developed it would be able to retain their lands.
+            \2 Officially stopped being granted in 1822 with Brazil's independence \cite{Silva2019-vj}. 
+            \2 However, effectively, land grants in Brazil came under a new regime in 1850 with the \textit{Lei das Terras} [ADD CITATION].
+            \2 However, \textit{sesmeiros} who had owned land and had developed it would be able to retain their lands. 
     \end{outline}    
 \end{frame}
 
@@ -157,7 +162,15 @@
         \1 Time Variation
         \1 Type of Settler to whom it was granted
         \1 Concessions vs. Applications
-        \1 What purpose was the land requested?
+        \1 What purpose was the land requested (production of cows, sugar plantation, etc.)
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Other possibilities?}
+    \begin{outline}
+        \1 Possible to focus only where we would expect them to have an effect and spend time transcribing/focusing on them.
+            \2 ``Under the auspices of King Philip I (1581-1598), the sesmaria was widely applied in the northeast and central coast regions of Brazil where a system involving large properties and slave labor was considered the only way to make a profit in the new land, whether by means of cultivation or cattle ranching.''\parencite{Lobb1976-mc}
+            \2 Sugarcane plantations required extensive amounts of slave labor \parencite{Silva2019-vj}
     \end{outline}
 \end{frame}
 
