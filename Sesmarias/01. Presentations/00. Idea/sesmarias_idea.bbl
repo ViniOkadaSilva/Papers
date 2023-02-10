@@ -116,6 +116,70 @@
       \range{pages}{15}
       \keyw{Sesmarias}
     \endentry
+    \entry{Motta1998-xw}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8aa20e3b66ebd68f88285040d2d4b55b}{%
+           family={Motta},
+           familyi={M\bibinitperiod},
+           given={Márcia},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {pt}%
+      }
+      \list{location}{1}{%
+        {[Rio de Janeiro, Brazil]}%
+      }
+      \list{publisher}{1}{%
+        {Arquivo Público do Estado do Rio de Janeiro}%
+      }
+      \strng{namehash}{8aa20e3b66ebd68f88285040d2d4b55b}
+      \strng{fullhash}{8aa20e3b66ebd68f88285040d2d4b55b}
+      \strng{bibnamehash}{8aa20e3b66ebd68f88285040d2d4b55b}
+      \strng{authorbibnamehash}{8aa20e3b66ebd68f88285040d2d4b55b}
+      \strng{authornamehash}{8aa20e3b66ebd68f88285040d2d4b55b}
+      \strng{authorfullhash}{8aa20e3b66ebd68f88285040d2d4b55b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nas fronteiras do poder conflitos de terras e direito agrário no Brasil de meados do século {XIX}}
+      \field{year}{1998}
+      \keyw{Books;Sesmarias}
+    \endentry
+    \entry{Nozoe2006-hj}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1e3c20034a4c5c486a4225c5ccce0048}{%
+           family={Nozoe},
+           familyi={N\bibinitperiod},
+           given={Nelson\bibnamedelima Hideiki},
+           giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e3c20034a4c5c486a4225c5ccce0048}
+      \strng{fullhash}{1e3c20034a4c5c486a4225c5ccce0048}
+      \strng{bibnamehash}{1e3c20034a4c5c486a4225c5ccce0048}
+      \strng{authorbibnamehash}{1e3c20034a4c5c486a4225c5ccce0048}
+      \strng{authornamehash}{1e3c20034a4c5c486a4225c5ccce0048}
+      \strng{authorfullhash}{1e3c20034a4c5c486a4225c5ccce0048}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economia: revista da ANPEC}
+      \field{number}{3}
+      \field{title}{Sesmaria e apossamento de terras no Brasil Colônia}
+      \field{volume}{7}
+      \field{year}{2006}
+      \field{pages}{587\bibrangedash 605}
+      \range{pages}{19}
+      \keyw{Sesmarias}
+    \endentry
     \entry{Silva2019-vj}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=a2e6a592b12c6da23630a57e80729909}{%
@@ -136,8 +200,8 @@
       }
       \strng{namehash}{23134053551c504c21d6eb830763304c}
       \strng{fullhash}{b53976b7e09d25c32c2405862adabe57}
-      \strng{bibnamehash}{23134053551c504c21d6eb830763304c}
-      \strng{authorbibnamehash}{23134053551c504c21d6eb830763304c}
+      \strng{bibnamehash}{b53976b7e09d25c32c2405862adabe57}
+      \strng{authorbibnamehash}{b53976b7e09d25c32c2405862adabe57}
       \strng{authornamehash}{23134053551c504c21d6eb830763304c}
       \strng{authorfullhash}{b53976b7e09d25c32c2405862adabe57}
       \field{sortinit}{S}
@@ -155,6 +219,32 @@
       \field{pages}{1\bibrangedash 17}
       \range{pages}{17}
       \keyw{legal-normative model; legislation; possession; conflito agrário; latifúndio; modelo jurı́dico-normativo; posse; regime de sesmarias;Sesmarias}
+    \endentry
+    \entry{Usaid2016-xs}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7becc5f8f6ecc3b54949defafcb25daf}{%
+           family={{USAID}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {USAID}%
+      }
+      \strng{namehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{fullhash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{bibnamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authorbibnamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authornamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authorfullhash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{USAID} {COUNTRY} {PROFILE}: {PROPERTY} {RIGHTS} {AND} {RESOURCE} {GOVERNANCE} - Brazil}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \keyw{Sesmarias}
     \endentry
   \enddatalist
 \endrefsection

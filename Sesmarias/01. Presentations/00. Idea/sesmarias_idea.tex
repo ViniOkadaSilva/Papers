@@ -32,16 +32,21 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\hypersetup{colorlinks = true, linkcolor = red, urlcolor = teal, citecolor = blue}
+\hypersetup{
+    colorlinks = true, 
+    linkcolor = red, 
+    urlcolor = teal, 
+    citecolor = blue}
 
 %\usepackage{caption}
 %\captionsetup{labelformat=empty}
 \usepackage{appendixnumberbeamer}
 
+\DeclareUnicodeCharacter{0301}{\'{e}}
 \DeclareUnicodeCharacter{2212}{-}
 \DeclareUnicodeCharacter{0327}{\c}
 
-\usepackage[backend = biber, style=authoryear, sorting = nty, maxnames=1]{biblatex}
+\usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1]{biblatex}
 
 \addbibresource{citations_sesmarias.bib}
 
@@ -84,8 +89,6 @@
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 
 \usepackage{setspace}
-
-\DeclareUnicodeCharacter{0301}{\'{e}}
 \usepackage{graphicx}
 
 \newcommand{\tinytable}[1]{\textcolor{black}{\tiny \input{#1}}}
@@ -95,7 +98,7 @@
 \beamertemplatenavigationsymbolsempty
 
 %Information to be included in the title page:
-\title{Sesmaria Land Grants and the Origins of Brazilian Inequality}
+\title{Portuguese Land Grants in Brazil: Long-term Effects on Inequality and Economic Development}
 \author{Vinicius Okada da Silva}
 \institute{The University of Illinois at Urbana-Champaign}
 \date{}
@@ -109,22 +112,41 @@
 	\titlepage
 \end{frame}
 
-\begin{frame}{History}
+\begin{frame}{Motivation}
+    \begin{outline}
+        \1 Inequality, in both land and income, is high in Brazil.
+            \2 ``Brazil has one of the highest levels of inequality of land distribution in the world. Inadequate access to land by the poor and insecure land tenure are factors behind rural poverty violence, human rights abuses, and exploitation of rural workers in conditions of servitude'' \parencite{Usaid2016-xs}
+            \2 ``An estimated 1\% of the population owns 45\% of all land in Brazil. Nearly five million families are landless.'' \parencite{Usaid2016-xs}
+        \1 How much of it can be traced to colonial institutions?
+            \2 Goal of this research would analyze the effects of the Portuguese \textit{sesmarias} land grants on long-term inequality in Brazil.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{History/Background}
     \begin{outline}
         \1 Originally a medieval Portuguese Law used to grant lands to be used and developed.
         \1 First mention of it in Brazil was in 1530, and it often favored the Portuguese aristocracy \parencite{Lobb1976-mc}
+            \2 Often very large in size with early ones up to 2,000 $km^2$ \parencite{Nozoe2006-hj}
             \2 Early studies argued it led to the development of the ``economic aristocracy of the colonial society'' and the ``principal cause of the \textit{latifundio}'' in Brazil \parencites[p.~36]{Lima2002-kd}[p.~48]{Da_Costa_Porto1979-dz}.
-            \2 Officially stopped being granted in 1822 with Brazil's independence \cite{Silva2019-vj}. 
-            \2 However, effectively, land grants in Brazil came under a new regime in 1850 with the \textit{Lei das Terras} [ADD CITATION].
-            \2 However, \textit{sesmeiros} who had owned land and had developed it would be able to retain their lands. 
+    \end{outline}
+\end{frame}
+
+\begin{frame}{History/Background}
+    \begin{outline}
+        \1 Officially stopped being granted in 1822 shortly before Brazil's independence \parencite{Silva2019-vj}. 
+        \1 Land reform in Brazil came under a new regime in 1850 with the \textit{Lei das Terras} \parencite[p.~148]{Da_Costa_Porto1979-dz}
+            \2 \textit{Sesmeiros} who had owned land and had developed it would be able to retain their lands, however, if not taken care of they would be retaken by the government.
+            \2 However, the land reform did not mean the end of the local political power of land owners \parencite{Motta1998-xw}.
     \end{outline}    
 \end{frame}
 
 \begin{frame}{Research Question}
     \begin{outline}
         \1 What are the long-term economic effects of the \textit{sesmarias} land grants in Brazil?
-            \2 Land inequality $\Rightarrow$ only those with financial conditions were granted \textit{sesmarias}, and were often granted large plots of land.
-            \2 Income inequality $\Rightarrow$ land was wealth, fewer people with land lead to wealth accumulation by the few.
+            \2 Land inequality $\Rightarrow$ only those with sufficient financial conditions were granted \textit{sesmarias}, and were often granted vast plots of land.
+            \2 Income inequality $\Rightarrow$ land was associated with wealth, fewer people with land lead to wealth accumulation by the few.
+            \2 Demographic Differences $\Rightarrow$ \textit{Sesmarias} often required African slaves, which could skew the demographics of a location.
+            \2 Economic Development $\Rightarrow$ often the lands granted were developed by the owners, leading to the early economic development of an area.
             %\2 Urban development $\Rightarrow$ .
     \end{outline}
 \end{frame}
@@ -132,6 +154,7 @@
 \begin{frame}{Data}
     \begin{outline}
         \1 Brazilian Censuses (1872-2010)
+            \2 Possibility of exploring other demographic data from other sources (eg. \href{http://colonialpopulations.fcsh.unl.pt/mainEnglish.php}{Counting Colonial Populations})
         \1 Location of \textit{sesmarias} from \href{http://plataformasilb.cchla.ufrn.br/}{SILB}.
     \end{outline}
 \end{frame}
@@ -156,27 +179,45 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Possible Sources of Variation}
+% Need to create here beamer buttons so people can zoom in if they want.
+
+% \begin{frame}{Information Extraction}
+% \end{frame}
+
+\begin{frame}{Identification/Possible Sources of Variation}
+    Unsure exactly what's the best way for identification. Below are some of the variation that can be obtained from the data:
     \begin{outline}
         \1 Geographical Variation
         \1 Time Variation
         \1 Type of Settler to whom it was granted
         \1 Concessions vs. Applications
-        \1 What purpose was the land requested (production of cows, sugar plantation, etc.)
+        \1 What purpose was the land requested (cattle, sugar plantation/factory, etc.)
     \end{outline}
 \end{frame}
 
-\begin{frame}{Other possibilities?}
+\begin{frame}{Work to be Done}
+    \begin{outline}
+        \1 Transcription of Manuscripts and information extraction are being done in Brazil.
+            \2 Four states in the Northeast will be finished by March.
+            \2 My state of Para has all the transcriptions $\Rightarrow$ only needed to extract the information.
+            \2 Minas Gerais, has all the documents scanned.
+                \3 Machine Learning techniques to extract the information (?)
+        \1 Georeferencing would be most of the work required.
+            \2 By myself, try creating a group, or looking for professional help?
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Other Angles}
     \begin{outline}
         \1 Possible to focus only where we would expect them to have an effect and spend time transcribing/focusing on them.
             \2 ``Under the auspices of King Philip I (1581-1598), the sesmaria was widely applied in the northeast and central coast regions of Brazil where a system involving large properties and slave labor was considered the only way to make a profit in the new land, whether by means of cultivation or cattle ranching.''\parencite{Lobb1976-mc}
-            \2 Sugarcane plantations required extensive amounts of slave labor \parencite{Silva2019-vj}
+            \2 Sugarcane plantations required extensive amounts of slave labor \parencite{Silva2019-vj}.
     \end{outline}
 \end{frame}
 
 \begin{frame}{Other Relevant (?) Information to Add}
     \begin{outline}
-        \1 Sesmarias caused land uncertainty in colonial times as often poor people would settle, develop land, and then lose the right of the land because a richer person would claim it \parencite[p.~142]{Da_Costa_Porto1979-dz}.
+        \1 Sesmarias caused economic uncertainty in colonial times as often poor people would settle, develop land, and then lose the right of the land because a richer person would claim it \parencite[p.~142]{Da_Costa_Porto1979-dz}.
     \end{outline}
 \end{frame}
 
