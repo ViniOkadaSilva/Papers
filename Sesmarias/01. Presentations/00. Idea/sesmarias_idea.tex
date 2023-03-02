@@ -1,4 +1,4 @@
-\documentclass[aspectratio=1610]{beamer}
+\documentclass[aspectratio=1610, handout]{beamer}
 %\linespread{1.5}\selectfont
 
 \usepackage{booktabs}
@@ -49,6 +49,8 @@
 \usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1]{biblatex}
 
 \addbibresource{citations_sesmarias.bib}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/}}
 
 %\addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
 
@@ -117,6 +119,8 @@
         \1 Inequality, in both land and income, is high in Brazil.
             \2 ``Brazil has one of the highest levels of inequality of land distribution in the world. Inadequate access to land by the poor and insecure land tenure are factors behind rural poverty violence, human rights abuses, and exploitation of rural workers in conditions of servitude'' \parencite{Usaid2016-xs}
             \2 ``An estimated 1\% of the population owns 45\% of all land in Brazil. Nearly five million families are landless.'' \parencite{Usaid2016-xs}
+            % \2 This can be traced even back in history, based on the 1920 census (add quote here about inequality in 1920)
+        \pause 
         \1 How much of it can be traced to colonial institutions?
             \2 Goal of this research would analyze the effects of the Portuguese \textit{sesmarias} land grants on long-term inequality in Brazil.
     \end{outline}
@@ -124,9 +128,9 @@
 
 \begin{frame}{History/Background}
     \begin{outline}
-        \1 Originally a medieval Portuguese Law used to grant lands to be used and developed.
-        \1 First mention of it in Brazil was in 1530, and it often favored the Portuguese aristocracy \parencite{Lobb1976-mc}
-            \2 Often very large in size with early ones up to 2,000 $km^2$ \parencite{Nozoe2006-hj}
+        \1 Originally a medieval Portuguese Law used to grant lands to be used and developed \parencite[p.~16]{Diegues_Junior1959-ba}
+        \1 First mention of it in Brazil was in 1530, and often favored the Portuguese aristocracy \parencites[p.~16]{Diegues_Junior1959-ba}{Lobb1976-mc}
+            \2 Often very large with early ones up to 2,000 $km^2$ \parencite{Nozoe2006-hj}
             \2 Early studies argued it led to the development of the ``economic aristocracy of the colonial society'' and the ``principal cause of the \textit{latifundio}'' in Brazil \parencites[p.~36]{Lima2002-kd}[p.~48]{Da_Costa_Porto1979-dz}.
     \end{outline}
 \end{frame}
@@ -148,6 +152,21 @@
             \2 Demographic Differences $\Rightarrow$ \textit{Sesmarias} often required African slaves, which could skew the demographics of a location.
             \2 Economic Development $\Rightarrow$ often the lands granted were developed by the owners, leading to the early economic development of an area.
             %\2 Urban development $\Rightarrow$ .
+            %\2 Political corruption: Dominance by aristocrats often hampered efforts for local reform and investment.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Literature Review}
+    \begin{outline}
+        \1 Role of colonization in present outcomes:
+            \2 South America: \parencites{Naritomi2012-or}{Musacchio2014-pq}{Wigton-Jones2020-ex}
+            \2 India:
+            \2 Africa: 
+        \1 Colonial land tenure and modern outcomes.
+            \2 \textcite{Banerjee2005-ki}
+        \1 Present-day effects of land tenure in Brazil.
+            \2 Deforestation: 
+            \2 Economic Inequality: \parencites{Wigton-Jones2020-ex}
     \end{outline}
 \end{frame}
 
@@ -155,6 +174,7 @@
     \begin{outline}
         \1 Brazilian Censuses (1872-2010)
             \2 Possibility of exploring other demographic data from other sources (eg. \href{http://colonialpopulations.fcsh.unl.pt/mainEnglish.php}{Counting Colonial Populations})
+        \1 Brazilian Agricultural Censuses.
         \1 Location of \textit{sesmarias} from \href{http://plataformasilb.cchla.ufrn.br/}{SILB}.
     \end{outline}
 \end{frame}
@@ -199,19 +219,31 @@
     \begin{outline}
         \1 Transcription of Manuscripts and information extraction are being done in Brazil.
             \2 Four states in the Northeast will be finished by March.
-            \2 My state of Para has all the transcriptions $\Rightarrow$ only needed to extract the information.
-            \2 Minas Gerais, has all the documents scanned.
+            \2 My state of \href{https://www.rosepepe.com.br/hotsite_acervo/sesmarias/}{Para} (\href{http://www.siaapm.cultura.mg.gov.br/modules/brtbusca/index.php?action=results&query=sesmarias&x=-722&y=-59}{and Minas Gerais}) has all the transcriptions $\Rightarrow$ only needed to extract the information.
                 \3 Machine Learning techniques to extract the information (?)
         \1 Georeferencing would be most of the work required.
             \2 By myself, try creating a group, or looking for professional help?
     \end{outline}
 \end{frame}
 
+\begin{frame}{Basic Descriptive Statistics}{Land History}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png}
+\end{frame}
+
+\begin{frame}{Basic Descriptive Statistics}{Yeart Dist.}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png}
+\end{frame}
+
 \begin{frame}{Other Angles}
     \begin{outline}
-        \1 Possible to focus only where we would expect them to have an effect and spend time transcribing/focusing on them.
+        \1 Possible to focus only where we would expect them to have an effect and spend time transcribing/focusing on them (eg. Northeast).
             \2 ``Under the auspices of King Philip I (1581-1598), the sesmaria was widely applied in the northeast and central coast regions of Brazil where a system involving large properties and slave labor was considered the only way to make a profit in the new land, whether by means of cultivation or cattle ranching.''\parencite{Lobb1976-mc}
-            \2 Sugarcane plantations required extensive amounts of slave labor \parencite{Silva2019-vj}.
+            \2 Sugarcane plantations required extensive amounts of slave labor \parencites{Silva2019-vj}[p.~16]{Baer2014-gh}.
+            \2 ``Much of the windfall profits of the sugar cycle had been appropriated by Portuguese and foreign intermediaries, whereas a large part of the profits accruing to the \textit{fazenda} and \textit{engenho} owners were spent on imported consumer goods rather than technical and infrastructural improvements'' \parencite[p.~16]{Baer2014-gh}
     \end{outline}
 \end{frame}
 
@@ -221,7 +253,7 @@
     \end{outline}
 \end{frame}
 
-\begin{frame}[allowframebreaks, t]{References}
+\begin{frame}[allowframebreaks, t, noframenumbering, plain]{References}
     \printbibliography
 \end{frame}
 

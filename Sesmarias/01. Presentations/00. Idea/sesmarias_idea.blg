@@ -1,15 +1,15 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.blg'
-[40] biber-darwin:340> INFO - === Fri Feb 10, 2023, 14:59:44
-[50] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bcf'
-[98] Biber.pm:978> INFO - Found 7 citekeys in bib section 0
-[106] Biber.pm:4401> INFO - Processing section 0
-[112] Biber.pm:4592> INFO - Looking for bibtex file 'citations_sesmarias.bib' for section 0
-[210] bibtex.pm:1713> INFO - LaTeX decoding ...
-[228] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/vinicius/Library/texmf/bibtex/bib/citations_sesmarias.bib'
-[264] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[265] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[265] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[265] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[269] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl' with encoding 'UTF-8'
-[271] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl
+[39] biber-darwin:340> INFO - === Tue Feb 28, 2023, 11:07:18
+[48] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bcf'
+[93] Biber.pm:978> INFO - Found 13 citekeys in bib section 0
+[101] Biber.pm:4401> INFO - Processing section 0
+[109] Biber.pm:4592> INFO - Looking for bibtex file 'citations_sesmarias.bib' for section 0
+[189] bibtex.pm:1713> INFO - LaTeX decoding ...
+[213] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/vinicius/Library/texmf/bibtex/bib/citations_sesmarias.bib'
+[261] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[261] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[261] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[261] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[268] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl' with encoding 'UTF-8'
+[272] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl
