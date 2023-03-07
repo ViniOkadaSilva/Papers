@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  28 FEB 2023 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  7 MAR 2023 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1229,15 +1229,15 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [7
 
 ]
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf, id=92, 281.05pt x 395.4775pt>
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf, id=102, 281.05pt x 395.4775pt>
 File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf Graphic file (type pdf)
 <use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf  used on input line 200.
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf  used on input line 196.
 (pdftex.def)             Requested size: 139.42093pt x 196.18137pt.
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf, id=93, page=1, 598.235pt x 845.1575pt>
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf, id=103, page=1, 598.235pt x 845.1575pt>
 File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf Graphic file (type pdf)
 <use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf, page 1>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf , page1 used on input line 200.
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf , page1 used on input line 196.
 (pdftex.def)             Requested size: 159.333pt x 225.10052pt.
  [8
 
@@ -1246,39 +1246,51 @@ Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/W
 ] [10
 
 ]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png, id=126, 1576.89125pt x 974.64125pt>
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png, id=135, 1576.89125pt x 974.64125pt>
 File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png Graphic file (type png)
 <use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png  used on input line 233.
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png  used on input line 229.
 (pdftex.def)             Requested size: 338.5919pt x 209.2761pt.
  [11
 
  </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/land_type.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png, id=134, 2195.20125pt x 1356.06625pt>
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png, id=143, 2195.20125pt x 1356.06625pt>
 File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png Graphic file (type png)
 <use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png  used on input line 239.
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png  used on input line 235.
 (pdftex.def)             Requested size: 338.57788pt x 209.1535pt.
  [12
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>] [13
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png, id=150, 2195.20125pt x 1356.06625pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png  used on input line 241.
+(pdftex.def)             Requested size: 338.57788pt x 209.1535pt.
+ [13
 
-] [14
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>] [14
+
+] [15
 
 ]
-Overfull \hbox (9.50392pt too wide) in paragraph at lines 258--258
+Overfull \hbox (9.50392pt too wide) in paragraph at lines 260--260
 [][][]\OT1/cmss/m/n/10.95 USAID (2016).[] \OT1/cmss/m/it/10.95 US-AID COUN-TRY PRO-FILE: PROP-ERTY RIGHTS AND RE-SOURCE
  []
 
-[15
+[16
 
- </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [16
+ </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [17
 
 
-] [17
+] [18
 
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 262.
+
 \tf@nav=\write7
 \openout7 = `sesmarias_idea.nav'.
 
@@ -1288,7 +1300,7 @@ Overfull \hbox (9.50392pt too wide) in paragraph at lines 258--258
 \tf@snm=\write9
 \openout9 = `sesmarias_idea.snm'.
 
- (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.aux)
+(/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.aux)
 Package rerunfilecheck Info: File `sesmarias_idea.out' has not changed.
 (rerunfilecheck)             Checksum: AEA4B6A8AE45636C75679C2F0DFA4493;93.
 Package logreq Info: Writing requests to 'sesmarias_idea.run.xml'.
@@ -1296,18 +1308,18 @@ Package logreq Info: Writing requests to 'sesmarias_idea.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36457 strings out of 476029
- 731228 string characters out of 5790167
- 1862346 words of memory out of 5000000
- 56180 multiletter control sequences out of 15000+600000
- 525602 words of font info for 80 fonts, out of 8000000 for 9000
+ 36529 strings out of 476029
+ 733642 string characters out of 5790167
+ 1865346 words of memory out of 5000000
+ 56243 multiletter control sequences out of 15000+600000
+ 526127 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,11n,122p,1859b,2421s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.pdf" (17 pages, 937208 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.pdf" (18 pages, 1075064 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

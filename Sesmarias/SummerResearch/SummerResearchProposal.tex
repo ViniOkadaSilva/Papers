@@ -1,0 +1,128 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}
+\usepackage{setspace}
+
+\usepackage{amsmath}
+\doublespacing
+
+\usepackage{indentfirst}
+\usepackage{pdflscape}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+
+\DeclareUnicodeCharacter{0301}{\'{e}}
+
+\usepackage[font=small,skip=0pt]{caption}
+\usepackage[section]{placeins}
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
+\usepackage{authblk}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{amssymb}
+\newcolumntype{d}{S[input-symbols = ()]}
+\usepackage{float}
+\usepackage{dcolumn}
+\usepackage[bottom]{footmisc} 
+\usepackage[textsize=tiny]{todonotes}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{bbding}
+\usepackage{xargs}
+\usepackage{xpatch}
+\usepackage[citecolor = blue]{hyperref}
+\hypersetup{colorlinks = true, linkcolor = red, urlcolor = teal}
+
+\usepackage{bookmark}
+\usepackage{todonotes}
+\setlength{\marginparwidth}{2cm}
+
+\DeclareUnicodeCharacter{0301}{\'{e}}
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{0327}{\c}
+
+\usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1]{biblatex}
+
+\addbibresource{citations_sesmarias.bib}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/}}
+
+%\addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\newcommand{\tinytable}[1]{\textcolor{black}{\tiny \input{#1}}}
+
+\begin{document}
+
+\section{Motivation}
+
+Originally a medieval Portuguese Law established in 1375 that allowed the grant of small plots of land to be used and developed \parencite[p.~16]{Diegues_Junior1959-ba}. In Brazil, the law was initially implanted with little difference based on an updated version of the law from 1446, with the first use being in 1530 \parencite[p.~16]{Diegues_Junior1959-ba}. The Law governing the \textit{sesmarias} would have two more changes during colonial Brazil, in 1511 and 1603. However, the core of the law remained the same, the land was to be granted in order to establish settlements in Portugal's colonial empire and allow it to develop. 
+
+Given that in order to request a land grant required the petitioner to prove that he had the financial means to develop and use the land requested, it often favored the Portuguese aristocracy \parencite{Lobb1976-mc}. Early studies argued it led to the development of the ``economic aristocracy of the colonial society'' and the ``principal cause of the \textit{latifundio}'' in Brazil \parencites[p.~36]{Lima2002-kd}[p.~48]{Da_Costa_Porto1979-dz}.
+
+\section{Data Collection}
+
+The goal of the summer would work in conjunction with researchers in Brazil to transcribe the manuscripts into text documents and also extract the information from the text. Given the geographical information extracted, the next step is to georeference the original location of the \textit{sesmaria}. 
+
+\newpage
+
+\xpatchbibmacro{author}{\printnames{author}}{\textbf{\printnames{author}}}{}{}
+
+\printbibliography
+
+\appendix
+
+\end{document}

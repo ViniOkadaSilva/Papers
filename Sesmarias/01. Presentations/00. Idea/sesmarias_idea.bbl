@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Andrade1980-md}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfe2ca8fe650891f00f654487b230386}{%
+           family={Andrade},
+           familyi={A\bibinitperiod},
+           given={Manuel\bibnamedelimb Correia\bibnamedelimb de\bibnamedelima Oliveira},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Livraria Duas Cidades}%
+      }
+      \strng{namehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{fullhash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{bibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorbibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authornamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorfullhash}{dfe2ca8fe650891f00f654487b230386}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Coleção História e sociedade.}
+      \field{title}{Latifúndio e reforma agrária no Brasil}
+      \field{year}{1980}
+      \keyw{Land tenure -- Brazil;Books;Sesmarias}
+    \endentry
     \entry{Baer2014-gh}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=26c2ed0a6a18aa2755f831796c5a2373}{%
@@ -50,6 +85,41 @@
       \field{title}{The Brazilian Economy: Growth and Development}
       \field{year}{2014}
       \keyw{Books;Sesmarias}
+    \endentry
+    \entry{Bandecchi1963-uj}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20fee9ae5ab19a6d59731f820b188121}{%
+           family={Bandecchi},
+           familyi={B\bibinitperiod},
+           given={Brasil},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Editôra Fulgor}%
+      }
+      \strng{namehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{fullhash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{bibnamehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{authorbibnamehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{authornamehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{authorfullhash}{20fee9ae5ab19a6d59731f820b188121}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Coleção Universidade do povo, 11}
+      \field{title}{Origem do latifúndio no Brasil}
+      \field{year}{1963}
+      \keyw{Land tenure -- Brazil -- History;Books;Sesmarias}
     \endentry
     \entry{Banerjee2005-ki}{article}{}
       \name{author}{2}{}{%
@@ -157,6 +227,40 @@
       \field{year}{1959}
       \keyw{Land tenure -- Brazil;Books;Sesmarias}
     \endentry
+    \entry{Laudares2022-vy}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc40e09e42fc26210abcee874e06f9a6}{%
+           family={Laudares},
+           familyi={L\bibinitperiod},
+           given={Humberto},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a361acc489cd2a17f4ebc3f269bed664}{%
+           family={Caicedo},
+           familyi={C\bibinitperiod},
+           given={Felipe\bibnamedelima Valencia},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9a83d2de851b099fee214d4c623b5e4}
+      \strng{fullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{bibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authorbibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authornamehash}{e9a83d2de851b099fee214d4c623b5e4}
+      \strng{authorfullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article documents the long-term impact of slavery on inequality at the receiving end. We focus on Brazil, the largest receiver of African slaves and the last country to abolish this institution in the Western Hemisphere, in 1888. To deal with the endogeneity of slavery placement, we use a spatial Regression Discontinuity Design (RDD), exploiting the Tordesillas Treaty, which established the colonial boundaries between the Portuguese and Spanish empires within Brazil. We find that the number of slaves in 1872 is discontinuously higher on the Portuguese side of the border, consistent with this power's comparative advantage in transatlantic slavery. We then show how this differential slave rate led to higher modern income inequality of 0.04 points (of the Gini Index), close to 10\% of the average income inequality in the country. In terms of mechanisms, we find a wider income gap, and important differences in education, employment and prejudice for blacks in modern times. We rule out the role of colonizer identity and other mechanisms proposed in the historical literature.}
+      \field{howpublished}{\url{https://conference.nber.org/conf_papers/f164242.pdf}}
+      \field{note}{Accessed: 2022-10-3}
+      \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
+      \field{year}{2022}
+      \keyw{Slavery in Brazil;Sesmarias}
+    \endentry
     \entry{Lima2002-kd}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0d14c224f083d914947a86cf64bf9b33}{%
@@ -219,6 +323,50 @@
       \field{pages}{49\bibrangedash 63}
       \range{pages}{15}
       \keyw{Sesmarias}
+    \endentry
+    \entry{Lowes2020-pr}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cc60d54c195d34926ef4540497702730}{%
+           family={Lowes},
+           familyi={L\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
+      \strng{fullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{bibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authorbibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authornamehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
+      \strng{authorfullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.}
+      \field{month}{10}
+      \field{number}{w27893}
+      \field{title}{Concessions, Violence, and Indirect Rule: Evidence from the Congo Free State}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \keyw{To Read;Sesmarias}
     \endentry
     \entry{Motta1998-xw}{book}{}
       \name{author}{1}{}{%
@@ -349,7 +497,7 @@
       \field{year}{2012}
       \field{pages}{393\bibrangedash 422}
       \range{pages}{30}
-      \keyw{To Read;URGENT;Sesmarias}
+      \keyw{URGENT;Brazil;Colonialism;History;Read;Sesmarias;Third Year Paper}
     \endentry
     \entry{Nozoe2006-hj}{article}{}
       \name{author}{1}{}{%
@@ -480,7 +628,7 @@
       \field{year}{2020}
       \field{pages}{455\bibrangedash 501}
       \range{pages}{47}
-      \keyw{To Read;URGENT;Sesmarias}
+      \keyw{URGENT;Read;History;Governance;Sesmarias;Third Year Paper}
     \endentry
   \enddatalist
 \endrefsection

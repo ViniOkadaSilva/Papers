@@ -2358,19 +2358,22 @@
     <bcf:citekey order="6" intorder="1">Nozoe2006-hj</bcf:citekey>
     <bcf:citekey order="7" intorder="1">Lima2002-kd</bcf:citekey>
     <bcf:citekey order="8" intorder="1">Da_Costa_Porto1979-dz</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Silva2019-vj</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Da_Costa_Porto1979-dz</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Motta1998-xw</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Naritomi2012-or</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Musacchio2014-pq</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Wigton-Jones2020-ex</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Banerjee2005-ki</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Andrade1980-md</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Silva2019-vj</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Da_Costa_Porto1979-dz</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Motta1998-xw</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Bandecchi1963-uj</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Naritomi2012-or</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Musacchio2014-pq</bcf:citekey>
     <bcf:citekey order="16" intorder="1">Wigton-Jones2020-ex</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Lobb1976-mc</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Silva2019-vj</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Baer2014-gh</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Baer2014-gh</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Da_Costa_Porto1979-dz</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Laudares2022-vy</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Banerjee2005-ki</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Lowes2020-pr</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Lobb1976-mc</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Silva2019-vj</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Baer2014-gh</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Baer2014-gh</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Da_Costa_Porto1979-dz</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
