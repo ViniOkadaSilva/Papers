@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  7 MAR 2023 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  7 MAR 2023 12:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1089,18 +1089,18 @@ Package logreq Info: Writing requests to 'SummerResearchProposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37075 strings out of 476029
- 745854 string characters out of 5790167
- 1857346 words of memory out of 5000000
- 56979 multiletter control sequences out of 15000+600000
+ 37076 strings out of 476029
+ 745865 string characters out of 5790167
+ 1858346 words of memory out of 5000000
+ 56980 multiletter control sequences out of 15000+600000
  513652 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,5n,94p,839b,2100s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.pdf (2 pages, 68942 bytes).
+Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.pdf (2 pages, 69591 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

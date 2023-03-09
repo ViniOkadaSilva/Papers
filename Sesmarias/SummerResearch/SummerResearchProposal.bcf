@@ -2355,6 +2355,7 @@
     <bcf:citekey order="3" intorder="1">Lobb1976-mc</bcf:citekey>
     <bcf:citekey order="4" intorder="1">Lima2002-kd</bcf:citekey>
     <bcf:citekey order="5" intorder="1">Da_Costa_Porto1979-dz</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Lobb1976-mc</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
