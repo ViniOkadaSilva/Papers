@@ -19,6 +19,114 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Andrade1980-md}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfe2ca8fe650891f00f654487b230386}{%
+           family={Andrade},
+           familyi={A\bibinitperiod},
+           given={Manuel\bibnamedelimb Correia\bibnamedelimb de\bibnamedelima Oliveira},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Livraria Duas Cidades}%
+      }
+      \strng{namehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{fullhash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{bibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorbibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authornamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorfullhash}{dfe2ca8fe650891f00f654487b230386}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Coleção História e sociedade.}
+      \field{title}{Latifúndio e reforma agrária no Brasil}
+      \field{year}{1980}
+      \keyw{Land tenure -- Brazil;Books;Sesmarias}
+    \endentry
+    \entry{Bandecchi1963-uj}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20fee9ae5ab19a6d59731f820b188121}{%
+           family={Bandecchi},
+           familyi={B\bibinitperiod},
+           given={Brasil},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Editôra Fulgor}%
+      }
+      \strng{namehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{fullhash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{bibnamehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{authorbibnamehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{authornamehash}{20fee9ae5ab19a6d59731f820b188121}
+      \strng{authorfullhash}{20fee9ae5ab19a6d59731f820b188121}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Coleção Universidade do povo, 11}
+      \field{title}{Origem do latifúndio no Brasil}
+      \field{year}{1963}
+      \keyw{Land tenure -- Brazil -- History;Books;Sesmarias}
+    \endentry
+    \entry{Banerjee2005-ki}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=027abafc894615db04e1c3f3dc5931c4}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Abhijit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d323edec08b9cdfccb11d18daa72806}{%
+           family={Iyer},
+           familyi={I\bibinitperiod},
+           given={Lakshmi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{18edac96fea31ae12a7b321c919f67db}
+      \strng{fullhash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{bibnamehash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{authorbibnamehash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{authornamehash}{18edac96fea31ae12a7b321c919f67db}
+      \strng{authorfullhash}{b7b9e42a898196fe3d292b5e10bee176}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{History, Institutions, and Economic Performance: The Legacy of Colonial Land Tenure Systems in India by Abhijit Banerjee and Lakshmi Iyer. Published in volume 95, issue 4, pages 1190-1213 of American Economic Review, September 2005, Abstract: We analyze the colonial land revenue institutions set up...}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{month}{9}
+      \field{number}{4}
+      \field{title}{History, Institutions, and Economic Performance: The Legacy of Colonial Land Tenure Systems in India}
+      \field{volume}{95}
+      \field{year}{2005}
+      \field{pages}{1190\bibrangedash 1213}
+      \range{pages}{24}
+      \keyw{Read;History;Third Year Paper;Bible Translations;Sesmarias}
+    \endentry
     \entry{Da_Costa_Porto1979-dz}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f2aa73d4e8421240ba41c1db32b95d34}{%
@@ -53,6 +161,84 @@
       \field{year}{1979}
       \keyw{Books;Sesmarias}
     \endentry
+    \entry{Dell2010-qt}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8185990c5393dc7868ca18973b150ae}{%
+           family={Dell},
+           familyi={D\bibinitperiod},
+           given={Melissa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{fullhash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{bibnamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authorbibnamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authornamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authorfullhash}{d8185990c5393dc7868ca18973b150ae}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{[This study utilizes regression discontinuity to examine the long-run impacts of the mita, an extensive forced mining labor system in effect in Peru and Bolivia between 1573 and 1812. Results indicate that a mita effect lowers household consumption by around 25\% and increases the prevalence of stunted growth in children by around 6 percentage points in subjected districts today. Using data from the Spanish Empire and Peruvian Republic to trace channels of institutional persistence, I show that the mita's influence has persisted through its impacts on land tenure and public goods provision. Mita districts historically had fewer large landowners and lower educational attainment. Today, they are less integrated into road networks and their residents are substantially more likely to be subsistence farmers.]}
+      \field{journaltitle}{Econometrica}
+      \field{number}{6}
+      \field{title}{{THE} {PERSISTENT} {EFFECTS} {OF} {PERU'S} {MINING} ``{MITA}''}
+      \field{volume}{78}
+      \field{year}{2010}
+      \field{pages}{1863\bibrangedash 1903}
+      \range{pages}{41}
+      \keyw{History;Read;Third Year Paper;Sesmarias}
+    \endentry
+    \entry{Dell2019-np}{article}{}
+      \name{author}{2}{ul=2}{%
+        {{un=0,uniquepart=base,hash=d8185990c5393dc7868ca18973b150ae}{%
+           family={Dell},
+           familyi={D\bibinitperiod},
+           given={Melissa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce891fd22770d34da4cd958320f9356f}{%
+           family={Olken},
+           familyi={O\bibinitperiod},
+           given={Benjamin\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Academic}%
+      }
+      \strng{namehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{fullhash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{bibnamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authorbibnamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authornamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authorfullhash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. Colonial powers typically organized economic activity in the colonies to maximize their economic returns. While the literature has emphasized long-run}
+      \field{journaltitle}{Rev. Econ. Stud.}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{The Development Effects of the Extractive Colonial Economy: The Dutch Cultivation System in Java}
+      \field{volume}{87}
+      \field{year}{2019}
+      \field{pages}{164\bibrangedash 203}
+      \range{pages}{40}
+      \keyw{History;Read;Third Year Paper;Sesmarias}
+    \endentry
     \entry{Diegues_Junior1959-ba}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ee1632a4c5c0aa11b7fbb035099260c6}{%
@@ -86,6 +272,40 @@
       \field{title}{População e propriedade da terra no Brasil}
       \field{year}{1959}
       \keyw{Land tenure -- Brazil;Books;Sesmarias}
+    \endentry
+    \entry{Laudares2022-vy}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc40e09e42fc26210abcee874e06f9a6}{%
+           family={Laudares},
+           familyi={L\bibinitperiod},
+           given={Humberto},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a361acc489cd2a17f4ebc3f269bed664}{%
+           family={Caicedo},
+           familyi={C\bibinitperiod},
+           given={Felipe\bibnamedelima Valencia},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9a83d2de851b099fee214d4c623b5e4}
+      \strng{fullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{bibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authorbibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authornamehash}{e9a83d2de851b099fee214d4c623b5e4}
+      \strng{authorfullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article documents the long-term impact of slavery on inequality at the receiving end. We focus on Brazil, the largest receiver of African slaves and the last country to abolish this institution in the Western Hemisphere, in 1888. To deal with the endogeneity of slavery placement, we use a spatial Regression Discontinuity Design (RDD), exploiting the Tordesillas Treaty, which established the colonial boundaries between the Portuguese and Spanish empires within Brazil. We find that the number of slaves in 1872 is discontinuously higher on the Portuguese side of the border, consistent with this power's comparative advantage in transatlantic slavery. We then show how this differential slave rate led to higher modern income inequality of 0.04 points (of the Gini Index), close to 10\% of the average income inequality in the country. In terms of mechanisms, we find a wider income gap, and important differences in education, employment and prejudice for blacks in modern times. We rule out the role of colonizer identity and other mechanisms proposed in the historical literature.}
+      \field{howpublished}{\url{https://conference.nber.org/conf_papers/f164242.pdf}}
+      \field{note}{Accessed: 2022-10-3}
+      \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
+      \field{year}{2022}
+      \keyw{Slavery in Brazil;Sesmarias}
     \endentry
     \entry{Lima2002-kd}{book}{}
       \name{author}{1}{}{%
@@ -149,6 +369,252 @@
       \field{pages}{49\bibrangedash 63}
       \range{pages}{15}
       \keyw{Sesmarias}
+    \endentry
+    \entry{Lowes2020-pr}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cc60d54c195d34926ef4540497702730}{%
+           family={Lowes},
+           familyi={L\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
+      \strng{fullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{bibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authorbibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authornamehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
+      \strng{authorfullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.}
+      \field{month}{10}
+      \field{number}{w27893}
+      \field{title}{Concessions, Violence, and Indirect Rule: Evidence from the Congo Free State}
+      \field{type}{techreport}
+      \field{year}{2020}
+      \keyw{To Read;Sesmarias}
+    \endentry
+    \entry{Musacchio2014-pq}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6d3042b29d93c0ba5bb96e1ac4278e9b}{%
+           family={Musacchio},
+           familyi={M\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b712dd12a2a9d50d4522bab163eb95e8}{%
+           family={Fritscher},
+           familyi={F\bibinitperiod},
+           given={André\bibnamedelima Martı́nez},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=055d5b7c7d98f3ef61271cbc3573be80}{%
+           family={Viarengo},
+           familyi={V\bibinitperiod},
+           given={Martina},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{7c3d890828f43d37274d4555d56d3baa}
+      \strng{fullhash}{c341b322c24765ad608dd15e715baddc}
+      \strng{bibnamehash}{c341b322c24765ad608dd15e715baddc}
+      \strng{authorbibnamehash}{c341b322c24765ad608dd15e715baddc}
+      \strng{authornamehash}{7c3d890828f43d37274d4555d56d3baa}
+      \strng{authorfullhash}{c341b322c24765ad608dd15e715baddc}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the initial expansion of public schooling across Brazilian states (1889--1930) and develop an alternative explanation of how colonial institutions may affect the provision of public goods in the long run. We find that states that exported commodities undergoing international booms, between 1889 and 1930, had significantly larger export tax revenues and could spend more on education, while other states lagged behind. Yet, such positive effect of commodity booms on education expenditures was muted in states that either had more slaves before abolition or cultivated cotton during colonial times.}
+      \field{journaltitle}{J. Econ. Hist.}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Colonial Institutions, Trade Shocks, and the Diffusion of Elementary Education in Brazil, 1889--1930}
+      \field{volume}{74}
+      \field{year}{2014}
+      \field{pages}{730\bibrangedash 766}
+      \range{pages}{37}
+      \keyw{Read;History;Brazil;Third Year Paper;Sesmarias}
+    \endentry
+    \entry{Naritomi2012-or}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=898300b70ca47365c98d4a5214feac73}{%
+           family={Naritomi},
+           familyi={N\bibinitperiod},
+           given={Joana},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=445f41b20b023950e8f1c63ae6762fa6}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2539abf6d9800b20c91a5b376ff2f773}{%
+           family={Assunção},
+           familyi={A\bibinitperiod},
+           given={Juliano\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ec18a61a2e4127cb9ba6202ee06f8ac0}
+      \strng{fullhash}{e833784bf4dbac8c793b0acc9826ac40}
+      \strng{bibnamehash}{e833784bf4dbac8c793b0acc9826ac40}
+      \strng{authorbibnamehash}{e833784bf4dbac8c793b0acc9826ac40}
+      \strng{authornamehash}{ec18a61a2e4127cb9ba6202ee06f8ac0}
+      \strng{authorfullhash}{e833784bf4dbac8c793b0acc9826ac40}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article analyzes the determinants of local institutions in Brazil. We show that institutional quality and distribution of land are partly inherited from the colonial histories experienced by different areas of the country. The sugar cane boom---characterized by an oligarchic society---is associated with more land inequality. The gold boom---characterized by a heavily inefficient presence of the Portuguese state---is associated with worse governance and access to justice. We do not find similar effects for a postcolonial boom (coffee). We also find that the colonial episodes are correlated with lower provision of public goods.}
+      \field{journaltitle}{J. Econ. Hist.}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Institutional Development and Colonial Heritage within Brazil}
+      \field{volume}{72}
+      \field{year}{2012}
+      \field{pages}{393\bibrangedash 422}
+      \range{pages}{30}
+      \keyw{URGENT;Brazil;Colonialism;History;Read;Sesmarias;Third Year Paper}
+    \endentry
+    \entry{Rocha2017-yq}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9e559013c90f378133caae2041324838}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Rudi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e38887bdd3fb5a306f32b90902dba88}{%
+           family={Ferraz},
+           familyi={F\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=445f41b20b023950e8f1c63ae6762fa6}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f9b5f7650192218c740f2e6f0e1f49fe}
+      \strng{fullhash}{124e71796402bc332b65e6751fec7201}
+      \strng{bibnamehash}{124e71796402bc332b65e6751fec7201}
+      \strng{authorbibnamehash}{124e71796402bc332b65e6751fec7201}
+      \strng{authornamehash}{f9b5f7650192218c740f2e6f0e1f49fe}
+      \strng{authorfullhash}{124e71796402bc332b65e6751fec7201}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Human Capital Persistence and Development by Rudi Rocha, Claudio Ferraz and Rodrigo R. Soares. Published in volume 9, issue 4, pages 105-36 of American Economic Journal: Applied Economics, October 2017, Abstract: This paper documents the persistence of human capital over time and its association wit...}
+      \field{journaltitle}{Am. Econ. J. Appl. Econ.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Human Capital Persistence and Development}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{105\bibrangedash 136}
+      \range{pages}{32}
+      \keyw{To Read;URGENT;Sesmarias;Slavery in Brazil}
+    \endentry
+    \entry{Usaid2016-xs}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7becc5f8f6ecc3b54949defafcb25daf}{%
+           family={{USAID}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {USAID}%
+      }
+      \strng{namehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{fullhash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{bibnamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authorbibnamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authornamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authorfullhash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{USAID} {COUNTRY} {PROFILE}: {PROPERTY} {RIGHTS} {AND} {RESOURCE} {GOVERNANCE} - Brazil}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \keyw{Sesmarias}
+    \endentry
+    \entry{Wigton-Jones2020-ex}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06408d5540b193d6cc53b24dbdb9bb10}{%
+           family={Wigton-Jones},
+           familyi={W\bibinithyphendelim J\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{fullhash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{bibnamehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{authorbibnamehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{authornamehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{authorfullhash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This research examines the effects of inequality on long-run development within Brazil. I first exploit variation in temperature and precipitation to instrument for the local distribution of land in 1920 using a two stage least squares instrumental variables framework. My instrument is an index quantifying the suitability of local climatic conditions for plantation versus smallholder agriculture. I construct this index using information on the growing conditions of crops within certain plant taxonomies that are more biologically suited for smallholder or plantation production. I argue that this index more fully identifies the optimal environmental conditions for these two types of agricultural production, and I show that it serves as a robust predictor of local land inequality in the year 1920. IV estimates then reveal that greater inequality is associated with less local government spending on welfare and public goods over the 1995-2005 time period, as well as reductions in measures of local government quality and per-child education spending. It is also associated with lower levels of development, as measured by the local Human Development Index (HDI) for the year 2000. Inequality primarily affects the HDI through shorter life expectancies and lower incomes. I argue that the latter is consistent with the agrarian elite obstructing the transition of the local economy from agriculture to industry/services, as historically unequal municipalities contain a greater percentage of workers in the lower-wage agriculture sector, and this sector itself constitutes a larger share of local GDP.}
+      \field{journaltitle}{J. Econ. Growth}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Legacies of inequality: the case of Brazil}
+      \field{volume}{25}
+      \field{year}{2020}
+      \field{pages}{455\bibrangedash 501}
+      \range{pages}{47}
+      \keyw{URGENT;Read;History;Governance;Sesmarias;Third Year Paper}
     \endentry
   \enddatalist
 \endrefsection

@@ -1,15 +1,15 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.blg'
-[37] biber-darwin:340> INFO - === Tue Mar  7, 2023, 11:46:53
-[46] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.bcf'
-[90] Biber.pm:978> INFO - Found 4 citekeys in bib section 0
-[98] Biber.pm:4401> INFO - Processing section 0
-[104] Biber.pm:4592> INFO - Looking for bibtex file 'citations_sesmarias.bib' for section 0
-[183] bibtex.pm:1713> INFO - LaTeX decoding ...
-[211] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/vinicius/Library/texmf/bibtex/bib/citations_sesmarias.bib'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[237] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[237] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[239] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.bbl' with encoding 'UTF-8'
-[240] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.bbl
+[38] biber-darwin:340> INFO - === Fri Mar 10, 2023, 10:49:36
+[47] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.bcf'
+[94] Biber.pm:978> INFO - Found 16 citekeys in bib section 0
+[102] Biber.pm:4401> INFO - Processing section 0
+[108] Biber.pm:4592> INFO - Looking for bibtex file 'citations_sesmarias.bib' for section 0
+[192] bibtex.pm:1713> INFO - LaTeX decoding ...
+[223] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/vinicius/Library/texmf/bibtex/bib/citations_sesmarias.bib'
+[281] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[281] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[281] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[281] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[290] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.bbl' with encoding 'UTF-8'
+[296] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.bbl

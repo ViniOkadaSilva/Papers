@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  7 MAR 2023 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  10 MAR 2023 10:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -550,6 +550,8 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@tables=\count340
 \c@LT@chunks=\count341
 \LT@p@ftn=\toks45
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/outlines/outlines.sty
+Package: outlines 2012/1/23 1.1 Ch. Pecheur
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
@@ -648,10 +650,10 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
  (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2023-02-02 L3 Experimental document command parser
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -747,7 +749,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip77
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+Package hyperref Info: Option `colorlinks' set `true' on input line 52.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -975,28 +977,28 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 108.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 111.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.aux)
 \openout1 = `SummerResearchProposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -1064,8 +1066,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 108.
-Package hyperref Info: Link coloring ON on input line 108.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 111.
+Package hyperref Info: Link coloring ON on input line 111.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1079,28 +1081,39 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'SummerResearchProposal.bbl' found.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.bbl)
-Package biblatex Info: Reference section=0 on input line 108.
-Package biblatex Info: Reference segment=0 on input line 108.
- [1
+Package biblatex Info: Reference section=0 on input line 111.
+Package biblatex Info: Reference segment=0 on input line 111.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 148.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 148.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.aux)
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.aux)
 Package logreq Info: Writing requests to 'SummerResearchProposal.run.xml'.
 \openout1 = `SummerResearchProposal.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 6 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 37076 strings out of 476029
- 745865 string characters out of 5790167
- 1858346 words of memory out of 5000000
- 56980 multiletter control sequences out of 15000+600000
- 513652 words of font info for 37 fonts, out of 8000000 for 9000
+ 37284 strings out of 476029
+ 750481 string characters out of 5790167
+ 1869346 words of memory out of 5000000
+ 57141 multiletter control sequences out of 15000+600000
+ 519773 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,5n,94p,839b,2100s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.pdf (2 pages, 69591 bytes).
+ 99i,8n,94p,1853b,33612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/SummerResearch/SummerResearchProposal.pdf (3 pages, 171466 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
