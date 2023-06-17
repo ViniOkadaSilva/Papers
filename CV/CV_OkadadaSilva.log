@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  10 MAR 2023 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  17 JUN 2023 18:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,29 +586,29 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/it' will be
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+BaskervilleF-TLF on input line 172.
+LaTeX Font Info:    Trying to load font information for TS1+BaskervilleF-TLF on input line 181.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/baskervillef/TS1BaskervilleF-TLF.fd
 File: TS1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for TS1/BaskervilleF-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 172.
+(Font)              scaled to size 10.95pt on input line 181.
  [2] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.aux)
 Package rerunfilecheck Info: File `CV_OkadadaSilva.out' has not changed.
-(rerunfilecheck)             Checksum: 8F0A7EBD10ACA775ACD500BADAB3B9AE;844.
+(rerunfilecheck)             Checksum: 9546D8CCEFF4F82D9EF2443BC89DB958;917.
  ) 
 Here is how much of TeX's memory you used:
- 12380 strings out of 476029
- 200801 string characters out of 5790167
+ 12382 strings out of 476029
+ 200821 string characters out of 5790167
  1872346 words of memory out of 5000000
- 32613 multiletter control sequences out of 15000+600000
+ 32614 multiletter control sequences out of 15000+600000
  663840 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,76p,1042b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/baskervillef/zba_qiwnw4.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-BoldItalic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.pdf (2 pages, 128212 bytes).
+Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/CV/CV_OkadadaSilva.pdf (2 pages, 128670 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

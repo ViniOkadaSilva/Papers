@@ -19,6 +19,94 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Acemoglu2001-dz}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ead6a4fdd114ed9b8c4c507081d69860}{%
+           family={Acemoglu},
+           familyi={A\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=449e4426c2748ee09f2020d37bab47b2}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43fffc00dff32adf8586a8a056cedf2d}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={J\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {aeaweb.org}%
+      }
+      \strng{namehash}{e7b1e577eb9045ff0efb712bcdd5b943}
+      \strng{fullhash}{db5a7cef940181492a2d3ed4e3845d64}
+      \strng{bibnamehash}{db5a7cef940181492a2d3ed4e3845d64}
+      \strng{authorbibnamehash}{db5a7cef940181492a2d3ed4e3845d64}
+      \strng{authornamehash}{e7b1e577eb9045ff0efb712bcdd5b943}
+      \strng{authorfullhash}{db5a7cef940181492a2d3ed4e3845d64}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We exploit differences in European mortality rates to estimate the effect of institutions on economic performance. Europeans adopted very different colonization policies in different …}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{title}{The colonial origins of comparative development: An empirical investigation}
+      \field{year}{2001}
+      \keyw{Sesmarias}
+    \endentry
+    \entry{Alston2010-cn}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7b8aabee11e4b6d9617c673739a57e2b}{%
+           family={Alston},
+           familyi={A\bibinitperiod},
+           given={Lee\bibnamedelima J},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55c31113d6ca2b1a3d499a08f7056364}{%
+           family={Libecap},
+           familyi={L\bibinitperiod},
+           given={Gary\bibnamedelima D},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=711e27d73bca8b195b6e2eaf7e92aecf}{%
+           family={Mueller},
+           familyi={M\bibinitperiod},
+           given={Bernardo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ann Arbor, MI}%
+      }
+      \list{publisher}{1}{%
+        {University of Michigan Press}%
+      }
+      \strng{namehash}{0313dc7b7b270e165d234f263d10df61}
+      \strng{fullhash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \strng{bibnamehash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \strng{authorbibnamehash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \strng{authornamehash}{0313dc7b7b270e165d234f263d10df61}
+      \strng{authorfullhash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Amazon, the world's largest rain forest, is the last frontier in Brazil. The settlement of large and small farmers, squatters, miners, and loggers in this frontier during the past thirty years has given rise to violent conflicts over land as well as environmental duress. Titles, Conflict, and Land Use examines the institutional development involved in the process of land use and ownership in the Amazon and shows how this phenomenon affects the behavior of the economic actors. It explores the way in which the absence of well-defined property rights in the Amazon has led to both economic and social problems, including lost investment opportunities, high costs in protecting claims, and violence. The relationship between land reform and violence is given special attention. The book offers an important application of the New Institutional Economics by examining a rare instance where institutional change can be empirically observed. This allows the authors to study property rights as they emerge and evolve and to analyze the effects of Amazon development on the economy. In doing so they illustrate well the point that often the evolution of economic institutions will not lead to efficient outcomes. This book will be important not only to economists but also to Latin Americanists, political scientists, anthropologists, and scholars in disciplines concerned with the environment. Lee Alston is Professor of Economics, University of Illinois, and Research Associate for the National Bureau of Economic Research. Gary Libecap is Professor of Economics and Law, University of Arizona, and Research Associate for the National Bureau of Economic Research. Bernardo Mueller is Assistant Professor, Universidade de Brasilia.}
+      \field{month}{5}
+      \field{series}{Economics, Cognition, and Society}
+      \field{title}{Titles, conflict, and land use}
+      \field{year}{2010}
+      \keyw{Books;Sesmarias;Third Year Paper}
+    \endentry
     \entry{Andrade1980-md}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=dfe2ca8fe650891f00f654487b230386}{%
@@ -499,36 +587,6 @@
       \range{pages}{30}
       \keyw{URGENT;Brazil;Colonialism;History;Read;Sesmarias;Third Year Paper}
     \endentry
-    \entry{Nozoe2006-hj}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1e3c20034a4c5c486a4225c5ccce0048}{%
-           family={Nozoe},
-           familyi={N\bibinitperiod},
-           given={Nelson\bibnamedelima Hideiki},
-           giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{1e3c20034a4c5c486a4225c5ccce0048}
-      \strng{fullhash}{1e3c20034a4c5c486a4225c5ccce0048}
-      \strng{bibnamehash}{1e3c20034a4c5c486a4225c5ccce0048}
-      \strng{authorbibnamehash}{1e3c20034a4c5c486a4225c5ccce0048}
-      \strng{authornamehash}{1e3c20034a4c5c486a4225c5ccce0048}
-      \strng{authorfullhash}{1e3c20034a4c5c486a4225c5ccce0048}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Economia: revista da ANPEC}
-      \field{number}{3}
-      \field{title}{Sesmaria e apossamento de terras no Brasil Colônia}
-      \field{volume}{7}
-      \field{year}{2006}
-      \field{pages}{587\bibrangedash 605}
-      \range{pages}{19}
-      \keyw{Sesmarias}
-    \endentry
     \entry{Silva2019-vj}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=a2e6a592b12c6da23630a57e80729909}{%
@@ -568,6 +626,44 @@
       \field{pages}{1\bibrangedash 17}
       \range{pages}{17}
       \keyw{legal-normative model; legislation; possession; conflito agrário; latifúndio; modelo jurı́dico-normativo; posse; regime de sesmarias;Sesmarias}
+    \endentry
+    \entry{Sokoloff2000-mb}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b61f61b2292667b0afa5d6e0b8cc6871}{%
+           family={Sokoloff},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima L},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58c02deaa8fcafadec98d12a31f3796b}{%
+           family={Engerman},
+           familyi={E\bibinitperiod},
+           given={Stanley\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{be99902df7ce689e312440fd123aee97}
+      \strng{fullhash}{472a2e99c451fcad4176a506130d4f17}
+      \strng{bibnamehash}{472a2e99c451fcad4176a506130d4f17}
+      \strng{authorbibnamehash}{472a2e99c451fcad4176a506130d4f17}
+      \strng{authornamehash}{be99902df7ce689e312440fd123aee97}
+      \strng{authorfullhash}{472a2e99c451fcad4176a506130d4f17}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Institutions, Factor Endowments, and Paths of Development in the New World by Kenneth L. Sokoloff and Stanley L. Engerman. Published in volume 14, issue 3, pages 217-232 of Journal of Economic Perspectives, Summer 2000, Abstract: The explanations offered for the contrasting records of long-run growt...}
+      \field{journaltitle}{J. Econ. Perspect.}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Institutions, Factor Endowments, and Paths of Development in the New World}
+      \field{volume}{14}
+      \field{year}{2000}
+      \field{pages}{217\bibrangedash 232}
+      \range{pages}{16}
+      \keyw{Sesmarias;Third Year Paper}
     \endentry
     \entry{Usaid2016-xs}{report}{}
       \name{author}{1}{}{%

@@ -555,6 +555,39 @@
       \range{pages}{32}
       \keyw{To Read;URGENT;Sesmarias;Slavery in Brazil}
     \endentry
+    \entry{Smith1944-oi}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f3a71e41875b51f7b09496fdbaf388f6}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={T\bibnamedelima Lynn},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Board of Regents of the University of Wisconsin System, University of Wisconsin Press]}%
+      }
+      \strng{namehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{fullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{bibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorbibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authornamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorfullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Land \& Public Utility Economics}
+      \field{number}{3}
+      \field{title}{Land Tenure in Brazil}
+      \field{volume}{20}
+      \field{year}{1944}
+      \field{pages}{194\bibrangedash 201}
+      \range{pages}{8}
+      \keyw{Sesmarias}
+    \endentry
     \entry{Usaid2016-xs}{report}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7becc5f8f6ecc3b54949defafcb25daf}{%
