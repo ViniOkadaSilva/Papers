@@ -1,0 +1,9 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/02. Draft/02. Second Draft/Sesmarias_Paper.blg'
+[42] biber-darwin:340> INFO - === Tue Aug 22, 2023, 11:43:44
+[53] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/02. Draft/02. Second Draft/Sesmarias_Paper.bcf'
+[102] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[110] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/02. Draft/02. Second Draft/Sesmarias_Paper.bbl' with encoding 'UTF-8'
+[110] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/02. Draft/02. Second Draft/Sesmarias_Paper.bbl
+[110] Biber.pm:130> WARN - The file '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/02. Draft/02. Second Draft/Sesmarias_Paper.bcf' does not contain any citations!
+[110] Biber.pm:132> INFO - WARNINGS: 1

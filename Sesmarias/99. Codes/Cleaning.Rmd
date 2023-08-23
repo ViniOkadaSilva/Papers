@@ -1,0 +1,118 @@
+---
+title: "Cleaning"
+output: html_document
+date: "2023-08-22"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Loading Up Packages
+
+```{r}
+rm(list = ls())
+
+library(ggplot2)
+library(ggspatial)
+library(tidyr)
+library(dplyr)
+library(sf)
+library(raster)
+library(nngeo)
+library(geobr)
+library(terra)
+```
+
+# Loading Up Data:
+
+```{r}
+mun_census_1872 <- read_municipality(code_muni = "all",year = 1872, simplified = TRUE, showProgress = TRUE)
+
+setwd("~/OneDrive - University of Illinois - Urbana/Research Data/Brazil/Census 1872")
+census_1872 <- read_xlsx("municipalities_1872_census.xlsx")
+census_names_1872 <- read_xlsx("CensusToShapeNames.xlsx")
+
+sugarcane <- 
+  terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/Brazil/FAO_GAEZ/sugarcane_lowinput_CO2.tiff")
+```
+
+# Cleaning Data:
+
+```{r}
+census_1872_clean <- merge(census_1872, census_names_1872, by = c("MunicId", "ProvId"))
+```
+
+```{r}
+census_1872_clean$abbrev_state <- ""
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Alagoas","AL", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Amazonas","AM", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Bahia","BA", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Ceará", "CE", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Espírito Santo","ES", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Goyaz","GO", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Maranhão","MA", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Minas Geraes","MG", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Matto Grosso","MT", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Pará","PA", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Parahyba","PB", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Pernambuco","PE", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Piauhy","PI", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Paraná","PR", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Rio de Janeiro","RJ", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Rio Grande do Norte","RN", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Rio Grande do Sul","RS", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Santa Catharina","SC", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Sergipe","SE", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "São Paulo","SP", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Municipio Neutro ( Município da Corte)","RJ",
+         census_1872_clean$abbrev_state)
+
+### 
+census_1872_clean$PrimeiroDeProvincia <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Municipio Neutro ( Município da Corte)","Municipio Neutro",
+         census_1872_clean$PrimeiroDeProvincia)
+```
+
+```{r}
+clean_1872 <- merge(mun_census_1872, census_1872_clean, by = c("name_muni", "abbrev_state"))
+clean_1872$sugarcane <- exact_extract(sugarcane, clean_1872, 'mean', progress = FALSE)
+```
+
+```{r}
+clean_1872$free_slave <- 
+  100*clean_1872$SomaDeSOMA_E_Almas/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = clean_1872, aes(fill = free_slave)) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  theme_bw()
+
+ggplot() +
+  geom_sf(data = clean_1872, aes(fill = sugarcane)) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  theme_bw()
+```
