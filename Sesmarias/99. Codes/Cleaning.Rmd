@@ -26,6 +26,7 @@ library(readxl)
 library(exactextractr)
 library(modelsummary)
 library(kableExtra)
+library(stringr)
 ```
 
 # Loading Up Data:
@@ -197,7 +198,7 @@ csi_post <- terra::rast("~/OneDrive - University of Illinois - Urbana/Research D
 raster::crs(csi_post) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 ```
 
-### Extracts to 1872: 
+### Extracts to 1872:
 
 ```{r}
 # Sugarcane:
@@ -532,7 +533,7 @@ ggplot() +
 
 # Testing Balance
 
-### 1872 
+### 1872
 
 ```{r}
 clean_1872$within <- 
@@ -637,12 +638,13 @@ datasummary_balance(~within, sesmarias_summary,
                     output = 'latex',
                     title = "Summary Statistics for the Land Grants",
                     align = 'lcccccc',
-                    stars = c('*' = .1, '**' = .05, '***' = 0.1)) %>%
+                    stars = c('*' = .1, '**' = .05, '***' = 0.1),
+                    dinm_statistic = "std.error") %>%
     kable_styling(latex_options = c("scale_down","hold_position"), position = "center") %>%
   save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias.pdf")
 ```
 
-# Regressions 
+# Regressions
 
 ```{r}
 summary(lm_robust(sesmarias_presence ~ log(sugarcane+1),
