@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  14 APR 2023 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  25 OCT 2023 10:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1046,24 +1046,24 @@ Package: setspace 2022/12/04 v6.7b set line spacing
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.aux)
 \openout1 = `sesmarias_idea.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1118,60 +1118,60 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 112.
+Package hyperref Info: Link coloring ON on input line 111.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.out) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.out)
 \@outlinefile=\write6
 \openout6 = `sesmarias_idea.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 112.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 112.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 111.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 112.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 112.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 112.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 112.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 112.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 112.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 112.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 112.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 112.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 112.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 112.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 112.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 112.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 112.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 112.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 112.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 112.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 112.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 111.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 111.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 112.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 111.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 112.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 111.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 112.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 111.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1200,8 +1200,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'sesmarias_idea.bbl' found.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.bbl)
-Package biblatex Info: Reference section=0 on input line 112.
-Package biblatex Info: Reference segment=0 on input line 112.
+Package biblatex Info: Reference section=0 on input line 111.
+Package biblatex Info: Reference segment=0 on input line 111.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.nav) [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1218,22 +1218,22 @@ LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inpu
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [2
 
+] [3
+
 ]
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//inequality_table.png, id=41, 538.01pt x 422.57875pt>
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//inequality_table.png, id=45, 538.01pt x 422.57875pt>
 File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//inequality_table.png Graphic file (type png)
 <use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//inequality_table.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//inequality_table.png  used on input line 139.
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//inequality_table.png  used on input line 148.
 (pdftex.def)             Requested size: 245.27313pt x 192.64761pt.
- [3
+ [4
 
  </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//inequality_table.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 153.
+(Font)              using `OT1/cmss/bx/n' instead on input line 168.
 
-[4
-
-] [5
+[5
 
 ] [6
 
@@ -1245,15 +1245,38 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 
 ] [10
 
-] [11
+]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/descriptive_map.png, id=129, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/descriptive_map.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/descriptive_map.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/descriptive_map.png  used on input line 266.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [11
 
-] [12
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/descriptive_map.png>] [12
 
-] [13
+]
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg, id=143, 475.7775pt x 627.34375pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg Graphic file (type jpg)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg  used on input line 284.
+(pdftex.def)             Requested size: 177.14124pt x 233.56856pt.
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf, id=144, 597.50829pt x 845.0471pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf Graphic file (type pdf)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf  used on input line 284.
+(pdftex.def)             Requested size: 163.51819pt x 231.2604pt.
+ [13
 
-] [14
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf>]
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png, id=152, 615.80063pt x 418.56375pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png  used on input line 291.
+(pdftex.def)             Requested size: 245.27313pt x 166.7136pt.
+ [14
 
-] [15
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png>] [15
 
 ] [16
 
@@ -1267,110 +1290,37 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 
 ] [21
 
-] [22
+]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/future_step.png, id=251, 525.4029pt x 324.7332pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/future_step.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/future_step.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/future_step.png  used on input line 427.
+(pdftex.def)             Requested size: 338.60568pt x 209.28035pt.
+ [22
 
-] [23
-
-] [24
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/future_step.png>] [23
 
 ]
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf, id=234, 281.05pt x 395.4775pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf Graphic file (type pdf)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf  used on input line 286.
-(pdftex.def)             Requested size: 139.42093pt x 196.18137pt.
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf, id=235, page=1, 598.235pt x 845.1575pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf Graphic file (type pdf)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf, page 1>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf , page1 used on input line 286.
-(pdftex.def)             Requested size: 159.333pt x 225.10052pt.
- [25
+Overfull \hbox (52.51585pt too wide) in paragraph at lines 441--441
+\OT1/cmss/m/it/10.95 United States\OT1/cmss/m/n/10.95 .[] [][]$\OT1/cmtt/m/n/10.95 https : / / static1 . squarespace . com / static / 5f50c7f3798bae1a11362fe8 /
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf>] [26
 
-]
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg, id=261, 475.7775pt x 627.34375pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg Graphic file (type jpg)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg  used on input line 318.
-(pdftex.def)             Requested size: 177.14124pt x 233.56856pt.
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf, id=262, 597.50829pt x 845.0471pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf Graphic file (type pdf)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf  used on input line 318.
-(pdftex.def)             Requested size: 163.51819pt x 231.2604pt.
- [27
+Overfull \hbox (54.98671pt too wide) in paragraph at lines 441--441
+\OT1/cmtt/m/n/10.95 t / 642b171c72aca01369a9ab0f / 1680545566532 / CorySmithLandConcentrationFrontier .
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_tordesillas.jpeg> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_tordesillas_263.pdf>]
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png, id=269, 615.80063pt x 418.56375pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png  used on input line 325.
-(pdftex.def)             Requested size: 245.27313pt x 166.7136pt.
- [28
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//treaty_madrid.png>] [29
-
-] [30
-
-] [31
-
-]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/obs_state.png, id=302, 453.1329pt x 279.9258pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/obs_state.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/obs_state.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/obs_state.png  used on input line 394.
-(pdftex.def)             Requested size: 378.4234pt x 233.77351pt.
- [32
-
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/obs_state.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png, id=308, 453.1329pt x 279.9258pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png  used on input line 401.
-(pdftex.def)             Requested size: 338.59044pt x 209.16644pt.
- [33
-
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png, id=314, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png  used on input line 407.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [34
-
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png, id=320, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png  used on input line 413.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [35
-
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png>] [36
-
-]
-<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_engenhos_279.pdf, id=337, 459.7175pt x 548.0475pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_engenhos_279.pdf Graphic file (type pdf)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_engenhos_279.pdf>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_engenhos_279.pdf  used on input line 437.
-(pdftex.def)             Requested size: 205.7416pt x 245.27313pt.
- [37
-
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//bethell_engenhos_279.pdf>]
 Overfull \hbox (9.50392pt too wide) in paragraph at lines 441--441
 [][][]\OT1/cmss/m/n/10.95 USAID (2016).[] \OT1/cmss/m/it/10.95 US-AID COUN-TRY PRO-FILE: PROP-ERTY RIGHTS AND RE-SOURCE
  []
 
-[38
+[24
 
- </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [39
-
-
-] [40
+ </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [25
 
 
-] [41
+] [26
 
 
 ]
@@ -1378,17 +1328,273 @@ Overfull \hbox (9.50392pt too wide) in paragraph at lines 441--441
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\translate ' on input line 443.
 
-[42
+[27
 
-] [43
+] [28
 
-] [44
+]
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf, id=303, 281.05pt x 395.4775pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf Graphic file (type pdf)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf  used on input line 473.
+(pdftex.def)             Requested size: 139.42093pt x 196.18137pt.
+<~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf, id=304, page=1, 598.235pt x 845.1575pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf Graphic file (type pdf)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf, page 1>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf , page1 used on input line 473.
+(pdftex.def)             Requested size: 159.333pt x 225.10052pt.
+ [29
 
-] [45
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//0167f614a7c3b3fd38127f1545dbee7c.pdf> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures//ea71ea6ac7c5ec3cefa24ded60ac6438.pdf>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png, id=324, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png  used on input line 482.
+(pdftex.def)             Requested size: 199.1693pt x 123.0339pt.
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png, id=325, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png  used on input line 482.
+(pdftex.def)             Requested size: 199.1693pt x 123.0339pt.
 
-] [46
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 482--482
+[][] [] 
+ []
 
-] [47
+[30
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png, id=332, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png  used on input line 489.
+(pdftex.def)             Requested size: 378.42044pt x 233.7669pt.
+ [31
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png, id=340, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png  used on input line 496.
+(pdftex.def)             Requested size: 378.42044pt x 233.7669pt.
+ [32
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png, id=348, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png  used on input line 505.
+(pdftex.def)             Requested size: 199.1693pt x 123.0339pt.
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png, id=349, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png  used on input line 505.
+(pdftex.def)             Requested size: 199.1693pt x 123.0339pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 505--505
+[][] [] 
+ []
+
+[33
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png, id=356, 453.1329pt x 279.9258pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png  used on input line 512.
+(pdftex.def)             Requested size: 338.59044pt x 209.16644pt.
+ [34
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png, id=363, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png  used on input line 520.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [35
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png, id=370, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png  used on input line 528.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [36
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png>] [37
+
+]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png, id=383, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png  used on input line 540.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [38
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png, id=389, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png  used on input line 550.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [39
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png, id=396, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png  used on input line 560.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [40
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png, id=403, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png  used on input line 570.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [41
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png, id=410, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png  used on input line 580.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [42
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png, id=417, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png  used on input line 590.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [43
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png>]
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png  used on input line 600.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.600 \end{frame}
+                  [44
+
+]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png, id=432, 508.7808pt x 314.3745pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png  used on input line 610.
+(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.610 \end{frame}
+                  [45
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png, id=439, 508.7808pt x 314.3745pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png  used on input line 620.
+(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.620 \end{frame}
+                  [46
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png, id=446, 508.7808pt x 314.3745pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png  used on input line 630.
+(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.630 \end{frame}
+                  [47
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png, id=453, 508.7808pt x 314.3745pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png  used on input line 640.
+(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.640 \end{frame}
+                  [48
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png, id=460, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png  used on input line 650.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [49
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png, id=468, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png  used on input line 660.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [50
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png, id=475, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png  used on input line 670.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [51
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png>]
+<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png, id=482, 526.8483pt x 325.4559pt>
+File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png Graphic file (type png)
+<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png>
+Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png  used on input line 680.
+(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+ [52
+
+ </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png>] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage.tex) [53
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_2010.tex) [54
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_grid.tex)
+pdfTeX warning (ext4): destination with the same identifier (name{sugar_table_2010}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.705 \end{frame}
+                  [55
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_activity_grid.tex) [56
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_development_grid.tex) [57
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/land_usage_year_grid.tex) [58
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/agglomeration_grid.tex) [59
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias_grid.tex) [60
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_1872.tex)
+
+Class beamer Warning: Frame text is shrunk by a factor of 30.51147 percent instead of 25 percent on input line 756.
+
+[61
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias.tex) [62
 
 ]
 \tf@nav=\write7
@@ -1411,18 +1617,18 @@ Package logreq Info: Writing requests to 'sesmarias_idea.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36739 strings out of 476029
- 740292 string characters out of 5790167
- 1866346 words of memory out of 5000000
- 56384 multiletter control sequences out of 15000+600000
- 526715 words of font info for 84 fonts, out of 8000000 for 9000
+ 37024 strings out of 476029
+ 761742 string characters out of 5790167
+ 1883346 words of memory out of 5000000
+ 56563 multiletter control sequences out of 15000+600000
+ 526358 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,11n,122p,1977b,2427s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.pdf" (47 pages, 2960054 bytes).
+ 128i,17n,122p,1977b,2422s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/00. Idea/sesmarias_idea.pdf" (62 pages, 11943816 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 655 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

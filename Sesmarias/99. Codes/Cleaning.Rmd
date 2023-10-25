@@ -27,6 +27,9 @@ library(exactextractr)
 library(modelsummary)
 library(kableExtra)
 library(stringr)
+library(plyr)
+library(stringr)
+library(gtools)
 ```
 
 # Loading Up Data:
@@ -119,6 +122,9 @@ clean_1872$s_literacy_rate <-
 clean_1872$farmers <-
   100*(clean_1872$SomaDeSOMA_G_Lavradores + clean_1872$SomaDeSOMA_G_Criadores)/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
 
+clean_1872$pasture_workers <-
+  100*(clean_1872$SomaDeSOMA_G_Criadores)/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas) 
+
 clean_1872$farmers_slaves <-
   100*(clean_1872$SomaDeSOMA_E_Lavradores + clean_1872$SomaDeSOMA_E_Criadores)/(clean_1872$SomaDeSOMA_E_Almas)
 
@@ -146,8 +152,98 @@ clean_1872$women_farmers_prop <-
 # Generates Variables for the 1872 census
 
 ```{r}
+training_data <- readxl::read_xlsx("/Users/vinicius/Downloads/database_training.xlsx")
+
+training_data$year <- as.numeric(str_sub(training_data$`Data de petição`,-4,-1))
+
+training_data$area <- 
+  ifelse(training_data$Área > 100, 
+         training_data$Área * 4.84 * 10^-6, 
+         training_data$Área * 2304)
+
+training_data <- training_data[,c(1,18,20)]
+
+test <- 
+  cbind(training_data[,c(1,2,3)], 
+        str_split_fixed(training_data$Justificativas, ";", 13))
+
+colnames(test)[1] <- "reference"
+```
+
+```{r}
+justifications <- read_xlsx("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Data/justification.xlsx")
+
+colnames(justifications)[1] <- "reference"
+
+test_2 <- 
+  cbind(justifications[,c(1)], 
+        str_split_fixed(justifications$JUSTIFICATIVA, ";", 13))
+
+
+test_3 = 
+test_2 %>%
+  full_join(test, by = intersect(colnames(test_2), colnames(test))) %>%
+  group_by(reference) 
+```
+
+```{r}
 sesmarias_pts <- read_xlsx("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Data/sesmarias_georeferenced.xlsx")
 
+sesmarias_pts$Year <- as.numeric(str_sub(sesmarias_pts$`Data da concessão`, -4))
+
+colnames(sesmarias_pts)[1] <- "reference"
+
+sesmarias_pts$reference <- str_replace_all(sesmarias_pts$reference, pattern=" ", repl="")
+
+sesmarias_pts_PE <- subset(sesmarias_pts, 
+                           grepl("PE", sesmarias_pts$reference) == TRUE |
+                             grepl("IT", sesmarias_pts$reference) == TRUE)
+
+# 0065, 0088, 0384, and 0385 are on the old database.
+
+sesmarias_pts_PE <- merge(sesmarias_pts_PE, test_3, by = c("reference"), all.x = TRUE)
+
+justifications_PB_RN <- 
+  read_xlsx("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Data/justifications_PB.xlsx", "Justificativas e Exigencias")
+
+sesmarias_pts_PB_RN <- subset(sesmarias_pts, 
+                              grepl("PE", sesmarias_pts$reference) == FALSE &
+                                grepl("IT", sesmarias_pts$reference) == FALSE)
+
+
+colnames(justifications_PB_RN)[1] <- "reference"
+justifications_PB_RN <- justifications_PB_RN[,c(1,2)]
+
+justifications_PB_RN$reference <- 
+  str_replace_all(justifications_PB_RN$reference, pattern=" ", repl="")
+
+justifications_PB_RN <- justifications_PB_RN[!duplicated(justifications_PB_RN),]
+
+test_4 <- 
+  justifications_PB_RN %>% 
+  group_by(reference) %>%
+  dplyr::mutate(id_rows = row_number()) %>%
+  pivot_wider( 
+    id_cols = c(reference),
+    names_from = id_rows,
+    values_from = Justificativa) %>% 
+  ungroup()
+
+test_4 <- 
+  subset(test_4, 
+         grepl("PB", test_4$reference) == TRUE |
+           grepl("RN", test_4$reference) == TRUE)
+
+sesmarias_pts_PB_RN <- merge(sesmarias_pts_PB_RN, test_4, by = c("reference"), all.x = TRUE)
+
+sesmarias_pts <- plyr::rbind.fill(sesmarias_pts_PE, sesmarias_pts_PB_RN)
+
+sesmarias_pts <- sesmarias_pts[mixedsort(colnames(sesmarias_pts))]
+
+sesmarias_pts <- sesmarias_pts[c(26,27, 23,25, seq(1,20,1))]
+```
+
+```{r}
 mun_1872 <- read_municipality(code_muni = "all",year = 1872, simplified = TRUE, showProgress = TRUE)
 mun_2010 <- read_municipality(code_muni = "all",year = 2010, simplified = TRUE, showProgress = TRUE)
 
@@ -157,11 +253,28 @@ sesmarias_pts$Latitude <- as.numeric(gsub('°','',sesmarias_pts$Latitude))
 sesmarias_pts$Longitude <- as.numeric(gsub('°','',sesmarias_pts$Longitude))
 
 sesmarias_pts <- subset(sesmarias_pts, 
-                        is.na(sesmarias_pts$Latitude) == F & is.na(sesmarias_pts$Longitude) == F)
+                        is.na(sesmarias_pts$Latitude) == F & 
+                          is.na(sesmarias_pts$Longitude) == F)
+
 sesmarias_pts <- st_as_sf(sesmarias_pts, coords = c("Longitude", "Latitude"), 
                           crs = st_crs(mun_1872))
 
-sesmarias_pts$Year <- as.numeric(str_sub(sesmarias_pts$`Data da concessão`, -4))
+# sesmarias_pts$Year <- as.numeric(str_sub(sesmarias_pts$`Data da concessão`, -4))
+```
+
+# Generating Types of Grants:
+
+```{r}
+p = data.frame()
+
+for (i in seq(3,22,1))
+{k = unique(st_drop_geometry(sesmarias_pts[i]))
+colnames(k) <- "request"
+p = rbind(p,k)}
+
+p$request <- str_trim(p$request, side = c("both"))
+
+p = unique(p)
 ```
 
 # Adding up geographical data (1872):
@@ -196,6 +309,15 @@ raster::crs(csi_pre) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 csi_post <- terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/Crop Suitability Index/post1500OptCalories.tif")
 
 raster::crs(csi_post) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+
+# MapBiomas (1990)
+
+land_usage_2000 <- terra::rast("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research Data/Brazil/Mapbiomas/brasil_coverage_2000.tif")
+
+raster::crs(land_usage_2000) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+
+# ok this works:
+
 ```
 
 ### Extracts to 1872:
@@ -230,6 +352,8 @@ clean_1872$csi_pre <-exact_extract(csi_pre, clean_1872, 'mean', progress = FALSE
 
 clean_1872$csi_post <-exact_extract(csi_post, clean_1872, 'mean', progress = FALSE)
 
+# Latitude and longitude 
+
 # Sesmaria + Intensity:
 
 p <- st_intersects(clean_1872, sesmarias_pts)
@@ -246,7 +370,7 @@ clean_1872$sesmarias_intensity <- unlist(p)
 
 # Sesmarias pre-1700
 
-p <- st_intersects(clean_1872, subset(sesmarias_pts, Year < 1701))
+p <- st_intersects(clean_1872, subset(sesmarias_pts, Year < 1697))
 p[lengths(p) > 0] <- 1
 p[lengths(p) == 0] <- 0
 
@@ -254,14 +378,189 @@ clean_1872$sesmarias_presence_1600 <- unlist(p)
 
 # Sesmarias post-1700 
 
-p <- st_intersects(clean_1872, subset(sesmarias_pts, Year > 1700))
+p <- st_intersects(clean_1872, subset(sesmarias_pts, Year >= 1697))
 p[lengths(p) > 0] <- 1
 p[lengths(p) == 0] <- 0
 
 clean_1872$sesmarias_presence_1700 <- unlist(p)
 ```
 
-### Extracting Data to the Sesmarias for balance table:
+### Economic Activity
+
+```{r}
+sesmarias_pts$sugar =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("engenho|canaviais", i))) > 0), 1,0)
+
+sesmarias_pts$pasture =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("gado", i))) > 0), 1,0)
+
+sesmarias_pts$discovery =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("descobridor", i))) > 0), 1,0)
+
+sesmarias_pts$settlement =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("povoamento", i))) > 0), 1,0)
+
+sesmarias_pts$no_land =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("Não tinha terras", i))) > 0), 1,0)
+```
+
+```{r}
+# Sesmarias Sugar 
+
+p <- st_intersects(clean_1872, subset(sesmarias_pts, sugar == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+clean_1872$sugar <- unlist(p)
+
+# Sesmarias Pasture
+
+p <- st_intersects(clean_1872, subset(sesmarias_pts, pasture == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+clean_1872$pasture <- unlist(p)
+
+# Sesmarias Discovery
+
+p <- st_intersects(clean_1872, subset(sesmarias_pts, discovery == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+clean_1872$discovery <- unlist(p)
+
+# Sesmarias Settlement
+
+p <- st_intersects(clean_1872, subset(sesmarias_pts, settlement == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+clean_1872$settlement <- unlist(p)
+
+# Sesmarias No Land
+
+p <- st_intersects(clean_1872, subset(sesmarias_pts, no_land == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+clean_1872$no_land <- unlist(p)
+```
+
+# Extracting for 2010:
+
+```{r}
+mun_2010_NE = subset(mun_2010, abbrev_state %in% c("PB", "PE", "RN", "AL"))
+
+# Sugarcane
+mun_2010_NE$sugarcane <- exact_extract(sugarcane, mun_2010_NE, 'mean', progress = FALSE)
+
+# River Distance
+
+river_dist <- st_distance(mun_2010_NE, rivers)
+river_dist <- apply(river_dist, 1, FUN = min)/1000
+mun_2010_NE$river_dist  <- river_dist
+
+# Distance to Coastline:
+
+coast_dist <- st_distance(mun_2010_NE, coastline)
+coast_dist <- apply(coast_dist, 1, FUN = min)/1000
+mun_2010_NE$coast_dist <- coast_dist
+
+# Mean Slope:
+
+mun_2010_NE$m_slope <- exact_extract(slope, mun_2010_NE, 'mean', progress = FALSE)
+
+# Mean Elevation:
+
+mun_2010_NE$m_elevation <- exact_extract(elevation, mun_2010_NE, 'mean', progress = FALSE)
+
+# Galor Suitability Index:
+
+mun_2010_NE$csi_pre <-exact_extract(csi_pre, mun_2010_NE, 'mean', progress = FALSE)
+
+mun_2010_NE$csi_post <-exact_extract(csi_post, mun_2010_NE, 'mean', progress = FALSE)
+
+# Land Usage 1985
+
+mun_2010_NE <- cbind(mun_2010_NE, 
+                         exact_extract(land_usage_2000, mun_2010_NE, 'frac', progress = TRUE))
+```
+
+```{r}
+# Sesmaria + Intensity:
+
+p <- st_intersects(mun_2010_NE, sesmarias_pts)
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$sesmarias_presence <- unlist(p)
+
+p <- st_intersects(mun_2010_NE, sesmarias_pts)
+p[lengths(p) > 0] <- lengths(p)
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$sesmarias_intensity <- unlist(p)
+
+# Sesmarias pre-1700
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, Year < 1697))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$sesmarias_presence_1600 <- unlist(p)
+
+# Sesmarias post-1700 
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, Year >= 1697))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$sesmarias_presence_1700 <- unlist(p)
+```
+
+```{r}
+# Sesmarias Sugar 
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, sugar == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$sugar <- unlist(p)
+
+# Sesmarias Pasture
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, pasture == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$pasture <- unlist(p)
+
+# Sesmarias Discovery
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, discovery == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$discovery <- unlist(p)
+
+# Sesmarias Settlement
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, settlement == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$settlement <- unlist(p)
+
+# Sesmarias No Land
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, no_land == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$no_land <- unlist(p)
+```
+
+# Extracting Data to the Sesmarias for balance table:
 
 ```{r}
 # Sugarcane:
@@ -315,9 +614,7 @@ ggplot() +
 
 -   Manually check the economic activities
 
-```{r}
-
-
+```{r, eval = FALSE}
 # 2010:
 
 mun_2010_NE <- subset(mun_2010, abbrev_state %in% c("PB", "PE", "RN", "AL"))
@@ -332,11 +629,12 @@ mun_2010_NE$sesmarias_presence <- unlist(p)
 ```{r}
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
-          aes(fill = free_slave)) +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), aes(fill = free_slave)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Proportion of Slaves \n to Total Population (%)") +
   theme_bw() +
   theme(#legend.position = "bottom", 
@@ -345,11 +643,13 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = sugarcane)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Maximum Sugar \n Cane Production") +
   theme_bw() +
   theme(# legend.position = "bottom", 
@@ -358,11 +658,13 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = farmers)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Proportion of \n Farmers to Pop.") +
   theme_bw() +
   theme(# legend.position = "bottom", 
@@ -371,11 +673,13 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = farmers_slaves)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Proportion of Slave \n Farmers to Slave Pop.") +
   theme_bw() +
   theme(# legend.position = "bottom", 
@@ -384,11 +688,13 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = industrial_workers)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Proportion of Industry \n Workers Pop.") +
   theme_bw() +
   theme(# legend.position = "bottom", 
@@ -397,11 +703,13 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = gender_disparity)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Ratio of Men \n to Women.") +
   theme_bw() +
   theme(# legend.position = "bottom", 
@@ -410,11 +718,13 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = slave_gender_disparity)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Ratio of Slave Men \n to Women.") +
   theme_bw() +
   theme(# legend.position = "bottom", 
@@ -423,17 +733,211 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = log(total_slaves))) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
-  coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Log(Total Slaves)") +
   theme_bw() +
   theme(# legend.position = "bottom", 
         plot.title = element_text(hjust = 0.5))
 ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png")
 ```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_sf(data = sesmarias_pts, size = 1.5, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Georeferenced Land Grants") +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/descriptive_map.png")
+```
+
+### Plotting by Type of Request
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_sf(data = subset(sesmarias_pts, pasture == 1), 
+          size = 1.5, color = "black", 
+          shape = 22, 
+          aes(fill = "pasture")) +
+  geom_sf(data = subset(sesmarias_pts, sugar == 1), 
+          size = 1.5, color = "black",
+          shape = 21, 
+         aes(fill = "sugar")) +
+  scale_fill_manual("Economic Activity:", 
+                    labels =  c("Pasture", "Sugarcane"),
+                    values = c("grey", "red")) + 
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Sugarcane Plantations vs. Ranching") +
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_sf(data = subset(sesmarias_pts, discovery == 0), 
+          size = 1.5, color = "black", 
+          shape = 22, 
+          aes(fill = "No Discovery")) +
+  geom_sf(data = subset(sesmarias_pts, discovery == 1), 
+          size = 1.5, color = "black",
+          shape = 21, 
+          aes(fill = "Discovery")) +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Claimed Discovery of the Land") +
+  scale_fill_manual("Claimed Discovery of Land:", 
+                    labels =  c("No", "Yes"),
+                    values = c("grey", "red")) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png")
+```
+
+Interact the discovery with the year one:
+
+```{r}
+# sesmarias_pts <- subset(sesmarias_pts, reference != "PE0276")
+sesmarias_pts$post_1700 <- ifelse(sesmarias_pts$Year >= 1700, 1, 0)
+sesmarias_pts$interact <- interaction(sesmarias_pts$discovery, sesmarias_pts$post_1700)
+
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_sf(data = subset(sesmarias_pts, is.na(interact) == F),
+          size = 1.5, color = "black", 
+          shape = 21, 
+          aes(fill = interact)) +
+  #geom_sf(data = subset(sesmarias_pts, discovery == 1 & Year >= 1700), 
+  #        size = 1.5, color = "black",
+  #        shape = 21, fill = "red") +
+  #geom_sf(data = subset(sesmarias_pts, discovery == 1 & Year < 1700), 
+  #        size = 1.5, color = "black",
+  #        shape = 21, fill = "green") +
+  scale_fill_manual("Claimed Discovery of Land - Year:", 
+                    labels =  c("No - Pre 1700", "Yes - Pre 1700", 
+                                "No - Post 1700", "Yes - Post 1700"),
+                    values = c("grey", "red", "green", "purple")) + 
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Claimed Discovery - By Year Split") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_sf(data = subset(sesmarias_pts, no_land == 0), 
+          size = 1.5, color = "black", 
+          shape = 22, fill = "gray") +
+  geom_sf(data = subset(sesmarias_pts, no_land == 1 & Year >= 1700), 
+          size = 1.5, color = "black",
+          shape = 21, fill = "red") +
+  geom_sf(data = subset(sesmarias_pts, no_land == 1 & Year < 1700), 
+          size = 1.5, color = "black",
+          shape = 21, fill = "green") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Claimed Not Owning Any Land") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+```
+
+Interact the discovery with the no land one:
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_sf(data = subset(sesmarias_pts, no_land == 0),
+          size = 1.5, color = "black", 
+          shape = 22, 
+          aes(fill = "No")) +
+  geom_sf(data = subset(sesmarias_pts, no_land == 1), 
+          size = 1.5, color = "black",
+          shape = 21, 
+          aes(fill = "Yes")) +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Claimed Not Owning Any Land") +
+  scale_fill_manual("Claimed Not Owning Land:", 
+                    labels =  c("No", "Yes"),
+                    values = c("grey", "red")) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png")
+```
+
+```{r, eval = FALSE}
+sesmarias_pts <- cbind(sesmarias_pts, st_coordinates(sesmarias_pts))
+sesmarias_pts$year_2 <- as.Date(as.character(sesmarias_pts$Year), format = "%Y")
+
+test = 
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_point(data = subset(sesmarias_pts, Year %in% seq(1500,1900,1)),
+             aes(x = X, y = Y, group = interaction(reference, Year)), 
+          size = 1.5, color = "black",
+          shape = 21, fill = "red") +
+  transition_time(year_2) +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Claimed Not Owning Any Land") +
+  theme_bw() +
+  labs(title = "Year: {frame_time}") +
+  ease_aes('linear') +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5)) +
+  shadow_mark()
+
+p <- animate(test, duration = 20, fps = 5)
+anim_save("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.gif", animation = p)
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "lightblue") +
+  geom_sf(data = subset(sesmarias_pts, Year >= 1700), size = 1.5, color = "black", 
+          shape = 22, fill = "gray") +
+  geom_sf(data = subset(sesmarias_pts, Year < 1700), size = 1.5, color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(title = "Pre and Post 1700") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png")
+```
+
+### Other
 
 ```{r}
 ggplot(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
@@ -473,10 +977,31 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 ```{r}
 ggplot() +
   geom_sf(data = mun_2010, fill = "white") +
-  geom_sf(data = subset(mun_2010, abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), fill = "lightblue") +
+  geom_sf(data = subset(mun_2010, abbrev_state %in% c("PB", "PE", "RN", "AL")), fill = "lightblue") +
   geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
   coord_sf(ylim = c(-2,-15), xlim = c(-34,-45), expand = FALSE) + 
   theme_bw()
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/municipalities_2010.png")
+```
+
+```{r}
+grid <- 
+  st_sfc(
+  st_make_grid(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
+               cellsize = .1,
+               crs = st_crs(clean_1872)))
+
+grid = grid[subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))]
+
+# grid <- st_intersection(grid, subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+ggplot() +
+  #geom_sf(data = subset(clean_1872, abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+  #        fill = "black", color = "white") +
+  geom_sf(data = subset(mun_2010, abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "NA", color = "blue") +
+  geom_sf(data = grid, fill = NA)
+  
 ```
 
 # Summary Tables:
@@ -485,16 +1010,242 @@ ggplot() +
 
 ```
 
-# Regressions:
+# Regressions (1872):
 
-```{r}
-summary(lm_robust(sesmarias_presence ~ log(sugarcane), 
+```{r, results = "asis"}
+clean_1872 <- cbind(clean_1872, st_coordinates(st_centroid(clean_1872)))
+mun_2010_NE <- cbind(mun_2010_NE, st_coordinates(st_centroid(mun_2010_NE)))
+clean_1872$area <- st_area(clean_1872)/(1000^2)
+
+clean_1872$sugarcane_t <- clean_1872$sugarcane/1000
+mun_2010_NE$sugarcane_t <- mun_2010_NE$sugarcane/1000
+
+test_1 <- estimatr::lm_robust(sesmarias_presence ~ 
+                    sugarcane_t, 
                   fixed_effects = ~abbrev_state, 
-                  data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE"))))
+                  data = subset(clean_1872,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+test_2 <- estimatr::lm_robust(sesmarias_presence ~ 
+                    sugarcane_t +
+                    X + Y + 
+                    m_slope + m_elevation + river_dist + coast_dist + area, 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(clean_1872,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+test_3 <- estimatr::lm_robust(sugar ~ 
+                    sugarcane_t, 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(clean_1872,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+test_4 <- estimatr::lm_robust(sugar ~ 
+                    sugarcane_t +
+                    X + Y + 
+                    m_slope + m_elevation + river_dist + coast_dist + area, 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(clean_1872,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+gm <- tibble::tribble(~raw,        ~clean,          ~fmt,
+                      "nobs",      "N",             0,
+                      "r.squared", "$R^2$", 2)
+
+rows_se <-  tribble(~term, ~'(1)', ~'(2)', ~'(3)', ~'(4)',
+                    'Geographical Controls', '', '\\checkmark', '', '\\checkmark')
+
+attr(rows_se, 'section') <- c('top')
+attr(rows_se, 'position') <- c(4,5)
+
+options(modelsummary_format_numeric_latex = "plain")
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",           
+modelsummary(list("(1)" = test_1, 
+                  "(2)" = test_2, 
+                  "(3)" = test_3,
+                  "(4)" = test_4),
+              coef_map = c("sugarcane_t" = 
+                             "Maximum Sugarcane Output (Thousand of Tons per hectare)"),
+             escape = FALSE,
+             gof_map = gm,
+             output = 'latex',
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             title = "Effects of Potential Sugarcane Output on Land Grants") %>%
+  add_header_above(c("",
+                     "Any Land Grants" = 2, 
+                     "Sugar Land Grants" = 2)) %>%
+  kable_styling(latex_options = c("scale_down","hold_position")) %>%
+  row_spec(2, hline_after = TRUE)) %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage.tex")
+
+
+# Interesting one:
+summary(lm_robust(farmers_slaves ~ log(sugarcane), 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))))
 
 summary(lm_robust(free_slave ~ sesmarias_intensity, 
                   fixed_effects = ~abbrev_state, 
-                  data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE"))))
+                  data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))))
+```
+
+# Regressions (2010):
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = mun_2010_NE, 
+          aes(fill = sugarcane)) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Potential Sugar \n Cane Production") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png")
+```
+### Map for Land Usage
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = mun_2010_NE, 
+          aes(fill = 100*frac_15)) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Share Area \nfor Pasture\n(1985)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = mun_2010_NE, 
+          aes(fill = 100*frac_20)) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Share Area\nSugarcane\n(1985)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = mun_2010_NE, 
+          aes(fill = 100*(frac_3 + frac_4 + frac_5))) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Share Area\nForest\n(1985)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png")
+```
+
+```{r}
+mun_2010_NE$agriculture_pasture = 
+  mun_2010_NE$frac_20 + 
+  mun_2010_NE$frac_41 + mun_2010_NE$frac_48 +
+  mun_2010_NE$frac_15
+
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = mun_2010_NE, 
+          aes(fill = 100*agriculture_pasture)) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Share Area\nAgriculture\nor Pasture\n(1985)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png")
+```
+
+```{r, results = "asis"}
+mun_2010_NE$area <- st_area(mun_2010_NE)/(1000^2)
+mun_2010_NE$sugarcane_t <- mun_2010_NE$sugarcane/1000
+
+test_1 <- estimatr::lm_robust(sesmarias_presence ~ 
+                    sugarcane_t, 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(mun_2010_NE,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+test_2 <- estimatr::lm_robust(sesmarias_presence ~ 
+                    sugarcane_t +
+                    X + Y + 
+                    m_slope + m_elevation + river_dist + coast_dist + area, 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(mun_2010_NE,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+test_3 <- estimatr::lm_robust(sugar ~ 
+                    sugarcane_t, 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(mun_2010_NE,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+test_4 <- estimatr::lm_robust(sugar ~ 
+                    sugarcane_t +
+                    X + Y + 
+                    m_slope + m_elevation + river_dist + coast_dist + area, 
+                    fixed_effects = ~abbrev_state, 
+                    data = subset(mun_2010_NE,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = test_1, 
+                  "(2)" = test_2, 
+                  "(3)" = test_3,
+                  "(4)" = test_4),
+             coef_map = c("sugarcane_t" = 
+                             "Maximum Sugarcane Output (Thousand of Tons per hectare)"),
+             escape = FALSE,
+             gof_map = gm,
+             output = 'latex',
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             title = "Effects of Potential Sugarcane Output on Land Grants - 2010") %>%
+    add_header_above(c("",
+                     "Any Land Grants" = 2, 
+                     "Sugar Land Grants" = 2)) %>%
+  kable_styling(latex_options = c("scale_down","hold_position")) %>%
+  row_spec(2, hline_after = TRUE)) %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_2010.tex")
+
+```
+
+```{r}
+summary(
+estimatr::lm_robust(frac_15 ~ 
+                    sesmarias_presence +
+                    X + Y + 
+                    m_slope + m_elevation + river_dist + coast_dist + area, 
+                  fixed_effects = ~abbrev_state, 
+                  data = subset(mun_2010_NE,  
+                                abbrev_state %in% c("PB", "PE", "RN", "AL"))))
 ```
 
 # 2010 Data:
@@ -507,13 +1258,25 @@ gini_2010 <-
 
 gdp_2010 <- read_xlsx("~/OneDrive - University of Illinois - Urbana/Research/Projects/Amazon/gdp/GDP1999-2017.xlsx")
 
-mun_2010 <- merge(race2010, mun_2010, by = c("code_muni"))
+gdp_2010 <- subset(gdp_2010, year == 2010)
+colnames(gdp_2010)[4] <- "name_muni"
+gdp_2010$name_muni <- tolower(gdp_2010$name_muni)
+colnames(gdp_2010)[2] <- "abbrev_state"
+gdp_2010$abbrev_state <- toupper(gdp_2010$abbrev_state)
+
+mun_2010_NE$name_muni <- tolower(mun_2010_NE$name_muni)
+
+# Look up the not 1-1 merge but approximating by character stuff
+
+mun_2010_N <- merge(race2010, mun_2010_NE, by = c("code_muni"))
+mun_2010_N <- merge(gdp_2010, mun_2010_N, 
+                    by = c("abbrev_state", "name_muni"))
 ```
 
-```{r}
+```{r, eval = FALSE }
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = free_slave)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
   geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
@@ -523,7 +1286,7 @@ ggplot() +
 
 ggplot() +
   geom_sf(data = mun_2010$geom, fill = "white") +
-  geom_sf(data = subset(mun_2010,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
+  geom_sf(data = subset(mun_2010_NE,  abbrev_state %in% c("PB", "PE", "RN", "AL", "CE")), 
           aes(fill = Preta)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
   geom_sf(data = sesmarias_pts, size = 0.25, color = "red") +
@@ -535,7 +1298,7 @@ ggplot() +
 
 ### 1872
 
-```{r}
+```{r, results = "asis"}
 clean_1872$within <- 
   ifelse(clean_1872$sesmarias_presence > 0, 
          "At least 1 Land Grant", 
@@ -578,7 +1341,7 @@ summary_1872 <- dplyr::rename(summary_1872,
                               "Enslaved Population as Total (%)" = free_slave, 
                               "Ratio of Free Men to Free Women" = gender_disparity,
                               "Ratio of Enslaved Men to Enslaved Women" = slave_gender_disparity,
-                              # Laboe
+                              # Labor
                               "Proportion of Industrial Workers (%)" = industrial_workers, 
                               "Proportion of Farmers (%)" = farmers,
                               "Proportion of Enslaved People working in Farming (%)" = farmers_slaves,
@@ -600,18 +1363,18 @@ datasummary_balance(~within, summary_1872,
   group_rows("Labor", 12,16) %>%
   group_rows("Human Capital", 17,17) %>%
   kable_styling(latex_options = c("scale_down","hold_position"), position = "center") %>%
-  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_1872.pdf")
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_1872.tex")
   
 datasummary_balance(~within, summary_1872)
 ```
 
 ### Sesmarias Themselves pre-1700 and post- 1700
 
-```{r}
+```{r, results = "asis"}
 sesmarias_pts$within <- 
-  ifelse(sesmarias_pts$Year < 1700, 
-         "Granted between 1624-1699", 
-         "Granted between 1700-1750")
+  ifelse(sesmarias_pts$Year < 1697, 
+         "Granted between 1624-1696", 
+         "Granted between 1697-1750")
 
 sesmarias_summary <- 
   sesmarias_pts[c("within",
@@ -641,13 +1404,78 @@ datasummary_balance(~within, sesmarias_summary,
                     stars = c('*' = .1, '**' = .05, '***' = 0.1),
                     dinm_statistic = "std.error") %>%
     kable_styling(latex_options = c("scale_down","hold_position"), position = "center") %>%
-  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias.pdf")
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias.tex")
 ```
 
 # Regressions
 
 ```{r}
+summary(lm_robust(Preta ~ sesmarias_presence,
+                  fixed_effects = ~abbrev_state,
+                  data = mun_2010_N))
+
+summary(lm_robust(Parda ~ sesmarias_presence,
+                  fixed_effects = ~abbrev_state,
+                  data = mun_2010_N))
+
+summary(lm_robust(Branca ~ sesmarias_presence,
+                  fixed_effects = ~abbrev_state,
+                  data = mun_2010_N))
+
 summary(lm_robust(sesmarias_presence ~ log(sugarcane+1),
                   fixed_effects = ~abbrev_state,
-                  data = mun_2010_NE))
+                  data = mun_2010_N))
+```
+
+# Regressions on the land grants themselves
+
+```{r}
+sesmarias_pts <- cbind(sesmarias_pts, st_coordinates(st_centroid(sesmarias_pts)))
+
+pre_post_1700 <-
+  lm_robust(post_1700 ~ sugarcane +
+              X + Y + 
+              m_slope + m_elevation + river_dist + coast_dist ,
+            data = sesmarias_pts)
+
+pasture <-
+  lm_robust(pasture ~ sugarcane +
+              X + Y + 
+              m_slope + m_elevation + river_dist + coast_dist ,
+            data = sesmarias_pts)
+
+discovery <-
+  lm_robust(discovery ~ sugarcane +
+              X + Y + 
+              m_slope + m_elevation + river_dist + coast_dist ,
+            data = sesmarias_pts)
+
+no_land <-
+  lm_robust(no_land ~ sugarcane +
+              X + Y + 
+              m_slope + m_elevation + river_dist + coast_dist ,
+            data = sesmarias_pts)
+
+```
+
+# Current State
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = subset(mun_2010, abbrev_state %in% c("PB", "PE", "RN", "AL")),
+          aes(fill = "Done")) +
+  geom_sf(data = subset(mun_2010, abbrev_state %in% c("BA")),
+          aes(fill = "Currently Being Georeferenced")) +  
+  geom_sf(data = subset(mun_2010, abbrev_state %in% c("PA", "AM")),
+          aes(fill = "Georeferenced but contact people")) +  
+  geom_sf(data = subset(mun_2010, abbrev_state %in% c("MG", "SP")),
+          aes(fill = "Letters in .pdf")) +
+  geom_vline(xintercept = -47, color = "red") + 
+  labs(fill = "Status") +
+  theme_bw() +
+  theme(legend.title.align=0.5,
+        legend.direction = "vertical")
+        #legend.position = "bottom") 
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/future_step.png")
 ```

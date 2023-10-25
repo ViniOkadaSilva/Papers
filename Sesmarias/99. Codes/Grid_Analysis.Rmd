@@ -1,0 +1,1074 @@
+---
+title: "Grid_Analysis"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Cleaning
+
+```{r}
+rm(list = ls())
+
+library(ggplot2)
+library(ggspatial)
+library(tidyr)
+library(dplyr)
+library(sf)
+library(raster)
+library(nngeo)
+library(geobr)
+library(terra)
+library(readxl)
+library(exactextractr)
+library(modelsummary)
+library(kableExtra)
+library(stringr)
+library(plyr)
+library(stringr)
+library(gtools)
+library(estimatr)
+library(conleyreg)
+```
+
+
+```{r}
+mun_census_1872 <- read_municipality(code_muni = "all",year = 1872, simplified = TRUE, showProgress = TRUE)
+#mun_seat_census_1872 <- read_municipal_seat(year = 1872, showProgress = TRUE)
+state_1872 <- read_state(year = 1872, simplified = TRUE, showProgress = TRUE)
+
+
+setwd("~/OneDrive - University of Illinois - Urbana/Research Data/Brazil/Census 1872")
+census_1872 <- read_xlsx("municipalities_1872_census.xlsx")
+census_names_1872 <- read_xlsx("CensusToShapeNames.xlsx")
+
+sugarcane <- 
+  terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/FAO_GAEZ/sugarcane_lowinput_CO2.tiff")
+```
+
+
+```{r}
+census_1872_clean <- merge(census_1872, census_names_1872, by = c("MunicId", "ProvId"))
+```
+
+```{r}
+census_1872_clean$abbrev_state <- ""
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Alagoas","AL", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Amazonas","AM", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Bahia","BA", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Ceará", "CE", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Espírito Santo","ES", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Goyaz","GO", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Maranhão","MA", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Minas Geraes","MG", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Matto Grosso","MT", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Pará","PA", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Parahyba","PB", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Pernambuco","PE", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Piauhy","PI", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Paraná","PR", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Rio de Janeiro","RJ", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Rio Grande do Norte","RN", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Rio Grande do Sul","RS", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Santa Catharina","SC", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Sergipe","SE", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "São Paulo","SP", census_1872_clean$abbrev_state)
+census_1872_clean$abbrev_state <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Municipio Neutro ( Município da Corte)","RJ",
+         census_1872_clean$abbrev_state)
+
+### 
+census_1872_clean$PrimeiroDeProvincia <- 
+  ifelse(census_1872_clean$PrimeiroDeProvincia == "Municipio Neutro ( Município da Corte)",
+         "Municipio Neutro",
+         census_1872_clean$PrimeiroDeProvincia)
+```
+
+```{r}
+clean_1872 <- merge(mun_census_1872, census_1872_clean, by = c("name_muni", "abbrev_state"))
+```
+
+```{r}
+clean_1872$free_slave <- 
+  100*clean_1872$SomaDeSOMA_E_Almas/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$literacy_rate <- 
+  100*(clean_1872$`SomaDeSOMA_L_Sabem Ler e Escrever`/
+         (clean_1872$SomaDeH_LIVRES_Almas + clean_1872$SomaDeM_LIVRES_Almas))
+
+clean_1872$s_literacy_rate <-
+  100*(clean_1872$`SomaDeSOMA_E_Sabem Ler e Escrever`/clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$farmers <-
+  100*(clean_1872$SomaDeSOMA_G_Lavradores + clean_1872$SomaDeSOMA_G_Criadores)/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$farmers_slaves <-
+  100*(clean_1872$SomaDeSOMA_E_Lavradores + clean_1872$SomaDeSOMA_E_Criadores)/(clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$industrial_workers <-
+  100*(clean_1872$`SomaDeSOMA_G_Manufatureiros e fabricantes` + clean_1872$`SomaDeSOMA_G_Comerciantes, guarda-livros e caixeiros`)/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$gender_disparity <-
+  (clean_1872$SomaDeH_LIVRES_Almas/clean_1872$SomaDeM_LIVRES_Almas)
+
+clean_1872$slave_gender_disparity <-
+  (clean_1872$SomaDeH_ESCR_Almas/clean_1872$SomaDeM_ESCR_Almas)
+
+clean_1872$total_slaves <- clean_1872$SomaDeSOMA_E_Almas
+
+clean_1872$men_farmers_prop <- 
+  100*(clean_1872$SomaDeH_LIVRES_Lavradores + clean_1872$SomaDeH_LIVRES_Criadores)/clean_1872$SomaDeH_LIVRES_Almas
+
+clean_1872$women_farmers_prop <- 
+  100*(clean_1872$SomaDeM_LIVRES_Lavradores + clean_1872$SomaDeM_LIVRES_Criadores)/clean_1872$SomaDeM_LIVRES_Almas
+
+#clean_1872$p_agriculture <-
+#  100*(parishes_1872$SOMA_L_Agriculture/parishes_1872$SOMA_L_Almas)
+```
+
+
+```{r}
+training_data <- readxl::read_xlsx("/Users/vinicius/Downloads/database_training.xlsx")
+
+training_data$year <- as.numeric(str_sub(training_data$`Data de petição`,-4,-1))
+
+training_data$area <- 
+  ifelse(training_data$Área > 100, 
+         training_data$Área * 4.84 * 10^-6, 
+         training_data$Área * 2304)
+
+training_data <- training_data[,c(1,18,20)]
+
+test <- 
+  cbind(training_data[,c(1,2,3)], 
+        str_split_fixed(training_data$Justificativas, ";", 13))
+
+colnames(test)[1] <- "reference"
+```
+
+## Adding Justifications
+
+```{r}
+justifications <- read_xlsx("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Data/justification.xlsx")
+
+colnames(justifications)[1] <- "reference"
+
+test_2 <- 
+  cbind(justifications[,c(1)], 
+        str_split_fixed(justifications$JUSTIFICATIVA, ";", 13))
+
+
+test_3 = 
+test_2 %>%
+  full_join(test, by = intersect(colnames(test_2), colnames(test))) %>%
+  group_by(reference) 
+```
+
+```{r}
+sesmarias_pts <- read_xlsx("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Data/sesmarias_georeferenced.xlsx")
+
+sesmarias_pts$Year <- as.numeric(str_sub(sesmarias_pts$`Data da concessão`, -4))
+
+colnames(sesmarias_pts)[1] <- "reference"
+
+sesmarias_pts$reference <- str_replace_all(sesmarias_pts$reference, pattern=" ", repl="")
+
+sesmarias_pts_PE <- subset(sesmarias_pts, 
+                           grepl("PE", sesmarias_pts$reference) == TRUE |
+                             grepl("IT", sesmarias_pts$reference) == TRUE)
+
+# 0065, 0088, 0384, and 0385 are on the old database.
+
+sesmarias_pts_PE <- merge(sesmarias_pts_PE, test_3, by = c("reference"), all.x = TRUE)
+
+justifications_PB_RN <- 
+  read_xlsx("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Data/justifications_PB.xlsx", "Justificativas e Exigencias")
+
+sesmarias_pts_PB_RN <- subset(sesmarias_pts, 
+                              grepl("PE", sesmarias_pts$reference) == FALSE &
+                                grepl("IT", sesmarias_pts$reference) == FALSE)
+
+
+colnames(justifications_PB_RN)[1] <- "reference"
+justifications_PB_RN <- justifications_PB_RN[,c(1,2)]
+
+justifications_PB_RN$reference <- 
+  str_replace_all(justifications_PB_RN$reference, pattern=" ", repl="")
+
+justifications_PB_RN <- justifications_PB_RN[!duplicated(justifications_PB_RN),]
+
+test_4 <- 
+  justifications_PB_RN %>% 
+  group_by(reference) %>%
+  dplyr::mutate(id_rows = row_number()) %>%
+  pivot_wider( 
+    id_cols = c(reference),
+    names_from = id_rows,
+    values_from = Justificativa) %>% 
+  ungroup()
+
+test_4 <- 
+  subset(test_4, 
+         grepl("PB", test_4$reference) == TRUE |
+           grepl("RN", test_4$reference) == TRUE)
+
+sesmarias_pts_PB_RN <- merge(sesmarias_pts_PB_RN, test_4, by = c("reference"), all.x = TRUE)
+
+sesmarias_pts <- plyr::rbind.fill(sesmarias_pts_PE, sesmarias_pts_PB_RN)
+
+sesmarias_pts <- sesmarias_pts[mixedsort(colnames(sesmarias_pts))]
+
+sesmarias_pts <- sesmarias_pts[c(26,27, 23,25, seq(1,20,1))]
+```
+## Adding Area
+
+## Rest of the data
+
+
+```{r}
+mun_1872 <- read_municipality(code_muni = "all",year = 1872, simplified = TRUE, showProgress = TRUE)
+mun_2010 <- read_municipality(code_muni = "all",year = 2010, simplified = TRUE, showProgress = TRUE)
+
+mun_2010$sugarcane <- exact_extract(sugarcane, mun_2010, 'mean', progress = FALSE)
+
+sesmarias_pts$Latitude <- as.numeric(gsub('°','',sesmarias_pts$Latitude))
+sesmarias_pts$Longitude <- as.numeric(gsub('°','',sesmarias_pts$Longitude))
+
+sesmarias_pts <- subset(sesmarias_pts, 
+                        is.na(sesmarias_pts$Latitude) == F & 
+                          is.na(sesmarias_pts$Longitude) == F)
+
+sesmarias_pts <- st_as_sf(sesmarias_pts, coords = c("Longitude", "Latitude"), 
+                          crs = st_crs(mun_1872))
+
+# sesmarias_pts$Year <- as.numeric(str_sub(sesmarias_pts$`Data da concessão`, -4))
+```
+
+```{r}
+p = data.frame()
+
+for (i in seq(3,22,1))
+{k = unique(st_drop_geometry(sesmarias_pts[i]))
+colnames(k) <- "request"
+p = rbind(p,k)}
+
+p$request <- str_trim(p$request, side = c("both"))
+
+p = unique(p)
+```
+
+```{r}
+# Rivers
+
+rivers <- read_sf("~/OneDrive - University of Illinois - Urbana/Research/Projects/Amazon/infrastructure/rodoviario/Hidrovias.shp")
+rivers <- st_transform(rivers, st_crs(mun_1872))
+
+# Data for the coastline
+coastline <- read_sf("~/OneDrive - University of Illinois - Urbana/Research Data/Brazil/Shapefiles/Coastline/brazil-coastline/brazil_coastline.shp")
+
+coastline <- st_transform(coastline, st_crs(mun_1872))
+
+# Getting mean elevation
+
+elevation <- terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/Global/Elevation/DEM_geotiff/alwdgg.tif")
+
+# Getting mean slope
+
+slope <- terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/Global/Slope/slope_1KMmn_GMTEDmd.tif")
+
+# Galor Suitability Index
+
+csi_pre <- terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/Crop Suitability Index/pre1500OptCalories.tif")
+
+raster::crs(csi_pre) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+
+csi_post <- terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/Crop Suitability Index/post1500OptCalories.tif")
+
+raster::crs(csi_post) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+
+# MapBiomas Land Usage (1985)
+```
+
+```{r}
+sesmarias_pts$sugar =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("engenho|canaviais", i))) > 0), 1,0)
+
+sesmarias_pts$pasture =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("gado", i))) > 0), 1,0)
+
+sesmarias_pts$discovery =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("descobridor", i))) > 0), 1,0)
+
+sesmarias_pts$settlement =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("povoamento", i))) > 0), 1,0)
+
+sesmarias_pts$no_land =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("Não tinha terras", i))) > 0), 1,0)
+```
+
+# Generating Grid
+
+```{r}
+grid <- 
+  st_sfc(
+  st_make_grid(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
+               cellsize = .1,
+               crs = st_crs(clean_1872)))
+
+grid = st_sf(grid[subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))])
+
+p = st_intersects(grid, subset(state_1872, name_state %in% 
+                                 c("Parahyba", "Pernambuco", "Rio Grande do Norte", "Alagôas")))
+# grid <- cbind(grid, unlist(p))
+
+k <- st_join(grid, st_make_valid(state_1872), largest = TRUE)
+
+grid$abbrev_state <- k$name_state
+
+# grid <- st_intersection(grid, subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+ggplot() +
+  #geom_sf(data = subset(clean_1872, abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+  #        fill = "black", color = "white") +
+  geom_sf(data = subset(mun_2010, abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          fill = "NA", color = "blue") +
+  geom_sf(data = grid, fill = NA)
+```
+
+# Extracting Data
+
+```{r}
+# Sugarcane
+
+grid$sugarcane <- exact_extract(sugarcane, grid, 'mean', progress = FALSE)
+
+# River Distance
+
+river_dist <- st_distance(grid, rivers)
+river_dist <- apply(river_dist, 1, FUN = min)/1000
+grid$river_dist  <- river_dist
+
+# Distance to Coastline:
+
+coast_dist <- st_distance(grid, coastline)
+coast_dist <- apply(coast_dist, 1, FUN = min)/1000
+grid$coast_dist <- coast_dist
+
+# Mean Slope:
+
+grid$m_slope <- exact_extract(slope, grid, 'mean', progress = FALSE)
+
+# Mean Elevation:
+
+grid$m_elevation <- exact_extract(elevation, grid, 'mean', progress = FALSE)
+
+# Galor Suitability Index:
+
+grid$csi_pre <-exact_extract(csi_pre, grid, 'mean', progress = FALSE)
+
+grid$csi_post <-exact_extract(csi_post, grid, 'mean', progress = FALSE)
+
+# MapBiomas (2000)
+
+land_usage_2000 <- terra::rast("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research Data/Brazil/Mapbiomas/brasil_coverage_2000.tif")
+
+raster::crs(land_usage_2000) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+
+p <- 100*exact_extract(land_usage_2000, grid, 'frac', progress = TRUE)
+
+grid <- cbind(grid, p)
+
+# Nighttime Light data (2000)
+
+night_2000 <- terra::rast("~/OneDrive - University of Illinois - Urbana/Research Data/Global/Nighttime Satellite/Harmonized_DN_NTL_2000_calDMSP.tif")
+
+grid$night_light <- exact_extract(night_2000, grid, 'sum', progress = FALSE)
+
+```
+
+## Land Grants:
+
+```{r}
+# Sesmaria + Intensity:
+
+p <- st_intersects(grid, sesmarias_pts)
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$sesmarias_presence <- unlist(p)
+
+p <- st_intersects(grid, sesmarias_pts)
+
+grid$sesmarias_intensity <- lengths(p)
+
+# Sesmarias pre-1700
+
+p <- st_intersects(grid, subset(sesmarias_pts, Year < 1697))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$sesmarias_presence_1600 <- unlist(p)
+
+# Sesmarias post-1700 
+
+p <- st_intersects(grid, subset(sesmarias_pts, Year >= 1697))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$sesmarias_presence_1700 <- unlist(p)
+
+# Sesmarias Sugar 
+
+p <- st_intersects(grid, subset(sesmarias_pts, sugar == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$sugar <- unlist(p)
+
+# Sesmarias Pasture
+
+p <- st_intersects(grid, subset(sesmarias_pts, pasture == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$pasture <- unlist(p)
+
+# Sesmarias Discovery
+
+p <- st_intersects(grid, subset(sesmarias_pts, discovery == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$discovery <- unlist(p)
+
+# Sesmarias Settlement
+
+p <- st_intersects(grid, subset(sesmarias_pts, settlement == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$settlement <- unlist(p)
+
+# Sesmarias No Land
+
+p <- st_intersects(grid, subset(sesmarias_pts, no_land == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$no_land <- unlist(p)
+
+grid <- cbind(grid, st_coordinates(st_centroid(grid)))
+```
+
+```{r, eval = FALSE}
+st_write(grid, "grid_1x1.shp")
+```
+
+# Maps:
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = frac_15),
+          color = NA) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = subset(sesmarias_pts, pasture == 1),  
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Share Area \nfor Pasture\n(2000)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = sugarcane),
+          color = NA) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = subset(sesmarias_pts, sugar == 1),  
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Potential\nSugarcane\n(FAO)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = frac_20),
+          color = NA) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = subset(sesmarias_pts, sugar == 1),  
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Share Area \nfor Sugarcane\n(2000)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png")
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = log(night_light + 1)),
+          color = NA) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = sesmarias_pts,  
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Log(Nightlight + 1)") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png")
+```
+
+# Regressions:
+
+## Balance table:
+```{r}
+grid$within <- 
+  ifelse(grid$sesmarias_presence > 0, 
+         "At least 1 Land Grant", 
+         "No Land Grants")
+
+summary_grid <- 
+  grid[c("within",
+         "river_dist",
+         "coast_dist",
+         "m_slope",
+         "m_elevation",
+         "X",
+         "Y",
+         "sugarcane",
+         "csi_pre",
+         "csi_post",
+         "frac_20",
+         "frac_15",
+         "frac_24",
+         "night_light")]
+
+summary_grid <- 
+  dplyr::rename(summary_grid, 
+                # Geographical:
+                "Distance to Nearest River (km)" = river_dist,
+                "Distance to the Coast (km)" = coast_dist,
+                "Mean Slope (m)" = m_slope,
+                "Mean Elevation (m)" = m_elevation,  
+                "Latitude" = X,
+                "Longitude" = Y,
+                # Agricultural:
+                "Potential Sugarcane Output (FAO)" = sugarcane, 
+                "Maximum Calories Pre-1500 (Galor, 2016)" = csi_pre,
+                "Maximum Calories Post-1500 (Galor, 2016)" = csi_post,
+                # Land Usage and Nightlight:
+                "Sugarcane Area (%)" = frac_20,
+                "Livestock Area (%)" = frac_15,
+                "Urban Area (%)" = frac_24,
+                "Ln(Nightlight + 1)" = night_light)
+
+datasummary_balance(~within, summary_grid,
+                    output = 'latex',
+                    title = "Summary Statistics for the Land Grants - Grid Level",
+                    align = 'lcccccc',
+                    stars = c('*' = .1, '**' = .05, '***' = 0.1),
+                    dinm_statistic = "std.error") %>%
+    group_rows("Geographical",1,6) %>%
+    group_rows("Agriculture", 7,9) %>%
+    group_rows("Satellite Data", 10,13)  %>%
+    kable_styling(latex_options = c("scale_down","hold_position"), position = "center") %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias_grid.tex")
+```
+
+## First Stage:
+```{r}
+grid$sugarcane_t <- grid$sugarcane/1000
+
+grid$latitude <- grid$Y
+grid$longitude <- grid$X
+
+test_1 <- estimatr::lm_robust(sesmarias_presence ~ 
+                    sugarcane_t, 
+                  fixed_effects = ~abbrev_state, 
+                  data = grid)
+
+test_2 <- estimatr::lm_robust(sesmarias_presence ~ 
+                    sugarcane_t +
+                    X + Y + 
+                    m_slope + m_elevation + river_dist + coast_dist, 
+                  fixed_effects = ~abbrev_state, 
+                  data = grid)
+
+test_3 <- estimatr::lm_robust(sugar ~ 
+                    sugarcane_t, 
+                  fixed_effects = ~abbrev_state, 
+                  data = grid)
+
+test_4 <- estimatr::lm_robust(sugar ~ 
+                    sugarcane_t +
+                    X + Y + 
+                    m_slope + m_elevation + river_dist + coast_dist, 
+                  fixed_effects = ~abbrev_state, 
+                  data = grid)
+
+gm <- tibble::tribble(~raw,        ~clean,          ~fmt,
+                      "nobs",      "N",             0,
+                      "r.squared", "$R^2$", 2)
+
+rows_se <-  tribble(~term, ~'(1)', ~'(2)', ~'(3)', ~'(4)',
+                    'Geographical Controls', '', '\\checkmark', '', '\\checkmark')
+
+attr(rows_se, 'section') <- c('top')
+attr(rows_se, 'position') <- c(4,5)
+
+options(modelsummary_format_numeric_latex = "plain")
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",           
+modelsummary(list("(1)" = test_1, 
+                  "(2)" = test_2, 
+                  "(3)" = test_3,
+                  "(4)" = test_4),
+              coef_map = c("sugarcane_t" = 
+                             "Maximum Sugarcane Output (Thousand of Tons per hectare)"),
+             escape = FALSE,
+             gof_map = gm,
+             output = 'latex',
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             title = "Effects of Potential Sugarcane Output on Land Grants") %>%
+  add_header_above(c("",
+                     "Any Land Grants" = 2, 
+                     "Sugar Land Grants" = 2)) %>%
+  kable_styling(latex_options = c("scale_down","hold_position")) %>%
+  row_spec(2, hline_after = TRUE)) %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_grid.tex")
+
+```
+
+## Economic Activity Persistence:
+
+```{r}
+
+test_1 <- 
+lm_robust(frac_20 ~ 
+            sugar + pasture, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_2 <- 
+lm_robust(frac_20 ~ 
+            sugar + pasture +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_2.1 <- 
+lm_robust(frac_20 ~ 
+            sesmarias_presence +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_3 <- 
+lm_robust(frac_15 ~ 
+            sugar + pasture, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_4 <- 
+lm_robust(frac_15 ~ 
+            sugar + pasture +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_4.1 <- 
+lm_robust(frac_15 ~ 
+            sesmarias_presence +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+gm <- tibble::tribble(~raw,        ~clean,          ~fmt,
+                      "nobs",      "N",             0,
+                      "r.squared", "$R^2$", 2)
+
+rows_se <-  tribble(~term, ~'(1)', ~'(2)', ~'(3)', ~'(4)',
+                    'Geographical Controls', 
+                    '', '\\checkmark', '', '\\checkmark',
+                    'DV Mean', 
+                    as.character(round(mean(grid$frac_20),2)), 
+                    as.character(round(mean(grid$frac_20),2)), 
+                    as.character(round(mean(grid$frac_15),2)), 
+                    as.character(round(mean(grid$frac_15),2)))
+
+attr(rows_se, 'section') <- c('top')
+attr(rows_se, 'position') <- c(5,6,7)
+
+options(modelsummary_format_numeric_latex = "plain")
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",           
+modelsummary(list("(1)" = test_1, 
+                  "(2)" = test_2, 
+                  "(3)" = test_3,
+                  "(4)" = test_4),
+              coef_map = c("sugar" = "Sugar Land Grants",
+                           "pasture" = "Livestock Land Grants"),
+             escape = FALSE,
+             gof_map = gm,
+             output = 'latex',
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             title = "OLS of Land Grants on Present Day Economic Activity") %>%
+  add_header_above(c("",
+                     "Area dedicated to Sugarcane" = 2, 
+                     "Area dedicated to Livestock" = 2)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  row_spec(4, hline_after = TRUE)) %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_activity_grid.tex")
+
+#conley_4 <-
+#  conleyreg(frac_15 ~ 
+#            pasture +
+#            X + Y + 
+#            m_slope + m_elevation + river_dist + coast_dist|
+#              abbrev_state,
+#            lat = "latitude",
+#            lon = "longitude",
+#            dist_cutoff = 400,
+#            data = st_drop_geometry(grid))
+```
+
+## Nightlight and urbanization
+
+```{r}
+grid$ln_nightlight <- log(grid$night_light + 1)
+
+test_1 <-
+  lm_robust(log(night_light + 1) ~ 
+            sugar + pasture, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+  
+test_2 <- 
+lm_robust(log(night_light + 1) ~ 
+            sugar + pasture +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+  
+test_3 <- 
+  lm_robust(frac_24 ~ 
+            sugar + pasture,
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+    
+test_4 <- 
+  lm_robust(frac_24 ~ 
+            sugar + pasture +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+
+rows_se <-  tribble(~term, ~'(1)', ~'(2)', ~'(3)', ~'(4)',
+                    'Geographical Controls', 
+                    '', '\\checkmark', '', '\\checkmark',
+                    'DV Mean', 
+                    as.character(round(mean(grid$ln_nightlight),2)), 
+                    as.character(round(mean(grid$ln_nightlight),2)), 
+                    as.character(round(mean(grid$frac_24),2)), 
+                    as.character(round(mean(grid$frac_24),2)))
+
+attr(rows_se, 'section') <- c('top')
+attr(rows_se, 'position') <- c(5,6,7)
+
+options(modelsummary_format_numeric_latex = "plain")
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",           
+modelsummary(list("(1)" = test_1, 
+                  "(2)" = test_2, 
+                  "(3)" = test_3,
+                  "(4)" = test_4),
+              coef_map = c("sugar" = "Sugar Land Grants",
+                           "pasture" = "Livestock Land Grants"),
+             escape = FALSE,
+             gof_map = gm,
+             output = 'latex',
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             title = "OLS of Land Grants on Economic Development") %>%
+  add_header_above(c("",
+                     "Ln(Nightlight + 1)" = 2, 
+                     "Urban Area (%)" = 2)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  row_spec(4, hline_after = TRUE)) %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_development_grid.tex")
+
+```
+
+## When were granted:
+```{r}
+test_1 <- 
+lm_robust(frac_20 ~ 
+            sesmarias_presence_1600, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_2 <- 
+lm_robust(frac_20 ~ 
+            sesmarias_presence_1600 +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_3 <- 
+lm_robust(frac_15 ~ 
+            sesmarias_presence_1600, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_4 <- 
+lm_robust(frac_15 ~ 
+            sesmarias_presence_1600 +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+          fixed_effects = ~abbrev_state, 
+          data = grid)
+
+test_5 <- 
+  lm_robust(frac_24 ~ 
+            sesmarias_presence_1600,
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+    
+test_6 <- 
+  lm_robust(frac_24 ~ 
+            sesmarias_presence_1600 +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+
+rows_se <-  tribble(~term, ~'(1)', ~'(2)', ~'(3)', ~'(4)', ~'(5)', ~'(6)',
+                    'Geographical Controls', 
+                    '', '\\checkmark', 
+                    '', '\\checkmark',
+                    '', '\\checkmark',
+                    'DV Mean', 
+                    as.character(round(mean(grid$frac_20),2)), 
+                    as.character(round(mean(grid$frac_20),2)), 
+                    as.character(round(mean(grid$frac_15),2)), 
+                    as.character(round(mean(grid$frac_15),2)), 
+                    as.character(round(mean(grid$frac_24),2)), 
+                    as.character(round(mean(grid$frac_24),2)))
+
+attr(rows_se, 'section') <- c('top')
+attr(rows_se, 'position') <- c(4,5)
+
+options(modelsummary_format_numeric_latex = "plain")
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",           
+modelsummary(list("(1)" = test_1, 
+                  "(2)" = test_2, 
+                  "(3)" = test_3,
+                  "(4)" = test_4,
+                  "(5)" = test_5,
+                  "(6)" = test_6),
+              coef_map = c("sesmarias_presence_1600" = "Grants Pre-1697"),
+             escape = FALSE,
+             gof_map = gm,
+             output = 'latex',
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             title = "OLS of Land Grants by Year of Grant on Land Usage") %>%
+  add_header_above(c("",
+                     "Sugarcane Area (%)" = 2, 
+                     "Pasture Area (%)" = 2,
+                     "Urban Area (%)" = 2)) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down")) %>%
+  row_spec(2, hline_after = TRUE)) %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/land_usage_year_grid.tex")
+
+```
+
+# Analyzing Agglomeration:
+
+```{r}
+grid$two_or_more <- 
+  ifelse(grid$sesmarias_intensity > 1, 100 , 0)
+
+grid$three <- 
+  ifelse(grid$sesmarias_intensity > 2, 100 , 0)
+
+test_6 <- 
+  lm_robust(two_or_more ~ 
+            sesmarias_presence +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+
+```
+
+```{r}
+box_sf <- 
+  st_buffer(st_centroid(grid), dist = 15000) %>% 
+  group_by(ID) %>%
+  nest()
+
+bbox_wrap <- function(x) st_as_sfc(st_bbox(x))
+box_sf <- box_sf %>% 
+  mutate(bbox = purrr::map(data, bbox_wrap))
+
+box_sf <- 
+box_sf %>% 
+  mutate(geometry = st_as_sfc(do.call(rbind, bbox))) %>% 
+  dplyr::select(-data, -bbox) %>% 
+  st_as_sf(crs = st_crs(mun_1872))
+
+p <- st_intersects(box_sf, sesmarias_pts)
+
+grid$sesmarias_neighbor_total <- lengths(p)
+
+grid$sesmarias_neighbor_intensity <- 
+  grid$sesmarias_neighbor_total - grid$sesmarias_intensity
+
+grid$sesmarias_neighbor_presence <- 
+  ifelse(grid$sesmarias_neighbor_intensity > 0, 1 ,0)
+```
+
+```{r}
+
+test_1 <- 
+  lm_robust(sesmarias_neighbor_presence ~ 
+            sesmarias_presence, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+
+test_2 <- 
+  lm_robust(sesmarias_neighbor_presence ~ 
+            sesmarias_presence +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+
+test_3 <-
+  lm_robust(sesmarias_neighbor_intensity ~ 
+            sesmarias_presence, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+  
+test_4 <- 
+  lm_robust(sesmarias_neighbor_intensity ~ 
+            sesmarias_presence +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+  
+test_5 <- 
+  lm_robust(sesmarias_neighbor_intensity ~ 
+            sesmarias_intensity, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+  
+test_6 <- 
+  lm_robust(sesmarias_neighbor_intensity ~ 
+            sesmarias_intensity +
+            X + Y + 
+            m_slope + m_elevation + river_dist + coast_dist, 
+            fixed_effects = ~abbrev_state, 
+            data = grid)
+
+rows_se <-  tribble(~term, ~'(1)', ~'(2)', ~'(3)', ~'(4)', ~'(5)', ~'(6)',
+                    'Geographical Controls', 
+                    '', '\\checkmark', 
+                    '', '\\checkmark',
+                    '', '\\checkmark',
+                    'DV Mean', 
+                    as.character(round(mean(grid$sesmarias_neighbor_presence),2)), 
+                    as.character(round(mean(grid$sesmarias_neighbor_presence),2)), 
+                    as.character(round(mean(grid$sesmarias_neighbor_intensity),2)), 
+                    as.character(round(mean(grid$sesmarias_neighbor_intensity),2)), 
+                    as.character(round(mean(grid$sesmarias_neighbor_intensity),2)), 
+                    as.character(round(mean(grid$sesmarias_neighbor_intensity),2)))
+
+attr(rows_se, 'section') <- c('top')
+attr(rows_se, 'position') <- c(5,6,7)
+
+options(modelsummary_format_numeric_latex = "plain")
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",           
+modelsummary(list("(1)" = test_1, 
+                  "(2)" = test_2, 
+                  "(3)" = test_3,
+                  "(4)" = test_4,
+                  "(5)" = test_5,
+                  "(6)" = test_6),
+              coef_map = c("sesmarias_presence" = "At Least One Land Grant",
+                           "sesmarias_intensity" = "Total Land Grants"),
+             escape = FALSE,
+             gof_map = gm,
+             output = 'latex',
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             align = "lcccccc",
+             title = "OLS of Land Grants on Surrounding Grids") %>%
+  add_header_above(c("",
+                     "Surrounding Grids \nLand Grant Presence (0/1)" = 2, 
+                     "Surrounding Grids \nNumber of Land Grants" = 4)) %>%
+  kable_styling(latex_options = c("hold_position", "scale_down")) %>%
+  row_spec(4, hline_after = TRUE)) %>%
+  save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/agglomeration_grid.tex")
+```
+
+```{r}
+ggplot(data = grid, aes(x = log(frac_24 + 1), y = log(night_light + 1))) +
+  geom_point() + 
+  theme_bw()
+```

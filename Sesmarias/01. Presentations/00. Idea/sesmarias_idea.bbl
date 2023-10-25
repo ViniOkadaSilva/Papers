@@ -59,7 +59,7 @@
       \field{journaltitle}{Am. Econ. Rev.}
       \field{title}{The colonial origins of comparative development: An empirical investigation}
       \field{year}{2001}
-      \keyw{Sesmarias}
+      \keyw{History;Sesmarias}
     \endentry
     \entry{Alston2010-cn}{book}{}
       \name{author}{3}{}{%
@@ -141,38 +141,6 @@
       \field{title}{Latifúndio e reforma agrária no Brasil}
       \field{year}{1980}
       \keyw{Land tenure -- Brazil;Books;Sesmarias}
-    \endentry
-    \entry{Baer2014-gh}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=26c2ed0a6a18aa2755f831796c5a2373}{%
-           family={Baer},
-           familyi={B\bibinitperiod},
-           given={Werner},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \list{publisher}{1}{%
-        {Lynne Rienner Publishers, Incorporated}%
-      }
-      \strng{namehash}{26c2ed0a6a18aa2755f831796c5a2373}
-      \strng{fullhash}{26c2ed0a6a18aa2755f831796c5a2373}
-      \strng{bibnamehash}{26c2ed0a6a18aa2755f831796c5a2373}
-      \strng{authorbibnamehash}{26c2ed0a6a18aa2755f831796c5a2373}
-      \strng{authornamehash}{26c2ed0a6a18aa2755f831796c5a2373}
-      \strng{authorfullhash}{26c2ed0a6a18aa2755f831796c5a2373}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In this thorough description and analysis of Latin America's largest economy, Werner Baer traces the trajectory of Brazil's economic development and performance from the colonial period through the early years (2011-2012) of the administration of Dilma Rousseff. In addition to updated information, the seventh edition includes entirely new chapters on the challenges and accomplishments of the Lula/Rousseff period and also on the nature of human capital and the role of the education system in Brazil. With Brazil playing an increasingly major role on the global economic stage, this edition will be valuable both in the classroom and as an authoritative reference resource.}
-      \field{title}{The Brazilian Economy: Growth and Development}
-      \field{year}{2014}
-      \keyw{Books;Sesmarias}
     \endentry
     \entry{Bandecchi1963-uj}{book}{}
       \name{author}{1}{}{%
@@ -281,39 +249,49 @@
       \field{year}{1979}
       \keyw{Books;Sesmarias}
     \endentry
-    \entry{Diegues_Junior1959-ba}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ee1632a4c5c0aa11b7fbb035099260c6}{%
-           family={Diégues\bibnamedelima Júnior},
-           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
-           given={Manuel},
+    \entry{Dell2019-np}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d8185990c5393dc7868ca18973b150ae}{%
+           family={Dell},
+           familyi={D\bibinitperiod},
+           given={Melissa},
            giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce891fd22770d34da4cd958320f9356f}{%
+           family={Olken},
+           familyi={O\bibinitperiod},
+           given={Benjamin\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
       }
       \list{language}{1}{%
-        {por}%
-      }
-      \list{location}{1}{%
-        {Washington}%
+        {en}%
       }
       \list{publisher}{1}{%
-        {União Pan-Americana}%
+        {Oxford Academic}%
       }
-      \strng{namehash}{ee1632a4c5c0aa11b7fbb035099260c6}
-      \strng{fullhash}{ee1632a4c5c0aa11b7fbb035099260c6}
-      \strng{bibnamehash}{ee1632a4c5c0aa11b7fbb035099260c6}
-      \strng{authorbibnamehash}{ee1632a4c5c0aa11b7fbb035099260c6}
-      \strng{authornamehash}{ee1632a4c5c0aa11b7fbb035099260c6}
-      \strng{authorfullhash}{ee1632a4c5c0aa11b7fbb035099260c6}
+      \strng{namehash}{b7ba80a9abaac4c2682bcfaa2160cf66}
+      \strng{fullhash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{bibnamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authorbibnamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authornamehash}{b7ba80a9abaac4c2682bcfaa2160cf66}
+      \strng{authorfullhash}{c2d2f4024fbfb564715e00c04d8674bd}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{População e propriedade da terra no Brasil}
-      \field{year}{1959}
-      \keyw{Land tenure -- Brazil;Books;Sesmarias}
+      \field{abstract}{Abstract. Colonial powers typically organized economic activity in the colonies to maximize their economic returns. While the literature has emphasized long-run}
+      \field{journaltitle}{Rev. Econ. Stud.}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{The Development Effects of the Extractive Colonial Economy: The Dutch Cultivation System in Java}
+      \field{volume}{87}
+      \field{year}{2019}
+      \field{pages}{164\bibrangedash 203}
+      \range{pages}{40}
+      \keyw{History;Read;Third Year Paper;Sesmarias}
     \endentry
     \entry{Laudares2022-vy}{misc}{}
       \name{author}{2}{}{%
@@ -347,7 +325,60 @@
       \field{note}{Accessed: 2022-10-3}
       \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
       \field{year}{2022}
-      \keyw{Slavery in Brazil;Sesmarias}
+      \keyw{Slavery in Brazil;Sesmarias;Third Year Paper}
+    \endentry
+    \entry{Li2020-cc}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=55672144ec141c2b20907b6106484ccd}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xuecao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7da13d3a0c651ed594151519b0d96a2}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yuyu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b24161b430375d9f0dc7d88a0db2093c}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29c0a5ec6f98ede6be6caecc7b5d1fae}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Xia},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b00aa9d760c3580e13015a20d8e47373}
+      \strng{fullhash}{a7ae3e976c681f2c3f4c1efe71a153e1}
+      \strng{bibnamehash}{b00aa9d760c3580e13015a20d8e47373}
+      \strng{authorbibnamehash}{b00aa9d760c3580e13015a20d8e47373}
+      \strng{authornamehash}{b00aa9d760c3580e13015a20d8e47373}
+      \strng{authorfullhash}{a7ae3e976c681f2c3f4c1efe71a153e1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nighttime light (NTL) data from the Defense Meteorological Satellite Program (DMSP)/Operational Linescan System (OLS) and the Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi National Polar-orbiting Partnership satellite provide a great opportunity for monitoring human activities from regional to global scales. Despite the valuable records of nightscape from DMSP (1992-2013) and VIIRS (2012-2018), the potential of the historical archive of NTL observations has not been fully explored because of the severe inconsistency between DMSP and VIIRS. In this study, we generated an integrated and consistent NTL dataset at the global scale by harmonizing the inter-calibrated NTL observations from the DMSP data and the simulated DMSP-like NTL observations from the VIIRS data. The generated global DMSP NTL time-series data (1992-2018) show consistent temporal trends. This temporally extended DMSP NTL dataset provides valuable support for various studies related to human activities such as electricity consumption and urban extent dynamics.}
+      \field{journaltitle}{Sci Data}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{A harmonized global nighttime light dataset 1992-2018}
+      \field{volume}{7}
+      \field{year}{2020}
+      \field{pages}{168}
+      \range{pages}{1}
+      \keyw{Data;Third Year Paper;Sesmarias}
     \endentry
     \entry{Lima2002-kd}{book}{}
       \name{author}{1}{}{%
@@ -379,38 +410,6 @@
       \field{title}{Pequena história territorial do Brasil: sesmarias e terras devolutas}
       \field{year}{2002}
       \keyw{Books;Sesmarias}
-    \endentry
-    \entry{Lobb1976-mc}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f394ded7c0b3aaaf85efedc94732cf95}{%
-           family={Lobb},
-           familyi={L\bibinitperiod},
-           given={C\bibnamedelima Gary},
-           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {University of Hawai'i Press}%
-      }
-      \strng{namehash}{f394ded7c0b3aaaf85efedc94732cf95}
-      \strng{fullhash}{f394ded7c0b3aaaf85efedc94732cf95}
-      \strng{bibnamehash}{f394ded7c0b3aaaf85efedc94732cf95}
-      \strng{authorbibnamehash}{f394ded7c0b3aaaf85efedc94732cf95}
-      \strng{authornamehash}{f394ded7c0b3aaaf85efedc94732cf95}
-      \strng{authorfullhash}{f394ded7c0b3aaaf85efedc94732cf95}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Yearbook of the Association of Pacific Coast Geographers}
-      \field{title}{The Sesmaria in Rio Grande do Sul: A Successful Frontier Institution, 1737-1823}
-      \field{volume}{38}
-      \field{year}{1976}
-      \field{pages}{49\bibrangedash 63}
-      \range{pages}{15}
-      \keyw{Sesmarias}
     \endentry
     \entry{Lowes2020-pr}{report}{}
       \name{author}{2}{}{%
@@ -455,40 +454,6 @@
       \field{type}{techreport}
       \field{year}{2020}
       \keyw{To Read;Sesmarias}
-    \endentry
-    \entry{Motta1998-xw}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=8aa20e3b66ebd68f88285040d2d4b55b}{%
-           family={Motta},
-           familyi={M\bibinitperiod},
-           given={Márcia},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {pt}%
-      }
-      \list{location}{1}{%
-        {[Rio de Janeiro, Brazil]}%
-      }
-      \list{publisher}{1}{%
-        {Arquivo Público do Estado do Rio de Janeiro}%
-      }
-      \strng{namehash}{8aa20e3b66ebd68f88285040d2d4b55b}
-      \strng{fullhash}{8aa20e3b66ebd68f88285040d2d4b55b}
-      \strng{bibnamehash}{8aa20e3b66ebd68f88285040d2d4b55b}
-      \strng{authorbibnamehash}{8aa20e3b66ebd68f88285040d2d4b55b}
-      \strng{authornamehash}{8aa20e3b66ebd68f88285040d2d4b55b}
-      \strng{authorfullhash}{8aa20e3b66ebd68f88285040d2d4b55b}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Nas fronteiras do poder conflitos de terras e direito agrário no Brasil de meados do século {XIX}}
-      \field{year}{1998}
-      \keyw{Books;Sesmarias}
     \endentry
     \entry{Musacchio2014-pq}{article}{}
       \name{author}{3}{}{%
@@ -587,45 +552,67 @@
       \range{pages}{30}
       \keyw{URGENT;Brazil;Colonialism;History;Read;Sesmarias;Third Year Paper}
     \endentry
-    \entry{Silva2019-vj}{article}{}
+    \entry{Sellars2018-yp}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=a2e6a592b12c6da23630a57e80729909}{%
-           family={Silva},
+        {{un=0,uniquepart=base,hash=c4d813e1ac55d19bcbbab156ed9d9c12}{%
+           family={Sellars},
            familyi={S\bibinitperiod},
-           given={Karla\bibnamedelimb Karoline\bibnamedelima Rodrigues},
-           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Emily\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=d232ee0c660ae26bdee51953681f1826}{%
-           family={Lopes\bibnamedelima Maia},
-           familyi={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Cláudio},
-           giveni={C\bibinitperiod},
+        {{un=0,uniquepart=base,hash=1a9c5fa8bedf49bcfc1b9691c0d2acdc}{%
+           family={Alix-Garcia},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Tutor Desenvolvimento e Publicacoes Ltda.}%
-      }
-      \strng{namehash}{23134053551c504c21d6eb830763304c}
-      \strng{fullhash}{b53976b7e09d25c32c2405862adabe57}
-      \strng{bibnamehash}{b53976b7e09d25c32c2405862adabe57}
-      \strng{authorbibnamehash}{b53976b7e09d25c32c2405862adabe57}
-      \strng{authornamehash}{23134053551c504c21d6eb830763304c}
-      \strng{authorfullhash}{b53976b7e09d25c32c2405862adabe57}
+      \strng{namehash}{02a40ed9cc840e8125b1397a912791ca}
+      \strng{fullhash}{0602fb91d8b45700f1b40557a08ccc12}
+      \strng{bibnamehash}{0602fb91d8b45700f1b40557a08ccc12}
+      \strng{authorbibnamehash}{0602fb91d8b45700f1b40557a08ccc12}
+      \strng{authornamehash}{02a40ed9cc840e8125b1397a912791ca}
+      \strng{authorfullhash}{0602fb91d8b45700f1b40557a08ccc12}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Accession Number: 139757311; Silva, Karla Karoline Rodrigues 1; Email Address: karla.s.rodrigues@hotmail.com Lopes Maia, Cláudio 2; Email Address: maiaclaudio@yahoo.com.br; Affiliation: 1: Mestranda em Direito Agrário pela Universidade Federal de Goiás (UFG) 2: Doutor em História pela Universidade Federal de Goiás, UFG (2008); Source Info: jan-jun2019, Vol. 5 Issue 1, p1; Author-Supplied Keyword: legal-normative model; Author-Supplied Keyword: legislation; Author-Supplied Keyword: possession; Author-Supplied Keyword: conflito agrário; Author-Supplied Keyword: latifúndio; Author-Supplied Keyword: modelo jurı́dico-normativo; Author-Supplied Keyword: posse; Author-Supplied Keyword: regime de sesmarias; Language of Keywords: English; Language of Keywords: Portuguese; Number of Pages: 17p; Document Type: Article; Language: Portuguese}
-      \field{journaltitle}{Revista de Direito Agrário e Agroambiental}
-      \field{number}{1}
-      \field{title}{{LATIFÚNDIO}: {UMA} {ANÁLISE} A {PARTIR} {DO} {ARCABOU{}̧ {C}O} {NORMATIVO} {DO} {REGIME} {DE} {SESMARIAS} {NO} {BRASIL}}
-      \field{volume}{5}
-      \field{year}{2019}
-      \field{pages}{1\bibrangedash 17}
-      \range{pages}{17}
-      \keyw{legal-normative model; legislation; possession; conflito agrário; latifúndio; modelo jurı́dico-normativo; posse; regime de sesmarias;Sesmarias}
+      \field{abstract}{How does labor scarcity shape institutional development? We examine the long-term impact of Mexico's 16th-century demographic collapse on landholding patterns through the present day. We show that the collapse, which reduced the indigenous population by between 70 and 90 percent and differed in severity across space, facilitated land concentration and the rise of a landowner class that dominated Mexican political economy for centuries. To identify the impact of the population collapse on land arrangements we use an instrumental-variables identification strategy exploiting climatic shocks associated with an epidemic in the 1570s that roughly halved the indigenous population. Though landholding patterns were transformed following the Revolution of 1910, we also show that disease-impacted areas now have more land in common-property institutions with limited property rights. The population collapse thus had a persistent impact on Mexican political economy, but the nature of this impact has changed radically over time.}
+      \field{journaltitle}{J. Dev. Econ.}
+      \field{month}{11}
+      \field{title}{Labor scarcity, land tenure, and historical legacy: Evidence from Mexico}
+      \field{volume}{135}
+      \field{year}{2018}
+      \field{pages}{504\bibrangedash 516}
+      \range{pages}{13}
+      \keyw{Economic history; Institutional development; Population dynamics; Land tenure;Read;History;Land Usage;Sesmarias;Third Year Paper}
+    \endentry
+    \entry{Smith_undated-ip}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9806584db113f694a5eafce6a9057815}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9806584db113f694a5eafce6a9057815}
+      \strng{fullhash}{9806584db113f694a5eafce6a9057815}
+      \strng{bibnamehash}{9806584db113f694a5eafce6a9057815}
+      \strng{authorbibnamehash}{9806584db113f694a5eafce6a9057815}
+      \strng{authornamehash}{9806584db113f694a5eafce6a9057815}
+      \strng{authorfullhash}{9806584db113f694a5eafce6a9057815}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://static1.squarespace.com/static/5f50c7f3798bae1a11362fe8/t/642b171c72aca01369a9ab0f/1680545566532/CorySmithLandConcentrationFrontier.pdf}}
+      \field{note}{Accessed: 2023-4-27}
+      \field{title}{Land concentration and Long-run development in the frontier United States}
+      \keyw{Read;Land Usage;History;Sesmarias}
     \endentry
     \entry{Sokoloff2000-mb}{article}{}
       \name{author}{2}{}{%
@@ -663,7 +650,7 @@
       \field{year}{2000}
       \field{pages}{217\bibrangedash 232}
       \range{pages}{16}
-      \keyw{Sesmarias;Third Year Paper}
+      \keyw{History;Sesmarias;Third Year Paper}
     \endentry
     \entry{Usaid2016-xs}{report}{}
       \name{author}{1}{}{%

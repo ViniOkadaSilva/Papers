@@ -365,8 +365,104 @@
   publisher = "Cambridge University Press",
   month     =  aug,
   year      =  2014,
-  keywords  = "Sesmarias;Third Year Paper",
+  keywords  = "Books;Sesmarias;Third Year Paper",
   language  = "en"
+}
+
+@ARTICLE{Sellars2018-yp,
+  title    = "Labor scarcity, land tenure, and historical legacy: Evidence from
+              Mexico",
+  author   = "Sellars, Emily A and Alix-Garcia, Jennifer",
+  abstract = "How does labor scarcity shape institutional development? We
+              examine the long-term impact of Mexico's 16th-century demographic
+              collapse on landholding patterns through the present day. We show
+              that the collapse, which reduced the indigenous population by
+              between 70 and 90 percent and differed in severity across space,
+              facilitated land concentration and the rise of a landowner class
+              that dominated Mexican political economy for centuries. To
+              identify the impact of the population collapse on land
+              arrangements we use an instrumental-variables identification
+              strategy exploiting climatic shocks associated with an epidemic
+              in the 1570s that roughly halved the indigenous population.
+              Though landholding patterns were transformed following the
+              Revolution of 1910, we also show that disease-impacted areas now
+              have more land in common-property institutions with limited
+              property rights. The population collapse thus had a persistent
+              impact on Mexican political economy, but the nature of this
+              impact has changed radically over time.",
+  journal  = "J. Dev. Econ.",
+  volume   =  135,
+  pages    = "504--516",
+  month    =  nov,
+  year     =  2018,
+  keywords = "Economic history; Institutional development; Population dynamics;
+              Land tenure;Read;History;Land Usage;Sesmarias;Third Year Paper"
+}
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@ARTICLE{Guirkinger2022-md,
+  title     = "Pro-birth policies, missions and fertility : historical evidence
+               from Congo",
+  author    = "Guirkinger, Catherine and Villar, Paola",
+  abstract  = "Did colonial powers shape fertility patterns in their colonies?
+               We investigate this question in the context of the Belgian
+               Congo. Starting in the late 1920s, several colonial powers in
+               Africa feared depopulation of their colonies and designed
+               pro-birth policies. The Belgian state heavily relied on Catholic
+               nuns to implement these policies in the Congo. Using a
+               demographic survey conducted in the 1970s in seven major cities,
+               we recovered the individual birth calendars of 30,000 women born
+               between 1900 and 1948, under colonial rule. In addition we
+               digitized high-quality territory level information on fertility
+               by cohort in the 1950s. We rely on unique historical and
+               archival material to reconstruct temporal and geographic
+               heterogeneity in exposure to missionary presence and the type of
+               activities performed at the station level. We find a positive
+               effect of Catholic nuns on fertility. In contrast, Catholic male
+               missionaries have no detectable impact on fertility and
+               Protestant missionaries have a clear negative impact. In terms
+               of mechanisms, we argue that progress in general health are
+               unlikely to explain, alone, the rise in fertility. Another
+               likely channel was the promotion of an ideal of domesticity
+               where women are confined to their role of mother and wife.
+               Finally, using Demographic and Health Survey data, we find some
+               trace of colonial mission{\^a}€™s influence on fertility
+               patterns today.",
+  journal   = "DeFiPP Working Papers",
+  publisher = "University of Namur, Development Finance and Public Policies",
+  month     =  mar,
+  year      =  2022,
+  keywords  = "Third Year Paper"
+}
+
+@MISC{Becker2023-wo,
+  title        = "Women on a mission: Protestant legacies of gender equality in
+                  Africa?",
+  author       = "Becker, Bastian and Meier Zu Selhausen, Felix",
+  abstract     = "Christian missions, especially Protestants missions, have
+                  been shown to advance longrun education outcomes and gender
+                  equality in Africa. However, the mechanisms behind this
+                  benign legacy and the contribution of missionary women, who
+                  constituted more than half of all Western mission staff, are
+                  not well-understood. We compile a new extensive data set on
+                  the locations of missions in colonial Africa, including the
+                  gender composition of their staff. In combination with
+                  contemporary survey data on one million respondents in 29
+                  African countries, we provide evidence of missions'
+                  equalizing effects with regards to education and a wide range
+                  of female agency outcomes. We document that Protestant
+                  missions left no more benign legacy than Catholics,
+                  questioning the Protestant exceptionalism highlighted by
+                  prior studies. We also document a strong association between
+                  missionary women and girls' school enrollment in colonial
+                  times but find no evidence of any lasting gendered effects.
+                  Post-independence expansion of public education and the
+                  secularization of school curricula may have offset
+                  persistence of Africa's earliest centers of female education.",
+  year         =  2023,
+  howpublished = "\url{https://www.aehnetwork.org/wp-content/uploads/2023/04/72_AEHNWP_Becker_MzS.pdf}",
+  keywords     = "Third Year Paper"
 }
 
 @ARTICLE{Jedwab2022-zv,
@@ -394,6 +490,37 @@
   month    =  jun,
   year     =  2022,
   keywords = "Religion;Read;History;Bible Translations;Third Year Paper"
+}
+
+@ARTICLE{Li2020-cc,
+  title    = "A harmonized global nighttime light dataset 1992-2018",
+  author   = "Li, Xuecao and Zhou, Yuyu and Zhao, Min and Zhao, Xia",
+  abstract = "Nighttime light (NTL) data from the Defense Meteorological
+              Satellite Program (DMSP)/Operational Linescan System (OLS) and
+              the Visible Infrared Imaging Radiometer Suite (VIIRS) on the
+              Suomi National Polar-orbiting Partnership satellite provide a
+              great opportunity for monitoring human activities from regional
+              to global scales. Despite the valuable records of nightscape from
+              DMSP (1992-2013) and VIIRS (2012-2018), the potential of the
+              historical archive of NTL observations has not been fully
+              explored because of the severe inconsistency between DMSP and
+              VIIRS. In this study, we generated an integrated and consistent
+              NTL dataset at the global scale by harmonizing the
+              inter-calibrated NTL observations from the DMSP data and the
+              simulated DMSP-like NTL observations from the VIIRS data. The
+              generated global DMSP NTL time-series data (1992-2018) show
+              consistent temporal trends. This temporally extended DMSP NTL
+              dataset provides valuable support for various studies related to
+              human activities such as electricity consumption and urban extent
+              dynamics.",
+  journal  = "Sci Data",
+  volume   =  7,
+  number   =  1,
+  pages    = "168",
+  month    =  jun,
+  year     =  2020,
+  keywords = "Data;Third Year Paper",
+  language = "en"
 }
 
 @ARTICLE{Ma2021-sb,
@@ -1114,7 +1241,7 @@
   number   =  2,
   pages    = "593--650",
   year     =  2011,
-  keywords = "History;Read;Third Year Paper",
+  keywords = "History;Read;Third Year Paper;Sesmarias",
   language = "en"
 }
 
@@ -2170,7 +2297,7 @@
   number   =  1,
   pages    = "260--272",
   year     =  2012,
-  keywords = "To Read;Third Year Paper"
+  keywords = "To Read;Methods;Read;Third Year Paper"
 }
 
 @BOOK{Newson2020-vg,
@@ -2711,7 +2838,7 @@
   pages    = "217--232",
   month    =  sep,
   year     =  2000,
-  keywords = "Sesmarias;Third Year Paper"
+  keywords = "History;Sesmarias;Third Year Paper"
 }
 
 % The entry below contains non-ASCII chars that could not be converted
