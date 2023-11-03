@@ -704,6 +704,20 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 ggplot() +
   geom_sf(data = mun_1872, fill = "white") +
   geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+          aes(fill = pasture_workers)) +
+  scale_fill_binned(type = "viridis", n.breaks = 10) + 
+  geom_sf(data = sesmarias_pts, size = 1, 
+          color = "black",
+          shape = 21, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  labs(fill = "Proportion of Ranching \n Workers") +
+  theme_bw() +
+  theme(# legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
           aes(fill = gender_disparity)) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
   geom_sf(data = sesmarias_pts, size = 1, 
@@ -745,6 +759,127 @@ ggplot() +
   theme(# legend.position = "bottom", 
         plot.title = element_text(hjust = 0.5))
 ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png")
+```
+
+# Checking effects of the 1701 Royal Decree banning livestock from 10 leagues from the coast
+
+```{r}
+clean_1872$ten_leagues <- ifelse(clean_1872$coast_dist > 66.6, 1, 0)
+clean_1872$pasture_post_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 1 & clean_1872$pasture == 1, 1, 0)
+clean_1872$pasture_pre_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 0 & clean_1872$pasture == 1, 1, 0)
+clean_1872_NE <- subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA"))
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = free_slave, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", se = FALSE) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=100,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=100,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+clean_1872_NE_donut <- subset(clean_1872_NE, coast_dist < 46.6 | coast_dist > 76.6)
+
+clean_1872_donut <- subset(clean_1872, coast_dist < 46.6 | coast_dist > 76.6)
+
+# Issue is that league can be 4.8, or 6.6, but even based on the other source 8
+
+summary(
+rdrobust(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers,
+                 c = 66, p = 1))
+
+summary(
+rdrobust(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers,
+          kernel = "triangular", p = 2, bwselect = "mserd",
+                 c = 66.6))
+
+summary(
+rdrobust(x = clean_1872_NE_donut$coast_dist, y = clean_1872_NE_donut$pasture,
+                 c = 66.6, p = 2))
+
+rdplot(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_post_1700, 
+       binselect="es", ci=95, 
+       c = 66.6, p = 2)
+
+rdplot(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers, 
+       binselect="es", ci=95, 
+       c = 66.6, p = 2)
+
+rdplot(x = clean_1872$coast_dist, y = clean_1872$pasture_workers, 
+       #binselect="es", ci=95, 
+       c = 66.6, p = 2)
+
+
+
+# Entirety of Brazil - only looking at ranching workers
+
+summary(
+rdrobust(x = clean_1872_donut$coast_dist, y = clean_1872_donut$free_slave,
+                 c = 66.6, p = 2))
+
+summary(
+rdrobust(x = clean_1872_donut$coast_dist, y = clean_1872_donut$free_slave,
+                 c = 66.6, p = 1))
+
+rdplot(x = clean_1872_donut$coast_dist, y = clean_1872_donut$free_slave, 
+       binselect="es", ci=95, 
+       #covs = factor(clean_1872_donut$abbrev_state), 
+       c = 66.6, p = 2)
+
+#rdplot(x = clean_1872_donut$coast_dist, y = clean_1872_donut$pasture, 
+#       c = 66.6, p = 2)
+
+
+
+ggplot(clean_1872_donut, 
+       aes(x = coast_dist, y = free_slave, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    annotate("rect", fill = "red", alpha = 0.5, 
+           xmin = 46.6, xmax = 76.6,
+           ymin = -Inf, ymax = Inf) +
+  theme_bw()
+
+rdd_data(y = clean_1872_NE$pasture_post_1700, 
+         x = clean_1872_NE$coast_dist, 
+         cutpoint = 66.6) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
+
+rdd_data(y = clean_1872_NE$pasture_pre_1700, 
+         x = clean_1872_NE$coast_dist, 
+         cutpoint = 66.6) %>% 
+  rdd_reg_lm(slope = "separate") %>% 
+  summary()
 ```
 
 ```{r}
@@ -984,7 +1119,7 @@ ggplot() +
 ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/municipalities_2010.png")
 ```
 
-```{r}
+```{r, eval = FALSE}
 grid <- 
   st_sfc(
   st_make_grid(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
@@ -1044,6 +1179,7 @@ test_4 <- estimatr::lm_robust(sugar ~
                     sugarcane_t +
                     X + Y + 
                     m_slope + m_elevation + river_dist + coast_dist + area, 
+                  se = "stata",
                   fixed_effects = ~abbrev_state, 
                   data = subset(clean_1872,  
                                 abbrev_state %in% c("PB", "PE", "RN", "AL")))

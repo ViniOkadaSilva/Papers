@@ -327,6 +327,13 @@ sesmarias_pts$settlement =
 
 sesmarias_pts$no_land =
   ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("Não tinha terras", i))) > 0), 1,0)
+
+sesmarias_pts$cattle_raising =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("Pretendia criar gado|Pretendia fazer curral|Pretendia apascentar gado|Pretendia fazer curral|Pretendia ter criações|Pretendia apascentar criações|Pretendia aumentar sua criação de gado", i))) > 0), 1,0)
+
+# Have to add some stuff here:
+# sesmarias_pts$claimed_occupied = 
+  
 ```
 
 # Generating Grid
@@ -440,6 +447,14 @@ p[lengths(p) == 0] <- 0
 
 grid$sesmarias_presence_1700 <- unlist(p)
 
+# Post-1701
+
+p <- st_intersects(grid, subset(sesmarias_pts, Year >= 1701))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$sesmarias_presence_1701 <- unlist(p)
+
 # Sesmarias Sugar 
 
 p <- st_intersects(grid, subset(sesmarias_pts, sugar == 1))
@@ -480,11 +495,25 @@ p[lengths(p) == 0] <- 0
 
 grid$no_land <- unlist(p)
 
+# Cattle Raising
+
+p <- st_intersects(grid, subset(sesmarias_pts, cattle_raising == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+grid$cattle_raising <- unlist(p)
+
 grid <- cbind(grid, st_coordinates(st_centroid(grid)))
 ```
 
 ```{r, eval = FALSE}
 st_write(grid, "grid_1x1.shp")
+```
+
+```{r}
+coast_dist <- st_distance(sesmarias_pts, coastline)
+coast_dist <- apply(coast_dist, 1, FUN = min)/1000
+sesmarias_pts$coast_dist <- coast_dist
 ```
 
 # Maps:
@@ -620,6 +649,172 @@ datasummary_balance(~within, summary_grid,
     group_rows("Satellite Data", 10,13)  %>%
     kable_styling(latex_options = c("scale_down","hold_position"), position = "center") %>%
   save_kable("~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias_grid.tex")
+```
+
+## RDD with Carta Regia 1701 (?) - No Cows within 80km of the coast
+
+```{r}
+sesmarias_pts$pasture_1700 <- 
+  ifelse(sesmarias_pts$pasture == 1 & sesmarias_pts$Year > 1700, 1, 0)
+
+sesmarias_pts$cattle_raising_1600 <- 
+  ifelse(sesmarias_pts$cattle_raising == 1 & sesmarias_pts$Year < 1701, 1, 0)
+
+sesmarias_pts$cattle_raising_1700 <- 
+  ifelse(sesmarias_pts$cattle_raising == 1 & sesmarias_pts$Year > 1701, 1, 0)
+
+grid$cattle_raising_1701 <- 
+  ifelse(grid$cattle_raising == 1 & grid$sesmarias_presence_1701 == 1, 1, 0)
+
+sesmarias_pts <- cbind(sesmarias_pts, st_coordinates(sesmarias_pts))
+
+grid$pasture_1700 <- 
+  ifelse(grid$pasture == 1 & grid$sesmarias_presence_1700 == 1, 1, 0)
+
+grid$within_80_coast <- ifelse(grid$coast_dist < 80, 1, 0)
+
+grid$within_70_coast <- ifelse(grid$coast_dist < 70, 1, 0)
+
+grid$within_60_coast <- ifelse(grid$coast_dist < 60, 1, 0)
+
+grid$within_50_coast <- ifelse(grid$coast_dist < 48.2, 1, 0)
+
+
+grid_other <- subset(grid, coast_dist < 200)
+
+summary(
+rdrobust(x = sesmarias_pts$coast_dist, y = sesmarias_pts$cattle_raising_1700, 
+                 covs = sesmarias_pts$X + sesmarias_pts$Y + sesmarias_pts$X*sesmarias_pts$Y + sesmarias_pts$X*sesmarias_pts$X + sesmarias_pts$Y*sesmarias_pts$Y, 
+                 c = 48.2, p = 2))
+
+rdplot(x = sesmarias_pts$coast_dist, y = sesmarias_pts$cattle_raising_1700, 
+       covs = sesmarias_pts$X + sesmarias_pts$Y + 
+         sesmarias_pts$X*grid$Y, 
+       c = 80, p = 2)
+
+rdplot(x = grid$coast_dist, y = grid$frac_15, 
+       covs = grid$X + grid$Y + grid$X*grid$Y, 
+       c = 48.2, p = 2)
+
+summary(
+rdrobust(x = grid$coast_dist, y = grid$frac_15,
+                 covs = grid$X + grid$Y + grid$X*grid$Y, 
+                 c = 48.2, p = 2))
+
+ggplot(data = grid, aes(x = coast_dist, y = frac_15)) +
+  stat_summary_bin(fun.y='mean', bins=100,
+                   color='orange', size=2, geom='point') +
+  geom_smooth(method = "loess") +
+  annotate("rect", fill = "red", alpha = 0.5, 
+           xmin = 48.2, xmax = 80,
+           ymin = -Inf, ymax = Inf) +
+  theme_bw()
+
+ggplot(data = grid, aes(x = coast_dist, y = pasture_1700)) +
+  stat_summary_bin(fun.y='mean', bins=100,
+                   color='orange', size=2, geom='point') +
+  geom_smooth(method = "loess") +
+  annotate("rect", fill = "red", alpha = 0.5, 
+           xmin = 48.2, xmax = 80,
+           ymin = -Inf, ymax = Inf) +
+  theme_bw()
+
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, cattle_raising_1700 == 1), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
+
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, cattle_raising_1600 == 1), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, cattle_raising == 0 & Year > 1701), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
+
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, cattle_raising == 0 & Year < 1701), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, pasture == 1 & Year > 1701), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
+
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, pasture == 1 & Year < 1701), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, pasture == 0 & Year > 1701), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
+
+ggplot() +
+  geom_sf(data = mun_2010, fill = "white") +
+  geom_sf(data = grid, 
+          aes(fill = factor(within_50_coast)),
+          color = NA) +
+  geom_sf(data = subset(sesmarias_pts, pasture == 0 & Year < 1701), 
+          size = 1, 
+          color = "black",
+          shape = 23, fill = "red") +
+  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE)
 ```
 
 ## First Stage:

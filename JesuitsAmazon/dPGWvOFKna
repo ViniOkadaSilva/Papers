@@ -1,374 +1,3 @@
-@ARTICLE{Valencia_Caicedo2018-gp,
-  title     = "The Mission: Human Capital Transmission, Economic Persistence,
-               and Culture in South America*",
-  author    = "Valencia Caicedo, Felipe",
-  abstract  = "Abstract. This article examines the long-term consequences of a
-               historical human capital intervention. The Jesuit order founded
-               religious missions in 1609 among",
-  journal   = "Q. J. Econ.",
-  publisher = "Oxford Academic",
-  volume    =  134,
-  number    =  1,
-  pages     = "507--556",
-  month     =  oct,
-  year      =  2018,
-  keywords  = "Religion;History;Read;Third Year Paper;Bible Translations",
-  copyright = "https://academic.oup.com/journals/pages/open\_access/funder\_policies/chorus/standard\_publication\_model",
-  language  = "en"
-}
-
-@BOOK{Denevan1992-qt,
-  title     = "The Native Population of the Americas in 1492",
-  author    = "Denevan, William M",
-  abstract  = "William M. Denevan writes that, ``The discovery of America was
-               followed by possibly the greatest demographic disaster in the
-               history of the world.'' Research by some scholars provides
-               population estimates of the pre-contact Americas to be as high
-               as 112 million in 1492, while others estimate the population to
-               have been as low as eight million. In any case, the native
-               population declined to less than six million by 1650. In this
-               collection of essays, historians, anthropologists, and
-               geographers discuss the discrepancies in the population
-               estimates and the evidence for the post-European decline.
-               Woodrow Borah, Angel Rosenblat, William T. Sanders, and others
-               touch on such topics as the Indian slave trade, diseases,
-               military action, and the disruption of the social systems of the
-               native peoples. Offering varying points of view, the
-               contributors critically analyze major hemispheric and regional
-               data and estimates for pre- and post-European contact. This
-               revised edition features a new introduction by Denevan reviewing
-               recent literature and providing a new hemispheric estimate of 54
-               million, a foreword by W. George Lovell of Queen's University,
-               and a comprehensive updating of the already extensive
-               bibliography. Research in this subject is accelerating, with
-               contributions from many disciplines. The discussions and essays
-               presented here can serve both as an overview of past estimates,
-               conflicts, and methods and as indicators of new approaches and
-               perspectives to this timely subject.",
-  publisher = "Univ of Wisconsin Press",
-  month     =  mar,
-  year      =  1992,
-  keywords  = "Books;Third Year Paper",
-  language  = "en"
-}
-
-@ARTICLE{Cirone2022-np,
-  title     = "Historical Persistence",
-  author    = "Cirone, Alexandra and Pepinsky, Thomas B",
-  abstract  = "This article reviews the literature on historical persistence in
-               political science and the related social sciences. Historical
-               persistence refers to causal effects that (a) operate over time
-               scales of a decade or more and (b) explain spatial variation in
-               political, economic, or social outcomes. Although political
-               scientists have always drawn from history, the historical
-               persistence literature represents a new approach to historical
-               research in the social sciences that places a premium on
-               credible research designs for causal inference. We discuss
-               regional and national coverage, state-of-the-art research
-               designs, analytical and inferential challenges, and mechanisms
-               and theories of persistence, drawing broadly from the
-               contemporary literature in political science and economics.",
-  journal   = "Annu. Rev. Polit. Sci.",
-  publisher = "Annual Reviews",
-  volume    =  25,
-  number    =  1,
-  pages     = "241--259",
-  month     =  may,
-  year      =  2022,
-  keywords  = "History;Reviews;Read;Third Year Paper"
-}
-
-@BOOK{Azevedo1930-ir,
-  title     = "Os Jesuitas No {Grao-Para}: Suas Missoes {E} a Colonizacao",
-  author    = "Azevedo, Jo{\~a}o L{\'u}cio",
-  publisher = "Imprensa da Universidade",
-  year      =  1930,
-  keywords  = "Books;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Arenz2012-cc,
-  title     = "Fazer sair da selva: as miss{\~o}es jesu{\'\i}tas na
-               Amaz{\^o}nia",
-  author    = "Arenz, Karl Heinz",
-  publisher = "Editora Estudos Amaz{\^o}nicos",
-  year      =  2012,
-  keywords  = "Books;Third Year Paper"
-}
-
-@BOOK{De_Assis_Costa2018-nt,
-  title     = "A Brief Economic History of the Amazon (1720-1970)",
-  author    = "de Assis Costa, Francisco",
-  abstract  = "This book covers 250 years of Amazonian economic history in
-               three chapters focusing on fundamental periods. The first
-               section provides a unique discussion of the dynamics of the
-               colonial Amazonian economy (1720-1822), the role of the
-               religious orders and trade companies, and the formation of a
-               caboclo-peasantry. This is followed by an original analysis of
-               the rubber economy (1850-1920), based on classical and
-               unprecedented data and considering the role of both the
-               caboclo-peasants and the big rubber plots in the mercantile
-               chains. The third chapter presents a pioneering analysis of the
-               rural and urban dynamics of the post-rubber boom era which
-               lasted until the 1960s. Considering the interest that the Amazon
-               arouses around the world, the book will appeal to the general
-               public, and will also draw particular attention from economists,
-               anthropologists, geographers, sociologists and ecologists, who,
-               as researchers or policymakers, are confronted with issues of
-               economic and social development and environmental sustainability
-               in underdeveloped countries.",
-  publisher = "Cambridge Scholars Publishing",
-  month     =  dec,
-  year      =  2018,
-  keywords  = "Books;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Leite1943-dy,
-  title     = "Hist{\'o}ria da Companhia de Jesus no Brasil: Norte 2: Obra e
-               assuntos gerais, s{\'e}culos {XVII-XVIII}",
-  author    = "Leite, Serafim",
-  publisher = "Livraria Portugalia",
-  year      =  1943,
-  keywords  = "Books;Third Year Paper",
-  language  = "pt-BR"
-}
-
-@BOOK{Hemming1987-vj,
-  title     = "Amazon frontier: the defeat of the Brazilian Indians",
-  author    = "Hemming, John",
-  publisher = "Macmillan",
-  volume    =  43,
-  year      =  1987,
-  keywords  = "Books;Third Year Paper"
-}
-
-@BOOK{Cardoso1984-ic,
-  title     = "Economia e sociedade em {\'a}reas coloniais perif{\'e}ricas:
-               Guiana Francesa e Par{\'a} (1750-1817)",
-  author    = "Cardoso, Ciro Flamarion Santana",
-  publisher = "Graal",
-  year      =  1984,
-  keywords  = "Books;Third Year Paper",
-  language  = "pt-BR"
-}
-
-% The entry below contains non-ASCII chars that could not be converted
-% to a LaTeX equivalent.
-@BOOK{Alden1996-id,
-  title     = "The Making of an Enterprise: The Society of Jesus in Portugal,
-               Its Empire, and Beyond, 1540-1750",
-  author    = "Alden, Dauril",
-  abstract  = "Based on more than two decades of research conducted on five
-               continents, this monumental work focuses on the activities of
-               members of the Society of Jesus from its foundation to the eve
-               of its expulsion from the Portuguese world. A second volume will
-               examine the Orders expulsion, the fate of its members, and the
-               disposition of its assets in Portugal and her empire from 1750
-               to 1808. The present volume begins with the Societys
-               introduction to Portugal and traces its expansion throughout
-               what the Society defined as the Portuguese Assistancy, a vast
-               complex of administrative units that included the kingdom of
-               Portugal and her empire plus portions of the Indian
-               subcontinent, Japan, China, the Indonesian archipelago, and
-               Ethiopia. Though it fully describes the evangelical and
-               educational activities of the Jesuits, the book emphasizes their
-               political relations with Portuguese and indigenous leaders, the
-               founding of their major training facilities, the development of
-               their economic infrastructure, their activities as governmental
-               administrators for the Portuguese in India and China, and their
-               role in Portugals unsuccessful attempts to preserve her eastern
-               empire and to revive Brazil after the Dutch occupation
-               (1630-1654). Throughout, the author makes insightful comparisons
-               between the Jesuits and their peers in various parts of the
-               Portuguese Assistancy and between the Jesuits and their monastic
-               predecessors in various parts of Europe, notably France and
-               England.",
-  publisher = "Stanford University Press",
-  year      =  1996,
-  keywords  = "Books;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Roller2014-gd,
-  title     = "Amazonian Routes: Indigenous Mobility and Colonial Communities
-               in Northern Brazil",
-  author    = "Roller, Heather",
-  abstract  = "This book reconstructs the world of eighteenth-century Amazonia
-               to argue that indigenous mobility did not undermine settlement
-               or community. In doing so, it revises longstanding views of
-               native Amazonians as perpetual wanderers, lacking attachment to
-               place and likely to flee at the slightest provocation. Instead,
-               native Amazonians used traditional as well as new, colonial
-               forms of spatial mobility to build enduring communities under
-               the constraints of Portuguese colonialism. Canoeing and trekking
-               through the interior to collect forest products or to contact
-               independent native groups, Indians expanded their social
-               networks, found economic opportunities, and brought new people
-               and resources back to the colonial villages. When they were not
-               participating in these state-sponsored expeditions, many Indians
-               migrated between colonial settlements, seeking to be
-               incorporated as productive members of their chosen communities.
-               Drawing on largely untapped village-level sources, the book
-               shows that mobile people remained attached to their home
-               communities and committed to the preservation of their lands and
-               assets. This argument still matters today, and not just to
-               scholars, as rural communities in the Brazilian Amazon find
-               themselves threatened by powerful outsiders who argue that their
-               mobility invalidates their claims to territory.",
-  publisher = "Stanford University Press",
-  edition   =  1,
-  month     =  jun,
-  year      =  2014,
-  keywords  = "Books;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Perdigao2020-fk,
-  title     = "Entre a cruz, a flecha e a espada",
-  author    = "Perdig{\~a}o, Jordan Lima",
-  abstract  = "ENTRE A CRUZ, A FLECHA E A ESPADA pretende ser de alguma
-               contribui{\c c}{\~a}o para as investiga{\c c}{\~o}es ainda pouco
-               frequentes sobre o protagonismo das Miss{\~o}es Carmelitas na
-               Amaz{\^o}nia Portuguesa no per{\'\i}odo colonial. Apesar de
-               haverem tido papel importante na coloniza{\c c}{\~a}o portuguesa
-               do que hoje {\'e} a Amaz{\^o}nia Brasileira, especialmente na
-               configura{\c c}{\~a}o daquele que hoje {\'e} geograficamente o
-               maior Estado brasileiro - o Amazonas -, os Carmelitas ainda
-               s{\~a}o, entretanto, quase desconhecidos pelos estudiosos da
-               hist{\'o}ria amazonense e amaz{\^o}nida como um todo. No
-               presente livro, os Carmelitas s{\~a}o apresentados desde sua
-               chegada {\`a} Amaz{\^o}nia no primeiro cap{\'\i}tulo, passando
-               por sua chegada {\`a} Amaz{\^o}nia Ocidental no segundo
-               cap{\'\i}tulo at{\'e} o final de suas seis d{\'e}cadas de
-               atua{\c c}{\~a}o nesta regi{\~a}o, entre 1695 at{\'e} 1755,
-               quando as miss{\~o}es foram extintas por ordem da Coroa
-               portuguesa, o que {\'e} abordado ao final do {\'u}ltimo
-               cap{\'\i}tulo. Importante tem{\'a}tica abordada neste trabalho,
-               dentre outras, {\'e} a da participa{\c c}{\~a}o dos Carmelitas
-               em situa{\c c}{\~o}es decisivas do rio Negro e do Solim{\~o}es
-               por meio de sua atua{\c c}{\~a}o mission{\'a}ria: os
-               in{\'\i}cios do Lugar da Barra, atual Manaus; a participa{\c
-               c}{\~a}o controversa na guerra aos Manau e outras na{\c
-               c}{\~o}es ind{\'\i}genas; e o epis{\'o}dio Samuel Fritz com
-               todas as conseq{\"u}{\^e}ncias para a amplia{\c c}{\~a}o das
-               fronteiras portuguesas na Amaz{\^o}nia. Destaca-se neste livro,
-               especialmente nos dois {\'u}ltimos cap{\'\i}tulos, a
-               import{\^a}ncia de Fr. Victoriano Pimentel e a significativa
-               documenta{\c c}{\~a}o que legou {\`a} historiografia de sua
-               ordem na Amaz{\^o}nia. Ao final se d{\'a} um destaque a aspectos
-               positivos da presen{\c c}a dos Camelitas na Amaz{\^o}nia,
-               n{\~a}o obstante as acusa{\c c}{\~o}es que lhes imputaram de
-               trai{\c c}{\~a}o {\`a} sua miss{\~a}o religiosa e pervers{\~a}o
-               no ac{\'u}mulo de terras, drogas do sert{\~a}o e escravos para
-               sua ordem.",
-  publisher = "Editora Dial{\'e}tica",
-  month     =  nov,
-  year      =  2020,
-  keywords  = "Books;Third Year Paper",
-  language  = "pt-BR"
-}
-
-@BOOK{Furtado1971-fh,
-  title     = "The Economic Growth of Brazil",
-  author    = "Furtado, Celso",
-  publisher = "University of California Press",
-  year      =  1971,
-  keywords  = "Books;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Melatti2007-yn,
-  title     = "Indios do Brasil",
-  author    = "Melatti, Julio Cezar",
-  publisher = "EdUSP",
-  year      =  2007,
-  keywords  = "Books;Third Year Paper",
-  language  = "pt-BR"
-}
-
-@MISC{noauthor_2003-ec,
-  title        = "World digital elevation model ({ETOPO5})",
-  abstract     = "Information on the environment for those involved in
-                  developing, adopting, implementing and evaluating
-                  environmental policy, and also the general public",
-  month        =  mar,
-  year         =  2003,
-  howpublished = "\url{https://www.eea.europa.eu/data-and-maps/data/world-digital-elevation-model-etopo5}",
-  note         = "Accessed: 2021-11-2",
-  keywords     = "Third Year Paper",
-  language     = "en"
-}
-
-@BOOK{noauthor_1997-kh,
-  title     = "Oxford Atlas of Exploration",
-  publisher = "Oxford University Press",
-  year      =  1997,
-  keywords  = "Books;Third Year Paper;Bible Translations",
-  language  = "en"
-}
-
-@BOOK{Alden1973-ky,
-  title     = "Colonial roots of modern Brazil papers of the Newberry Library
-               Conference",
-  author    = "Alden, Dauril",
-  publisher = "University of California Press",
-  year      =  1973,
-  address   = "Berkeley",
-  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Diffie1987-bw,
-  title     = "A History of Colonial Brazil, 1500-1792",
-  author    = "Diffie, Bailey Wallys",
-  publisher = "R.E. Krieger Publishing Company",
-  year      =  1987,
-  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Bethell1987-ml,
-  title     = "Colonial Brazil",
-  author    = "Bethell, Leslie",
-  publisher = "Cambridge University Press",
-  year      =  1987,
-  address   = "Cambridge",
-  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
-  language  = "en"
-}
-
-@BOOK{Caldeira2017-tl,
-  title     = "Hist{\'o}ria da riqueza no Brasil: cinco s{\'e}culos de pessoas,
-               costumes e governos",
-  author    = "Caldeira, Jorge",
-  publisher = "Esta{\c c}{\~a}o Brasil",
-  year      =  2017,
-  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
-  language  = "pt"
-}
-
-@BOOK{Fausto2014-bh,
-  title     = "A Concise History of Brazil",
-  author    = "Fausto, Boris and Fausto, Sergio",
-  abstract  = "The second edition of A Concise History of Brazil offers a
-               sweeping yet accessible history of Latin America's largest
-               country. Boris Fausto examines Brazil's history from the arrival
-               of the Portuguese in the New World through the long and
-               sometimes rocky transition from independence in 1822 to
-               democracy in the twentieth century. In a completely new chapter,
-               his son Sergio Fausto, a prominent political scientist, brings
-               the history up to the present, focusing on Brazil's increasing
-               global economic importance as well as its continued democratic
-               development and the challenges the country faces to meet the
-               higher expectations of its people.",
-  publisher = "Cambridge University Press",
-  month     =  aug,
-  year      =  2014,
-  keywords  = "Books;Sesmarias;Third Year Paper",
-  language  = "en"
-}
-
 @ARTICLE{Sellars2018-yp,
   title    = "Labor scarcity, land tenure, and historical legacy: Evidence from
               Mexico",
@@ -492,6 +121,46 @@
   keywords = "Religion;Read;History;Bible Translations;Third Year Paper"
 }
 
+@BOOK{Azevedo1930-ir,
+  title     = "Os Jesuitas No {Grao-Para}: Suas Missoes {E} a Colonizacao",
+  author    = "Azevedo, Jo{\~a}o L{\'u}cio",
+  publisher = "Imprensa da Universidade",
+  year      =  1930,
+  keywords  = "Books;Third Year Paper",
+  language  = "en"
+}
+
+@ARTICLE{Eslava2023-eq,
+  title     = "Origins of Latin American inequality",
+  author    = "Eslava, Francisco and Valencia Caicedo, Felipe",
+  abstract  = "How deep are the roots of Latin America's economic inequalities?
+               In this chapter we survey both the history and the literature
+               about the region's extreme economic disparities, focusing on the
+               most recent academic contributions. We begin by documenting the
+               broad patterns of national and sub-national differences in
+               income and inequality, building on the seminal contributions of
+               Engerman and Sokoloff (2000; 2002, 2005) and aiming to capture
+               different dimensions of inequality. We then proceed
+               thematically, providing empirical evidence and summarizing the
+               key recent studies on colonial institutions, slavery, land
+               reform, education and the role of elites. Finally, we conduct a
+               ``replication'' exercise with some seminal papers in the
+               literature, extending their economic results to include
+               different measures of inequality as outcomes.",
+  publisher = "International Inequalities Institute, London School of Economics
+               and Political Science",
+  number    =  95,
+  pages     = "40",
+  series    = "III Working Paper",
+  month     =  jul,
+  year      =  2023,
+  address   = "London, UK",
+  keywords  = "inequality, Latin America, history, colonization, persistence,
+               slavery, land reform, education, elites;Third Year
+               Paper;Sesmarias",
+  language  = "en"
+}
+
 @ARTICLE{Li2020-cc,
   title    = "A harmonized global nighttime light dataset 1992-2018",
   author   = "Li, Xuecao and Zhou, Yuyu and Zhao, Min and Zhao, Xia",
@@ -519,7 +188,7 @@
   pages    = "168",
   month    =  jun,
   year     =  2020,
-  keywords = "Data;Third Year Paper",
+  keywords = "Data;Third Year Paper;Sesmarias",
   language = "en"
 }
 
@@ -590,6 +259,57 @@
   number    =  4,
   pages     = "435--467",
   year      =  2010,
+  keywords  = "Third Year Paper"
+}
+
+@BOOK{Arenz2012-cc,
+  title     = "Fazer sair da selva: as miss{\~o}es jesu{\'\i}tas na
+               Amaz{\^o}nia",
+  author    = "Arenz, Karl Heinz",
+  publisher = "Editora Estudos Amaz{\^o}nicos",
+  year      =  2012,
+  keywords  = "Books;Third Year Paper"
+}
+
+@MISC{Pereira2023-qq,
+  title    = "geobr: Download Official Spatial Data Sets of Brazil",
+  author   = "Pereira, Rafael H M and Goncalves, Caio Nogueira",
+  year     =  2023,
+  keywords = "Sesmarias;Third Year Paper"
+}
+
+@ARTICLE{Fonseca2017-ky,
+  title     = "Os mapas da popula{\c c}{\~a}o no Estado do Gr{\~a}o Par{\'a}:
+               consolida{\c c}{\~a}o de uma popula{\c c}{\~a}o colonial na
+               segunda metade do s{\'e}culo {XVIII}",
+  author    = "Fonseca, Andr{\'e} Augusto da",
+  abstract  = "A partir de meados do s{\'e}culo XVIII, no contexto das chamadas
+               Reformas Pombalinas, as ``Leis de Liberdade dos {\'I}ndios''
+               incorporaram uma vasta regi{\~a}o no norte da Am{\'e}rica
+               portuguesa {\`a} administra{\c c}{\~a}o civil, transformando
+               mais de 60 aldeamentos mission{\'a}rios em vilas e lugares
+               portugueses de popula{\c c}{\~a}o majoritariamente
+               ind{\'\i}gena. Esta pesquisa prop{\~o}e-se a investigar a
+               evolu{\c c}{\~a}o demogr{\'a}fica dos {\'\i}ndios aldeados e da
+               popula{\c c}{\~a}o livre n{\~a}o aldeada sob esse novo regime.
+               Para uma parte da historiografia, a popula{\c c}{\~a}o das vilas
+               e lugares ind{\'\i}genas, sob o Diret{\'o}rio (1757-1798), era
+               mantida artificialmente pelo constante aporte de novos
+               contingentes de povos nativos, por meio dos descimentos. No
+               entanto, a an{\'a}lise dos mapas de popula{\c c}{\~a}o
+               elaborados a partir de 1773 mostra um crescimento lento, mas
+               consistente de todos os grupos da popula{\c c}{\~a}o das
+               capitanias do Estado do Gr{\~a}o-Par{\'a}, mesmo sofrendo os
+               danos das frequentes epidemias e do trabalho compuls{\'o}rio ao
+               qual estava sujeita a maior parte da popula{\c c}{\~a}o
+               ind{\'\i}gena.",
+  journal   = "Rev. Bras. Estud. Popul.",
+  publisher = "Associacao Brasileira de Estudos Populacionais",
+  volume    =  34,
+  number    =  3,
+  pages     = "439--464",
+  month     =  dec,
+  year      =  2017,
   keywords  = "Third Year Paper"
 }
 
@@ -769,6 +489,34 @@
   year      =  2016,
   keywords  = "Colonialism;History;Read;Religion;Third Year Paper;Bible
                Translations;Printing Press"
+}
+
+@BOOK{De_Assis_Costa2018-nt,
+  title     = "A Brief Economic History of the Amazon (1720-1970)",
+  author    = "de Assis Costa, Francisco",
+  abstract  = "This book covers 250 years of Amazonian economic history in
+               three chapters focusing on fundamental periods. The first
+               section provides a unique discussion of the dynamics of the
+               colonial Amazonian economy (1720-1822), the role of the
+               religious orders and trade companies, and the formation of a
+               caboclo-peasantry. This is followed by an original analysis of
+               the rubber economy (1850-1920), based on classical and
+               unprecedented data and considering the role of both the
+               caboclo-peasants and the big rubber plots in the mercantile
+               chains. The third chapter presents a pioneering analysis of the
+               rural and urban dynamics of the post-rubber boom era which
+               lasted until the 1960s. Considering the interest that the Amazon
+               arouses around the world, the book will appeal to the general
+               public, and will also draw particular attention from economists,
+               anthropologists, geographers, sociologists and ecologists, who,
+               as researchers or policymakers, are confronted with issues of
+               economic and social development and environmental sustainability
+               in underdeveloped countries.",
+  publisher = "Cambridge Scholars Publishing",
+  month     =  dec,
+  year      =  2018,
+  keywords  = "Books;Third Year Paper",
+  language  = "en"
 }
 
 @ARTICLE{Calvi2018-ax,
@@ -1019,6 +767,25 @@
   language  = "en"
 }
 
+@ARTICLE{Valencia_Caicedo2018-gp,
+  title     = "The Mission: Human Capital Transmission, Economic Persistence,
+               and Culture in South America*",
+  author    = "Valencia Caicedo, Felipe",
+  abstract  = "Abstract. This article examines the long-term consequences of a
+               historical human capital intervention. The Jesuit order founded
+               religious missions in 1609 among",
+  journal   = "Q. J. Econ.",
+  publisher = "Oxford Academic",
+  volume    =  134,
+  number    =  1,
+  pages     = "507--556",
+  month     =  oct,
+  year      =  2018,
+  keywords  = "Religion;History;Read;Third Year Paper;Bible Translations",
+  copyright = "https://academic.oup.com/journals/pages/open\_access/funder\_policies/chorus/standard\_publication\_model",
+  language  = "en"
+}
+
 @ARTICLE{Reeve1993-wy,
   title     = "Regional Interaction in the Western Amazon: The Early Colonial
                Encounter and the Jesuit Years: 1538-1767",
@@ -1137,6 +904,16 @@
   author   = "Henriques, Antônio and de Magalhães, 1828-1937 Lisboa :
               Livraria Popular",
   keywords = "Books;Third Year Paper"
+}
+
+@BOOK{Leite1943-dy,
+  title     = "Hist{\'o}ria da Companhia de Jesus no Brasil: Norte 2: Obra e
+               assuntos gerais, s{\'e}culos {XVII-XVIII}",
+  author    = "Leite, Serafim",
+  publisher = "Livraria Portugalia",
+  year      =  1943,
+  keywords  = "Books;Third Year Paper",
+  language  = "pt-BR"
 }
 
 @ARTICLE{Bombardi2022-ri,
@@ -1395,6 +1172,15 @@
   keywords  = "Read;Third Year Paper"
 }
 
+@BOOK{Hemming1987-vj,
+  title     = "Amazon frontier: the defeat of the Brazilian Indians",
+  author    = "Hemming, John",
+  publisher = "Macmillan",
+  volume    =  43,
+  year      =  1987,
+  keywords  = "Books;Third Year Paper"
+}
+
 @INCOLLECTION{McGinness2018-ig,
   title     = "The Historiography of the Jesuits in Brazil Prior to the
                Suppression",
@@ -1405,6 +1191,16 @@
   year      =  2018,
   keywords  = "To Read;Third Year Paper",
   language  = "en"
+}
+
+@BOOK{Cardoso1984-ic,
+  title     = "Economia e sociedade em {\'a}reas coloniais perif{\'e}ricas:
+               Guiana Francesa e Par{\'a} (1750-1817)",
+  author    = "Cardoso, Ciro Flamarion Santana",
+  publisher = "Graal",
+  year      =  1984,
+  keywords  = "Books;Third Year Paper",
+  language  = "pt-BR"
 }
 
 @BOOK{De_la_Torre2018-cz,
@@ -1435,6 +1231,43 @@
                political stakeholders.",
   publisher = "University of North Carolina Press",
   year      =  2018,
+  keywords  = "Books;Third Year Paper",
+  language  = "en"
+}
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@BOOK{Alden1996-id,
+  title     = "The Making of an Enterprise: The Society of Jesus in Portugal,
+               Its Empire, and Beyond, 1540-1750",
+  author    = "Alden, Dauril",
+  abstract  = "Based on more than two decades of research conducted on five
+               continents, this monumental work focuses on the activities of
+               members of the Society of Jesus from its foundation to the eve
+               of its expulsion from the Portuguese world. A second volume will
+               examine the Orders expulsion, the fate of its members, and the
+               disposition of its assets in Portugal and her empire from 1750
+               to 1808. The present volume begins with the Societys
+               introduction to Portugal and traces its expansion throughout
+               what the Society defined as the Portuguese Assistancy, a vast
+               complex of administrative units that included the kingdom of
+               Portugal and her empire plus portions of the Indian
+               subcontinent, Japan, China, the Indonesian archipelago, and
+               Ethiopia. Though it fully describes the evangelical and
+               educational activities of the Jesuits, the book emphasizes their
+               political relations with Portuguese and indigenous leaders, the
+               founding of their major training facilities, the development of
+               their economic infrastructure, their activities as governmental
+               administrators for the Portuguese in India and China, and their
+               role in Portugals unsuccessful attempts to preserve her eastern
+               empire and to revive Brazil after the Dutch occupation
+               (1630-1654). Throughout, the author makes insightful comparisons
+               between the Jesuits and their peers in various parts of the
+               Portuguese Assistancy and between the Jesuits and their monastic
+               predecessors in various parts of Europe, notably France and
+               England.",
+  publisher = "Stanford University Press",
+  year      =  1996,
   keywords  = "Books;Third Year Paper",
   language  = "en"
 }
@@ -1584,6 +1417,85 @@
   language  = "en"
 }
 
+@BOOK{Roller2014-gd,
+  title     = "Amazonian Routes: Indigenous Mobility and Colonial Communities
+               in Northern Brazil",
+  author    = "Roller, Heather",
+  abstract  = "This book reconstructs the world of eighteenth-century Amazonia
+               to argue that indigenous mobility did not undermine settlement
+               or community. In doing so, it revises longstanding views of
+               native Amazonians as perpetual wanderers, lacking attachment to
+               place and likely to flee at the slightest provocation. Instead,
+               native Amazonians used traditional as well as new, colonial
+               forms of spatial mobility to build enduring communities under
+               the constraints of Portuguese colonialism. Canoeing and trekking
+               through the interior to collect forest products or to contact
+               independent native groups, Indians expanded their social
+               networks, found economic opportunities, and brought new people
+               and resources back to the colonial villages. When they were not
+               participating in these state-sponsored expeditions, many Indians
+               migrated between colonial settlements, seeking to be
+               incorporated as productive members of their chosen communities.
+               Drawing on largely untapped village-level sources, the book
+               shows that mobile people remained attached to their home
+               communities and committed to the preservation of their lands and
+               assets. This argument still matters today, and not just to
+               scholars, as rural communities in the Brazilian Amazon find
+               themselves threatened by powerful outsiders who argue that their
+               mobility invalidates their claims to territory.",
+  publisher = "Stanford University Press",
+  edition   =  1,
+  month     =  jun,
+  year      =  2014,
+  keywords  = "Books;Third Year Paper",
+  language  = "en"
+}
+
+@BOOK{Perdigao2020-fk,
+  title     = "Entre a cruz, a flecha e a espada",
+  author    = "Perdig{\~a}o, Jordan Lima",
+  abstract  = "ENTRE A CRUZ, A FLECHA E A ESPADA pretende ser de alguma
+               contribui{\c c}{\~a}o para as investiga{\c c}{\~o}es ainda pouco
+               frequentes sobre o protagonismo das Miss{\~o}es Carmelitas na
+               Amaz{\^o}nia Portuguesa no per{\'\i}odo colonial. Apesar de
+               haverem tido papel importante na coloniza{\c c}{\~a}o portuguesa
+               do que hoje {\'e} a Amaz{\^o}nia Brasileira, especialmente na
+               configura{\c c}{\~a}o daquele que hoje {\'e} geograficamente o
+               maior Estado brasileiro - o Amazonas -, os Carmelitas ainda
+               s{\~a}o, entretanto, quase desconhecidos pelos estudiosos da
+               hist{\'o}ria amazonense e amaz{\^o}nida como um todo. No
+               presente livro, os Carmelitas s{\~a}o apresentados desde sua
+               chegada {\`a} Amaz{\^o}nia no primeiro cap{\'\i}tulo, passando
+               por sua chegada {\`a} Amaz{\^o}nia Ocidental no segundo
+               cap{\'\i}tulo at{\'e} o final de suas seis d{\'e}cadas de
+               atua{\c c}{\~a}o nesta regi{\~a}o, entre 1695 at{\'e} 1755,
+               quando as miss{\~o}es foram extintas por ordem da Coroa
+               portuguesa, o que {\'e} abordado ao final do {\'u}ltimo
+               cap{\'\i}tulo. Importante tem{\'a}tica abordada neste trabalho,
+               dentre outras, {\'e} a da participa{\c c}{\~a}o dos Carmelitas
+               em situa{\c c}{\~o}es decisivas do rio Negro e do Solim{\~o}es
+               por meio de sua atua{\c c}{\~a}o mission{\'a}ria: os
+               in{\'\i}cios do Lugar da Barra, atual Manaus; a participa{\c
+               c}{\~a}o controversa na guerra aos Manau e outras na{\c
+               c}{\~o}es ind{\'\i}genas; e o epis{\'o}dio Samuel Fritz com
+               todas as conseq{\"u}{\^e}ncias para a amplia{\c c}{\~a}o das
+               fronteiras portuguesas na Amaz{\^o}nia. Destaca-se neste livro,
+               especialmente nos dois {\'u}ltimos cap{\'\i}tulos, a
+               import{\^a}ncia de Fr. Victoriano Pimentel e a significativa
+               documenta{\c c}{\~a}o que legou {\`a} historiografia de sua
+               ordem na Amaz{\^o}nia. Ao final se d{\'a} um destaque a aspectos
+               positivos da presen{\c c}a dos Camelitas na Amaz{\^o}nia,
+               n{\~a}o obstante as acusa{\c c}{\~o}es que lhes imputaram de
+               trai{\c c}{\~a}o {\`a} sua miss{\~a}o religiosa e pervers{\~a}o
+               no ac{\'u}mulo de terras, drogas do sert{\~a}o e escravos para
+               sua ordem.",
+  publisher = "Editora Dial{\'e}tica",
+  month     =  nov,
+  year      =  2020,
+  keywords  = "Books;Third Year Paper",
+  language  = "pt-BR"
+}
+
 @INCOLLECTION{Azevedo1943-gs,
   title     = "A cultura brasileira (introdu{\c c}{\~a}o ao estudo da cultura
                no Brasil)",
@@ -1617,6 +1529,15 @@
   keywords = "Third Year Paper"
 }
 
+@BOOK{Furtado1971-fh,
+  title     = "The Economic Growth of Brazil",
+  author    = "Furtado, Celso",
+  publisher = "University of California Press",
+  year      =  1971,
+  keywords  = "Books;Third Year Paper",
+  language  = "en"
+}
+
 @ARTICLE{Nunn2010-ls,
   title    = "Religious Conversion in Colonial Africa",
   author   = "Nunn, Nathan",
@@ -1630,6 +1551,15 @@
   month    =  may,
   year     =  2010,
   keywords = "History;Read;Religion;Third Year Paper;Bible Translations"
+}
+
+@BOOK{Melatti2007-yn,
+  title     = "Indios do Brasil",
+  author    = "Melatti, Julio Cezar",
+  publisher = "EdUSP",
+  year      =  2007,
+  keywords  = "Books;Third Year Paper",
+  language  = "pt-BR"
 }
 
 @ARTICLE{Mabeu2021-sn,
@@ -1675,6 +1605,19 @@
   keywords = "Cross-sectional dependence; Non-parametric covariance matrix
               estimation; Random fields; Generalized method of moments;Third
               Year Paper"
+}
+
+@MISC{noauthor_2003-ec,
+  title        = "World digital elevation model ({ETOPO5})",
+  abstract     = "Information on the environment for those involved in
+                  developing, adopting, implementing and evaluating
+                  environmental policy, and also the general public",
+  month        =  mar,
+  year         =  2003,
+  howpublished = "\url{https://www.eea.europa.eu/data-and-maps/data/world-digital-elevation-model-etopo5}",
+  note         = "Accessed: 2021-11-2",
+  keywords     = "Third Year Paper",
+  language     = "en"
 }
 
 @ARTICLE{Amatulli2018-gl,
@@ -1728,6 +1671,14 @@
   month    =  oct,
   year     =  2016,
   keywords = "History;Read;Third Year Paper"
+}
+
+@BOOK{noauthor_1997-kh,
+  title     = "Oxford Atlas of Exploration",
+  publisher = "Oxford University Press",
+  year      =  1997,
+  keywords  = "Books;Third Year Paper;Bible Translations",
+  language  = "en"
 }
 
 @BOOK{Eriksen2011-cv,
@@ -1971,6 +1922,41 @@
   publisher = "Department of Human Geography, Human Ecology Division, Lund
                University",
   year      =  2011,
+  keywords  = "Books;Third Year Paper",
+  language  = "en"
+}
+
+@BOOK{Denevan1992-qt,
+  title     = "The Native Population of the Americas in 1492",
+  author    = "Denevan, William M",
+  abstract  = "William M. Denevan writes that, ``The discovery of America was
+               followed by possibly the greatest demographic disaster in the
+               history of the world.'' Research by some scholars provides
+               population estimates of the pre-contact Americas to be as high
+               as 112 million in 1492, while others estimate the population to
+               have been as low as eight million. In any case, the native
+               population declined to less than six million by 1650. In this
+               collection of essays, historians, anthropologists, and
+               geographers discuss the discrepancies in the population
+               estimates and the evidence for the post-European decline.
+               Woodrow Borah, Angel Rosenblat, William T. Sanders, and others
+               touch on such topics as the Indian slave trade, diseases,
+               military action, and the disruption of the social systems of the
+               native peoples. Offering varying points of view, the
+               contributors critically analyze major hemispheric and regional
+               data and estimates for pre- and post-European contact. This
+               revised edition features a new introduction by Denevan reviewing
+               recent literature and providing a new hemispheric estimate of 54
+               million, a foreword by W. George Lovell of Queen's University,
+               and a comprehensive updating of the already extensive
+               bibliography. Research in this subject is accelerating, with
+               contributions from many disciplines. The discussions and essays
+               presented here can serve both as an overview of past estimates,
+               conflicts, and methods and as indicators of new approaches and
+               perspectives to this timely subject.",
+  publisher = "Univ of Wisconsin Press",
+  month     =  mar,
+  year      =  1992,
   keywords  = "Books;Third Year Paper",
   language  = "en"
 }
@@ -2646,6 +2632,32 @@
   language  = "en"
 }
 
+@ARTICLE{Cirone2022-np,
+  title     = "Historical Persistence",
+  author    = "Cirone, Alexandra and Pepinsky, Thomas B",
+  abstract  = "This article reviews the literature on historical persistence in
+               political science and the related social sciences. Historical
+               persistence refers to causal effects that (a) operate over time
+               scales of a decade or more and (b) explain spatial variation in
+               political, economic, or social outcomes. Although political
+               scientists have always drawn from history, the historical
+               persistence literature represents a new approach to historical
+               research in the social sciences that places a premium on
+               credible research designs for causal inference. We discuss
+               regional and national coverage, state-of-the-art research
+               designs, analytical and inferential challenges, and mechanisms
+               and theories of persistence, drawing broadly from the
+               contemporary literature in political science and economics.",
+  journal   = "Annu. Rev. Polit. Sci.",
+  publisher = "Annual Reviews",
+  volume    =  25,
+  number    =  1,
+  pages     = "241--259",
+  month     =  may,
+  year      =  2022,
+  keywords  = "History;Reviews;Read;Third Year Paper"
+}
+
 @BOOK{Bisin2021-il,
   title     = "The Handbook of Historical Economics",
   author    = "Bisin, Alberto and Federico, Giovanni",
@@ -2698,6 +2710,46 @@
   keywords     = "Slavery in Brazil;Sesmarias;Third Year Paper"
 }
 
+@BOOK{Alden1973-ky,
+  title     = "Colonial roots of modern Brazil papers of the Newberry Library
+               Conference",
+  author    = "Alden, Dauril",
+  publisher = "University of California Press",
+  year      =  1973,
+  address   = "Berkeley",
+  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
+  language  = "en"
+}
+
+@BOOK{Diffie1987-bw,
+  title     = "A History of Colonial Brazil, 1500-1792",
+  author    = "Diffie, Bailey Wallys",
+  publisher = "R.E. Krieger Publishing Company",
+  year      =  1987,
+  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
+  language  = "en"
+}
+
+@BOOK{Bethell1987-ml,
+  title     = "Colonial Brazil",
+  author    = "Bethell, Leslie",
+  publisher = "Cambridge University Press",
+  year      =  1987,
+  address   = "Cambridge",
+  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
+  language  = "en"
+}
+
+@BOOK{Caldeira2017-tl,
+  title     = "Hist{\'o}ria da riqueza no Brasil: cinco s{\'e}culos de pessoas,
+               costumes e governos",
+  author    = "Caldeira, Jorge",
+  publisher = "Esta{\c c}{\~a}o Brasil",
+  year      =  2017,
+  keywords  = "Books;Sesmarias;Slavery in Brazil;Third Year Paper",
+  language  = "pt"
+}
+
 @ARTICLE{Chambouleyron2020-fx,
   title     = "Ruralidades ind{\'\i}genas na Amaz{\^o}nia colonial",
   author    = "Chambouleyron, Rafael and Arenz, Karl Heinz and Melo, Vanice
@@ -2724,6 +2776,27 @@
   keywords  = "{\'I}ndios; Agricultura; Amaz{\^o}nia colonial;Sesmarias;Third
                Year Paper",
   language  = "pt"
+}
+
+@BOOK{Fausto2014-bh,
+  title     = "A Concise History of Brazil",
+  author    = "Fausto, Boris and Fausto, Sergio",
+  abstract  = "The second edition of A Concise History of Brazil offers a
+               sweeping yet accessible history of Latin America's largest
+               country. Boris Fausto examines Brazil's history from the arrival
+               of the Portuguese in the New World through the long and
+               sometimes rocky transition from independence in 1822 to
+               democracy in the twentieth century. In a completely new chapter,
+               his son Sergio Fausto, a prominent political scientist, brings
+               the history up to the present, focusing on Brazil's increasing
+               global economic importance as well as its continued democratic
+               development and the challenges the country faces to meet the
+               higher expectations of its people.",
+  publisher = "Cambridge University Press",
+  month     =  aug,
+  year      =  2014,
+  keywords  = "Books;Sesmarias;Third Year Paper",
+  language  = "en"
 }
 
 @ARTICLE{Wigton-Jones2020-ex,

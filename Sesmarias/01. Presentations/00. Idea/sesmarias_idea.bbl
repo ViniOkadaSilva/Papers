@@ -107,41 +107,6 @@
       \field{year}{2010}
       \keyw{Books;Sesmarias;Third Year Paper}
     \endentry
-    \entry{Andrade1980-md}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=dfe2ca8fe650891f00f654487b230386}{%
-           family={Andrade},
-           familyi={A\bibinitperiod},
-           given={Manuel\bibnamedelimb Correia\bibnamedelimb de\bibnamedelima Oliveira},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {por}%
-      }
-      \list{location}{1}{%
-        {São Paulo}%
-      }
-      \list{publisher}{1}{%
-        {Livraria Duas Cidades}%
-      }
-      \strng{namehash}{dfe2ca8fe650891f00f654487b230386}
-      \strng{fullhash}{dfe2ca8fe650891f00f654487b230386}
-      \strng{bibnamehash}{dfe2ca8fe650891f00f654487b230386}
-      \strng{authorbibnamehash}{dfe2ca8fe650891f00f654487b230386}
-      \strng{authornamehash}{dfe2ca8fe650891f00f654487b230386}
-      \strng{authorfullhash}{dfe2ca8fe650891f00f654487b230386}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{series}{Coleção História e sociedade.}
-      \field{title}{Latifúndio e reforma agrária no Brasil}
-      \field{year}{1980}
-      \keyw{Land tenure -- Brazil;Books;Sesmarias}
-    \endentry
     \entry{Bandecchi1963-uj}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=20fee9ae5ab19a6d59731f820b188121}{%
@@ -455,6 +420,36 @@
       \field{year}{2020}
       \keyw{To Read;Sesmarias}
     \endentry
+    \entry{Manchester1931-zw}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=090ba8a16914e0af9cb19019d4bd13a4}{%
+           family={Manchester},
+           familyi={M\bibinitperiod},
+           given={A\bibnamedelima K},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{fullhash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{bibnamehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{authorbibnamehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{authornamehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{authorfullhash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{… land granted if the future should reveal the advisability of such action while wood proper for naval construction was reserved for the, crown. The holder of the grant … tion on colonial Brazil . …}
+      \field{journaltitle}{Hisp. Am. Hist. Rev.}
+      \field{title}{The rise of the Brazilian Aristocracy}
+      \field{year}{1931}
+      \keyw{Read;Sesmarias}
+    \endentry
     \entry{Musacchio2014-pq}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=6d3042b29d93c0ba5bb96e1ac4278e9b}{%
@@ -589,7 +584,7 @@
       \range{pages}{13}
       \keyw{Economic history; Institutional development; Population dynamics; Land tenure;Read;History;Land Usage;Sesmarias;Third Year Paper}
     \endentry
-    \entry{Smith_undated-ip}{misc}{}
+    \entry{Smith2023-ip}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9806584db113f694a5eafce6a9057815}{%
            family={Smith},
@@ -606,12 +601,12 @@
       \strng{authorfullhash}{9806584db113f694a5eafce6a9057815}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://static1.squarespace.com/static/5f50c7f3798bae1a11362fe8/t/642b171c72aca01369a9ab0f/1680545566532/CorySmithLandConcentrationFrontier.pdf}}
-      \field{note}{Accessed: 2023-4-27}
       \field{title}{Land concentration and Long-run development in the frontier United States}
+      \field{year}{2023}
       \keyw{Read;Land Usage;History;Sesmarias}
     \endentry
     \entry{Sokoloff2000-mb}{article}{}
