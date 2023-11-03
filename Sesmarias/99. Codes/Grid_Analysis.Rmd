@@ -341,14 +341,14 @@ sesmarias_pts$cattle_raising =
 ```{r}
 grid <- 
   st_sfc(
-  st_make_grid(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
+  st_make_grid(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")),
                cellsize = .1,
                crs = st_crs(clean_1872)))
 
-grid = st_sf(grid[subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))])
+grid = st_sf(grid[subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA"))])
 
 p = st_intersects(grid, subset(state_1872, name_state %in% 
-                                 c("Parahyba", "Pernambuco", "Rio Grande do Norte", "Alagôas")))
+                                 c("Parahyba", "Pernambuco", "Rio Grande do Norte", "Alagôas", "Bahia")))
 # grid <- cbind(grid, unlist(p))
 
 k <- st_join(grid, st_make_valid(state_1872), largest = TRUE)
@@ -677,6 +677,8 @@ grid$within_70_coast <- ifelse(grid$coast_dist < 70, 1, 0)
 
 grid$within_60_coast <- ifelse(grid$coast_dist < 60, 1, 0)
 
+grid$within_66_coast <- ifelse(grid$coast_dist < 66.6, 1, 0)
+
 grid$within_50_coast <- ifelse(grid$coast_dist < 48.2, 1, 0)
 
 
@@ -685,7 +687,7 @@ grid_other <- subset(grid, coast_dist < 200)
 summary(
 rdrobust(x = sesmarias_pts$coast_dist, y = sesmarias_pts$cattle_raising_1700, 
                  covs = sesmarias_pts$X + sesmarias_pts$Y + sesmarias_pts$X*sesmarias_pts$Y + sesmarias_pts$X*sesmarias_pts$X + sesmarias_pts$Y*sesmarias_pts$Y, 
-                 c = 48.2, p = 2))
+                 c = 66.6, p = 2))
 
 rdplot(x = sesmarias_pts$coast_dist, y = sesmarias_pts$cattle_raising_1700, 
        covs = sesmarias_pts$X + sesmarias_pts$Y + 
@@ -694,31 +696,75 @@ rdplot(x = sesmarias_pts$coast_dist, y = sesmarias_pts$cattle_raising_1700,
 
 rdplot(x = grid$coast_dist, y = grid$frac_15, 
        covs = grid$X + grid$Y + grid$X*grid$Y, 
-       c = 48.2, p = 2)
+       c = 66.6, p = 2)
+
+rdplot(x = grid$coast_dist, y = grid$cattle_raising_1701, 
+       covs = grid$X + grid$Y + grid$X*grid$Y, 
+       c = 66.6, p = 2)
 
 summary(
 rdrobust(x = grid$coast_dist, y = grid$frac_15,
-                 covs = grid$X + grid$Y + grid$X*grid$Y, 
-                 c = 48.2, p = 2))
+                 #covs = grid$X + grid$Y + grid$X*grid$Y, 
+                 c = 66.6, p = 1))
 
-ggplot(data = grid, aes(x = coast_dist, y = frac_15)) +
+summary(
+rdrobust(x = grid$coast_dist, y = grid$cattle_raising_1701,
+                 #covs = grid$X + grid$Y + grid$X*grid$Y, 
+                 c = 66.6, p = 1))
+
+ggplot(data = grid, aes(x = coast_dist, y = frac_15, color = factor(within_66_coast))) +
   stat_summary_bin(fun.y='mean', bins=100,
                    color='orange', size=2, geom='point') +
-  geom_smooth(method = "loess") +
+  geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+  #annotate("rect", fill = "red", alpha = 0.5, 
+  #         xmin = 48.2, xmax = 80,
+  #         ymin = -Inf, ymax = Inf) +
+  theme_bw()
+
+ggplot(data = grid_donut, aes(x = coast_dist, y = pasture_1700)) +
+  stat_summary_bin(fun.y='mean', bins=100,
+                   color='orange', size=2, geom='point') +
+  geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
   annotate("rect", fill = "red", alpha = 0.5, 
            xmin = 48.2, xmax = 80,
            ymin = -Inf, ymax = Inf) +
   theme_bw()
 
-ggplot(data = grid, aes(x = coast_dist, y = pasture_1700)) +
-  stat_summary_bin(fun.y='mean', bins=100,
-                   color='orange', size=2, geom='point') +
-  geom_smooth(method = "loess") +
-  annotate("rect", fill = "red", alpha = 0.5, 
-           xmin = 48.2, xmax = 80,
-           ymin = -Inf, ymax = Inf) +
-  theme_bw()
+```
 
+# Normal Donut RDD Regressions
+
+```{r}
+grid_donut <- subset(grid, coast_dist < 56.6 | coast_dist > 76.6)
+
+pasture_1700 <-
+rdd_data(y = 100*grid$pasture_1700, 
+         x = grid$coast_dist, 
+         cutpoint = 66.6) 
+
+pasture_land <-
+rdd_data(y = grid$frac_15, 
+         x = grid$coast_dist, 
+         cutpoint = 66.6) 
+
+plot(pasture_land)
+plot(pasture_1700)
+
+pasture_land %>% 
+  rdd_reg_lm(slope = "separate", order = 2) %>% 
+  summary()
+
+pasture_land %>% 
+  rdd_reg_np(slope = "separate", inference = "np") %>% 
+  summary()
+
+pasture_1700 %>% 
+  rdd_reg_lm(slope = "separate", order = 2) %>% 
+  summary()
+
+pasture_1700 %>% 
+  rdd_reg_np(slope = "separate", inference = "np") %>% 
+  summary()
 ```
 
 ```{r}

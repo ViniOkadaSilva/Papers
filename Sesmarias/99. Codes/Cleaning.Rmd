@@ -402,6 +402,10 @@ sesmarias_pts$settlement =
 
 sesmarias_pts$no_land =
   ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("Não tinha terras", i))) > 0), 1,0)
+
+sesmarias_pts$cattle_raising =
+  ifelse((rowSums(sapply(sesmarias_pts, function(i) grepl("Pretendia criar gado|Pretendia fazer curral|Pretendia apascentar gado|Pretendia fazer curral|Pretendia ter criações|Pretendia apascentar criações|Pretendia aumentar sua criação de gado", i))) > 0), 1,0)
+
 ```
 
 ```{r}
@@ -444,6 +448,23 @@ p[lengths(p) > 0] <- 1
 p[lengths(p) == 0] <- 0
 
 clean_1872$no_land <- unlist(p)
+
+# Specific Cattle Raising 
+
+p <- st_intersects(clean_1872, subset(sesmarias_pts, cattle_raising == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+clean_1872$cattle_raising <- unlist(p)
+
+# Specific Cattle Raising Post 1701
+
+p <- st_intersects(clean_1872, subset(sesmarias_pts, cattle_raising == 1 & Year > 1701))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+clean_1872$cattle_raising_post_1701 <- unlist(p)
+
 ```
 
 # Extracting for 2010:
@@ -767,7 +788,111 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 clean_1872$ten_leagues <- ifelse(clean_1872$coast_dist > 66.6, 1, 0)
 clean_1872$pasture_post_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 1 & clean_1872$pasture == 1, 1, 0)
 clean_1872$pasture_pre_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 0 & clean_1872$pasture == 1, 1, 0)
-clean_1872_NE <- subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA"))
+clean_1872_NE <- subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))
+
+# Any land grants:
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Pasture Land Grants linear vs. quadratic
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Pasture Workers, linear vs. quadratic
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL") & coast_dist < 200), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL") & coast_dist < 200), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Pasture Workers, now including Bahia
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL","BA")), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Farming in general:
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+       aes(x = coast_dist, y = farmers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+
+# Literacy?
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+       aes(x = coast_dist, y = literacy_rate, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Other
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
@@ -787,10 +912,19 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
     geom_point() +
-    #stat_summary_bin(fun.y='mean', bins=100,
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
     #                color='orange', size=2, geom='point') +
     geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
     geom_vline(xintercept = 66.6, color = "red") +
@@ -813,7 +947,7 @@ clean_1872_donut <- subset(clean_1872, coast_dist < 46.6 | coast_dist > 76.6)
 
 summary(
 rdrobust(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers,
-                 c = 66, p = 1))
+                 c = 66, p = 2))
 
 summary(
 rdrobust(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers,
@@ -833,8 +967,28 @@ rdplot(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers,
        c = 66.6, p = 2)
 
 rdplot(x = clean_1872$coast_dist, y = clean_1872$pasture_workers, 
-       #binselect="es", ci=95, 
+       binselect="es", ci=95, 
        c = 66.6, p = 2)
+
+# Normal RD no fancy stuff:
+
+pasture_workers <-
+rdd_data(y = clean_1872_NE$pasture_workers, 
+         x = clean_1872_NE$coast_dist, 
+         cutpoint = 66.6) 
+
+pasture_workers %>% 
+  rdd_reg_lm(slope = "separate", order = 2) %>% 
+  summary()
+
+pasture_grants <-
+rdd_data(y = clean_1872_NE$pasture_post_1700, 
+         x = clean_1872_NE$coast_dist, 
+         cutpoint = 66.6) 
+
+pasture_grants %>% 
+  rdd_reg_lm(slope = "separate", order = 2) %>% 
+  summary()
 
 
 
@@ -875,12 +1029,79 @@ rdd_data(y = clean_1872_NE$pasture_post_1700,
   rdd_reg_lm(slope = "separate") %>% 
   summary()
 
-rdd_data(y = clean_1872_NE$pasture_pre_1700, 
+rdd_data(y = clean_1872_NE$pasture_workers, 
          x = clean_1872_NE$coast_dist, 
          cutpoint = 66.6) %>% 
   rdd_reg_lm(slope = "separate") %>% 
   summary()
 ```
+
+### RDD - Coastal effects:
+
+```{r}
+# Any land grants:
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Pasture Land Grants linear vs. quadratic
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Very specific on raising cattle 
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = cattle_raising_post_1701, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = cattle_raising_post_1701, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+```
+
+# Some other Stuff
 
 ```{r}
 ggplot() +
