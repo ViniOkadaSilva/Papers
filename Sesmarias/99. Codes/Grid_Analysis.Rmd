@@ -341,11 +341,11 @@ sesmarias_pts$cattle_raising =
 ```{r}
 grid <- 
   st_sfc(
-  st_make_grid(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")),
+  st_make_grid(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
                cellsize = .1,
                crs = st_crs(clean_1872)))
 
-grid = st_sf(grid[subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA"))])
+grid = st_sf(grid[subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))])
 
 p = st_intersects(grid, subset(state_1872, name_state %in% 
                                  c("Parahyba", "Pernambuco", "Rio Grande do Norte", "Alagôas", "Bahia")))
@@ -683,7 +683,171 @@ grid$within_50_coast <- ifelse(grid$coast_dist < 48.2, 1, 0)
 
 
 grid_other <- subset(grid, coast_dist < 200)
+```
 
+```{r}
+ggplot(grid, 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(grid, 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(grid, 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+# Livestock Land Grants
+
+ggplot(grid, 
+       aes(x = coast_dist, y = pasture_1700, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(grid, 
+       aes(x = coast_dist, y = pasture_1700, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+# Narrow Down on Cattle Raising
+
+ggplot(grid_other, 
+       aes(x = coast_dist, y = cattle_raising_1701, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(grid_other, 
+       aes(x = coast_dist, y = cattle_raising_1701, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(grid_other, 
+       aes(x = coast_dist, y = cattle_raising_1701, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+# Land Usage
+
+ggplot(grid_other, 
+       aes(x = coast_dist, y = frac_15, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(grid_other, 
+       aes(x = coast_dist, y = frac_15, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+
+ggplot(grid_other, 
+       aes(x = coast_dist, y = frac_15, color = factor(within_66_coast))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=100,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+```
+
+```{r}
 summary(
 rdrobust(x = sesmarias_pts$coast_dist, y = sesmarias_pts$cattle_raising_1700, 
                  covs = sesmarias_pts$X + sesmarias_pts$Y + sesmarias_pts$X*sesmarias_pts$Y + sesmarias_pts$X*sesmarias_pts$X + sesmarias_pts$Y*sesmarias_pts$Y, 
@@ -729,7 +893,6 @@ ggplot(data = grid_donut, aes(x = coast_dist, y = pasture_1700)) +
            xmin = 48.2, xmax = 80,
            ymin = -Inf, ymax = Inf) +
   theme_bw()
-
 ```
 
 # Normal Donut RDD Regressions

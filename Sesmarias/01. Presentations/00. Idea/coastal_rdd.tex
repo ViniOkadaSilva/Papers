@@ -1,0 +1,231 @@
+\documentclass[aspectratio=1610]{beamer}
+%\linespread{1.5}\selectfont
+
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{lscape} 
+\usepackage{tikz}
+\usepackage[export]{adjustbox}
+\usepackage{ragged2e}
+\justifying
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{caption}
+%\captionsetup{font=footnotesize}
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true, 
+    linkcolor = red, 
+    urlcolor = teal, 
+    citecolor = blue}
+
+%\usepackage{caption}
+%\captionsetup{labelformat=empty}
+\usepackage{appendixnumberbeamer}
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=20pt plus 0cm}
+
+\DeclareUnicodeCharacter{0301}{\'{e}}
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{0327}{\c}
+
+\usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1]{biblatex}
+
+\addbibresource{citations_sesmarias.bib}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/}}
+
+%\addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\newcommand{\tinytable}[1]{\textcolor{black}{\tiny \input{#1}}}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/}}
+
+\beamertemplatenavigationsymbolsempty
+
+%Information to be included in the title page:
+
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+
+\section{Any Grants Post 1701}
+
+\begin{frame}{Any Grants Post 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_any_grants_1700_orderone.png}
+\end{frame}
+
+\begin{frame}{Any Grants Post 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_any_grants_1700_ordertwo.png}
+\end{frame}
+
+\begin{frame}{Any Grants Post 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_any_grants_1700_loess.png}
+\end{frame}
+
+\section{Any Grants Pre 1701}
+
+\begin{frame}{Any Grants Pre 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_any_grants_1600_orderone.png}
+\end{frame}
+
+\begin{frame}{Any Grants Pre 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_any_grants_1600_ordertwo.png}
+\end{frame}
+
+\begin{frame}{Any Grants Pre 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_any_grants_1600_loess.png}
+\end{frame}
+
+\section{Livestock Land Grants Post 1701}
+
+\begin{frame}{Livestock Land Grants Post 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_livestock_grants_1700_orderone.png}
+\end{frame}
+
+\begin{frame}{Livestock Land Grants Post 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_livestock_grants_1700_ordertwo.png}
+\end{frame}
+
+\begin{frame}{Livestock Land Grants Post 1701}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_livestock_grants_1700_loess.png}
+\end{frame}
+
+\section{Livestock Workers}
+
+\begin{frame}{Livestock Workers}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_livestock_workers_1872_orderone.png}
+\end{frame}
+
+\begin{frame}{Livestock Workers}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_livestock_workers_1872_ordertwo.png}
+\end{frame}
+
+\begin{frame}{Livestock Workers}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_livestock_workers_1872_loess.png}
+\end{frame}
+
+\section{Livestock Workers + Bahia}
+
+\begin{frame}{Livestock Workers + Bahia}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_BA_livestock_workers_1872_orderone.png}
+\end{frame}
+
+\begin{frame}{Livestock Workers + Bahia}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_BA_livestock_workers_1872_ordertwo.png}
+\end{frame}
+
+\begin{frame}{Livestock Workers + Bahia}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_BA_livestock_workers_1872_loess.png}
+\end{frame}
+
+\section{Total Population}
+
+\begin{frame}{Total Population}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_totalpop_1872_orderone.png}
+\end{frame}
+
+\begin{frame}{Total Population}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_totalpop_1872_ordertwo.png}
+\end{frame}
+
+\begin{frame}{Total Population}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {rdd_totalpop_1872_loess.png}
+\end{frame}
+
+
+
+\end{document}

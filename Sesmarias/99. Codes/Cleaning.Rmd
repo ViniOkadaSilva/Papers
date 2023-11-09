@@ -30,6 +30,7 @@ library(stringr)
 library(plyr)
 library(stringr)
 library(gtools)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 7.29, fig.height =  4.51)
 ```
 
 # Loading Up Data:
@@ -109,12 +110,37 @@ clean_1872 <- merge(mun_census_1872, census_1872_clean, by = c("name_muni", "abb
 ```
 
 ```{r}
+clean_1872$G_below_15 = 
+  clean_1872$`SomaDeSOMA_G_1 mês` + clean_1872$`SomaDeSOMA_G_2 meses` +
+  clean_1872$`SomaDeSOMA_G_3 meses` + clean_1872$`SomaDeSOMA_G_4 meses` +
+  clean_1872$`SomaDeSOMA_G_5 meses` + clean_1872$`SomaDeSOMA_G_6 meses` +
+  clean_1872$`SomaDeSOMA_G_7 meses` + clean_1872$`SomaDeSOMA_G_8 meses` +
+  clean_1872$`SomaDeSOMA_G_9 meses` + clean_1872$`SomaDeSOMA_G_10 meses` +
+  clean_1872$`SomaDeSOMA_G_11 meses` + clean_1872$`SomaDeSOMA_G_1 ano` +
+  clean_1872$`SomaDeSOMA_G_2 anos` + clean_1872$`SomaDeSOMA_G_3 anos` +
+  clean_1872$`SomaDeSOMA_G_4 anos` + clean_1872$`SomaDeSOMA_G_5 anos` +
+  clean_1872$`SomaDeSOMA_G_6-10 anos` + clean_1872$`SomaDeSOMA_G_11-15 anos`
+
+clean_1872$L_below_15 = 
+  clean_1872$`SomaDeSOMA_L_1 mês` + clean_1872$`SomaDeSOMA_L_2 meses` +
+  clean_1872$`SomaDeSOMA_L_3 meses` + clean_1872$`SomaDeSOMA_L_4 meses` +
+  clean_1872$`SomaDeSOMA_L_5 meses` + clean_1872$`SomaDeSOMA_L_6 meses` +
+  clean_1872$`SomaDeSOMA_L_7 meses` + clean_1872$`SomaDeSOMA_L_8 meses` +
+  clean_1872$`SomaDeSOMA_L_9 meses` + clean_1872$`SomaDeSOMA_L_10 meses` +
+  clean_1872$`SomaDeSOMA_L_11 meses` + clean_1872$`SomaDeSOMA_L_1 ano` +
+  clean_1872$`SomaDeSOMA_L_2 anos` + clean_1872$`SomaDeSOMA_L_3 anos` +
+  clean_1872$`SomaDeSOMA_L_4 anos` + clean_1872$`SomaDeSOMA_L_5 anos` +
+  clean_1872$`SomaDeSOMA_L_6-10 anos` + clean_1872$`SomaDeSOMA_L_11-15 anos`
+
+clean_1872$free_blacks_slave_ratio <- 
+  clean_1872$SomaDeSOMA_L_Preto/clean_1872$SomaDeSOMA_E_Preto
+
 clean_1872$free_slave <- 
   100*clean_1872$SomaDeSOMA_E_Almas/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
 
 clean_1872$literacy_rate <- 
   100*(clean_1872$`SomaDeSOMA_L_Sabem Ler e Escrever`/
-         (clean_1872$SomaDeH_LIVRES_Almas + clean_1872$SomaDeM_LIVRES_Almas))
+         (clean_1872$SomaDeSOMA_L_Almas - clean_1872$L_below_15))
 
 clean_1872$s_literacy_rate <-
   100*(clean_1872$`SomaDeSOMA_E_Sabem Ler e Escrever`/clean_1872$SomaDeSOMA_E_Almas)
@@ -123,7 +149,7 @@ clean_1872$farmers <-
   100*(clean_1872$SomaDeSOMA_G_Lavradores + clean_1872$SomaDeSOMA_G_Criadores)/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
 
 clean_1872$pasture_workers <-
-  100*(clean_1872$SomaDeSOMA_G_Criadores)/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas) 
+  100*(clean_1872$SomaDeSOMA_G_Criadores)/(clean_1872$SomaDeSOMA_G_Almas - clean_1872$G_below_15) 
 
 clean_1872$farmers_slaves <-
   100*(clean_1872$SomaDeSOMA_E_Lavradores + clean_1872$SomaDeSOMA_E_Criadores)/(clean_1872$SomaDeSOMA_E_Almas)
@@ -505,6 +531,7 @@ mun_2010_NE$csi_post <-exact_extract(csi_post, mun_2010_NE, 'mean', progress = F
 
 mun_2010_NE <- cbind(mun_2010_NE, 
                          exact_extract(land_usage_2000, mun_2010_NE, 'frac', progress = TRUE))
+
 ```
 
 ```{r}
@@ -579,6 +606,22 @@ p[lengths(p) > 0] <- 1
 p[lengths(p) == 0] <- 0
 
 mun_2010_NE$no_land <- unlist(p)
+
+# Specific Cattle Raising 
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, cattle_raising == 1))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$cattle_raising <- unlist(p)
+
+# Specific Cattle Raising Post 1701
+
+p <- st_intersects(mun_2010_NE, subset(sesmarias_pts, cattle_raising == 1 & Year > 1701))
+p[lengths(p) > 0] <- 1
+p[lengths(p) == 0] <- 0
+
+mun_2010_NE$cattle_raising_post_1701 <- unlist(p)
 ```
 
 # Extracting Data to the Sesmarias for balance table:
@@ -791,6 +834,7 @@ clean_1872$pasture_pre_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 0 & 
 clean_1872_NE <- subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))
 
 # Any land grants:
+## Post-1700
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
     #geom_point() +
@@ -798,7 +842,13 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
                     color='orange', size=2, geom='point') +
     geom_smooth(method = "lm") +
     geom_vline(xintercept = 66.6, color = "red") +
-  theme_bw()
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_any_grants_1700_orderone.png")
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
@@ -807,9 +857,78 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
                     color='orange', size=2, geom='point') +
     geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
     geom_vline(xintercept = 66.6, color = "red") +
-  theme_bw()
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Quadratic",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_any_grants_1700_ordertwo.png")
 
-# Pasture Land Grants linear vs. quadratic
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Post 1701", title = "Any Land Grants - Locally Smooth",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_any_grants_1700_loess.png")
+
+# Grants Pre 1700
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1600, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Pre 1701", title = "Any Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_any_grants_1600_orderone.png")
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1600, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+labs(x = "Distance to Coast", y = "Any Land Grants Pre 1701", title = "Any Land Grants - Quadratic",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_any_grants_1600_ordertwo.png")
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = sesmarias_presence_1600, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Pre 1701", title = "Any Land Grants - Locally Smooth",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_any_grants_1600_loess.png")
+
+
+# Pasture Post 1700 Land Grants linear vs. quadratic
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
@@ -818,7 +937,13 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
                     color='orange', size=2, geom='point') +
     geom_smooth(method = "lm") +
     geom_vline(xintercept = 66.6, color = "red") +
-  theme_bw()
+  labs(x = "Distance to Coast", y = "Any Land Grants Pre 1701", title = "Livestock Land Grants - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_livestock_grants_1700_orderone.png")
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
@@ -827,32 +952,135 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
                     color='orange', size=2, geom='point') +
     geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
     geom_vline(xintercept = 66.6, color = "red") +
-  theme_bw()
+  labs(x = "Distance to Coast", y = "Any Land Grants Pre 1701", title = "Livestock Land Grants - Quadratic",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_livestock_grants_1700_ordertwo.png")
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_post_1700, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Any Land Grants Pre 1701", 
+       title = "Livestock Land Grants - Locally Smooth",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_livestock_grants_1700_loess.png")
 
 # Pasture Workers, linear vs. quadratic
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL") & coast_dist < 200), 
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
-    geom_point() +
-    #stat_summary_bin(fun.y='mean', bins=20,
-    #                color='orange', size=2, geom='point') +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
     geom_smooth(method = "lm") +
     geom_vline(xintercept = 66.6, color = "red") +
-  theme_bw()
+  labs(x = "Distance to Coast", y = "Workers in Livestock Creation (% of Total)", 
+       title = "% of Workforce on Livestock Creation - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_livestock_workers_1872_orderone.png")
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL") & coast_dist < 200), 
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
-    geom_point() +
-    #stat_summary_bin(fun.y='mean', bins=20,
-    #                color='orange', size=2, geom='point') +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
     geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
     geom_vline(xintercept = 66.6, color = "red") +
-  theme_bw()
+  labs(x = "Distance to Coast", y = "Workers in Livestock Creation (% of Total)", 
+       title = "% of Workforce on Livestock Creation - Quadratic",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_livestock_workers_1872_ordertwo.png")
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Workers in Livestock Creation (% of Total)", 
+       title = "% of Workforce on Livestock Creation - Locally Smooth",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_livestock_workers_1872_loess.png")
+
 
 # Pasture Workers, now including Bahia
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL","BA")), 
        aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Workers in Livestock Creation (% of Total)", 
+       title = "% of Workforce on Livestock Creation - Linear + Bahia",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_BA_livestock_workers_1872_orderone.png")
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Workers in Livestock Creation (% of Total)", 
+       title = "% of Workforce on Livestock Creation - Quadratic + Bahia",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_BA_livestock_workers_1872_ordertwo.png")
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Workers in Livestock Creation (% of Total)", 
+       title = "% of Workforce on Livestock Creation - Locally Smooth + Bahia",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_BA_livestock_workers_1872_loess.png")
+
+# Farming in general:
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = farmers, color = factor(ten_leagues))) +
     geom_point() +
     #stat_summary_bin(fun.y='mean', bins=20,
     #                color='orange', size=2, geom='point') +
@@ -860,18 +1088,7 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL","BA")),
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
-       aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
-    geom_point() +
-    #stat_summary_bin(fun.y='mean', bins=20,
-    #                color='orange', size=2, geom='point') +
-    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
-    geom_vline(xintercept = 66.6, color = "red") +
-  theme_bw()
-
-# Farming in general:
-
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = farmers, color = factor(ten_leagues))) +
     geom_point() +
     #stat_summary_bin(fun.y='mean', bins=20,
@@ -880,11 +1097,111 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")),
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = farmers, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
 
 # Literacy?
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")), 
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
        aes(x = coast_dist, y = literacy_rate, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = literacy_rate, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = literacy_rate, color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+# Total Population
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = log(SomaDeSOMA_G_Almas), color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Ln(Total Population)", 
+       title = "Ln(Total Population) - Linear",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_totalpop_1872_orderone.png")
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = log(SomaDeSOMA_G_Almas), color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Ln(Total Population)", 
+       title = "Ln(Total Population) - Quadratic",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_totalpop_1872_ordertwo.png")
+
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = log(SomaDeSOMA_G_Almas), color = factor(ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  labs(x = "Distance to Coast", y = "Ln(Total Population)", 
+       title = "Ln(Total Population) - Locally Smooth",
+       color = "Within 66km of the Coast") +
+  scale_color_discrete(labels=c('No', 'Yes')) + 
+  theme_bw() +
+  theme(legend.position = "bottom", 
+        plot.title = element_text(hjust = 0.5))
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/02. Graph/rdd_totalpop_1872_loess.png")
+
+# Slaves to Free Population Ratio:
+
+# Blacks to Slaves Slavery Ratio:
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = free_blacks_slave_ratio, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = free_blacks_slave_ratio, color = factor(ten_leagues))) +
     geom_point() +
     #stat_summary_bin(fun.y='mean', bins=20,
     #                color='orange', size=2, geom='point') +
@@ -892,6 +1209,17 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "BA")),
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
+ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+       aes(x = coast_dist, y = free_blacks_slave_ratio, color = factor(ten_leagues))) +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=20,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "loess") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+```
+
+```{r}
 # Other
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
@@ -1034,6 +1362,9 @@ rdd_data(y = clean_1872_NE$pasture_workers,
          cutpoint = 66.6) %>% 
   rdd_reg_lm(slope = "separate") %>% 
   summary()
+
+library(data.table)
+dt = fread("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research Data/Brazil/IPUMS/1980/ipums_1980.csv.gz")
 ```
 
 ### RDD - Coastal effects:
@@ -1099,6 +1430,56 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
+```
+
+## For 2010:
+```{r}
+mun_2010_NE$within_ten_leagues <- ifelse(mun_2010_NE$coast_dist < 66.6, 1, 0)
+
+ggplot(mun_2010_NE, 
+       aes(x = coast_dist, y = frac_15, color = factor(within_ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(mun_2010_NE, 
+       aes(x = coast_dist, y = sugarcane, color = factor(within_ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(mun_2010_NE, coast_dist < 150),
+       aes(x = coast_dist, y = cattle_raising_post_1701, color = factor(within_ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(mun_2010_NE, coast_dist < 150),
+       aes(x = coast_dist, y = sugarcane, color = factor(within_ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
+
+ggplot(subset(mun_2010_NE, coast_dist < 150),
+       aes(x = coast_dist, y = frac_15, color = factor(within_ten_leagues))) +
+    #geom_point() +
+    stat_summary_bin(fun.y='mean', bins=50,
+                    color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 66.6, color = "red") +
+  theme_bw()
 ```
 
 # Some other Stuff
