@@ -8,6 +8,11 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Expand the census data
+https://stackoverflow.com/questions/55912035/expand-each-row-with-specific-value-in-tidyr
+https://stackoverflow.com/questions/2894775/repeat-each-row-of-data-frame-the-number-of-times-specified-in-a-column
+
+
 # Cleaning
 
 ```{r}

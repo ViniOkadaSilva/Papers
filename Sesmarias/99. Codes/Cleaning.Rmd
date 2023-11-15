@@ -1441,7 +1441,7 @@ ggplot(mun_2010_NE,
     #geom_point() +
     stat_summary_bin(fun.y='mean', bins=50,
                     color='orange', size=2, geom='point') +
-    geom_smooth(method = "lm") +
+    geom_smooth(method = "loess") +
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
@@ -1450,7 +1450,7 @@ ggplot(mun_2010_NE,
     #geom_point() +
     stat_summary_bin(fun.y='mean', bins=50,
                     color='orange', size=2, geom='point') +
-    geom_smooth(method = "lm") +
+    geom_smooth(method = "loess") +
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
@@ -1459,7 +1459,7 @@ ggplot(subset(mun_2010_NE, coast_dist < 150),
     #geom_point() +
     stat_summary_bin(fun.y='mean', bins=50,
                     color='orange', size=2, geom='point') +
-    geom_smooth(method = "lm") +
+    geom_smooth(method = "loess") +
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
@@ -1468,7 +1468,7 @@ ggplot(subset(mun_2010_NE, coast_dist < 150),
     #geom_point() +
     stat_summary_bin(fun.y='mean', bins=50,
                     color='orange', size=2, geom='point') +
-    geom_smooth(method = "lm") +
+    geom_smooth(method = "loess") +
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
@@ -1480,6 +1480,71 @@ ggplot(subset(mun_2010_NE, coast_dist < 150),
     geom_smooth(method = "lm") +
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
+```
+
+# Merging with the 1872 'microdata' and running the same plots:
+
+```{r}
+clean_1872_nag <- st_drop_geometry(clean_1872) %>% dplyr::select(-contains("Soma"))
+
+labor_microcensus_1872 <-
+  read.csv("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research Data/Brazil/Census 1872/Microdata/labor_municipality.csv")
+
+labor_microcensus_1872 <- merge(labor_microcensus_1872, clean_1872_nag, 
+                                by = c("MunicId", "ProvId"))
+
+labor_microcensus_1872_NE <- subset(labor_microcensus_1872, 
+                                    abbrev_state %in% c("PB", "PE", "RN", "AL"))
+
+labor_microcensus_1872_NE$livestock_creator <-
+  ifelse(labor_microcensus_1872_NE$CAT_T8 == 139, 1, 0)
+
+labor_microcensus_1872_NE$farmer <-
+  ifelse(labor_microcensus_1872_NE$CAT_T8 == 138, 1, 0)
+
+test <- feols(livestock_creator ~ ten_leagues| 
+              abbrev_state,
+              data = labor_microcensus_1872_NE, 
+              cluster = ~MunicId)
+
+test_farmer <-
+  feols(farmer ~ ten_leagues| 
+              abbrev_state,
+              data = labor_microcensus_1872_NE, 
+              cluster = ~MunicId)
+
+labor_microcensus_1872_NE$past_ten_leagues <- 
+  ifelse(labor_microcensus_1872_NE$coast_dist > 66.6 , 1 ,0)
+
+test_rdd <-
+  feols(livestock_creator ~ past_ten_leagues + I(coast_dist - 66.6) + past_ten_leagues:I(coast_dist - 66.6)| 
+          abbrev_state,
+        data = labor_microcensus_1872_NE, 
+        cluster = ~MunicId)
+
+test_rdd_2 <-
+  feols(livestock_creator ~ past_ten_leagues + I(coast_dist - 66.6) + past_ten_leagues:I(coast_dist - 66.6)| 
+          abbrev_state,
+        data = subset(labor_microcensus_1872_NE, coast_dist < 120),
+        cluster = ~MunicId)
+
+test_rdd_3 <-
+  feols(livestock_creator ~ past_ten_leagues + I(coast_dist - 66.6) + past_ten_leagues:I(coast_dist - 66.6)| 
+          abbrev_state,
+        data = subset(labor_microcensus_1872_NE, coast_dist < 100),
+        cluster = ~MunicId)
+
+
+summary(test_farmer)
+
+test_2 <- 
+  feols(pasture_workers ~ ten_leagues + I(coast_dist - 66.6) + ten_leagues:I(coast_dist - 66.6)|
+          abbrev_state,
+        data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")))
+
+summary(test_rdd)
+summary(test_2)
+
 ```
 
 # Some other Stuff
