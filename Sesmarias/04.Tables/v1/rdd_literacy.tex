@@ -1,0 +1,26 @@
+\begin{table}[!h]
+
+\caption{Effects on Literacy Rate (\%) \label{tab:rdd_literacy}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lccccc}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{Optimal Bandwidth} & \multicolumn{1}{c}{[10, 150]} & \multicolumn{1}{c}{[20, 140]} & \multicolumn{1}{c}{[30, 130]} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6}
+  & (1) & (2) & (3) & (4) & (5)\\
+\midrule
+Estimate & \num{1.862} & \num{0.320} & \num{3.077} & \num{2.468} & \num{0.413}\\
+ & (\num{2.499}) & (\num{3.852}) & (\num{2.155}) & (\num{2.399}) & (\num{2.656})\\
+
+\midrule
+Polynomial Order & 1 & 2 & 1 & 1 & 1\\
+N & \num{670} & \num{670} & \num{848} & \num{714} & \num{608}\\
+$R^2$ & \num{0.07} & \num{0.07} & \num{0.08} & \num{0.07} & \num{0.07}\\
+\bottomrule
+\multicolumn{6}{l}{\rule{0pt}{1em}* p $<$ 0.1, ** p $<$ 0.05, *** p $<$ 0.01}\\
+\end{tabular}
+\begin{tablenotes}
+\item[a] Mean of the dependent variable is 43.1\%
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

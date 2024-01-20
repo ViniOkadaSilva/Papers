@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Loading Up Packages
 
 ```{r}
-rm(list = ls())
+# rm(list = ls())
 
 library(ggplot2)
 library(ggspatial)
@@ -36,7 +36,11 @@ knitr::opts_chunk$set(echo = TRUE, fig.width = 7.29, fig.height =  4.51)
 # Loading Up Data:
 
 ```{r}
-mun_census_1872 <- read_municipality(code_muni = "all",year = 1872, simplified = TRUE, showProgress = TRUE)
+mun_census_1872 <- 
+  read_municipality(code_muni = "all",year = 1872, simplified = TRUE, showProgress = TRUE)
+
+mun_seat_census_1872 <-
+  read_municipal_seat(year = 1872,  showProgress = TRUE)
 
 setwd("~/OneDrive - University of Illinois - Urbana/Research Data/Brazil/Census 1872")
 census_1872 <- read_xlsx("municipalities_1872_census.xlsx")
@@ -138,6 +142,18 @@ clean_1872$free_blacks_slave_ratio <-
 clean_1872$free_slave <- 
   100*clean_1872$SomaDeSOMA_E_Almas/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
 
+clean_1872$proportion_white <- 
+  100*clean_1872$SomaDeSOMA_L_Branco/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$proportion_pardo <- 
+  100*clean_1872$SomaDeSOMA_L_Pardo/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$proportion_caboclo <- 
+  100*clean_1872$SomaDeSOMA_L_Caboclo/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$proportion_free_black <- 
+  100*clean_1872$SomaDeSOMA_L_Preto/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
+
 clean_1872$literacy_rate <- 
   100*(clean_1872$`SomaDeSOMA_L_Sabem Ler e Escrever`/
          (clean_1872$SomaDeSOMA_L_Almas - clean_1872$L_below_15))
@@ -151,8 +167,17 @@ clean_1872$farmers <-
 clean_1872$pasture_workers <-
   100*(clean_1872$SomaDeSOMA_G_Criadores)/(clean_1872$SomaDeSOMA_G_Almas - clean_1872$G_below_15) 
 
+clean_1872$slave_pasture_workers <-
+  100*(clean_1872$SomaDeSOMA_E_Criadores)/(clean_1872$SomaDeSOMA_G_Almas - clean_1872$G_below_15) 
+
 clean_1872$farmers_slaves <-
   100*(clean_1872$SomaDeSOMA_E_Lavradores + clean_1872$SomaDeSOMA_E_Criadores)/(clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$men_farmers_slaves <-
+  100*(clean_1872$SomaDeH_ESCR_Lavradores + clean_1872$SomaDeH_ESCR_Criadores)/(clean_1872$SomaDeH_ESCR_Almas)
+
+clean_1872$women_farmers_slaves <-
+  100*(clean_1872$SomaDeM_ESCR_Lavradores + clean_1872$SomaDeM_ESCR_Criadores)/(clean_1872$SomaDeM_ESCR_Almas)
 
 clean_1872$industrial_workers <-
   100*(clean_1872$`SomaDeSOMA_G_Manufatureiros e fabricantes` + clean_1872$`SomaDeSOMA_G_Comerciantes, guarda-livros e caixeiros`)/(clean_1872$SomaDeSOMA_L_Almas + clean_1872$SomaDeSOMA_E_Almas)
@@ -170,6 +195,15 @@ clean_1872$men_farmers_prop <-
 
 clean_1872$women_farmers_prop <- 
   100*(clean_1872$SomaDeM_LIVRES_Lavradores + clean_1872$SomaDeM_LIVRES_Criadores)/clean_1872$SomaDeM_LIVRES_Almas
+
+clean_1872$domestic_service_slaves <- 
+  100*(clean_1872$`SomaDeSOMA_E_Serviço doméstico`/clean_1872$SomaDeSOMA_E_Almas)
+
+clean_1872$domestic_service_slaves_men <- 
+  100*(clean_1872$`SomaDeH_ESCR_Serviço doméstico`/clean_1872$SomaDeH_ESCR_Almas)
+
+clean_1872$domestic_service_slave_women <- 
+  100*(clean_1872$`SomaDeM_ESCR_Serviço doméstico`/clean_1872$SomaDeM_ESCR_Almas)
 
 #clean_1872$p_agriculture <-
 #  100*(parishes_1872$SOMA_L_Agriculture/parishes_1872$SOMA_L_Almas)
@@ -314,7 +348,9 @@ rivers <- read_sf("~/OneDrive - University of Illinois - Urbana/Research/Project
 rivers <- st_transform(rivers, st_crs(mun_1872))
 
 # Data for the coastline
-coastline <- read_sf("~/OneDrive - University of Illinois - Urbana/Research Data/Brazil/Shapefiles/Coastline/brazil-coastline/brazil_coastline.shp")
+coastline <- geobr::read_biomes(year = 2019)
+
+coastline <- subset(coastline, name_biome == "Sistema Costeiro")
 
 coastline <- st_transform(coastline, st_crs(mun_1872))
 
@@ -364,6 +400,19 @@ coast_dist <- st_distance(clean_1872, coastline)
 coast_dist <- apply(coast_dist, 1, FUN = min)/1000
 clean_1872$coast_dist <- coast_dist
 
+# Distance from Municipality seat to coastline:
+
+coast_dist <- st_distance(mun_seat_census_1872, coastline)
+coast_dist <- apply(coast_dist, 1, FUN = min)/1000
+mun_seat_census_1872$coast_dist_seat <- coast_dist
+
+placeholder <- 
+  st_drop_geometry(
+  mun_seat_census_1872[c("code_muni", "abbrev_state", "coast_dist_seat")])
+
+clean_1872 <- merge(clean_1872, placeholder, by = c("code_muni", "abbrev_state"))
+
+
 # Mean Slope:
 
 clean_1872$m_slope <- exact_extract(slope, clean_1872, 'mean', progress = FALSE)
@@ -409,6 +458,11 @@ p[lengths(p) > 0] <- 1
 p[lengths(p) == 0] <- 0
 
 clean_1872$sesmarias_presence_1700 <- unlist(p)
+```
+
+```{r}
+ggplot() +
+    geom_sf(data = coastline)
 ```
 
 ### Economic Activity
@@ -810,14 +864,15 @@ ggplot() +
 ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png")
 
 ggplot() +
-  geom_sf(data = mun_1872, fill = "white") +
-  geom_sf(data = subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+  #geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  
+                        abbrev_state %in% c("PB", "PE", "RN", "AL", "MG", "SP", "BA")), 
           aes(fill = log(total_slaves))) +
   scale_fill_binned(type = "viridis", n.breaks = 10) + 
-  geom_sf(data = sesmarias_pts, size = 1, 
-          color = "black",
-          shape = 21, fill = "red") +
-  coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
+  #geom_sf(data = sesmarias_pts, size = 1, 
+  #        color = "black",
+  #        shape = 21, fill = "red") +
+  #coord_sf(ylim = c(-4,-12), xlim = c(-34,-42), expand = FALSE) + 
   labs(fill = "Log(Total Slaves)") +
   theme_bw() +
   theme(# legend.position = "bottom", 
@@ -825,18 +880,579 @@ ggplot() +
 ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png")
 ```
 
+# RDD - all in one
+
+```{r}
+clean_1872$ten_leagues_seat <- 
+  ifelse(clean_1872$coast_dist_seat >= 80, 1, 0)
+
+clean_1872$ten_leagues <- 
+  ifelse(clean_1872$coast_dist >= 80, 1, 0)
+
+# "SE", "CE", "ES", "RJ"
+
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  
+                        abbrev_state %in% c("PB", "PE", "RN", "AL", "MG", "SP", "BA")), 
+          aes(fill = factor(ten_leagues))) +
+  #geom_sf(data = mun_seat_census_1872, size = 0.1) +
+  coord_sf(ylim = c(-30,-0), xlim = c(-34,-55), expand = FALSE) + 
+  labs(fill = "80 km away of the coast:") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/coastal_dist_1872.png")
+
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  
+                        abbrev_state %in% 
+                          c("PB", "PE", "RN", "AL", "MG","PI", "SE",
+                            "SP", "BA", "CE", "MA", "ES", "RJ")), 
+          aes(fill = factor(ten_leagues_seat))) +
+  geom_sf(data = coastline) +
+  coord_sf(ylim = c(-30,-0), xlim = c(-34,-55), expand = FALSE) + 
+  labs(fill = "80 km away of the coast:") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+
+
+ggplot() +
+  geom_sf(data = mun_1872, fill = "white") +
+  geom_sf(data = subset(clean_1872,  
+                        abbrev_state %in% 
+                          c("PB", "PE", "RN", "AL", "MG","PI", "SE",
+                            "SP", "BA", "CE", "MA", "ES", "RJ")), 
+          aes(fill = factor(ten_leagues))) +
+  geom_sf(data = coastline) +
+  coord_sf(ylim = c(-30,-0), xlim = c(-34,-55), expand = FALSE) + 
+  labs(fill = "80 km away of the coast:") +
+  theme_bw() +
+  theme(legend.position = "bottom")
+ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/coastal_dist_seat_1872.png.png")
+```
+
+```{r}
+gm <- tibble::tribble(~raw,        ~clean,          ~fmt,
+                      "nobs",      "N",             0,
+                      "r.squared", "$R^2$", 2)
+
+rows_se <-  tribble(~term, ~'(1)', ~'(2)', ~'(3)', ~'(4)', ~'(5)', 
+                      'Polynomial Order', '1', '2', '1', '1', '1')
+
+attr(rows_se, 'section') <- c('top')
+attr(rows_se, 'position') <- c(3,4)
+
+
+
+clean_1872$pasture_post_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 1 & clean_1872$pasture == 1, 1, 0)
+clean_1872$pasture_pre_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 0 & clean_1872$pasture == 1, 1, 0)
+clean_1872_NE <- subset(clean_1872,  
+                        abbrev_state %in% 
+                          c("PB", "PE", "RN", "AL", "MG","PI", "SE",
+                            "SP", "BA", "CE", "MA", "ES", "RJ"))
+clean_1872_NE$past_ten_leagues <- ifelse(clean_1872_NE$coast_dist > 80 , 1 ,0)
+
+
+free_slave_ratio <-
+rdd_data(y = free_slave, 
+         x = coast_dist_seat, 
+         covar = abbrev_state,
+         data = clean_1872_NE,
+         cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(free_slave_ratio, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(free_slave_ratio, 
+             slope = "separate", 
+             order = 1, 
+             covariates = abbrev_state,
+             bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(free_slave_ratio, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(free_slave_ratio, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(free_slave_ratio, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(free_slave_ratio, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Slaves to Total Population (\\%) \\label{tab:rdd_free_slave}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 14.2%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_free_slave_1872.tex")
+```
+
+```{r}
+farmers_slaves <-
+    rdd_data(y = farmers_slaves, 
+             x = coast_dist_seat, 
+         covar = abbrev_state,
+         data = clean_1872_NE,
+         cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(farmers_slaves, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(farmers_slaves, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(farmers_slaves, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(farmers_slaves, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(farmers_slaves, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(farmers_slaves, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Slaves Working in Farming (\\%) \\label{tab:rdd_enslaved_farming}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 40.7%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_farming_1872.tex")
+```
+
+```{r}
+men_farmers_slaves <-
+    rdd_data(y = clean_1872_NE$men_farmers_slaves, 
+             x = clean_1872_NE$coast_dist_seat, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(men_farmers_slaves, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(men_farmers_slaves, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(men_farmers_slaves, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(men_farmers_slaves, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(men_farmers_slaves, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(men_farmers_slaves, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Male Slaves Working in Farming (\\%) \\label{tab:rdd_men_enslaved_farming}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 50.1%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_men_enslaved_farming_1872.tex")
+
+```
+
+```{r}
+women_farmers_slaves <-
+    rdd_data(y = clean_1872_NE$women_farmers_slaves, 
+             x = clean_1872_NE$coast_dist, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(women_farmers_slaves, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(women_farmers_slaves, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(women_farmers_slaves, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(women_farmers_slaves, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(women_farmers_slaves, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(women_farmers_slaves, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Female Slaves Working in Farming (\\%) \\label{tab:rdd_women_enslaved_farming}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 30.1%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_women_enslaved_farming_1872.tex")
+```
+
+```{r}
+domestic_service_slaves <-
+    rdd_data(y = clean_1872_NE$domestic_service_slaves, 
+             x = clean_1872_NE$coast_dist, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(domestic_service_slaves, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(domestic_service_slaves, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(domestic_service_slaves, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(domestic_service_slaves, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(domestic_service_slaves, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(domestic_service_slaves, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Slaves in Domestic Work (\\%) \\label{tab:rdd_enslaved_domestic}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 18.6%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_domestic_1872.tex")
+```
+
+```{r}
+domestic_service_slaves_men <-
+    rdd_data(y = clean_1872_NE$domestic_service_slaves_men, 
+             x = clean_1872_NE$coast_dist, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(domestic_service_slaves_men, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(domestic_service_slaves_men, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(domestic_service_slaves_men, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(domestic_service_slaves_men, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(domestic_service_slaves_men, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(domestic_service_slaves_men, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Male Slaves in Domestic Work (\\%) \\label{tab:rdd_enslaved_domestic_men}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 10.7%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_domestic_men_1872.tex")
+```
+
+```{r}
+domestic_service_slave_women <-
+    rdd_data(y = clean_1872_NE$domestic_service_slave_women, 
+             x = clean_1872_NE$coast_dist_seat, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(domestic_service_slave_women, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(domestic_service_slave_women, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(domestic_service_slave_women, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(domestic_service_slave_women, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(domestic_service_slave_women, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(domestic_service_slave_women, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Female Slaves in Domestic Work (\\%) \\label{tab:rdd_enslaved_domestic_women}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 27.3%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_domestic_women_1872.tex")
+```
+
+```{r}
+farmers <-
+    rdd_data(y = clean_1872_NE$farmers, 
+             x = clean_1872_NE$coast_dist, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(farmers, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(farmers, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(farmers, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(farmers, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(farmers, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(farmers, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Proportion of Farmers (\\%) \\label{tab:rdd_farmers}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 31.4%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_farmers_1872.tex")
+```
+
+```{r}
+literacy <-
+    rdd_data(y = clean_1872_NE$SomaDeSOMA_L_Almas, 
+             x = clean_1872_NE$coast_dist, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(literacy, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(literacy, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(literacy, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(literacy, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(literacy, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(literacy, slope = "separate", order = 1, bw = 50) 
+
+sub("(\\\\midrule.*?)\\\\midrule", "\\1",
+modelsummary(list("(1)" = reg_1, 
+                  "(2)" = reg_2,
+                  "(3)" = reg_3,
+                  "(4)" = reg_4,
+                  "(5)" = reg_5), 
+             output = 'latex',
+             coef_map = c("D" = "Estimate"), 
+             gof_omit = 'R2 Adj.|se_type', 
+             stars = c('*' = .1, '**' = 0.05, '***' = 0.01 ),
+             add_rows = rows_se,
+             gof_map = gm,
+             escape = FALSE,
+             title = "Effects on Literacy Rate (\\%) \\label{tab:rdd_literacy_1872}") %>%
+  add_header_above(c("",
+                     "Optimal Bandwidth" = 2, 
+                     "[10, 150]" = 1, 
+                     "[20, 140]" = 1,
+                     "[30, 130]" = 1)) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  kableExtra::footnote(alphabet = "Mean of the dependent variable is 26.3%", threeparttable = T) %>%
+  row_spec(2, hline_after = TRUE)) %>% 
+    save_kable("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_literacy_1872.tex")
+```
+
+```{r}
+women_farmers_prop <-
+    rdd_data(y = clean_1872_NE$women_farmers_prop, 
+             x = clean_1872_NE$coast_dist, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(women_farmers_prop, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(women_farmers_prop, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(women_farmers_prop, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(women_farmers_prop, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(women_farmers_prop, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(women_farmers_prop, slope = "separate", order = 1, bw = 50) 
+```
+
+```{r}
+free_blacks_slave_ratio <-
+    rdd_data(y = 100*clean_1872_NE$free_blacks_slave_ratio, 
+             x = clean_1872_NE$coast_dist, 
+             cutpoint = 80) 
+
+bw_ik <- rdd_bw_ik(free_blacks_slave_ratio, kernel = "Triangular")
+
+reg_1 <- 
+  rdd_reg_lm(free_blacks_slave_ratio, slope = "separate", order = 1, bw = bw_ik) 
+
+reg_2 <- 
+  rdd_reg_lm(free_blacks_slave_ratio, slope = "separate", order = 2, bw = bw_ik) 
+
+reg_3 <- 
+  rdd_reg_lm(free_blacks_slave_ratio, slope = "separate", order = 1, bw = 70) 
+
+reg_4 <- 
+  rdd_reg_lm(free_blacks_slave_ratio, slope = "separate", order = 1, bw = 60) 
+
+reg_5 <- 
+  rdd_reg_lm(free_blacks_slave_ratio, slope = "separate", order = 1, bw = 50) 
+```
+
 # Checking effects of the 1701 Royal Decree banning livestock from 10 leagues from the coast
 
 ```{r}
-clean_1872$ten_leagues <- ifelse(clean_1872$coast_dist > 66.6, 1, 0)
 clean_1872$pasture_post_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 1 & clean_1872$pasture == 1, 1, 0)
 clean_1872$pasture_pre_1700 <- ifelse(clean_1872$sesmarias_presence_1700 == 0 & clean_1872$pasture == 1, 1, 0)
-clean_1872_NE <- subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL"))
+clean_1872_NE <- subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL", "MG" , "SP"))
 
 # Any land grants:
 ## Post-1700
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
-       aes(x = coast_dist, y = sesmarias_presence_1700, color = factor(ten_leagues))) +
+ggplot(clean_1872_NE, 
+       aes(x = coast_dist, y = free_slave, color = factor(ten_leagues))) +
     #geom_point() +
     stat_summary_bin(fun.y='mean', bins=50,
                     color='orange', size=2, geom='point') +
@@ -978,11 +1594,11 @@ ggsave("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urban
 
 # Pasture Workers, linear vs. quadratic
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+ggplot(clean_1872_NE, 
        aes(x = coast_dist, y = pasture_workers, color = factor(ten_leagues))) +
-    #geom_point() +
-    stat_summary_bin(fun.y='mean', bins=50,
-                    color='orange', size=2, geom='point') +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=50,
+    #                color='orange', size=2, geom='point') +
     geom_smooth(method = "lm") +
     geom_vline(xintercept = 66.6, color = "red") +
   labs(x = "Distance to Coast", y = "Workers in Livestock Creation (% of Total)", 
@@ -1088,13 +1704,13 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+ggplot(clean_1872_NE, 
        aes(x = coast_dist, y = farmers, color = factor(ten_leagues))) +
     geom_point() +
     #stat_summary_bin(fun.y='mean', bins=20,
     #                color='orange', size=2, geom='point') +
     geom_smooth(method = "lm", formula = y ~ x + I(x^2)) +
-    geom_vline(xintercept = 66.6, color = "red") +
+    geom_vline(xintercept = 80, color = "red") +
   theme_bw()
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
@@ -1138,11 +1754,11 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
 
 # Total Population
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+ggplot(clean_1872_NE, 
        aes(x = coast_dist, y = log(SomaDeSOMA_G_Almas), color = factor(ten_leagues))) +
-    #geom_point() +
-    stat_summary_bin(fun.y='mean', bins=50,
-                    color='orange', size=2, geom='point') +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=50,
+    #                color='orange', size=2, geom='point') +
     geom_smooth(method = "lm") +
     geom_vline(xintercept = 66.6, color = "red") +
   labs(x = "Distance to Coast", y = "Ln(Total Population)", 
@@ -1220,6 +1836,8 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
 ```
 
 ```{r}
+clean_1872_NE$past_ten_leagues <- ifelse(clean_1872_NE$coast_dist > 80 , 1 ,0)
+
 # Other
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
@@ -1231,13 +1849,13 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
     geom_vline(xintercept = 66.6, color = "red") +
   theme_bw()
 
-ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
+ggplot(subset(clean_1872_NE, coast_dist < 120),
        aes(x = coast_dist, y = free_slave, color = factor(ten_leagues))) +
-    #geom_point() +
-    stat_summary_bin(fun.y='mean', bins=100,
-                    color='orange', size=2, geom='point') +
-    geom_smooth(method = "lm", se = FALSE) +
-    geom_vline(xintercept = 66.6, color = "red") +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=100,
+    #                color='orange', size=2, geom='point') +
+    geom_smooth(method = "lm") +
+    geom_vline(xintercept = 80, color = "red") +
   theme_bw()
 
 ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")), 
@@ -1275,16 +1893,16 @@ clean_1872_donut <- subset(clean_1872, coast_dist < 46.6 | coast_dist > 76.6)
 
 summary(
 rdrobust(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers,
-                 c = 66, p = 2))
+                 c = 80, p = 1))
 
 summary(
 rdrobust(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers,
           kernel = "triangular", p = 2, bwselect = "mserd",
-                 c = 66.6))
+                 c = 80))
 
 summary(
 rdrobust(x = clean_1872_NE_donut$coast_dist, y = clean_1872_NE_donut$pasture,
-                 c = 66.6, p = 2))
+                 c = 80, p = 1))
 
 rdplot(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_post_1700, 
        binselect="es", ci=95, 
@@ -1292,7 +1910,7 @@ rdplot(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_post_1700,
 
 rdplot(x = clean_1872_NE$coast_dist, y = clean_1872_NE$pasture_workers, 
        binselect="es", ci=95, 
-       c = 66.6, p = 2)
+       c = 80, p = 1)
 
 rdplot(x = clean_1872$coast_dist, y = clean_1872$pasture_workers, 
        binselect="es", ci=95, 
@@ -1301,18 +1919,18 @@ rdplot(x = clean_1872$coast_dist, y = clean_1872$pasture_workers,
 # Normal RD no fancy stuff:
 
 pasture_workers <-
-rdd_data(y = clean_1872_NE$pasture_workers, 
+rdd_data(y = clean_1872_NE$free_slave, 
          x = clean_1872_NE$coast_dist, 
-         cutpoint = 66.6) 
+         cutpoint = 60) 
 
 pasture_workers %>% 
-  rdd_reg_lm(slope = "separate", order = 2) %>% 
+  rdd_reg_lm(slope = "separate", order = 1) %>% 
   summary()
 
 pasture_grants <-
 rdd_data(y = clean_1872_NE$pasture_post_1700, 
          x = clean_1872_NE$coast_dist, 
-         cutpoint = 66.6) 
+         cutpoint = 80) 
 
 pasture_grants %>% 
   rdd_reg_lm(slope = "separate", order = 2) %>% 
@@ -1327,13 +1945,13 @@ rdrobust(x = clean_1872_donut$coast_dist, y = clean_1872_donut$free_slave,
                  c = 66.6, p = 2))
 
 summary(
-rdrobust(x = clean_1872_donut$coast_dist, y = clean_1872_donut$free_slave,
-                 c = 66.6, p = 1))
+rdrobust(x = clean_1872_NE$coast_dist, y = clean_1872_NE$free_slave,
+                 c = 66.6, p = 2))
 
-rdplot(x = clean_1872_donut$coast_dist, y = clean_1872_donut$free_slave, 
+rdplot(x = clean_1872_NE$coast_dist, y = clean_1872_NE$free_slave, 
        binselect="es", ci=95, 
        #covs = factor(clean_1872_donut$abbrev_state), 
-       c = 66.6, p = 2)
+       c = 80, p = 2)
 
 #rdplot(x = clean_1872_donut$coast_dist, y = clean_1872_donut$pasture, 
 #       c = 66.6, p = 2)
@@ -1359,7 +1977,7 @@ rdd_data(y = clean_1872_NE$pasture_post_1700,
 
 rdd_data(y = clean_1872_NE$pasture_workers, 
          x = clean_1872_NE$coast_dist, 
-         cutpoint = 66.6) %>% 
+         cutpoint = 80) %>% 
   rdd_reg_lm(slope = "separate") %>% 
   summary()
 
@@ -1434,24 +2052,24 @@ ggplot(subset(clean_1872,  abbrev_state %in% c("PB", "PE", "RN", "AL")),
 
 ## For 2010:
 ```{r}
-mun_2010_NE$within_ten_leagues <- ifelse(mun_2010_NE$coast_dist < 66.6, 1, 0)
+mun_2010_NE$within_ten_leagues <- ifelse(mun_2010_NE$coast_dist < 80, 1, 0)
 
 ggplot(mun_2010_NE, 
        aes(x = coast_dist, y = frac_15, color = factor(within_ten_leagues))) +
-    #geom_point() +
-    stat_summary_bin(fun.y='mean', bins=50,
-                    color='orange', size=2, geom='point') +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=50,
+    #                color='orange', size=2, geom='point') +
     geom_smooth(method = "loess") +
-    geom_vline(xintercept = 66.6, color = "red") +
+    geom_vline(xintercept = 80, color = "red") +
   theme_bw()
 
 ggplot(mun_2010_NE, 
        aes(x = coast_dist, y = sugarcane, color = factor(within_ten_leagues))) +
-    #geom_point() +
-    stat_summary_bin(fun.y='mean', bins=50,
-                    color='orange', size=2, geom='point') +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=50,
+    #                color='orange', size=2, geom='point') +
     geom_smooth(method = "loess") +
-    geom_vline(xintercept = 66.6, color = "red") +
+    geom_vline(xintercept = 80, color = "red") +
   theme_bw()
 
 ggplot(subset(mun_2010_NE, coast_dist < 150),
@@ -1465,11 +2083,11 @@ ggplot(subset(mun_2010_NE, coast_dist < 150),
 
 ggplot(subset(mun_2010_NE, coast_dist < 150),
        aes(x = coast_dist, y = sugarcane, color = factor(within_ten_leagues))) +
-    #geom_point() +
-    stat_summary_bin(fun.y='mean', bins=50,
-                    color='orange', size=2, geom='point') +
+    geom_point() +
+    #stat_summary_bin(fun.y='mean', bins=50,
+    #                color='orange', size=2, geom='point') +
     geom_smooth(method = "loess") +
-    geom_vline(xintercept = 66.6, color = "red") +
+    geom_vline(xintercept = 80, color = "red") +
   theme_bw()
 
 ggplot(subset(mun_2010_NE, coast_dist < 150),

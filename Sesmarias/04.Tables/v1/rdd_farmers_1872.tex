@@ -1,0 +1,26 @@
+\begin{table}[!h]
+
+\caption{Effects on Proportion of Farmers (\%) \label{tab:rdd_farmers}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lccccc}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{Optimal Bandwidth} & \multicolumn{1}{c}{[10, 150]} & \multicolumn{1}{c}{[20, 140]} & \multicolumn{1}{c}{[30, 130]} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6}
+  & (1) & (2) & (3) & (4) & (5)\\
+\midrule
+Estimate & \num{-4.491} & \num{-7.025} & \num{-4.159} & \num{-3.052} & \num{-3.602}\\
+ & (\num{4.714}) & (\num{7.028}) & (\num{4.687}) & (\num{5.119}) & (\num{5.173})\\
+
+\midrule
+Polynomial Order & 1 & 2 & 1 & 1 & 1\\
+N & \num{122} & \num{122} & \num{123} & \num{105} & \num{91}\\
+$R^2$ & \num{0.03} & \num{0.05} & \num{0.03} & \num{0.05} & \num{0.05}\\
+\bottomrule
+\multicolumn{6}{l}{\rule{0pt}{1em}* p $<$ 0.1, ** p $<$ 0.05, *** p $<$ 0.01}\\
+\end{tabular}
+\begin{tablenotes}
+\item[a] Mean of the dependent variable is 31.4\%
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

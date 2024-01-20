@@ -1,0 +1,26 @@
+\begin{table}[!h]
+
+\caption{Effects on Proportion of People Working with Farming (\%) \label{tab:rdd_farming}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lccccc}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{Optimal Bandwidth} & \multicolumn{1}{c}{[10, 150]} & \multicolumn{1}{c}{[20, 140]} & \multicolumn{1}{c}{[30, 130]} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6}
+  & (1) & (2) & (3) & (4) & (5)\\
+\midrule
+Estimate & \num{1.074} & \num{2.021} & \num{0.848} & \num{1.216} & \num{1.506}\\
+ & (\num{1.472}) & (\num{2.306}) & (\num{1.107}) & (\num{1.229}) & (\num{1.374})\\
+
+\midrule
+Polynomial Order & 1 & 2 & 1 & 1 & 1\\
+N & \num{557} & \num{557} & \num{848} & \num{714} & \num{608}\\
+$R^2$ & \num{0.01} & \num{0.01} & \num{0.00} & \num{0.00} & \num{0.01}\\
+\bottomrule
+\multicolumn{6}{l}{\rule{0pt}{1em}* p $<$ 0.1, ** p $<$ 0.05, *** p $<$ 0.01}\\
+\end{tabular}
+\begin{tablenotes}
+\item[a] Mean of the dependent variable is 19.5\%
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
