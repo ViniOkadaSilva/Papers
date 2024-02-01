@@ -19,6 +19,72 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Bethell1984-of}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b455c393882fef8c3999920f8690b01}{%
+           family={Bethell},
+           familyi={B\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Cambridge, England ;}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{fullhash}{8b455c393882fef8c3999920f8690b01}
+      \strng{bibnamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authorbibnamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authornamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authorfullhash}{8b455c393882fef8c3999920f8690b01}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Cambridge history of Latin America}
+      \field{year}{1984}
+      \keyw{Latin America -- History}
+    \endentry
+    \entry{Boxer1962-bj}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0904e22fdbc4bd8d15e2bf3e97cc7ff8}{%
+           family={Boxer},
+           familyi={B\bibinitperiod},
+           given={C\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {University of California Press}%
+      }
+      \strng{namehash}{0904e22fdbc4bd8d15e2bf3e97cc7ff8}
+      \strng{fullhash}{0904e22fdbc4bd8d15e2bf3e97cc7ff8}
+      \strng{bibnamehash}{0904e22fdbc4bd8d15e2bf3e97cc7ff8}
+      \strng{authorbibnamehash}{0904e22fdbc4bd8d15e2bf3e97cc7ff8}
+      \strng{authornamehash}{0904e22fdbc4bd8d15e2bf3e97cc7ff8}
+      \strng{authorfullhash}{0904e22fdbc4bd8d15e2bf3e97cc7ff8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This title is part of UC Press's Voices Revived program, which commemorates University of California Press's mission to seek out and cultivate the brightest minds and give them voice, reach, and impact. Drawing on a backlist dating to 1893, Voices Revived makes high-quality, peer-reviewed scholarship accessible once again using print-on-demand technology. This title was originally published in 1962.}
+      \field{edition}{1}
+      \field{title}{The Golden Age of Brazil 1695-1750: Growing Pains of a Colonial Society}
+      \field{year}{1962}
+    \endentry
     \entry{Dean1971-iq}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b100b40f29115cac5afc9796e584dda9}{%
@@ -55,7 +121,39 @@
       \field{year}{1971}
       \field{pages}{606\bibrangedash 625}
       \range{pages}{20}
-      \keyw{History;Read;Sesmarias}
+    \endentry
+    \entry{Dell2010-qt}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8185990c5393dc7868ca18973b150ae}{%
+           family={Dell},
+           familyi={D\bibinitperiod},
+           given={Melissa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{fullhash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{bibnamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authorbibnamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authornamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authorfullhash}{d8185990c5393dc7868ca18973b150ae}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{[This study utilizes regression discontinuity to examine the long-run impacts of the mita, an extensive forced mining labor system in effect in Peru and Bolivia between 1573 and 1812. Results indicate that a mita effect lowers household consumption by around 25\% and increases the prevalence of stunted growth in children by around 6 percentage points in subjected districts today. Using data from the Spanish Empire and Peruvian Republic to trace channels of institutional persistence, I show that the mita's influence has persisted through its impacts on land tenure and public goods provision. Mita districts historically had fewer large landowners and lower educational attainment. Today, they are less integrated into road networks and their residents are substantially more likely to be subsistence farmers.]}
+      \field{journaltitle}{Econometrica}
+      \field{number}{6}
+      \field{title}{{THE} {PERSISTENT} {EFFECTS} {OF} {PERU}'{S} {MINING} ``{MITA}''}
+      \field{volume}{78}
+      \field{year}{2010}
+      \field{pages}{1863\bibrangedash 1903}
+      \range{pages}{41}
     \endentry
     \entry{Fausto2014-bh}{book}{}
       \name{author}{2}{}{%
@@ -94,7 +192,56 @@
       \field{month}{8}
       \field{title}{A Concise History of Brazil}
       \field{year}{2014}
-      \keyw{Books;Sesmarias;Third Year Paper}
+    \endentry
+    \entry{UnknownUnknown-ro}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Conheça a história das cidades, vendo também as suas fotografias históricas (cidade: Ruy Barbosa | estado: Bahia).}
+      \field{howpublished}{\url{https://cidades.ibge.gov.br/brasil/ba/ruy-barbosa/historico}}
+      \field{note}{Accessed: 2024-1-24}
+      \field{title}{{IBGE}}
+    \endentry
+    \entry{Lowes2021-ww}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cc60d54c195d34926ef4540497702730}{%
+           family={Lowes},
+           familyi={L\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Academic}%
+      }
+      \strng{namehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
+      \strng{fullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{bibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authorbibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authornamehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
+      \strng{authorfullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. All colonial powers granted concessions to private companies to extract natural resources during the colonial era. In Africa, these concessions were c}
+      \field{journaltitle}{Q. J. Econ.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Concessions, Violence, and Indirect Rule: Evidence from the Congo Free State}
+      \field{volume}{136}
+      \field{year}{2021}
+      \field{pages}{2047\bibrangedash 2091}
+      \range{pages}{45}
     \endentry
     \entry{De_Oliveira_Andrade1980-xz}{book}{}
       \name{author}{1}{}{%
@@ -129,7 +276,6 @@
       \field{abstract}{The Northeast: Region of contrast; Land tenure and labor in the zona da mata and eastern littoral; Property, polyculture, and Labor systems; Latifundia, division of land, and labor systems in the sertao and northern littoral; The middle north: Maranhao and Piaui; Tentative solutions to the agrarian problem.}
       \field{title}{The Land and People of Northeast Brazil}
       \field{year}{1980}
-      \keyw{Books;Sesmarias}
     \endentry
     \entry{Pereira2023-qv}{misc}{}
       \name{author}{2}{}{%
@@ -159,8 +305,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{censobr: Download Data from Brazil's Population Census}
+      \field{version}{v0.2.0}
       \field{year}{2023}
-      \keyw{Third Year Paper;placeholder;Sesmarias}
     \endentry
     \entry{Ratnoo2023-vw}{article}{}
       \name{author}{1}{}{%
@@ -197,9 +343,46 @@
       \field{year}{2023}
       \field{pages}{103247}
       \range{pages}{1}
-      \keyw{Historical persistence; India; Institutions; Green revolution; Rural development;Sesmarias}
+      \keyw{Historical persistence; India; Institutions; Green revolution; Rural development}
     \endentry
-    \entry{Simonsen1937-ps}{article}{}
+    \entry{Ribeiro2012-lb}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cb41ac7c0964443fdaf111eaefba097e}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Ricardo\bibnamedelima Ferreira},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{fullhash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{bibnamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authorbibnamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authornamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authorfullhash}{cb41ac7c0964443fdaf111eaefba097e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{During the twentieth century, Brazil developed its beef industry, acquiring in the last decade great importance in the international market. This article considers four exotic factors that contributed to its moving from importer of beef to the largest exporter: the raising of cattle of Iberian origin, since the sixteenth century; the Zebu breed brought from India at the end of the nineteenth century; the grass brought from Africa, for the cattle to graze; and barbed wire, invented in the United States, which deepened land concentration in the country. Each factor has distinct geographical origins, but all acted together, like the four ‘legs’ that sustain this immense bovine, to enable its adaptation to Brazilian lands. These four factors, before obtaining success and hegemony, encountered resistance and created controversy, not only for ideological and technical reasons, but also the conflicts of interest that their arrival represented.}
+      \field{journaltitle}{Agrar. S. J. Polit. Econ.}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{The ox from the Four Corners of the world: The historic origins of the Brazilian beef industry}
+      \field{volume}{1}
+      \field{year}{2012}
+      \field{pages}{315\bibrangedash 340}
+      \range{pages}{26}
+    \endentry
+    \entry{Simonsen2005-ps}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5d1a1636c321e8b2efdd4171f29168a7}{%
            family={Simonsen},
@@ -209,7 +392,7 @@
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Ed. Nacional}%
+        {Brasília : Senado Federal, Conselho Editorial}%
       }
       \strng{namehash}{5d1a1636c321e8b2efdd4171f29168a7}
       \strng{fullhash}{5d1a1636c321e8b2efdd4171f29168a7}
@@ -223,10 +406,46 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Brasiliana}
-      \field{title}{História econômica do Brasil: 1500-1820}
-      \field{year}{1937}
-      \keyw{Sesmarias}
+      \field{series}{Edições do Senado Federal ; v. 34}
+      \field{title}{História econômica do Brasil : 1500-1820}
+      \field{year}{2005}
+    \endentry
+    \entry{Sokoloff2000-mb}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b61f61b2292667b0afa5d6e0b8cc6871}{%
+           family={Sokoloff},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima L},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58c02deaa8fcafadec98d12a31f3796b}{%
+           family={Engerman},
+           familyi={E\bibinitperiod},
+           given={Stanley\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{be99902df7ce689e312440fd123aee97}
+      \strng{fullhash}{472a2e99c451fcad4176a506130d4f17}
+      \strng{bibnamehash}{472a2e99c451fcad4176a506130d4f17}
+      \strng{authorbibnamehash}{472a2e99c451fcad4176a506130d4f17}
+      \strng{authornamehash}{be99902df7ce689e312440fd123aee97}
+      \strng{authorfullhash}{472a2e99c451fcad4176a506130d4f17}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Institutions, Factor Endowments, and Paths of Development in the New World by Kenneth L. Sokoloff and Stanley L. Engerman. Published in volume 14, issue 3, pages 217-232 of Journal of Economic Perspectives, Summer 2000, Abstract: The explanations offered for the contrasting records of long-run growt...}
+      \field{journaltitle}{J. Econ. Perspect.}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Institutions, Factor Endowments, and Paths of Development in the New World}
+      \field{volume}{14}
+      \field{year}{2000}
+      \field{pages}{217\bibrangedash 232}
+      \range{pages}{16}
     \endentry
     \entry{Souza2020-kb}{article}{}
       \name{author}{33}{}{%
@@ -459,7 +678,6 @@
       \field{year}{2020}
       \field{pages}{2735}
       \range{pages}{1}
-      \keyw{Sesmarias}
     \endentry
     \entry{Sparovek2019-dn}{article}{}
       \name{author}{14}{}{%
@@ -475,10 +693,10 @@
            given={Bastiaan\bibnamedelima Philip},
            giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c51ac2215e90d7cf28d5f007c1edde1d}{%
+        {{un=0,uniquepart=base,hash=a6da444a89f6b523941ce5ce9b54b4c0}{%
            family={Guedes\bibnamedelima Pinto},
            familyi={G\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={Luı́s\bibnamedelima Fernando},
+           given={Luís\bibnamedelima Fernando},
            giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=cd1aa8b751775a182f3da2f9693ef216}{%
@@ -558,11 +776,11 @@
         {Elsevier BV}%
       }
       \strng{namehash}{009e722f674a8ca529defeeb8b442d9b}
-      \strng{fullhash}{b103829d996bc221a9bc60593f00b1c3}
+      \strng{fullhash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
       \strng{bibnamehash}{009e722f674a8ca529defeeb8b442d9b}
       \strng{authorbibnamehash}{009e722f674a8ca529defeeb8b442d9b}
       \strng{authornamehash}{009e722f674a8ca529defeeb8b442d9b}
-      \strng{authorfullhash}{b103829d996bc221a9bc60593f00b1c3}
+      \strng{authorfullhash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
@@ -578,7 +796,7 @@
       \field{year}{2019}
       \field{pages}{104062}
       \range{pages}{1}
-      \keyw{Brazil; Governance; Land tenure; Policy; Territorial planning;Sesmarias}
+      \keyw{Brazil; Governance; Land tenure; Policy; Territorial planning}
     \endentry
   \enddatalist
 \endrefsection

@@ -109,6 +109,15 @@
 \begin{document}
 
 \maketitle
+\thispagestyle{empty} 
+
+\vspace{-.1cm}
+\begin{center}
+  \textcolor{red}{Latest Update: \today}
+  \\
+  \href{https://viniokadasilva.github.io/Papers/JesuitsAmazon/JesuitsAmazon.pdf}{Click here for the Latest Version}
+\end{center}
+\vspace{.1cm}
 
 \clearpage
 \pagenumbering{arabic} 
@@ -121,6 +130,9 @@ However, land inequality in Brazil is something that can be found in the past.
 
 This paper tries to answer how much of Brazil's present-day inequality can be traced to colonial institutions. Specifically, this paper uses Portuguese land grants called \textit{sesmarias}, to identify the historical persistence of colonial activity in Brazil to present-day inequality.
 
+\parencite{Dell2010-qt}
+\parencite{Sokoloff2000-mb}
+
 
 
 \textcite{Ratnoo2023-vw} [Paper about land tenure in India]
@@ -130,7 +142,7 @@ This paper tries to answer how much of Brazil's present-day inequality can be tr
 
 \textcite{Dean1971-iq} - ``Anyone who claimed to have the means and desire to make use of the land was given a grant, customarily one to three leagues in extent (16.7 to 50.1 square miles).''
 
-\textcite{Simonsen1937-ps} - ``the ones that don't possess sesmarias or can't own land are disowned by the own society they live in"
+\textcite{Simonsen2005-ps} - ``the ones that don't possess sesmarias or can't own land are disowned by the own society they live in"
 
 \section{Data}
 
@@ -148,17 +160,32 @@ Land usage from 1985-2010 is obtained from Mapbiomas.\textcite{Souza2020-kb}\foo
 
 Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
   Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
-The 1872 Imperial Census contains demographic data at the municipality level and was the last census taken before the abolition of slavery in Brazil. Other census data is obtained from the IBGE (\textit{}).\footnote{Microcensus data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
+The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. \footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used I have 469 municipalities and 968 parishes.}
+
+Other census data is obtained from the IBGE (\textit{}).\footnote{Microcensus data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
 
 \section{Descriptive}
+
+Following \textcite{Lowes2021-ww} I show balance on geographical characteristics at the 10 x 10km grid level in [reference to table here].
 
 \section{Identification Strategy}
 
 \subsection{Coastal Ban on Livestock}
 
-In 1701, the Portuguese Crown enacted a ban on livestock from 80km of the coast \parencite[p~.40]{Fausto2014-bh}.
+In 1701, the Portuguese Crown enacted a ban on cattle ranching from 80km of the coast (10 leagues) \parencites[p~.40]{Fausto2014-bh}[p~.198]{Simonsen2005-ps}[p~.460]{Bethell1984-of}.
+
+\textcite{Bethell1984-of} ``Landholding in the sertao was truly extensive. Although there was legislation limiting the size of sesmarias to three square leagues, this restriction was simply disregarded. The sesmarias on which cattle ranches were established sometimes exceeded hundreds of thousands of acres"
+
 The effect was the expansion of cattle ranches towards the west of Brazil, especially in the Northeastern states. 
 As \textcite[p~.41]{Fausto2014-bh} indicates, the need for large lands to allow cattle to roam free led to the creation of large estates in the area, even bigger than those compared to the coast.\footnote{An example of this would be the d'Avila family which owned a large estate in the state of Bahia [...]}
+That led to a ``a clear specialization between the two activities'' \parencite{Ribeiro2012-lb}.\footnote{An example of the effect can be seen in the Municipality of Ruy Barbosa and the state of Bahia and Caico in the state of Rio Grande do Norte. Both are described and being created by the cattle expansion that happened because of the 1701 Royal Decree. \parencite{UnknownUnknown-ro}}
+
+\parencite[p~.]{Boxer1962-bj}
+
+``Cattle farming was to supply dry beef, leather, and carrying animals to the sugar mills and, later, to the villas that emerged around mining, but was not to mix itself geographically with these other two important export activities from the colonial period, nor with the coffee estates that emerged during the nineteenth century,  when  Brazil was already independent from  Portugal.'' \parencite{Ribeiro2012-lb}.
+
+``It was there that farms measuring thousands of hectares emerged, where cattle found favourable environmental conditions for the multiplication of herds.''\parencite{Ribeiro2012-lb}.
+
 
 Given the nature of this ban, I exploit the cutoff of 80 km to use a regression discontinuity design to measure the effects between the two types of economies in the region. 
 
@@ -171,12 +198,31 @@ Secondly, using the 1872 I analyze whether or not there were any effects of the 
 
 Historically livestock-raising areas were [...]
 
+\begin{equation}
+  Y_{i,m,s} = 
+\end{equation}
+
+Provision of Public goods is the cause for the effects on literacy in 1970 and onwards (?).
+
+Other links:
+
+\url{http://historialuso.an.gov.br/index.php?option=com_content&view=article&id=6191:escravos-de-ganho&catid=2073&Itemid=121}
+
+\url{https://www.nexojornal.com.br/especial/2017/07/07/censo-de-1872-o-retrato-do-brasil-da-escravidao}
+
+“Quando o senhor não tinha uma função para o escravo, ele deixava o escravo ao ganho”, explica o historiador Diego Bissigo. “Ele ia para cidade buscar emprego e o senhor ficava com o salário que o escravo recebesse. É uma forma de uso para o escravo. Assim, ou alugando para outro senhor também.”
+
+
 
 \parencite[p.~142]{De_Oliveira_Andrade1980-xz}
 
 \subsection{Treaty of Tordesillas}
 
 \subsection{Instrumental Variable}
+
+\section{Results}
+
+
 
 \section{Robustness}
 \subsection{Donut RDD}
@@ -191,18 +237,121 @@ Historically livestock-raising areas were [...]
 \clearpage
 
 \section{Figures}
-\subsection{Maps}
+
+\begin{figure}
+  \caption{Distribution of Land Grants pre- and post- 1701}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:SesmariasDistribution}
+\end{figure}
+
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{1970 Municipalities and Sharecropping}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:pasture_grid}
+\end{figure}
+
+\begin{figure}
+  \caption{1970 Municipalities and Sharecropping}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:natural_grid}
+\end{figure}
+
+\begin{figure}
+  \caption{1970 Municipalities and Sharecropping}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:sugarcane_grid}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{1970 Municipalities and Sharecropping}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_population.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:sharecropping_1970}
+\end{figure}
+
+\begin{figure}[h!]
+  \caption{1970 Municipalities and Sharecropping}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sharecropping.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:sharecropping_1970}
+\end{figure}
+
+\begin{figure}
+  \caption{1970 Municipalities and Land Ownership}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:land_ownership_1970}
+\end{figure}
+
+\begin{figure}
+  \caption{1970 Municipalities and Sugarcane}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:sugarcane_1970}
+\end{figure}
 
 \begin{figure}
   \caption{1872 Municipalities and Proximity to the Coast}
   \begin{center}
      \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{coastal_dist_1872.png}}
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_cotton.png}}
   \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
   \end{center}
-  \label{fig:PlaceboMapv2}
+  \label{fig:cotton_1970}
 \end{figure}
 
+\begin{figure}
+  \caption{1872 Municipalities and Proximity to the Coast}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:sugarcane_1970}
+\end{figure}
+
+\begin{figure}
+  \caption{1872 Municipalities and Proximity to the Coast}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:sugarcane_1970}
+\end{figure}
 \clearpage
 
 \section{Tables}
@@ -248,6 +397,24 @@ Historically livestock-raising areas were [...]
 \clearpage
 
 \appendix
+
+\setcounter{figure}{0}  
+\setcounter{table}{0}  
+
+\renewcommand{\thefigure}{A.\arabic{figure}}
+\renewcommand{\thetable}{A.\arabic{table}}
+
+\section{Figures}
+
+\begin{figure}
+  \caption{1872 Municipalities and Parish Locations}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
+  \textit{Notes:} Geographical distribution of 1872 parishes alongside 1872 municipality boundaries.
+  \end{center}
+  \label{fig:parishes_1872}
+\end{figure}
 
 \section{Description of Letters and Georeferencing}
 \label{app:appendix_data}
