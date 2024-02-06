@@ -203,6 +203,39 @@
       \field{note}{Accessed: 2024-1-24}
       \field{title}{{IBGE}}
     \endentry
+    \entry{Laudares2022-vy}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc40e09e42fc26210abcee874e06f9a6}{%
+           family={Laudares},
+           familyi={L\bibinitperiod},
+           given={Humberto},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a361acc489cd2a17f4ebc3f269bed664}{%
+           family={Caicedo},
+           familyi={C\bibinitperiod},
+           given={Felipe\bibnamedelima Valencia},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9a83d2de851b099fee214d4c623b5e4}
+      \strng{fullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{bibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authorbibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authornamehash}{e9a83d2de851b099fee214d4c623b5e4}
+      \strng{authorfullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article documents the long-term impact of slavery on inequality at the receiving end. We focus on Brazil, the largest receiver of African slaves and the last country to abolish this institution in the Western Hemisphere, in 1888. To deal with the endogeneity of slavery placement, we use a spatial Regression Discontinuity Design (RDD), exploiting the Tordesillas Treaty, which established the colonial boundaries between the Portuguese and Spanish empires within Brazil. We find that the number of slaves in 1872 is discontinuously higher on the Portuguese side of the border, consistent with this power's comparative advantage in transatlantic slavery. We then show how this differential slave rate led to higher modern income inequality of 0.04 points (of the Gini Index), close to 10\% of the average income inequality in the country. In terms of mechanisms, we find a wider income gap, and important differences in education, employment and prejudice for blacks in modern times. We rule out the role of colonizer identity and other mechanisms proposed in the historical literature.}
+      \field{howpublished}{\url{https://conference.nber.org/conf\_papers/f164242.pdf}}
+      \field{note}{Accessed: 2022-10-3}
+      \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
+      \field{year}{2022}
+    \endentry
     \entry{Lowes2021-ww}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=cc60d54c195d34926ef4540497702730}{%
@@ -381,6 +414,49 @@
       \field{year}{2012}
       \field{pages}{315\bibrangedash 340}
       \range{pages}{26}
+    \endentry
+    \entry{Rocha2017-yq}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9e559013c90f378133caae2041324838}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Rudi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e38887bdd3fb5a306f32b90902dba88}{%
+           family={Ferraz},
+           familyi={F\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=445f41b20b023950e8f1c63ae6762fa6}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f9b5f7650192218c740f2e6f0e1f49fe}
+      \strng{fullhash}{124e71796402bc332b65e6751fec7201}
+      \strng{bibnamehash}{124e71796402bc332b65e6751fec7201}
+      \strng{authorbibnamehash}{124e71796402bc332b65e6751fec7201}
+      \strng{authornamehash}{f9b5f7650192218c740f2e6f0e1f49fe}
+      \strng{authorfullhash}{124e71796402bc332b65e6751fec7201}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Human Capital Persistence and Development by Rudi Rocha, Claudio Ferraz and Rodrigo R. Soares. Published in volume 9, issue 4, pages 105-36 of American Economic Journal: Applied Economics, October 2017, Abstract: This paper documents the persistence of human capital over time and its association wit...}
+      \field{journaltitle}{Am. Econ. J. Appl. Econ.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Human Capital Persistence and Development}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{105\bibrangedash 136}
+      \range{pages}{32}
     \endentry
     \entry{Simonsen2005-ps}{book}{}
       \name{author}{1}{}{%

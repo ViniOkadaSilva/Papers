@@ -115,7 +115,7 @@
 \begin{center}
   \textcolor{red}{Latest Update: \today}
   \\
-  \href{https://viniokadasilva.github.io/Papers/JesuitsAmazon/JesuitsAmazon.pdf}{Click here for the Latest Version}
+  \href{https://viniokadasilva.github.io/Papers/Sesmarias/02.Draft/02.Second_Draft/Sesmarias_Paper.pdf}{Click here for the Latest Version}
 \end{center}
 \vspace{.1cm}
 
@@ -160,13 +160,23 @@ Land usage from 1985-2010 is obtained from Mapbiomas.\textcite{Souza2020-kb}\foo
 
 Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
   Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
-The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. \footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used I have 469 municipalities and 968 parishes.}
+The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. \footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 968 parishes.}
 
 Other census data is obtained from the IBGE (\textit{}).\footnote{Microcensus data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
 
 \section{Descriptive}
 
+\subsection{Summary Statistics}
+
 Following \textcite{Lowes2021-ww} I show balance on geographical characteristics at the 10 x 10km grid level in [reference to table here].
+
+\subsection{OLS Descriptive}
+
+First I show descriptively through the 1872 census that the interiors of Brazil were more likely to be [...] \parencite{Laudares2022-vy}.
+
+\begin{equation}
+  Y_{p,s} = \beta_1 \cdot Morethan80km_{p,s} + \mu_s + \epsilon_{p,s}
+\end{equation}
 
 \section{Identification Strategy}
 
@@ -222,10 +232,9 @@ Other links:
 
 \section{Results}
 
+\subsection{1872}
 
-
-\section{Robustness}
-\subsection{Donut RDD}
+\subsection{1970-2010}
 
 \clearpage
 
@@ -236,7 +245,17 @@ Other links:
 
 \clearpage
 
-\section{Figures}
+\section*{Figures}
+
+\begin{figure}[h!]
+  \caption{1872 Municipalities and Parish Locations}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
+  \textit{Notes:} Geographical distribution of 1872 parishes alongside 1872 municipality boundaries.
+  \end{center}
+  \label{fig:parishes_1872}
+\end{figure}
 
 \begin{figure}
   \caption{Distribution of Land Grants pre- and post- 1701}
@@ -248,11 +267,76 @@ Other links:
   \label{fig:SesmariasDistribution}
 \end{figure}
 
+\clearpage
+
+\subsection*{1872 RDD Plots}
+
+\begin{figure}[h!]
+  \caption{Coastal RDD Estimates for Total Parish Population}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_total_population_RDD.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:1872_RDD_Population}
+\end{figure}
+
+\begin{figure}
+  \caption{Coastal RDD Estimates for Other Jobs}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:1872_RDD_OtherJobs}
+\end{figure}
+
+\begin{figure}
+  \caption{Coastal RDD Estimates for Free People Working on Other Jobs}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_other_prof_RDD.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:1872_RDD_Free_OtherJobs}
+\end{figure}
+
+\begin{figure}
+  \caption{Coastal RDD Estimates for Enslaved People Working on Other Jobs}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_enslaved_other_prof_RDD.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:1872_RDD_Enslaved_OtherJobs}
+\end{figure}
+
+\begin{figure}
+  \caption{Coastal RDD Estimates for Enslaved People Working on Other Jobs}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_jornaleiros_RDD.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:1872_RDD_Free_Jornaleiros}
+\end{figure}
+
+\subsection*{1970 RDD Plots}
+
+\begin{figure}[h!]
+  \caption{Coastal RDD Estimates for Percentage of People Sharecropping}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_graph_sharecropping.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:1970_RDD_Sharecropping}
+\end{figure}
 
 \clearpage
 
-\begin{figure}[h!]
-  \caption{1970 Municipalities and Sharecropping}
+\begin{figure}
+  \caption{(\%) of the Grid Measured as Pastures - Grid data}
   \begin{center}
      \makebox[\textwidth]			 
      {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png}}
@@ -262,7 +346,7 @@ Other links:
 \end{figure}
 
 \begin{figure}
-  \caption{1970 Municipalities and Sharecropping}
+  \caption{(\%) of the Grid Measured as Natural Vegetation- Grid data}
   \begin{center}
      \makebox[\textwidth]			 
      {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png}}
@@ -272,7 +356,7 @@ Other links:
 \end{figure}
 
 \begin{figure}
-  \caption{1970 Municipalities and Sharecropping}
+  \caption{(\%) of the Grid Measured as Sugarcane - Grid data}
   \begin{center}
      \makebox[\textwidth]			 
      {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png}}
@@ -283,7 +367,7 @@ Other links:
 
 \clearpage
 
-\begin{figure}[h!]
+\begin{figure}
   \caption{1970 Municipalities and Sharecropping}
   \begin{center}
      \makebox[\textwidth]			 
@@ -337,16 +421,6 @@ Other links:
   \caption{1872 Municipalities and Proximity to the Coast}
   \begin{center}
      \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:sugarcane_1970}
-\end{figure}
-
-\begin{figure}
-  \caption{1872 Municipalities and Proximity to the Coast}
-  \begin{center}
-     \makebox[\textwidth]			 
      {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png}}
   \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
   \end{center}
@@ -354,45 +428,32 @@ Other links:
 \end{figure}
 \clearpage
 
-\section{Tables}
+\section*{Tables}
+
+\subsection{Summary Statistics}
+
+\input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/summary_1872.tex}
+
+\input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/summary_1872_40km.tex}
+
+\clearpage
+
+\subsection{Descriptive OLS - 1872}
+
+\input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex}
+
+\clearpage
+
+\input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex}
+
+\clearpage
+
 \subsection{Coastal RDD - 1872}
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_free_slave_1872.tex}
-
-\clearpage
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_farming_1872.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_men_enslaved_farming_1872.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_women_enslaved_farming_1872.tex}
-
-\clearpage
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_domestic_1872.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_domestic_men_1872.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_enslaved_domestic_women_1872.tex}
-
-\clearpage
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_farmers_1872.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_literacy_1872.tex}
 
 \clearpage
 
 \subsection{Coastal RDD - 1970}
 
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_sharecropping.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_livestock.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_sugarcane.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_literacy.tex}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/04.Tables/v1/rdd_farming.tex}
 
 \clearpage
 
@@ -406,17 +467,93 @@ Other links:
 
 \section{Figures}
 
-\begin{figure}
-  \caption{1872 Municipalities and Parish Locations}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
-  \textit{Notes:} Geographical distribution of 1872 parishes alongside 1872 municipality boundaries.
-  \end{center}
-  \label{fig:parishes_1872}
-\end{figure}
+\clearpage
 
 \section{Description of Letters and Georeferencing}
 \label{app:appendix_data}
+\clearpage
+
+\section{Data Appendix - 1872}
+\label{app:variable_construction_1872}
+
+Below are the definitions of the variables measured for the 1872 census and how they were constructed. Some of the variables are already defined in the census:
+
+\subsection{Base Variables, available by gender and free vs. enslaved:}
+
+\begin{enumerate}
+  \item Number of Literate People
+  \item Number of People 6-15 Attending/Not Attending/No Information on Schooling
+  \item Demographic Information on Race
+    \begin{enumerate}
+      \item Number of Enslaved People
+      \item Number of Pardos
+      \item Number of Whites
+      \item Number of Blacks
+      \item Number of Caboclos
+    \end{enumerate}
+  \item Number of People not born in the state based on origin: Within Brazil or from another country.
+  \item Number of people on types of jobs: Liberal/Manual/Agricultural/Industry/Other Jobs/No Jobs
+    \begin{enumerate}
+      \item Liberal: Religious men/women, judges, lawyers, notaries, attorneys, justice officials, medics, surgeons, pharmacists, midwives, teachers, public officials, and artists.
+      \item Manual or Mechanical: 
+      \item Agricultural: Farmers and livestock breeders.
+      \item Industry: Manufacturers and merchants.
+      \item Other: Military officers, mariners, fishermen, capitalists/owners, \textit{jornaleiros} (workers that are paid based on a working day), domestic workers, and no information
+    \end{enumerate}
+  \item Number of people by age group.
+\end{enumerate}
+
+\subsection{Constructed Variables:}
+
+\begin{enumerate}
+  \item Number of Free People Above the Age of 15
+  $$ \sum \text{\# Of Free People Above 15} $$
+
+  \item Literacy Rates, following \textcite{Rocha2017-yq}: 
+  $$100 \times \frac{\text{\# of Literate Free People}}{\text{\# of Free People Above the Age of 15}}$$
+
+  \item Men Literacy Rates: 
+  $$100 \times \frac{\text{\# of Literate Free Men}}{\text{\# of Free Men Above the Age of 15}}$$
+
+  \item Women Literacy Rates: 
+  $$100 \times \frac{\text{\# of Literate Free Women}}{\text{\# of Free Women Above the Age of 15}} $$
+
+  \item Total number of children between 6-15
+  \begin{equation*}
+    \begin{array}{l}
+  \text{\# of Free People between the ages 6-15 who attend school} + \\ \text{\# of Free People between the ages 6-15 who do not attend school} + \\ \text{\# of Free People between the ages 6-15 with no information on schooling}
+    \end{array}
+  \end{equation*}
+
+  \item Percentage of Children between age 6-15 who are attending school:
+  \begin{equation*}
+    100 \times \frac{\text{\# of Free People between the ages 6-15 who attend school}}{\text{Total \# of Free Children between 6-15}}
+  \end{equation*}
+
+  \item Percentage of Boys between age 6-15 who are attending school:
+  \begin{equation*}
+    100 \times \frac{\text{\# of Free Boys between the ages 6-15 who attend school}}{\text{Total \# of Free Boys between 6-15}}
+  \end{equation*}
+
+  \item Percentage of Girls between age 6-15 who are attending school:
+  \begin{equation*}
+    100 \times \frac{\text{\# of Free Girls between the ages 6-15 who attend school}}{\text{Total \# of Free Girls between 6-15}}
+  \end{equation*}
+
+  \item Proportion of Slaves to Free Population:
+  $$ 100 \times \frac{\text{\# of Enslaved People}}{\text{\# of Free People}} $$
+
+  \item Proportion of White/Caboclo/Black/Pardo:
+  $$ 100 \times \frac{\text{\# of Free People of Certain Race}}{\text{\# of Free People}}$$
+
+  \item Proportion of Internal/Foreign Immigrants:
+  $$ 100 \times \frac{\text{\# of Free People of Certain Immigration Category}}{\text{\# of Free People}}$$
+  \item Proportion of Teachers per 10,000:
+  $$ 10000 \times \frac{\text{\# of Free People working as Teacher}}{\text{\# of Free People}}$$
+  \item Proportion of Workers by Labor Market characteristics (as described in the data above):
+  $$ 100 \times \frac{\text{\# of Total People in Certain Job}}{\text{\# of Total People}}$$
+\end{enumerate}
+
+\clearpage
 
 \end{document}

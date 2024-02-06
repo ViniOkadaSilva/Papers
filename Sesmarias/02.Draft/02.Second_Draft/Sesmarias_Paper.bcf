@@ -2359,17 +2359,19 @@
     <bcf:citekey order="7" intorder="1">Souza2020-kb</bcf:citekey>
     <bcf:citekey order="8" intorder="1">Pereira2023-qv</bcf:citekey>
     <bcf:citekey order="9" intorder="1">Lowes2021-ww</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Fausto2014-bh</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Simonsen2005-ps</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Bethell1984-of</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Laudares2022-vy</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Fausto2014-bh</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Simonsen2005-ps</bcf:citekey>
     <bcf:citekey order="13" intorder="1">Bethell1984-of</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Fausto2014-bh</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Ribeiro2012-lb</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">UnknownUnknown-ro</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Boxer1962-bj</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Ribeiro2012-lb</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Bethell1984-of</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Fausto2014-bh</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Ribeiro2012-lb</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">UnknownUnknown-ro</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Boxer1962-bj</bcf:citekey>
     <bcf:citekey order="19" intorder="1">Ribeiro2012-lb</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">De_Oliveira_Andrade1980-xz</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Ribeiro2012-lb</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">De_Oliveira_Andrade1980-xz</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Rocha2017-yq</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
