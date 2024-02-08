@@ -2353,63 +2353,11 @@
     <bcf:citekey order="1" intorder="1">Dell2010-qt</bcf:citekey>
     <bcf:citekey order="2" intorder="1">Sokoloff2000-mb</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Ratnoo2023-vw</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">Dean1971-iq</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Simonsen2005-ps</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Sparovek2019-dn</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Souza2020-kb</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Pereira2023-qv</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Lowes2021-ww</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Laudares2022-vy</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Fausto2014-bh</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Simonsen2005-ps</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Bethell1984-of</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Bethell1984-of</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Fausto2014-bh</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Ribeiro2012-lb</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">UnknownUnknown-ro</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Boxer1962-bj</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Ribeiro2012-lb</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Ribeiro2012-lb</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">De_Oliveira_Andrade1980-xz</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">Rocha2017-yq</bcf:citekey>
-  </bcf:section>
-  <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="nty">
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sortingtemplate>
-  <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="nty/global//global/global"
-                type="entry"
-                sortingtemplatename="nty"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global">
-  </bcf:datalist>
-</bcf:controlfile>
+    <bcf:citekey order="4" intorder="1">Smith1944-oi</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Dean1971-iq</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Simonsen2005-ps</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">De_Oliveira_Andrade1980-xz</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">De_Oliveira_Andrade1980-xz</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">De_Oliveira_Andrade1980-xz</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Junior1967-jv</bcf:citekey>
+    <bcf:citekey order="

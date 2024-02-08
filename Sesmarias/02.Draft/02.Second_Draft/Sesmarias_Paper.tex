@@ -140,9 +140,35 @@ This paper tries to answer how much of Brazil's present-day inequality can be tr
 
 \section{Historical Background}
 
+\textcite{Smith1944-oi} ``The only way to distribute the lands was by grants of large tracts as sesmarias''
+
 \textcite{Dean1971-iq} - ``Anyone who claimed to have the means and desire to make use of the land was given a grant, customarily one to three leagues in extent (16.7 to 50.1 square miles).''
 
 \textcite{Simonsen2005-ps} - ``the ones that don't possess sesmarias or can't own land are disowned by the own society they live in"
+
+\textcite[p.~1]{De_Oliveira_Andrade1980-xz}
+``The agrarian problem is one of the most serious the country has, because of the great concentration of land ownership and the low level of utilization by the large and medium property owners. A majority of the rural population receives very low wages, which practically puts them outside the consumer market''
+
+\textcite[p.~34-35]{De_Oliveira_Andrade1980-xz} argues that 
+``one of the causes that most aggravate the problem [the considerable increase in population, without a corresponding increase in possibilities for employment, is much more a swelling than an orderly growth] is the system of land tenure, dominant since colonization. It tends to contribute to the concentration of property and the lack of guarantees, of written and respected contracts, that would give greater stability to the sharecroppers in the Agreste and the Sertao and to the agricultural workers in the Zona da Mata."
+
+\textcite[p.~36]{De_Oliveira_Andrade1980-xz}
+``The concentration of landholdings in the Northeast is a consequence of the essentially commercial character of agriculture there. This character has manifested itself since the start of colonization. Even today, despite the perceptible growth of the middle class and the internal markets, it os predominant. Its control manifests itself in the protection bestowed by the government agencies on the large farms, and in the complete disdain for subsistence farming''
+
+\textcite[p.~216]{Junior1967-jv}
+``Even the law excluded cattle raising from the ten maritime  leagues which had been laid down as the area reserved for  agriculture''
+
+\textcite[p.~113]{De_Oliveira_Andrade1980-xz}
+``Extensive cattle raising, with open grazing, did not require much attention or labor. For that reason, the number of slaves in the region was small''
+
+\textcite[p.~157]{De_Oliveira_Andrade1980-xz}
+``Cattle raising is today, as in the past, the source of great wealth in the Sertao [...] The system of cattle raising on the large fazendas of the Sertao has changed little in recent years''
+
+The first big land reform was in 1964 with the Land Act.
+
+1985 National Agrarian Reform Plan was used.
+
+Land grants were given until 1822, shortly before Brazil's independence.
 
 \section{Data}
 
@@ -152,15 +178,17 @@ The database uses archival data from either state records or original manuscript
 When available, information such as the year, the reason for the request, etc. are coded. 
 The sesmarias are then georeferenced based on the geographical information present in the text, allowing us to trace them back to Brazilian municipalities.\footnote{A more in-depth description on how the sources of the letters and how the sesmarias were georeferenced is available in \autoref{app:appendix_data}}
 
+\footnote{More information on the description based on the 1872 census data is available on \autoref{app:variable_construction_1872}}
+
 Data for current land tenure in 2021 in Brazil is obtained from \textcite{Sparovek2019-dn}.\footnote{
   Available at \url{https://atlasagropecuario.imaflora.org/}}
 
-Land usage from 1985-2010 is obtained from Mapbiomas.\textcite{Souza2020-kb}\footnote{
-  Available at \url{https://brasil.mapbiomas.org/en/}}
+Land usage from 1985-2010 is obtained from Mapbiomas\textcite{Souza2020-kb}\footnote{
+  Available at \url{https://brasil.mapbiomas.org/en/}}.
 
 Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
   Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
-The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. \footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 968 parishes.}
+The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. \footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes.}
 
 Other census data is obtained from the IBGE (\textit{}).\footnote{Microcensus data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
 
@@ -170,13 +198,19 @@ Other census data is obtained from the IBGE (\textit{}).\footnote{Microcensus da
 
 Following \textcite{Lowes2021-ww} I show balance on geographical characteristics at the 10 x 10km grid level in [reference to table here].
 
+Summary statistics for the 1872 censuses are available in \autoref{tab:1872summary}. Overall, we can see that municipalities farther from the coast 
+
 \subsection{OLS Descriptive}
 
-First I show descriptively through the 1872 census that the interiors of Brazil were more likely to be [...] \parencite{Laudares2022-vy}.
+First I show descriptively through the 1872 census that the interior of Brazil was more likely to be [...] \parencite{Laudares2022-vy}.
 
 \begin{equation}
   Y_{p,s} = \beta_1 \cdot Morethan80km_{p,s} + \mu_s + \epsilon_{p,s}
 \end{equation}
+
+Results can be found in \autoref{tab:1872_OLS_Demographics} and \autoref{tab:1872_OLS_Labor}. Descriptively, it indicates that parishes more than 80km from the coast had a lower proportion of slaves to the total population and lower amounts of freed black people as a total of the population.
+
+Similarly, matching to the historical evidence, these places have a higher proportion of people who report ranching as the primary occupation, and were less likely to have jobs in the industry, liberal, or other professions. 
 
 \section{Identification Strategy}
 
@@ -184,11 +218,11 @@ First I show descriptively through the 1872 census that the interiors of Brazil 
 
 In 1701, the Portuguese Crown enacted a ban on cattle ranching from 80km of the coast (10 leagues) \parencites[p~.40]{Fausto2014-bh}[p~.198]{Simonsen2005-ps}[p~.460]{Bethell1984-of}.
 
-\textcite{Bethell1984-of} ``Landholding in the sertao was truly extensive. Although there was legislation limiting the size of sesmarias to three square leagues, this restriction was simply disregarded. The sesmarias on which cattle ranches were established sometimes exceeded hundreds of thousands of acres"
+\textcite{Bethell1984-of} ``Landholding in the [interior] was truly extensive. Although there was legislation limiting the size of sesmarias to three square leagues, this restriction was simply disregarded. The sesmarias on which cattle ranches were established sometimes exceeded hundreds of thousands of acres"
 
 The effect was the expansion of cattle ranches towards the west of Brazil, especially in the Northeastern states. 
 As \textcite[p~.41]{Fausto2014-bh} indicates, the need for large lands to allow cattle to roam free led to the creation of large estates in the area, even bigger than those compared to the coast.\footnote{An example of this would be the d'Avila family which owned a large estate in the state of Bahia [...]}
-That led to a ``a clear specialization between the two activities'' \parencite{Ribeiro2012-lb}.\footnote{An example of the effect can be seen in the Municipality of Ruy Barbosa and the state of Bahia and Caico in the state of Rio Grande do Norte. Both are described and being created by the cattle expansion that happened because of the 1701 Royal Decree. \parencite{UnknownUnknown-ro}}
+That led to a ``a clear specialization between the two activities'' \parencite{Ribeiro2012-lb}.\footnote{An example of the effect can be seen in the Municipality of Ruy Barbosa and the state of Bahia and Caico in the state of Rio Grande do Norte. Both are described as being created by the cattle expansion that happened because of the 1701 Royal Decree. \parencite{UnknownUnknown-ro}}
 
 \parencite[p~.]{Boxer1962-bj}
 
@@ -232,9 +266,14 @@ Other links:
 
 \section{Results}
 
+
 \subsection{1872}
 
 \subsection{1970-2010}
+
+\subsection{Agricultural Census}
+
+\autoref{fig:livestock_area_1995}, \autoref{fig:occupied_area_1995}, \autoref{fig:leased_area_1995}, and \autoref{fig:latifundia_1995}.
 
 \clearpage
 
@@ -335,7 +374,9 @@ Other links:
 
 \clearpage
 
-\begin{figure}
+\subsection*{Grid Satellite Data}
+
+\begin{figure}[h!]
   \caption{(\%) of the Grid Measured as Pastures - Grid data}
   \begin{center}
      \makebox[\textwidth]			 
@@ -367,7 +408,9 @@ Other links:
 
 \clearpage
 
-\begin{figure}
+\subsection*{1970 Census}
+
+\begin{figure}[h!]
   \caption{1970 Municipalities and Sharecropping}
   \begin{center}
      \makebox[\textwidth]			 
@@ -426,6 +469,65 @@ Other links:
   \end{center}
   \label{fig:sugarcane_1970}
 \end{figure}
+\clearpage
+
+\subsection*{Brazilian 1995 Agricultural Census}
+
+\begin{figure}[h!]
+  \caption{1995 Agricultural Census - Area Dedicated to Livestock}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_livestock_map.png}}
+  \textit{Notes:} 
+  \end{center}
+  \label{fig:livestock_area_1995}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \caption{1995 Agricultural Census - Occupied Agricultural Land}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png}}
+  \textit{Notes:} Occupied means that the person who uses the land does not own, nor is paying anyone for the use.  
+  \end{center}
+  \label{fig:occupied_area_1995}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \caption{1995 Agricultural Census - Leased Agricultural Land}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png}}
+  \textit{Notes:} 
+  \end{center}
+  \label{fig:leased_area_1995}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \caption{1995 Agricultural Census - Share of Agricultural Land in establishments over 2000ha}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_latifundia_map.png}}
+  \textit{Notes:} 
+  \end{center}
+  \label{fig:latifundia_1995}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{1995 Agricultural Census - Productive Land Not Used (\%)}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png}}
+  \textit{Notes:} 
+  \end{center}
+  \label{fig:productive_land_not_used_1995}
+\end{figure}
+
 \clearpage
 
 \section*{Tables}

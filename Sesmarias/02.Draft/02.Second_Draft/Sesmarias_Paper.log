@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  6 FEB 2024 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  8 FEB 2024 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1097,165 +1097,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.165 O
-       ther census data is obtained from the IBGE (\textit{}).\footnote{Micr... [1
+l.160 
+       [1
 
-] [2]
-Overfull \hbox (60.7405pt too wide) in paragraph at lines 219--220
+] [2] [3]
+Overfull \hbox (60.7405pt too wide) in paragraph at lines 253--254
 [][][]$\OT1/cmtt/m/n/10 http : / / historialuso . an . gov . br / index . php ? option = com _ content & view = article & id = 6191 : escravos-[]de-[]ganho &
  []
 
 
-Overfull \hbox (58.49054pt too wide) in paragraph at lines 221--222
+Overfull \hbox (58.49054pt too wide) in paragraph at lines 255--256
 [][][]$\OT1/cmtt/m/n/10 https : / / www . nexojornal . com . br / especial / 2017 / 07 / 07 / censo-[]de-[]1872-[]o-[]retrato-[]do-[]brasil-[]da-[]escravidao$[][] 
  []
 
-[3] [4] [5
+[4] [5] [6
 
-] [6]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png, id=139, 514.8033pt x 318.2289pt>
+] [7]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png, id=171, 526.8483pt x 325.4559pt>
 File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png Graphic file (type png)
 <use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png  used on input line 254.
-(pdftex.def)             Requested size: 522.1545pt x 322.80223pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png, id=140, 489.2679pt x 302.3295pt>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png  used on input line 293.
+(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png, id=172, 489.2679pt x 302.3295pt>
 File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png Graphic file (type png)
 <use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png  used on input line 264.
-(pdftex.def)             Requested size: 522.1545pt x 322.65898pt.
- [7
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>] [8 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_total_population_RDD.png, id=151, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_total_population_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_total_population_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_total_population_RDD.png  used on input line 278.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png, id=152, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png  used on input line 288.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_other_prof_RDD.png, id=153, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_other_prof_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_other_prof_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_other_prof_RDD.png  used on input line 298.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_enslaved_other_prof_RDD.png, id=154, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_enslaved_other_prof_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_enslaved_other_prof_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_enslaved_other_prof_RDD.png  used on input line 308.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_jornaleiros_RDD.png, id=155, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_jornaleiros_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_jornaleiros_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_jornaleiros_RDD.png  used on input line 318.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_graph_sharecropping.png, id=156, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_graph_sharecropping.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_graph_sharecropping.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_graph_sharecropping.png  used on input line 330.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_total_population_RDD.png>] [10 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png>] [11 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_other_prof_RDD.png>] [12 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_enslaved_other_prof_RDD.png>] [13 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_jornaleiros_RDD.png>] [14 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_graph_sharecropping.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png, id=188, 514.0806pt x 317.7471pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png  used on input line 342.
-(pdftex.def)             Requested size: 522.1545pt x 322.74503pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png, id=189, 514.0806pt x 317.7471pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png  used on input line 352.
-(pdftex.def)             Requested size: 522.1545pt x 322.74503pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png, id=190, 514.0806pt x 317.7471pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png  used on input line 362.
-(pdftex.def)             Requested size: 522.1545pt x 322.74503pt.
- [15 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png>] [16 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png>] [17 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_population.png, id=206, 489.2679pt x 302.3295pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_population.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_population.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_population.png  used on input line 374.
-(pdftex.def)             Requested size: 522.1545pt x 322.65898pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sharecropping.png, id=207, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sharecropping.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sharecropping.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sharecropping.png  used on input line 384.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png, id=208, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png  used on input line 394.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png, id=209, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png  used on input line 404.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_cotton.png, id=210, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_cotton.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_cotton.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_cotton.png  used on input line 414.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png, id=211, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png  used on input line 424.
-(pdftex.def)             Requested size: 522.1545pt x 322.5748pt.
-[18 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_population.png>] [19 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sharecropping.png>] [20 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png>] [21 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png>] [22 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_cotton.png>] [23 </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png>] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/summary_1872.tex) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/summary_1872_40km.tex
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [24
-
-
-
-] [25] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex) [26
-
-] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex) [27
-
-] [28
-
-] [29
-
-] [30
-
-] [31
-
-] [32
-
-] [33] [34] (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/02.Draft/02.Second_Draft/Sesmarias_Paper.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package logreq Info: Writing requests to 'Sesmarias_Paper.run.xml'.
-\openout1 = `Sesmarias_Paper.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 37542 strings out of 476029
- 769660 string characters out of 5790167
- 1895346 words of memory out of 5000000
- 57259 multiletter control sequences out of 15000+600000
- 522266 words of font info for 71 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,18n,94p,2101b,2140s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/02.Draft/02.Second_Draft/Sesmarias_Paper.pdf (35 pages, 4575711 bytes).
-PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 417 compressed objects within 5 object streams
- 135 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/J
