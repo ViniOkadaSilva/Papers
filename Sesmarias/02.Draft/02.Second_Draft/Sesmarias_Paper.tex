@@ -1,7 +1,6 @@
 \documentclass{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage{subfig}
 \usepackage{setspace}
 
 \usepackage{amsmath}
@@ -21,7 +20,7 @@
 \usepackage{csquotes}
 \usepackage{booktabs}
 \usepackage{siunitx}
-\newcolumntype{d}{S[input-open-uncertainty=, input-close-uncertainty=, parse-numbers = false, table-align-text-pre=false, table-align-text-post=false]}
+\newcolumntype{d}{S[ input-open-uncertainty=, input-close-uncertainty=, parse-numbers = false, table-align-text-pre=false, table-align-text-post=false ]}
 \usepackage{amssymb}
 % \newcolumntype{d}{S[input-symbols = ()]}
 \usepackage{float}
@@ -42,9 +41,12 @@
 \usepackage{xcolor}
 \usepackage{afterpage}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage{bbding}
 \usepackage{xargs}
 \usepackage{xpatch}
+\usepackage{ragged2e}
+\usepackage{rotating}
 \usepackage[citecolor = blue]{hyperref}
 \hypersetup{colorlinks = true, linkcolor = red, urlcolor = teal}
 
@@ -140,6 +142,12 @@ This paper tries to answer how much of Brazil's present-day inequality can be tr
 
 \section{Historical Background}
 
+\subsection{Land Access}
+
+\textcite[p.~58-59]{Da_Costa_Porto1979-dz} ``Enquanto, no Portugal de D. Fernando, de D.João e de D. Duarte, a distribuição de terra de sesmaria gerou, em regra, a pequena propriedade, no Brasil foi a causa principal do latifúndio"
+
+\textcite{Diegues_Junior1959-ba}
+
 \textcite{Smith1944-oi} ``The only way to distribute the lands was by grants of large tracts as sesmarias''
 
 \textcite{Dean1971-iq} - ``Anyone who claimed to have the means and desire to make use of the land was given a grant, customarily one to three leagues in extent (16.7 to 50.1 square miles).''
@@ -164,11 +172,20 @@ This paper tries to answer how much of Brazil's present-day inequality can be tr
 \textcite[p.~157]{De_Oliveira_Andrade1980-xz}
 ``Cattle raising is today, as in the past, the source of great wealth in the Sertao [...] The system of cattle raising on the large fazendas of the Sertao has changed little in recent years''
 
+``The slaves in Brazil were at least partially integrated into society and possessed rights, quite a legal contrast to the plight of the slaves in the United States. Hence their transition from slave to freedman was facilitated. One paramount privilege the slaves enjoyed was their ability to purchase their
+own freedom. Blacks, taking advantage of the many Catholic holidays to work on their own, saved money for that purpose. They occasionally formed their own mutual aid societies to facilitate their purchase of freedom.''
+
+Between 1822 and 1850 there was no clear way on how to obtain lands in Brazil.
+
+1850 Land Law allowed [...]
+
 The first big land reform was in 1964 with the Land Act.
 
 1985 National Agrarian Reform Plan was used.
 
 Land grants were given until 1822, shortly before Brazil's independence.
+
+\subsection{Land Inequality}
 
 \section{Data}
 
@@ -234,6 +251,8 @@ That led to a ``a clear specialization between the two activities'' \parencite{R
 Given the nature of this ban, I exploit the cutoff of 80 km to use a regression discontinuity design to measure the effects between the two types of economies in the region. 
 
 In the first-stage I check whether post-1701 we see an increasing number of land grants dedicated to livestock in municipalities farther than 80 km from the coast. 
+
+Have to think this as an ITT, same with part of the land grants.
 
 Secondly, using the 1872 I analyze whether or not there were any effects of the coastal livestock ban on the demographics and economic activities at that time.
 
@@ -308,6 +327,31 @@ Other links:
 
 \clearpage
 
+\begin{figure}
+  \begin{subfigure}[t]{0.45\paperwidth}\centering
+      \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_50km.png}
+  \caption{Sub figure A}
+  \end{subfigure} 
+  \begin{subfigure}[t]{0.45\paperwidth}\centering
+      \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_40km.png}
+  \caption{Sub figure B}
+  \end{subfigure}
+
+  \begin{subfigure}[t]{0.45\textwidth}\centering
+    \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_30km.png}
+  \caption{Sub figure B}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.45\textwidth}\centering
+    \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_20km.png}
+  \caption{Sub figure B}
+  \end{subfigure}
+
+  \caption{Figure in landscape orientation}
+  \label{fig:sub2}
+\end{figure}
+
+\clearpage
+
 \subsection*{1872 RDD Plots}
 
 \begin{figure}[h!]
@@ -360,6 +404,8 @@ Other links:
   \label{fig:1872_RDD_Free_Jornaleiros}
 \end{figure}
 
+\clearpage
+
 \subsection*{1970 RDD Plots}
 
 \begin{figure}[h!]
@@ -370,6 +416,20 @@ Other links:
   \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
   \end{center}
   \label{fig:1970_RDD_Sharecropping}
+\end{figure}
+
+\clearpage
+
+\subsection*{1872 Maps}
+
+\begin{figure}[h!]
+  \caption{Coastal RDD Estimates for Percentage of People Sharecropping}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_census_ranching_map.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:1872_ranching_maps}
 \end{figure}
 
 \clearpage
@@ -404,6 +464,16 @@ Other links:
   \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
   \end{center}
   \label{fig:sugarcane_grid}
+\end{figure}
+
+\begin{figure}
+  \caption{(\%) of the Grid Measured as Sugarcane - Grid data}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane_area.png}}
+  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
+  \end{center}
+  \label{fig:sugarcane_area_grid}
 \end{figure}
 
 \clearpage
@@ -540,21 +610,27 @@ Other links:
 
 \clearpage
 
-\subsection{Descriptive OLS - 1872}
+\subsection{Results - 1872}
 
-\input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex}
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex}
+
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex}
+
+\clearpage
+
+\subsection{Results - 1970 Census}
+
+\clearpage
+
+\subsection{Results - 1995 Agricultural Census}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Results.tex}
 
 \clearpage
 
 \input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex}
-
-\clearpage
-
-\subsection{Coastal RDD - 1872}
-
-\clearpage
-
-\subsection{Coastal RDD - 1970}
 
 
 \clearpage

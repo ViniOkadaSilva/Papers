@@ -1,0 +1,696 @@
+\documentclass[aspectratio=1610]{beamer}
+%\linespread{1.5}\selectfont
+
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{dcolumn}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{lscape} 
+\usepackage{tikz}
+\usepackage[export]{adjustbox}
+\usepackage{ragged2e}
+\justifying
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{caption}\captionsetup{labelformat=empty}
+%\captionsetup{font=footnotesize}
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true, 
+    linkcolor = red, 
+    urlcolor = teal, 
+    citecolor = blue}
+
+%\usepackage{caption}
+%\captionsetup{labelformat=empty}
+\usepackage{appendixnumberbeamer}
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=20pt plus 0cm}
+
+\DeclareUnicodeCharacter{0301}{\'{e}}
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{0327}{\c}
+
+\usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1]{biblatex}
+
+\addbibresource{citations_sesmarias.bib}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/}}
+
+%\addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\newcommand{\tinytable}[1]{\textcolor{black}{\tiny \input{#1}}}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures/}}
+
+\beamertemplatenavigationsymbolsempty
+
+%Information to be included in the title page:
+\title{Portuguese Colonial Land Grants in Brazil: Long-term Effects on Inequality and Economic Development}
+\author{Vinicius Okada da Silva [5th Year]}
+\date{}
+
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+
+
+\begin{frame}[plain, noframenumbering]
+	\titlepage
+    \begin{center}
+        Committee: \textbf{Richard Akresh (Chair), Marieke Kleemans, Felipe Valencia Caicedo (UBC), Mary Arends-Kuenning (ACE)}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Feedback}
+    
+\end{frame}
+
+\begin{frame}{Motivation}
+    \begin{outline}
+        \1 Inequality in access to land has been .
+            \vspace{2mm}
+            \2 ``\textcolor{red}{\textbf{Brazil has one of the highest levels of inequality of land distribution in the world}} [...] \textcolor{red}{\textbf{An estimated 1\% of the population owns 45\% of all land in Brazil}}.'' \parencite{Usaid2016-xs}
+        \1 ``The agrarian problem is one of the most serious [Brazil] has, because of the great concentration of land ownership and the low level of utilization by the large and medium property owners" \parencite[p.~1]{De_Oliveira_Andrade1980-xz}
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Research Question}
+    \begin{outline}
+        \1 How much of economic development and inequality can be traced to colonial institutions?
+            \vspace{2mm}
+            \2 Goal of this research would analyze the effects of colonial Portuguese land grants (\textit{sesmarias}) on long-term development and inequality in Brazil.
+            \vspace{2mm}
+        % Cite here the papers that have used these identifications.
+        \pause 
+        \1 Proposed Identification:
+            \2 Exploit a 1701 law that banned livestock grazing within 80km of the coast of Brazil.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Possible Channels}
+    \begin{outline}
+        \1 What are the long-term economic effects of colonial Portuguese land grants in Brazil?
+        \vspace{2mm}
+        \pause 
+            \2 Land Tenure $\Rightarrow$ Different sizes of land grants could lead to different utilization of land, and how owners would exploit it.
+            \pause 
+            \vspace{2mm}
+            \2 Demographic Differences $\Rightarrow$ Land grants often required African slaves, which could skew the demographics of a location.
+            \pause 
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Diagram with History of Land Concessions in Brazil}
+    
+\end{frame}
+
+\begin{frame}{Diagram with Proposed Channels}
+    
+\end{frame}
+
+\begin{frame}{Contribution}
+    \begin{outline}
+        \1 Role of colonization, institutions, and land tenure in present outcomes:
+            \vspace{2mm}
+            \2 Institutional and Natural Endowments: \cite{Acemoglu2001-dz} (AER), \cite{Sokoloff2000-mb} (JEP). 
+            \vspace{2mm}
+            \2 Americas: \cite{Naritomi2012-or} (JEH), 
+            \cite{Musacchio2014-pq} (JEH),
+            \cite{Wigton-Jones2020-ex} (JEG),
+            \cite{Laudares2022-vy} (WP),
+            \cite{Sellars2018-yp} (JDE),
+            \cite{Smith2023-ip} (WP)
+            \vspace{2mm}
+            \2 India and Africa: 
+            \cites{Banerjee2005-ki} (AER)
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Data}
+    \begin{outline}
+        \1 Land Grant Locations:
+            \2 Information on the land grants from the \href{http://plataformasilb.cchla.ufrn.br/}{Sesmarias of the Luso-Brazilian Empire Database}
+        \vspace{2mm}
+        \1 Establish that they had an effect in the past:
+            \2 1872 Brazilian Census [\textbf{Novel Data for 1872 at a Fine Geographical Level}]
+        \vspace{2mm}
+        \1 Present-Day Effects on Land Tenure
+            \2 1995 Brazilian Agricultural Census
+    \end{outline}
+\end{frame}
+
+\begin{frame}{1872 Parish Level Information}{[New Data]}
+    \begin{figure}[h!]
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
+        \end{center}
+        \label{fig:parishes_1872}
+      \end{figure}
+\end{frame}
+
+% Be more clear on agriculture
+% Interact with land grants 
+% Put somewhere the Y variables I'm taking a look at 
+% Make very clear on what I'm using
+% Show first the OLS - main things that are going on 
+% Coast_Dist
+% What the story: be more clear 
+% I can show the RDD
+% Make clear 
+% Run for separate regions
+% Show in Table form 
+% Maybe check if the law had a bite in a different 
+
+\begin{frame}{Identification Strategy}{Coastal Ban on Livestock}
+    \begin{outline}
+        \1 In 1701, the Portuguese Crown enacted a ban on cattle ranching from 80km of the coast (10 leagues) \parencites[p~.40]{Fausto2014-bh}[p~.198]{Simonsen2005-ps}[p~.460]{Bethell1984-of}.
+        \1 ``Landholding in the [interior] was truly extensive [...] The sesmarias on which cattle ranches were established sometimes exceeded hundreds of thousands of acres" \parencite{Bethell1984-of} 
+        \1 ``Extensive cattle raising, with open grazing, did not require much attention or labor. For that reason, the number of slaves in the region was small'' \parencite[p.~113]{De_Oliveira_Andrade1980-xz}
+        \1 Regression Discontinuity design exploiting this 80km cutoff.
+    \end{outline}
+    \vspace{2mm}
+    
+    \begin{equation}
+    Y_{m,s} = \beta \cdot CoastDist_{m,s} + f(D_{m,s})+ \mu_s + X_{m,s} + \epsilon_{m,s}
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Distribution of Land Grants pre- and post- 1701}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png}}
+        \end{center}
+        \label{fig:SesmariasDistribution}
+      \end{figure}      
+\end{frame}
+
+\begin{frame}{1872 Results}{Agriculture}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png}}
+        \end{center}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{1872 Results}{Slavery}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png}}
+        \end{center}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{1872 Results}{Slavery}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png}}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{1872 RD vs. OLS}{Demographics}
+    \small
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex}
+\end{frame}
+
+\begin{frame}{1985 LandSat RD vs. OLS}{Land Usage}
+    
+\end{frame}
+
+\begin{frame}{1872 RD vs. OLS}{Descriptive OLS - Labor}
+    \footnotesize
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex}
+\end{frame}
+
+\begin{frame}{1995 Agricultural Census Results}{Occupied Land}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png}}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{1995 Agricultural Census Results}{Occupied Land}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png}}
+        \end{center}
+        \label{fig:occupied_area_1995}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{1995 Agricultural Census Results}{Productive Land Not Used}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Productive_Land_Not_Used_RDD.png}}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{1995 Agricultural Census Results}{Productive Land Not Used}
+    \begin{figure}
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png}}
+        \end{center}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{1995 Agricultural Census}{Leased Land}
+    \begin{figure}[h!]
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png}}
+        \end{center}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{1995 RD vs. OLS}{Agricultural Land Usage}
+    \small
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Results.tex}
+\end{frame}
+
+\begin{frame}{1970 Census}{People Working in Sugarcane Production}
+    \begin{figure}[h!]
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png}}
+        \end{center}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{Conclusion}
+    
+\end{frame}
+
+\begin{frame}[allowframebreaks, t, noframenumbering, plain]{References}
+    \printbibliography
+\end{frame}
+
+\appendix
+
+\begin{frame}{History/Background}{Request Process}
+    \begin{outline}
+        \1 Petitioner submits a letter for an unoccupied land detailing their qualifications (captain, governor, etc.)
+        \vspace{1mm}
+        \pause 
+        \1 Governor reads it, and if accepted returns back a letter with the requirements for the petitioner to satisfy.
+        \vspace{1mm}
+        \pause 
+        \1 Five years to develop the land
+        \vspace{1mm}
+        \pause 
+        \1 If successful, upon an inspection, land was transferred to the \textit{sesmeiro}.
+        \vspace{1mm}
+        \pause 
+        \1 Able to sell, pass down as inheritance, etc. 
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Selection}\hypertarget{selection}{}
+    \begin{outline}
+        \1 Agglomeration: \hyperlink{agglomeration}{\beamerbutton{Effects on Neighboring Grids}}
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Identification}{Exploring the Content of the Letters}
+    \begin{outline}
+        \1 Focus on the letters and their contents. 
+        \vspace{2mm}
+        \1 Make the unit of observation a state by year. 
+        \vspace{2mm}
+        \1 \textbf{Example Research Question:} How would a change in state governorship affect the contents of the letter:
+        \vspace{1mm}
+            \2 \textbf{Channel:} New governor, not enough information on how strict he would be enforcing the land grants $\Rightarrow$ the letters are longer and more specific.
+        \vspace{1mm}
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Other Relevant (?) Information to Add}
+    \begin{outline}
+        \1 \textit{Sesmarias} caused economic uncertainty in colonial times as often poor people would settle, develop land, and then lose the right of the land because a richer person would claim it \parencite[p.~142]{Da_Costa_Porto1979-dz}.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Manueline Ordinances 1511-1512}
+    ``Na petição por uma carta de sesmaria, o requerente devia justificar seu pedido, e quando recebesse a carta de concessão havia uma serie de obrigações entre as quais estava a necessidade do cultivo''
+\end{frame}
+
+\begin{frame}{\hypertarget{1872_slavery} 1872 Census - Slavery Distribution
+    \hyperlink{maps}{\beamerbutton{Back}}} 
+    
+    \includegraphics[width=0.5\textwidth]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png}
+    \includegraphics[width=0.5\textwidth]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png}
+\end{frame}
+
+\begin{frame}{\hypertarget{1872_sugarcane} 1872 Census - Potential Sugarcane Output
+    \hyperlink{IV}{\beamerbutton{Back}}} 
+    \centering
+    \includegraphics[width=0.95\textwidth]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png}
+\end{frame}
+
+\begin{frame}{\hypertarget{2010_sugarcane} 2010 Census - Potential Sugarcane Output
+    \hyperlink{IV}{\beamerbutton{Back}}} 
+    \centering
+    \includegraphics[width=0.95\textwidth]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png}
+\end{frame}
+
+\begin{frame}{\hypertarget{1872_gender} 1872 Census - Gender Distribution
+    \hyperlink{maps}{\beamerbutton{Back}}} 
+    %\hypertarget{1872_slavery}
+    \includegraphics[width=0.5\textwidth]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png}
+    \includegraphics[width=0.5\textwidth]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png}
+\end{frame}
+
+\begin{frame}{Basic Descriptive Statistics}
+    {Year Dist. \hyperlink{maps}{\beamerbutton{Back}}}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png}
+\end{frame}
+
+\begin{frame}{Basic Descriptive Statistics (1 hec = 2.5 Football Fields)}
+    {Size Dist. \hyperlink{maps}{\beamerbutton{Back}}} 
+    \hypertarget{year_dist}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png}
+\end{frame}
+
+\begin{frame}{Basic Descriptive Statistics (1 hec = 2.5 Football Fields)}
+    {Size Dist. \hyperlink{data}{\beamerbutton{Back}}}
+    \hypertarget{year_dist_1697}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png}
+\end{frame}
+
+\begin{frame}{Smallest Land Grant}
+    \begin{outline}
+        \1 The smallest land grant we have in the dataset is from 1603, in Rio de Janeiro (RJ0118). The petitioner asked for some land to build a house in the city of São Sebastião, which explains why in hectares it is so small.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Basic Descriptive Statistics}{No Obs. in Pernambuco}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{sugar}
+    Georeferenced Land Grants
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Sugarcane vs. Ranching}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{discovery}
+    Georeferenced Land Grants
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{discovery_year}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{no_land}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{year}
+    Georeferenced Land Grants
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Year of the Land Grant}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{no_land}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{no_land}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{no_land}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{no_land}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{no_land}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Alleged Discovery of the Land}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{pasture_grid}
+    Georeferenced Land Grants 
+    \hyperlink{grid_maps}{\beamerbutton{Back}}}
+    {Pasture request + Land Usage in 2000}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{psugarcane_grid}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Sugarcane request + Potential Sugarcane Production}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{sugarcane_grid}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {Sugarcane request + Area used for Sugarcane (2000)}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{nightlight_grid}
+    Georeferenced Land Grants 
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    {All requests + Nightlight data (2000)}
+    \centering
+    \includegraphics[width=0.85\textwidth,height=0.85\textheight,keepaspectratio]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png}
+\end{frame}
+
+
+\begin{frame}{
+    \hypertarget{sugar_table}
+    First-Stage Estimates - 1872 
+    \hyperlink{IV}{\beamerbutton{Back}}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage.tex}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{sugar_table_2010}
+    First-Stage Estimates - 2010
+    \hyperlink{IV}{\beamerbutton{Back}}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_2010.tex}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{sugar_table_2010}
+    First-Stage Estimates - Grid
+    \hyperlink{IV}{\beamerbutton{Back}}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_grid.tex}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{econ_activities}
+    OLS - Economic Activities
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_activity_grid.tex}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{econ_dev}
+    OLS - Economic Development
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_development_grid.tex}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{land_usage_year}
+    OLS - Land Usage
+    \hyperlink{maps}{\beamerbutton{Back}}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/land_usage_year_grid.tex}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{agglomeration}
+    OLS - Agglomeration
+    \hyperlink{selection}{\beamerbutton{Back}}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/agglomeration_grid.tex}
+\end{frame}
+
+\begin{frame}
+    {Balance Tables \hyperlink{data}{\beamerbutton{Back}}}
+    \hypertarget{grid_balance}
+    {Grid Level}
+    \begin{center}
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias_grid.tex}
+    \end{center}
+\end{frame}
+
+\begin{frame}[shrink=25]{
+    \hypertarget{year_2}
+    Balance Tables 
+    \hyperlink{data}{\beamerbutton{Back}}}
+    {1872 Municipality Level}
+    \begin{center}
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_1872.tex}
+    \end{center}
+\end{frame}
+
+\begin{frame}{
+    \hypertarget{land_grant_level}
+    Balance Tables 
+    \hyperlink{data}{\beamerbutton{Back}}}
+    {\textcolor{white}{Land Grant Level}}
+    \centering
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias.tex}
+\end{frame}
+
+\end{document}

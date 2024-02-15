@@ -85,6 +85,39 @@
       \field{title}{The Golden Age of Brazil 1695-1750: Growing Pains of a Colonial Society}
       \field{year}{1962}
     \endentry
+    \entry{Da_Costa_Porto1979-dz}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f2aa73d4e8421240ba41c1db32b95d34}{%
+           family={Costa\bibnamedelima Porto},
+           familyi={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{language}{1}{%
+        {pt-BR}%
+      }
+      \list{publisher}{1}{%
+        {Editora Universidade de Brasília}%
+      }
+      \strng{namehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{fullhash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{bibnamehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{authorbibnamehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{authornamehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{authorfullhash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{O} sistema sesmarial no Brasil}
+      \field{year}{1979}
+    \endentry
     \entry{Dean1971-iq}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b100b40f29115cac5afc9796e584dda9}{%
@@ -154,6 +187,40 @@
       \field{year}{2010}
       \field{pages}{1863\bibrangedash 1903}
       \range{pages}{41}
+    \endentry
+    \entry{Diegues_Junior1959-ba}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ee1632a4c5c0aa11b7fbb035099260c6}{%
+           family={Diégues\bibnamedelima Júnior},
+           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {Washington}%
+      }
+      \list{publisher}{1}{%
+        {União Pan-Americana}%
+      }
+      \strng{namehash}{ee1632a4c5c0aa11b7fbb035099260c6}
+      \strng{fullhash}{ee1632a4c5c0aa11b7fbb035099260c6}
+      \strng{bibnamehash}{ee1632a4c5c0aa11b7fbb035099260c6}
+      \strng{authorbibnamehash}{ee1632a4c5c0aa11b7fbb035099260c6}
+      \strng{authornamehash}{ee1632a4c5c0aa11b7fbb035099260c6}
+      \strng{authorfullhash}{ee1632a4c5c0aa11b7fbb035099260c6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{População e propriedade da terra no Brasil}
+      \field{year}{1959}
+      \keyw{Land tenure -- Brazil}
     \endentry
     \entry{Fausto2014-bh}{book}{}
       \name{author}{2}{}{%
