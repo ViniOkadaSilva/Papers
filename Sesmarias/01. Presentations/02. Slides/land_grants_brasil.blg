@@ -1,15 +1,15 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.blg'
-[39] biber-darwin:340> INFO - === Thu Feb 15, 2024, 10:53:00
-[48] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.bcf'
-[97] Biber.pm:978> INFO - Found 15 citekeys in bib section 0
-[105] Biber.pm:4401> INFO - Processing section 0
-[112] Biber.pm:4592> INFO - Looking for bibtex file 'citations_sesmarias.bib' for section 0
-[206] bibtex.pm:1713> INFO - LaTeX decoding ...
-[306] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/vinicius/Library/texmf/bibtex/bib/citations_sesmarias.bib'
-[374] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[374] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[374] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[374] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[383] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.bbl' with encoding 'UTF-8'
-[391] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.bbl
+[40] biber-darwin:340> INFO - === Tue Feb 20, 2024, 09:46:33
+[53] Biber.pm:418> INFO - Reading '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.bcf'
+[100] Biber.pm:978> INFO - Found 18 citekeys in bib section 0
+[108] Biber.pm:4401> INFO - Processing section 0
+[113] Biber.pm:4592> INFO - Looking for bibtex file 'citations_sesmarias.bib' for section 0
+[200] bibtex.pm:1713> INFO - LaTeX decoding ...
+[282] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/vinicius/Library/texmf/bibtex/bib/citations_sesmarias.bib'
+[347] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[347] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[347] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[347] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[356] bbl.pm:654> INFO - Writing '/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.bbl' with encoding 'UTF-8'
+[362] bbl.pm:757> INFO - Output to /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.bbl

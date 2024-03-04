@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{subfig}
 \usepackage{setspace}
-\spacing{1.15}
+\spacing{1.5}
 
 \usepackage{amsmath}
 
@@ -168,8 +168,17 @@ The paper the most similar to this project is \textcite{Wigton-Jones2020-ex}, wh
 The literature has analyzed how different economic cycles and how immigration has led to differential educational outcomes in Brazil \parencites{Musacchio2014-pq}{Rocha2017-yq}.
 Related literature has also analyzed the effect of the Spanish-Portuguese borders in South America, the role of sugarcane, and gold mining in Brazil \parencites{Laudares2022-vy}{Naritomi2012-or}.
 
+\section{Data}
 
-\section{Data Collection}
+Data for current land tenure in 2021 in Brazil is obtained from \textcite{Sparovek2019-dn}.\footnote{
+  Available at \url{https://atlasagropecuario.imaflora.org/}}.
+Land usage from 1985-2010 is obtained from Mapbiomas \parencite{Souza2020-kb}\footnote{
+  Available at \url{https://brasil.mapbiomas.org/en/}}.
+Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
+  Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
+The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. \footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes.}
+
+Other census data is obtained from the IBGE (\textit{}).\footnote{Microcensus is available through the IBGE but the data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
 
 Most of the current work in the project would require work in cooperation with researchers in Brazil. 
 Part of the project requires the transcription of the original manuscripts into text documents.
@@ -178,6 +187,18 @@ Once the text is available, then some information such as the date of the reques
 
 Given the geographical information extracted, part of the project is to georeference the original location of the \textit{sesmaria}. This is possible by using geographical markers (such as proximity to a river or a city) to get an estimate of the original location of the land grant.
 Once each \textit{sesmaria} is georeferenced and has the necessary information about it I would then be able to connect each point to Brazilian censuses from 1872-2010 and other sources of historical data.
+
+A geographical description of the current status on the land grant data collection is below. Both the states of Minas Gerais and Sao Paulo will be finished by the mid of March.
+
+
+
+\section{Identification}
+
+\subsection{Matching}
+
+\parencite{}
+
+\section{Preliminary Results}
 
 \newpage
 

@@ -2370,6 +2370,9 @@
     <bcf:citekey order="18" intorder="1">Rocha2017-yq</bcf:citekey>
     <bcf:citekey order="19" intorder="1">Laudares2022-vy</bcf:citekey>
     <bcf:citekey order="20" intorder="1">Naritomi2012-or</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Sparovek2019-dn</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Souza2020-kb</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Pereira2023-qv</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

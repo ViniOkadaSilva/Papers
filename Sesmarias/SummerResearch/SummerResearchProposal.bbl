@@ -52,7 +52,7 @@
       \field{series}{Coleção História e sociedade.}
       \field{title}{Latifúndio e reforma agrária no Brasil}
       \field{year}{1980}
-      \keyw{Land tenure -- Brazil;Books;Sesmarias}
+      \keyw{Land tenure -- Brazil}
     \endentry
     \entry{Bandecchi1963-uj}{book}{}
       \name{author}{1}{}{%
@@ -87,7 +87,7 @@
       \field{series}{Coleção Universidade do povo, 11}
       \field{title}{Origem do latifúndio no Brasil}
       \field{year}{1963}
-      \keyw{Land tenure -- Brazil -- History;Books;Sesmarias}
+      \keyw{Land tenure -- Brazil -- History}
     \endentry
     \entry{Banerjee2005-ki}{article}{}
       \name{author}{2}{}{%
@@ -125,7 +125,6 @@
       \field{year}{2005}
       \field{pages}{1190\bibrangedash 1213}
       \range{pages}{24}
-      \keyw{Read;History;Third Year Paper;Bible Translations;Sesmarias}
     \endentry
     \entry{Da_Costa_Porto1979-dz}{book}{}
       \name{author}{1}{}{%
@@ -143,7 +142,7 @@
         {pt-BR}%
       }
       \list{publisher}{1}{%
-        {Editora Universidade de Brası́lia}%
+        {Editora Universidade de Brasília}%
       }
       \strng{namehash}{f2aa73d4e8421240ba41c1db32b95d34}
       \strng{fullhash}{f2aa73d4e8421240ba41c1db32b95d34}
@@ -159,7 +158,6 @@
       \field{labeltitlesource}{title}
       \field{title}{{O} sistema sesmarial no Brasil}
       \field{year}{1979}
-      \keyw{Books;Sesmarias}
     \endentry
     \entry{Dell2010-qt}{article}{}
       \name{author}{1}{}{%
@@ -188,12 +186,11 @@
       \field{abstract}{[This study utilizes regression discontinuity to examine the long-run impacts of the mita, an extensive forced mining labor system in effect in Peru and Bolivia between 1573 and 1812. Results indicate that a mita effect lowers household consumption by around 25\% and increases the prevalence of stunted growth in children by around 6 percentage points in subjected districts today. Using data from the Spanish Empire and Peruvian Republic to trace channels of institutional persistence, I show that the mita's influence has persisted through its impacts on land tenure and public goods provision. Mita districts historically had fewer large landowners and lower educational attainment. Today, they are less integrated into road networks and their residents are substantially more likely to be subsistence farmers.]}
       \field{journaltitle}{Econometrica}
       \field{number}{6}
-      \field{title}{{THE} {PERSISTENT} {EFFECTS} {OF} {PERU'S} {MINING} ``{MITA}''}
+      \field{title}{{THE} {PERSISTENT} {EFFECTS} {OF} {PERU}'{S} {MINING} ``{MITA}''}
       \field{volume}{78}
       \field{year}{2010}
       \field{pages}{1863\bibrangedash 1903}
       \range{pages}{41}
-      \keyw{History;Read;Third Year Paper;Sesmarias}
     \endentry
     \entry{Dell2019-np}{article}{}
       \name{author}{2}{ul=2}{%
@@ -237,7 +234,6 @@
       \field{year}{2019}
       \field{pages}{164\bibrangedash 203}
       \range{pages}{40}
-      \keyw{History;Read;Third Year Paper;Sesmarias}
     \endentry
     \entry{Diegues_Junior1959-ba}{book}{}
       \name{author}{1}{}{%
@@ -271,7 +267,7 @@
       \field{labeltitlesource}{title}
       \field{title}{População e propriedade da terra no Brasil}
       \field{year}{1959}
-      \keyw{Land tenure -- Brazil;Books;Sesmarias}
+      \keyw{Land tenure -- Brazil}
     \endentry
     \entry{Laudares2022-vy}{misc}{}
       \name{author}{2}{}{%
@@ -301,11 +297,10 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This article documents the long-term impact of slavery on inequality at the receiving end. We focus on Brazil, the largest receiver of African slaves and the last country to abolish this institution in the Western Hemisphere, in 1888. To deal with the endogeneity of slavery placement, we use a spatial Regression Discontinuity Design (RDD), exploiting the Tordesillas Treaty, which established the colonial boundaries between the Portuguese and Spanish empires within Brazil. We find that the number of slaves in 1872 is discontinuously higher on the Portuguese side of the border, consistent with this power's comparative advantage in transatlantic slavery. We then show how this differential slave rate led to higher modern income inequality of 0.04 points (of the Gini Index), close to 10\% of the average income inequality in the country. In terms of mechanisms, we find a wider income gap, and important differences in education, employment and prejudice for blacks in modern times. We rule out the role of colonizer identity and other mechanisms proposed in the historical literature.}
-      \field{howpublished}{\url{https://conference.nber.org/conf_papers/f164242.pdf}}
+      \field{howpublished}{\url{https://conference.nber.org/conf\_papers/f164242.pdf}}
       \field{note}{Accessed: 2022-10-3}
       \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
       \field{year}{2022}
-      \keyw{Slavery in Brazil;Sesmarias}
     \endentry
     \entry{Lima2002-kd}{book}{}
       \name{author}{1}{}{%
@@ -336,7 +331,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Pequena história territorial do Brasil: sesmarias e terras devolutas}
       \field{year}{2002}
-      \keyw{Books;Sesmarias}
     \endentry
     \entry{Lobb1976-mc}{article}{}
       \name{author}{1}{}{%
@@ -368,51 +362,6 @@
       \field{year}{1976}
       \field{pages}{49\bibrangedash 63}
       \range{pages}{15}
-      \keyw{Sesmarias}
-    \endentry
-    \entry{Lowes2020-pr}{report}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=cc60d54c195d34926ef4540497702730}{%
-           family={Lowes},
-           familyi={L\bibinitperiod},
-           given={Sara},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
-           family={Montero},
-           familyi={M\bibinitperiod},
-           given={Eduardo},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {National Bureau of Economic Research}%
-      }
-      \list{location}{1}{%
-        {Cambridge, MA}%
-      }
-      \list{publisher}{1}{%
-        {National Bureau of Economic Research}%
-      }
-      \strng{namehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
-      \strng{fullhash}{a86718519fc8d4418a55d2dfd904006e}
-      \strng{bibnamehash}{a86718519fc8d4418a55d2dfd904006e}
-      \strng{authorbibnamehash}{a86718519fc8d4418a55d2dfd904006e}
-      \strng{authornamehash}{5f0ba09f8a29e3cfb9e7511391f9be59}
-      \strng{authorfullhash}{a86718519fc8d4418a55d2dfd904006e}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Founded in 1920, the NBER is a private, non-profit, non-partisan organization dedicated to conducting economic research and to disseminating research findings among academics, public policy makers, and business professionals.}
-      \field{month}{10}
-      \field{number}{w27893}
-      \field{title}{Concessions, Violence, and Indirect Rule: Evidence from the Congo Free State}
-      \field{type}{techreport}
-      \field{year}{2020}
-      \keyw{To Read;Sesmarias}
     \endentry
     \entry{Musacchio2014-pq}{article}{}
       \name{author}{3}{}{%
@@ -422,10 +371,10 @@
            given={Aldo},
            giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b712dd12a2a9d50d4522bab163eb95e8}{%
+        {{un=0,uniquepart=base,hash=e82f3790934a5508e824ceb64617fe27}{%
            family={Fritscher},
            familyi={F\bibinitperiod},
-           given={André\bibnamedelima Martı́nez},
+           given={André\bibnamedelima Martínez},
            giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=055d5b7c7d98f3ef61271cbc3573be80}{%
@@ -439,27 +388,26 @@
         {Cambridge University Press}%
       }
       \strng{namehash}{7c3d890828f43d37274d4555d56d3baa}
-      \strng{fullhash}{c341b322c24765ad608dd15e715baddc}
-      \strng{bibnamehash}{c341b322c24765ad608dd15e715baddc}
-      \strng{authorbibnamehash}{c341b322c24765ad608dd15e715baddc}
+      \strng{fullhash}{4109067c9abd85b53a5cbc5c8f1e0207}
+      \strng{bibnamehash}{4109067c9abd85b53a5cbc5c8f1e0207}
+      \strng{authorbibnamehash}{4109067c9abd85b53a5cbc5c8f1e0207}
       \strng{authornamehash}{7c3d890828f43d37274d4555d56d3baa}
-      \strng{authorfullhash}{c341b322c24765ad608dd15e715baddc}
+      \strng{authorfullhash}{4109067c9abd85b53a5cbc5c8f1e0207}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We study the initial expansion of public schooling across Brazilian states (1889--1930) and develop an alternative explanation of how colonial institutions may affect the provision of public goods in the long run. We find that states that exported commodities undergoing international booms, between 1889 and 1930, had significantly larger export tax revenues and could spend more on education, while other states lagged behind. Yet, such positive effect of commodity booms on education expenditures was muted in states that either had more slaves before abolition or cultivated cotton during colonial times.}
+      \field{abstract}{We study the initial expansion of public schooling across Brazilian states (1889–1930) and develop an alternative explanation of how colonial institutions may affect the provision of public goods in the long run. We find that states that exported commodities undergoing international booms, between 1889 and 1930, had significantly larger export tax revenues and could spend more on education, while other states lagged behind. Yet, such positive effect of commodity booms on education expenditures was muted in states that either had more slaves before abolition or cultivated cotton during colonial times.}
       \field{journaltitle}{J. Econ. Hist.}
       \field{month}{9}
       \field{number}{3}
-      \field{title}{Colonial Institutions, Trade Shocks, and the Diffusion of Elementary Education in Brazil, 1889--1930}
+      \field{title}{Colonial Institutions, Trade Shocks, and the Diffusion of Elementary Education in Brazil, {1889–1930}}
       \field{volume}{74}
       \field{year}{2014}
       \field{pages}{730\bibrangedash 766}
       \range{pages}{37}
-      \keyw{Read;History;Brazil;Third Year Paper;Sesmarias}
     \endentry
     \entry{Naritomi2012-or}{article}{}
       \name{author}{3}{}{%
@@ -500,7 +448,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This article analyzes the determinants of local institutions in Brazil. We show that institutional quality and distribution of land are partly inherited from the colonial histories experienced by different areas of the country. The sugar cane boom---characterized by an oligarchic society---is associated with more land inequality. The gold boom---characterized by a heavily inefficient presence of the Portuguese state---is associated with worse governance and access to justice. We do not find similar effects for a postcolonial boom (coffee). We also find that the colonial episodes are correlated with lower provision of public goods.}
+      \field{abstract}{This article analyzes the determinants of local institutions in Brazil. We show that institutional quality and distribution of land are partly inherited from the colonial histories experienced by different areas of the country. The sugar cane boom—characterized by an oligarchic society—is associated with more land inequality. The gold boom—characterized by a heavily inefficient presence of the Portuguese state—is associated with worse governance and access to justice. We do not find similar effects for a postcolonial boom (coffee). We also find that the colonial episodes are correlated with lower provision of public goods.}
       \field{journaltitle}{J. Econ. Hist.}
       \field{month}{5}
       \field{number}{2}
@@ -509,7 +457,37 @@
       \field{year}{2012}
       \field{pages}{393\bibrangedash 422}
       \range{pages}{30}
-      \keyw{URGENT;Brazil;Colonialism;History;Read;Sesmarias;Third Year Paper}
+    \endentry
+    \entry{Pereira2023-qv}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e8d2d68bdd57b5d71c4b52705f83b13d}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Rafael\bibnamedelimb H\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0afb30cb2e97ab1bd9a284661b85acd3}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={Rogério\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2de8cda036c83295519e4eba70930c05}
+      \strng{fullhash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{bibnamehash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{authorbibnamehash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{authornamehash}{2de8cda036c83295519e4eba70930c05}
+      \strng{authorfullhash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{censobr: Download Data from Brazil's Population Census}
+      \field{version}{v0.2.0}
+      \field{year}{2023}
     \endentry
     \entry{Rocha2017-yq}{article}{}
       \name{author}{3}{}{%
@@ -553,7 +531,6 @@
       \field{year}{2017}
       \field{pages}{105\bibrangedash 136}
       \range{pages}{32}
-      \keyw{To Read;URGENT;Sesmarias;Slavery in Brazil}
     \endentry
     \entry{Smith1944-oi}{article}{}
       \name{author}{1}{}{%
@@ -586,7 +563,357 @@
       \field{year}{1944}
       \field{pages}{194\bibrangedash 201}
       \range{pages}{8}
-      \keyw{Sesmarias}
+    \endentry
+    \entry{Souza2020-kb}{article}{}
+      \name{author}{33}{}{%
+        {{un=0,uniquepart=base,hash=28c51d4e672a881a36827846d97ec31d}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Carlos\bibnamedelima M},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ccc812325163ff89403746acf1d289b}{%
+           family={Z.\bibnamedelimi Shimbo},
+           familyi={Z\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=649c25b784ee89fc4716bad9ad57daff}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Marcos\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8bd1d7d59542cccd0c21283a6b04def}{%
+           family={Parente},
+           familyi={P\bibinitperiod},
+           given={Leandro\bibnamedelima L},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5aa15b81008e113dce4aafac9bf5cd1}{%
+           family={A.\bibnamedelimi Alencar},
+           familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Ane},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80c0988de9042a9825983c1935250f61}{%
+           family={Rudorff},
+           familyi={R\bibinitperiod},
+           given={Bernardo\bibnamedelimb F\bibnamedelima T},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f5ccf4493b091f6b848e80dcd095f70}{%
+           family={Hasenack},
+           familyi={H\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=628ab24e7e5f083ce35b1263a32a8d33}{%
+           family={Matsumoto},
+           familyi={M\bibinitperiod},
+           given={Marcelo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed0b486ed7e10f9cebd02a1598dbc8e7}{%
+           family={G.\bibnamedelimi Ferreira},
+           familyi={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Laerte},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20cf07c5e1029a7303317de8fd35afc1}{%
+           family={Souza-Filho},
+           familyi={S\bibinithyphendelim F\bibinitperiod},
+           given={Pedro\bibnamedelimb W\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83fc7a059e6c41b675db205d7b4cdade}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Sergio\bibnamedelima W},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=73a0c7f3fcb5b05ad3f45a6f5456c8e6}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Washington\bibnamedelima F},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bf45dc7202f2898b9819f1cf941e996}{%
+           family={Fonseca},
+           familyi={F\bibinitperiod},
+           given={Antônio\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cdd607288f1cae7604288e78b90b82b}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={Camila\bibnamedelima B},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c11063fb086c5cc0161f5bdbd274513}{%
+           family={Diniz},
+           familyi={D\bibinitperiod},
+           given={Cesar\bibnamedelima G},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=239a14b692856111acf9a83ac69b48cb}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80d9c4d299e64fb067abe9657dd37615}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Dyeden},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cef5f8f652840e33045390cc761931b0}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Eduardo\bibnamedelima R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73670ecf289cfdf8a28ddb6da3033111}{%
+           family={Vélez-Martin},
+           familyi={V\bibinithyphendelim M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=064a3baf23664ec536c14d4c2ab21658}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Eliseu\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61f7bf75781b8d5b7ccf1e8554087d53}{%
+           family={Lenti},
+           familyi={L\bibinitperiod},
+           given={Felipe\bibnamedelimb E\bibnamedelima B},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0651812d4995f64824ccbe6ee68a26f3}{%
+           family={Paternost},
+           familyi={P\bibinitperiod},
+           given={Fernando\bibnamedelima F},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aad8fbd9880b6f754a451fe643886226}{%
+           family={Pareyn},
+           familyi={P\bibinitperiod},
+           given={Frans\bibnamedelimb G\bibnamedelima C},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9031badf6a5a3fa51cccafc8ccc91af}{%
+           family={Siqueira},
+           familyi={S\bibinitperiod},
+           given={João\bibnamedelima V},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5eaa872acfe865fb7eddd400e6ebb816}{%
+           family={Viera},
+           familyi={V\bibinitperiod},
+           given={José\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a835519a5f4f36d978b9686dcebd0520}{%
+           family={Neto},
+           familyi={N\bibinitperiod},
+           given={Luiz\bibnamedelimb C\bibnamedelima Ferreira},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fceb7ebdd3c16c81cdbcad599eb9e518}{%
+           family={Saraiva},
+           familyi={S\bibinitperiod},
+           given={Marciano\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8215c66064117c85348ce72919abb391}{%
+           family={Sales},
+           familyi={S\bibinitperiod},
+           given={Marcio\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4ec58a930e8f1d9103936f9790455aa}{%
+           family={Salgado},
+           familyi={S\bibinitperiod},
+           given={Moises\bibnamedelimb P\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a545192534e6c8767352d782de41cbd7}{%
+           family={Vasconcelos},
+           familyi={V\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34109d448df6354fb50fe0f1bd366134}{%
+           family={Galano},
+           familyi={G\bibinitperiod},
+           given={Soltan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cffa7205846341adaea013df2fe0137}{%
+           family={Mesquita},
+           familyi={M\bibinitperiod},
+           given={Vinicius\bibnamedelima V},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f082da0c655fc4fdade325d7b448e8b}{%
+           family={Azevedo},
+           familyi={A\bibinitperiod},
+           given={Tasso},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{37ec9b9882124adab855cc62eace12d2}
+      \strng{fullhash}{7ba289c3f754b3d2b42ab5f92667ddd9}
+      \strng{bibnamehash}{37ec9b9882124adab855cc62eace12d2}
+      \strng{authorbibnamehash}{37ec9b9882124adab855cc62eace12d2}
+      \strng{authornamehash}{37ec9b9882124adab855cc62eace12d2}
+      \strng{authorfullhash}{7ba289c3f754b3d2b42ab5f92667ddd9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Brazil has a monitoring system to track annual forest conversion in the Amazon and most recently to monitor the Cerrado biome. However, there is still a gap of annual land use and land cover (LULC) information in all Brazilian biomes in the country. Existing countrywide efforts to map land use and land cover lack regularly updates and high spatial resolution time-series data to better understand historical land use and land cover dynamics, and the subsequent impacts in the country biomes. In this study, we described a novel approach and the results achieved by a multi-disciplinary network called MapBiomas to reconstruct annual land use and land cover information between 1985 and 2017 for Brazil, based on random forest applied to Landsat archive using Google Earth Engine. We mapped five major classes: forest, non-forest natural formation, farming, non-vegetated areas, and water. These classes were broken into two sub-classification levels leading to the most comprehensive and detailed mapping for the country at a 30 m pixel resolution. The average overall accuracy of the land use and land cover time-series, based on a stratified random sample of 75,000 pixel locations, was 89\% ranging from 73 to 95\% in the biomes. The 33 years of LULC change data series revealed that Brazil lost 71 Mha of natural vegetation, mostly to cattle ranching and agriculture activities. Pasture expanded by 46\% from 1985 to 2017, and agriculture by 172\%, mostly replacing old pasture fields. We also identified that 86 Mha of the converted native vegetation was undergoing some level of regrowth. Several applications of the MapBiomas dataset are underway, suggesting that reconstructing historical land use and land cover change maps is useful for advancing the science and to guide social, economic and environmental policy decision-making processes in Brazil.}
+      \field{journaltitle}{Remote Sensing}
+      \field{month}{8}
+      \field{number}{17}
+      \field{title}{Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian Biomes with Landsat Archive and Earth Engine}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{2735}
+      \range{pages}{1}
+    \endentry
+    \entry{Sparovek2019-dn}{article}{}
+      \name{author}{14}{}{%
+        {{un=0,uniquepart=base,hash=743f5bac0ec3d9254fbd9ba6aa084c5a}{%
+           family={Sparovek},
+           familyi={S\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46f97bd84419f9a25687b633b9a2afaa}{%
+           family={Reydon},
+           familyi={R\bibinitperiod},
+           given={Bastiaan\bibnamedelima Philip},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6da444a89f6b523941ce5ce9b54b4c0}{%
+           family={Guedes\bibnamedelima Pinto},
+           familyi={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Luís\bibnamedelima Fernando},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd1aa8b751775a182f3da2f9693ef216}{%
+           family={Faria},
+           familyi={F\bibinitperiod},
+           given={Vinicius},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26e43223a59570ce3c6b05a4bf36b58f}{%
+           family={Freitas},
+           familyi={F\bibinitperiod},
+           given={Flavio\bibnamedelimb Luiz\bibnamedelima Mazzaro},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=da167b71d3634468570ef93fb847d232}{%
+           family={Azevedo-Ramos},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9d0703ce2f5ccb6c7385c03e0bee202}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={Toby},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bec02b6de93bef837fef8237962a2f6}{%
+           family={Hamamura},
+           familyi={H\bibinitperiod},
+           given={Caio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d331d88573eaca85d0cdc94057c9105}{%
+           family={Rajão},
+           familyi={R\bibinitperiod},
+           given={Raoni},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55c95acf456d68bce0078df0a580e62e}{%
+           family={Cerignoni},
+           familyi={C\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49f45a75be5a209aef4d23d2e0c4395f}{%
+           family={Siqueira},
+           familyi={S\bibinitperiod},
+           given={Gabriel\bibnamedelima Pansani},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cf85474e4b6a3cc0ce116502d5719d0}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Tomás},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c3796f208b5e407135dc60a84a88c0a}{%
+           family={Alencar},
+           familyi={A\bibinitperiod},
+           given={Ane},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2e98d8a6cb11d67751b7d363185a78b}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Vivian},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{009e722f674a8ca529defeeb8b442d9b}
+      \strng{fullhash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
+      \strng{bibnamehash}{009e722f674a8ca529defeeb8b442d9b}
+      \strng{authorbibnamehash}{009e722f674a8ca529defeeb8b442d9b}
+      \strng{authornamehash}{009e722f674a8ca529defeeb8b442d9b}
+      \strng{authorfullhash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Land tenure in many parts of Brazil remains uncertain and controversial. These problems have recently been exacerbated by changes in the legal framework regulating protected areas and the land market. A particular challenge facing attempts to improve land tenure security and governance in Brazil is the lack of a single, integrated assessment of all types of lands. Here we address this problem and present a first, integrated map of Brazilian land tenure encompassing all official data sources pertaining to both public and private lands. Of the total (8.5 million km2) 36.1\% of all lands are public (with 6.4\% officially undesignated), 44.2\% are private, and 16.6\% are unregistered or with unknown tenure. Strikingly, overlaps among land tenure categories sum to 50\% of the registered territory of Brazil. A clearer understanding of uncertainties in land tenure, and the spatial distribution of those uncertainties can help guide research and public policies focused on minimizing land conflicts and strengthening governance and territorial planning to improve economic, environmental and social outcomes from land use in Brazil.}
+      \field{journaltitle}{Land use policy}
+      \field{month}{9}
+      \field{number}{104062}
+      \field{title}{Who owns Brazilian lands?}
+      \field{volume}{87}
+      \field{year}{2019}
+      \field{pages}{104062}
+      \range{pages}{1}
+      \keyw{Brazil; Governance; Land tenure; Policy; Territorial planning}
     \endentry
     \entry{Usaid2016-xs}{report}{}
       \name{author}{1}{}{%
@@ -612,7 +939,6 @@
       \field{title}{{USAID} {COUNTRY} {PROFILE}: {PROPERTY} {RIGHTS} {AND} {RESOURCE} {GOVERNANCE} - Brazil}
       \field{type}{techreport}
       \field{year}{2016}
-      \keyw{Sesmarias}
     \endentry
     \entry{Wigton-Jones2020-ex}{article}{}
       \name{author}{1}{}{%
@@ -647,9 +973,9 @@
       \field{year}{2020}
       \field{pages}{455\bibrangedash 501}
       \range{pages}{47}
-      \keyw{URGENT;Read;History;Governance;Sesmarias;Third Year Paper}
     \endentry
   \enddatalist
+  \missing{Lowes2020-pr}
 \endrefsection
 \endinput
 

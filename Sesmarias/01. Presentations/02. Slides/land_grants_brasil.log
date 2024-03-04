@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  15 FEB 2024 10:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  20 FEB 2024 09:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -719,6 +719,8 @@ Package: ragged2e 2022/11/13 v3.2 ragged2e Package
 \RaggedLeftParindent=\skip78
 \RaggedRightParindent=\skip79
 \JustifyingParindent=\skip80
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/oberdiek/centernot.sty
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/outlines/outlines.sty
 Package: outlines 2012/1/23 1.1 Ch. Pecheur
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
@@ -840,7 +842,7 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \c@nlinenum=\count383
 \TeXr@lab=\toks58
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 40.
+Package hyperref Info: Option `colorlinks' set `true' on input line 42.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty)
    defining Unicode char U+0301 (decimal 769)
    defining Unicode char U+2212 (decimal 8722)
@@ -1072,30 +1074,30 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 111.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 113.
 \@quotelevel=\count511
 \@quotereset=\count512
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.aux)
 \openout1 = `land_grants_brasil.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1150,60 +1152,60 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 111.
+Package hyperref Info: Link coloring ON on input line 113.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.out) (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.out)
 \@outlinefile=\write6
 \openout6 = `land_grants_brasil.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 111.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 111.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 113.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 111.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 111.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 111.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 111.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 111.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 111.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 111.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 111.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 113.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 111.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 111.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 111.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 111.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 111.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 111.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 111.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 111.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 113.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 111.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 111.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 113.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 111.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 113.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 111.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 113.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 111.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 113.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1219,7 +1221,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 111.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 113.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
@@ -1235,22 +1237,22 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'land_grants_brasil.bbl' found.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.bbl)
-Package biblatex Info: Reference section=0 on input line 111.
-Package biblatex Info: Reference segment=0 on input line 111.
+Package biblatex Info: Reference section=0 on input line 113.
+Package biblatex Info: Reference segment=0 on input line 113.
  (/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.nav) [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 132.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 132.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 132.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 143.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [3
@@ -1275,432 +1277,386 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [13
 
-]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png, id=123, 501.3129pt x 309.7974pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png  used on input line 207.
-(pdftex.def)             Requested size: 386.96024pt x 239.14507pt.
-
-Overfull \vbox (10.49101pt too high) detected at line 207
- []
-
-[14
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>] [15
+] [14
 
 ]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png, id=149, 489.2679pt x 302.3295pt>
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png, id=161, 526.8483pt x 325.4559pt>
 File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png Graphic file (type png)
 <use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png  used on input line 244.
-(pdftex.def)             Requested size: 386.96024pt x 239.11908pt.
- [16
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png  used on input line 329.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+ [15
 
  </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_distribution_1701.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png, id=156, 501.3129pt x 309.7974pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png  used on input line 253.
-(pdftex.def)             Requested size: 386.96024pt x 239.14507pt.
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_cattle_distribution_1701.png, id=169, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_cattle_distribution_1701.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_cattle_distribution_1701.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_cattle_distribution_1701.png  used on input line 338.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+ [16
 
-Overfull \vbox (10.49101pt too high) detected at line 253
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grant_cattle_distribution_1701.png>] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex) [17
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [29.4,29.4]| 
  []
 
-[17
 
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png, id=162, 501.3129pt x 309.7974pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png  used on input line 262.
-(pdftex.def)             Requested size: 386.96024pt x 239.14507pt.
-
-Overfull \vbox (10.49101pt too high) detected at line 262
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--15
+ []|\OT1/cmss/m/n/8 [35.9,35.9]| 
  []
 
-[18
+) [18
 
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png, id=169, 501.3129pt x 309.7974pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png  used on input line 271.
-(pdftex.def)             Requested size: 386.96024pt x 239.14507pt.
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1985_Grid_Land_Usage_Results_NE.tex) [19
 
-Overfull \vbox (10.49101pt too high) detected at line 271
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Results_NE.tex)
+Overfull \vbox (3.84996pt too high) detected at line 372
  []
 
-[19
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png>] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex) [20
+[20
 
 ] [21
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex) [22
+] [22
 
 ]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png, id=194, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png  used on input line 294.
-(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
-
-Overfull \vbox (10.3868pt too high) detected at line 294
+Overfull \hbox (9.50392pt too wide) in paragraph at lines 396--396
+[][][]\OT1/cmss/m/n/10.95 USAID (2016).[] \OT1/cmss/m/it/10.95 US-AID COUN-TRY PRO-FILE: PROP-ERTY RIGHTS AND RE-SOURCE
  []
 
 [23
 
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png, id=200, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png  used on input line 304.
-(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
-
-Overfull \vbox (10.3868pt too high) detected at line 304
- []
-
-[24
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Productive_Land_Not_Used_RDD.png, id=207, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Productive_Land_Not_Used_RDD.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Productive_Land_Not_Used_RDD.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Productive_Land_Not_Used_RDD.png  used on input line 313.
-(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
-
-Overfull \vbox (10.3868pt too high) detected at line 313
- []
-
-[25
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Productive_Land_Not_Used_RDD.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png, id=214, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png  used on input line 322.
-(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
-
-Overfull \vbox (10.3868pt too high) detected at line 322
- []
-
-[26
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png, id=220, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png  used on input line 331.
-(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
-
-Overfull \vbox (10.3868pt too high) detected at line 331
- []
-
-[27
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png>] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Results.tex) [28
-
-]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png, id=231, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png  used on input line 345.
-(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
-
-Overfull \vbox (10.3868pt too high) detected at line 345
- []
-
-[29
-
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png>] [30
-
-]
-Overfull \hbox (9.50392pt too wide) in paragraph at lines 353--353
-[][][]\OT1/cmss/m/n/10.95 USAID (2016).[] \OT1/cmss/m/it/10.95 US-AID COUN-TRY PRO-FILE: PROP-ERTY RIGHTS AND RE-SOURCE
- []
-
-[31
-
- </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [32
+ </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [24
 
 
-] [33
+] [25
 
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 355.
+(hyperref)                removing `\translate ' on input line 398.
+
+[26
+
+]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/current_status_sesmarias.png, id=270, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/current_status_sesmarias.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/current_status_sesmarias.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/current_status_sesmarias.png  used on input line 424.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (15.11597pt too high) detected at line 424
+ []
+
+[27
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/current_status_sesmarias.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png, id=277, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png  used on input line 434.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 434
+ []
+
+[28
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png, id=286, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png  used on input line 443.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.3868pt too high) detected at line 443
+ []
+
+[29
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_Census_Enslaved_People.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png, id=292, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png  used on input line 452.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 452
+ []
+
+[30
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_slaves_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_white_RDD.png, id=299, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_white_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_white_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_white_RDD.png  used on input line 461.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 461
+ []
+
+[31
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_white_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_black_RDD.png, id=307, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_black_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_black_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_black_RDD.png  used on input line 470.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 470
+ []
+
+[32
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_black_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png, id=314, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png  used on input line 479.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 479
+ []
+
+[33
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_agriculture_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_ranching_RDD.png, id=321, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_ranching_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_ranching_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_ranching_RDD.png  used on input line 488.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 488
+ []
 
 [34
 
-] [35
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_ranching_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_industry_RDD.png, id=328, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_industry_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_industry_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_industry_RDD.png  used on input line 497.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
 
-] [36
+Overfull \vbox (10.68683pt too high) detected at line 497
+ []
 
-] [37
+[35
 
-] [38
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_industry_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png, id=335, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png  used on input line 506.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
 
-] [39
+Overfull \vbox (10.3868pt too high) detected at line 506
+ []
 
-] [40
+[36
 
-] [41
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png, id=341, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png  used on input line 515.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
 
-] [42
+Overfull \vbox (10.3868pt too high) detected at line 515
+ []
 
-]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png, id=320, 513.3579pt x 317.2653pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png  used on input line 411.
-(pdftex.def)             Requested size: 199.1693pt x 123.0891pt.
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png, id=321, 513.3579pt x 317.2653pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png  used on input line 411.
-(pdftex.def)             Requested size: 199.1693pt x 123.0891pt.
+[37
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 411--411
-[][] [] 
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png, id=348, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png  used on input line 525.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.3868pt too high) detected at line 525
+ []
+
+[38
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Livestock_RDD.png, id=355, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Livestock_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Livestock_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Livestock_RDD.png  used on input line 534.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 534
+ []
+
+[39
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Livestock_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png, id=362, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png  used on input line 543.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 543
+ []
+
+[40
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_Occupied_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_2000ha_RDD.png, id=369, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_2000ha_RDD.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_2000ha_RDD.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_2000ha_RDD.png  used on input line 552.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 552
+ []
+
+[41
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_Ag_Census_2000ha_RDD.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_natural_vegetation.png, id=377, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_natural_vegetation.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_natural_vegetation.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_natural_vegetation.png  used on input line 561.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 561
+ []
+
+[42
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_natural_vegetation.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_actual_sugarcane.png, id=384, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_actual_sugarcane.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_actual_sugarcane.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_actual_sugarcane.png  used on input line 570.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 570
  []
 
 [43
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/slave_proportion.png> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/total_slaves.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png, id=331, 513.3579pt x 317.2653pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png  used on input line 418.
-(pdftex.def)             Requested size: 378.42044pt x 233.87704pt.
- [44
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_actual_sugarcane.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_pasture.png, id=392, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_pasture.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_pasture.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_pasture.png  used on input line 579.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png, id=340, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png  used on input line 425.
-(pdftex.def)             Requested size: 378.42044pt x 233.7669pt.
- [45
+Overfull \vbox (10.68683pt too high) detected at line 579
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_production_2010.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png, id=348, 513.3579pt x 317.2653pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png  used on input line 434.
-(pdftex.def)             Requested size: 199.1693pt x 123.0891pt.
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png, id=349, 513.3579pt x 317.2653pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png  used on input line 434.
-(pdftex.def)             Requested size: 199.1693pt x 123.0891pt.
+[44
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 434--434
-[][] [] 
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_graph_pasture.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png, id=399, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png  used on input line 586.
+(pdftex.def)             Requested size: 295.90587pt x 182.79039pt.
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png, id=400, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png  used on input line 586.
+(pdftex.def)             Requested size: 295.90587pt x 182.79039pt.
+
+Overfull \hbox (86.96214pt too wide) in paragraph at lines 586--586
+[]|  []   [] 
+ []
+
+[45
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png> </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_latifundia_map.png, id=406, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_latifundia_map.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_latifundia_map.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_latifundia_map.png  used on input line 595.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.3868pt too high) detected at line 595
  []
 
 [46
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio.png> </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/gender_ratio_slaves.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png, id=357, 453.1329pt x 279.9258pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png  used on input line 441.
-(pdftex.def)             Requested size: 338.59044pt x 209.16644pt.
- [47
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_latifundia_map.png>] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor_Enslaved.tex
+Overfull \hbox (3.0461pt too wide) in paragraph at lines 5--5
+ []|\OT1/cmss/m/n/8 Agriculture 
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png, id=364, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png  used on input line 449.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [48
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png, id=372, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png  used on input line 457.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [49
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [29.1,29.1]| 
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/size_dist_1697.png>] [50
 
-]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png, id=387, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png  used on input line 469.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [51
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [28.5,28.5]| 
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/year_dist_PE.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png, id=393, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png  used on input line 479.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [52
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugar_pasture.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png, id=401, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png  used on input line 489.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [53
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [33.6,33.6]| 
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png, id=409, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png  used on input line 499.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [54
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/discovery_year.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png, id=417, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png  used on input line 509.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [55
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [43.1,43.1]| 
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png, id=426, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png  used on input line 519.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [56
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/year_distribution.png>]
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/no_land.png  used on input line 529.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--15
+ []|\OT1/cmss/m/n/8 [40.6,40.6]| 
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.529 \end{frame}
-                  [57
+) [47
 
-]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png, id=441, 508.7808pt x 314.3745pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png  used on input line 539.
-(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor_Free.tex
+Overfull \hbox (3.0461pt too wide) in paragraph at lines 5--5
+ []|\OT1/cmss/m/n/8 Agriculture 
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.539 \end{frame}
-                  [58
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_1985_2010.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png, id=448, 508.7808pt x 314.3745pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png  used on input line 549.
-(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [30.9,30.9]| 
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.549 \end{frame}
-                  [59
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_1985_2010.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png, id=455, 508.7808pt x 314.3745pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png  used on input line 559.
-(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [34.7,34.7]| 
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.559 \end{frame}
-                  [60
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/agriculture_pasture_1985_2010.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png, id=462, 508.7808pt x 314.3745pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png  used on input line 569.
-(pdftex.def)             Requested size: 338.6067pt x 209.2243pt.
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [24.7,24.7]| 
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{no_land}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.569 \end{frame}
-                  [61
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/forest_1985_2010.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png, id=470, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png  used on input line 579.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [62
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--14
+ []|\OT1/cmss/m/n/8 [34.3,34.3]| 
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/pasture_2000_grid.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png, id=479, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png  used on input line 589.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [63
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_potential_2000_grid.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png, id=487, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png  used on input line 599.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [64
+Overfull \hbox (1.39333pt too wide) in paragraph at lines 14--15
+ []|\OT1/cmss/m/n/8 [28.2,28.2]| 
+ []
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/sugarcane_usage_2000_grid.png>]
-<~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png, id=495, 526.8483pt x 325.4559pt>
-File: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png Graphic file (type png)
-<use ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png>
-Package pdftex.def Info: ~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png  used on input line 609.
-(pdftex.def)             Requested size: 338.5886pt x 209.16013pt.
- [65
+) [48
 
- </Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/01. Maps/nightlight_2000_grid.png>] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage.tex) [66
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1985_Grid_Geography_Results_NE.tex
+Overfull \hbox (16.9439pt too wide) in paragraph at lines 3--27
+ [] 
+ []
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_2010.tex) [67
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/sugar_first_stage_grid.tex)
-pdfTeX warning (ext4): destination with the same identifier (name{sugar_table_2010}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.634 \end{frame}
-                  [68
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_activity_grid.tex) [69
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/economic_development_grid.tex) [70
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/land_usage_year_grid.tex) [71
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/agglomeration_grid.tex) [72
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias_grid.tex) [73
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_1872.tex)
-
-Class beamer Warning: Frame text is shrunk by a factor of 30.51147 percent instead of 25 percent on input line 685.
-
-[74
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Tables/summary_sesmarias.tex) [75
+) [49
 
 ]
 \tf@nav=\write7
@@ -1720,30 +1676,21 @@ Package logreq Info: Writing requests to 'land_grants_brasil.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40527 strings out of 476029
- 875783 string characters out of 5790167
- 1883346 words of memory out of 5000000
- 60010 multiletter control sequences out of 15000+600000
- 526715 words of font info for 84 fonts, out of 8000000 for 9000
+ 40375 strings out of 476029
+ 866612 string characters out of 5790167
+ 1876346 words of memory out of 5000000
+ 59941 multiletter control sequences out of 15000+600000
+ 526710 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,17n,122p,1865b,2417s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,122p,1865b,2422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{grid_maps} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{1995_over2000ha} has been referenced but does not exist, replaced by a fixed one
 
-
-pdfTeX warning (dest): name{data} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{IV} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{maps} has been referenced but does not exist, replaced by a fixed one
-
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.pdf" (75 pages, 12534533 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/02. Slides/land_grants_brasil.pdf" (49 pages, 4440807 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 528 compressed objects within 6 object streams
- 200 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 145 named destinations out of 1000 (max. 500000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

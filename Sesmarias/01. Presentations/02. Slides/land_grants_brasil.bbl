@@ -164,6 +164,43 @@
       \field{title}{{O} sistema sesmarial no Brasil}
       \field{year}{1979}
     \endentry
+    \entry{Dean1971-iq}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b100b40f29115cac5afc9796e584dda9}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Werren},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Duke University Press}%
+      }
+      \strng{namehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{fullhash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{bibnamehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{authorbibnamehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{authornamehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{authorfullhash}{b100b40f29115cac5afc9796e584dda9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{… Some Portuguese did remain on the sesmarias of others as tenants of a sort, but because … the principal institutions of Brazilian society. The sesmarias were granted unsystematically and …}
+      \field{journaltitle}{Hisp. Am. Hist. Rev.}
+      \field{month}{11}
+      \field{number}{4}
+      \field{title}{Latifundia and land policy in nineteenth-century Brazil}
+      \field{volume}{51}
+      \field{year}{1971}
+      \field{pages}{606\bibrangedash 625}
+      \range{pages}{20}
+    \endentry
     \entry{Fausto2014-bh}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d569fc63042aed8fd5cb86dddbc6b7a1}{%
@@ -234,6 +271,36 @@
       \field{note}{Accessed: 2022-10-3}
       \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
       \field{year}{2022}
+    \endentry
+    \entry{Lima2002-kd}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d14c224f083d914947a86cf64bf9b33}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Ruy\bibnamedelima Cirne},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {pt-BR}%
+      }
+      \list{publisher}{1}{%
+        {Editora UFG}%
+      }
+      \strng{namehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{fullhash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{bibnamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authorbibnamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authornamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authorfullhash}{0d14c224f083d914947a86cf64bf9b33}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pequena história territorial do Brasil: sesmarias e terras devolutas}
+      \field{year}{2002}
     \endentry
     \entry{Musacchio2014-pq}{article}{}
       \name{author}{3}{}{%
@@ -431,12 +498,12 @@
     \endentry
     \entry{Smith2023-ip}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9806584db113f694a5eafce6a9057815}{%
+        {{un=1,uniquepart=given,hash=9806584db113f694a5eafce6a9057815}{%
            family={Smith},
            familyi={S\bibinitperiod},
            given={Cory},
            giveni={C\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{9806584db113f694a5eafce6a9057815}
       \strng{fullhash}{9806584db113f694a5eafce6a9057815}
@@ -452,6 +519,38 @@
       \field{labeltitlesource}{title}
       \field{title}{Land concentration and Long-run development in the frontier United States}
       \field{year}{2023}
+    \endentry
+    \entry{Smith1944-oi}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=f3a71e41875b51f7b09496fdbaf388f6}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={T\bibnamedelima Lynn},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {[Board of Regents of the University of Wisconsin System, University of Wisconsin Press]}%
+      }
+      \strng{namehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{fullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{bibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorbibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authornamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorfullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Land \& Public Utility Economics}
+      \field{number}{3}
+      \field{title}{Land Tenure in Brazil}
+      \field{volume}{20}
+      \field{year}{1944}
+      \field{pages}{194\bibrangedash 201}
+      \range{pages}{8}
     \endentry
     \entry{Sokoloff2000-mb}{article}{}
       \name{author}{2}{}{%
