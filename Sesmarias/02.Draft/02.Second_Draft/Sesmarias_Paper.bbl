@@ -61,6 +61,52 @@
       \field{pages}{116\bibrangedash 125}
       \range{pages}{10}
     \endentry
+    \entry{Albertus2018-bf}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9dcb437679ca57e86d54676a70bcb35d}{%
+           family={Albertus},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=492dda499f5cd335b9b29ecef36efc63}{%
+           family={Brambor},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e862cd9036398a5b9a4470cc9c813acf}{%
+           family={Ceneviva},
+           familyi={C\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Inc}%
+      }
+      \strng{namehash}{e79a2c36a181db4f35eb6422dd2a2c2d}
+      \strng{fullhash}{7d43c2fe9b1e3b0aa78dccc721237930}
+      \strng{bibnamehash}{7d43c2fe9b1e3b0aa78dccc721237930}
+      \strng{authorbibnamehash}{7d43c2fe9b1e3b0aa78dccc721237930}
+      \strng{authornamehash}{e79a2c36a181db4f35eb6422dd2a2c2d}
+      \strng{authorfullhash}{7d43c2fe9b1e3b0aa78dccc721237930}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What is the relationship between landholding inequality and rural unrest? And why does land reform that ostensibly addresses rural grievances sometimes exacerbate unrest? We advance the understanding of these longstanding questions by shifting the emphasis from how landholding inequality fuels rural grievances to how it captures the collective action capacity of landowners. Using municipal-level data from Brazil?s large land reform program from 1988 to 2013, we demonstrate that the relationship between landholding inequality and unrest is conditional. Isolated threats to landed elites in the form of land invasions are difficult to repel, generating a positive relationship between landholding inequality and one-off land invasions. By contrast, sustained, broader local threats triggered by nearby land reforms catalyze landowner organization to repel land invasions, leading to the reverse relationship. The findings provide a novel answer for why a straightforward link between land inequality and rural unrest is elusive and may generalize to a broad range of similar cases.}
+      \field{journaltitle}{J. Conflict Resolut.}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Land Inequality and Rural Unrest: Theory and Evidence from Brazil}
+      \field{volume}{62}
+      \field{year}{2018}
+      \field{pages}{557\bibrangedash 596}
+      \range{pages}{40}
+    \endentry
     \entry{Allen2019-kh}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=03906f8f9ec86a54bb146c9aac218ed0}{%

@@ -122,7 +122,7 @@
 \vspace{.1cm}
 
 \begin{abstract}
-  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called sesmarias. These land grants were often given to people with substantial financial means, restricting land access to most of the population. By collecting a novel dataset on the location of these land grants alongside a matching procedure, I study the long-term effects of land grants on Brazil's economic development. Preliminary results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
+  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called \textit{sesmarias}. These land grants were often given to people with substantial financial means, restricting land access to most of the population. By collecting a novel dataset on the location of these land grants alongside a matching procedure, I study the long-term effects of land grants on Brazil's economic development. Preliminary results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
 \end{abstract}
 
 \clearpage
@@ -135,9 +135,19 @@ This issue is compounded by the fact that large agricultural lands in Brazil are
 The combination of land concentration and low levels of utilization are spread through the economy as it depresses rural wages, keeping those people away from the consumer markets \parencite[p.~1]{De_Oliveira_Andrade1980-xz}.
 % However, this is not a recent issue as even in the 1920 census, average land inequality per municipality was already high \parencite{Wigton-Jones2020-ex}. 
 However, land inequality is something that has persisted in Brazil ever since its colonization.
+
 This paper analyzes the historical colonial causes of land inequality in Brazil, by exploiting geographical and economic variation in the request for land grants, called \textit{sesmarias}.
 
-Given the prominence of land grants in colonial Brazil and the variation on why the land was granted, this project would contribute to the understanding of the role of colonial land assignment in long-term development.  
+I exploit the geographical and time variation of the grants 
+
+I first describe how the grants themselves were distributed and describe the process of learning that ...
+
+I use a matching algorithm to show that the land grants in Brazil are associated with... . These effects are seen in 1872 and have persisted up to ... 
+
+I then turn to understand what are the mechanisms that are driving the results. 
+
+Given the prominence of land grants in colonial Brazil and the variation on why the land was granted, this paper studies the long-term effects of the role of colonial land assignment in long-term development.  
+The paper provides a novel georeferenced dataset of colonial grants in Brazil. 
 First, there are no empirical papers studying the direct causes of colonial land distribution in Brazil. 
 Previous literature has found negative long-term effects of colonial land usage in Africa and South America \parencites{Dell2010-qt}{Lowes2021-ww}. 
 However, there exists evidence that not all land regimes led to negative effects and instead led to economic development, with examples in India and Indonesia \parencites{Banerjee2005-ki}{Dell2019-np}{Ratnoo2023-vw}.  
@@ -156,17 +166,27 @@ Related literature has also analyzed the effect of the Spanish-Portuguese border
 
 \textcite{Ratnoo2023-vw} [Paper about land tenure in India]
 
+\textcite{Albertus2018-bf}
+
 
 \section{Historical Background}
 
 \subsection{Land Grant Implementation in Brazil}
+
+Portuguese presence in Brazil began in 1500, when [...].
+
+Something about the capitanias here [...] 
+
+Quote about how the captains had to give land grants. 
+
+Implementation in the following years.
 
 Portugal tried to implement in Brazil a similar system of land distribution they had successfully done in the Azores and in Portugal.
 
 \textcite[p.~58-59]{Da_Costa_Porto1979-dz} ``Enquanto, no Portugal de D. Fernando, de D.João e de D. Duarte, a distribuição de terra de sesmaria gerou, em regra, a pequena propriedade, no Brasil foi a causa principal do latifúndio"
 
 \parencite{Carlson2019-mk}
-``For many Latin American scholars seeking to explain their region’s backwardness in the first half of the  twentieth century, the prevalence of latifundio-dominated agrarian structures was key. The latifundio was  seen  as  a  fundamental  impediment  to  economic  development  due  to  its  feudal-like  social  relations,  its   tendency for monocropping, and its negative impact on the formation of domestic markets. However, it  was these scholars’ emphasis on the labor regimes that were characteristic of the latifundio that prevented  them from fully grasping the nature of the problem.''
+``For many Latin American scholars seeking to explain their region’s backwardness in the first half of the  twentieth century, the prevalence of latifundio-dominated agrarian structures was key. The latifundio was  seen  as a  fundamental  impediment  to  economic  development  due  to  its  feudal-like  social  relations,  its   tendency for monocropping, and its negative impact on the formation of domestic markets. However, it  was these scholars’ emphasis on the labor regimes that were characteristic of the latifundio that prevented  them from fully grasping the nature of the problem.''
 
 \parencite{Carlson2019-mk}
 ``Going back to colonial times, land in Latin America has often been acquired outside of market mechanisms.  This typically occurred through massive land grants from the crown such as the merced, or the sesmaria in  Brazil, or, after independence, through free or low-cost land concessions from national or local governments  (Furtado  2003,  68–80).''
@@ -309,7 +329,7 @@ To study the effects of the land grants I use a propensity score matching proced
   LandGrant_m = X_{m,s} + \mu_s + \epsilon_{m,s}
 \end{equation}
 
-The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops\footnote{proxied by the measures of \textcite{Galor2016-ba}.}, potential sugarcane output from the FAO, and the distance to the coast. These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
+The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops\footnote{Proxied by the measures of \textcite{Galor2016-ba}.}, potential sugarcane output from the FAO, and the distance to the coast. These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
 
 From the matched sample I then estimate the following equation:
 
@@ -319,9 +339,17 @@ From the matched sample I then estimate the following equation:
 
 The assumption for the matched sample is that conditional on the set of controls, the municipalities that received a land grant are as good as random since the control municipalities had similar geographical characteristics. 
 
+The results are found in tables X, Y, and Z. In each Panel, I consider whether the given municipality had any land grants, a land grant pre-1700 and a land grant only post-1700. The 1700 cutoff is chosen due to two historical factors: First, in 1698 it was imposed a limit on the size of the grants to be 3x1 leagues maximum [add citation here]. Additionally, in 1701 there was a ban on livestock grazing within 80km of the coast. The 1700 cutoff, therefore, chooses the combination of the two. Ideally, we would expect that the effects on land usage would change in favor to [add here] and [blah blah blah] 
+
 \subsection{Dutch Brazil}
 
 \subsection{Instrumental Variable - Distance to Salvador and Olinda}
+
+The main ports in the region were... 
+
+The radiation points for cattle were also...
+
+First-stage indicates that ...
 
 \subsection{Coastal Ban on Livestock}
 
@@ -386,26 +414,25 @@ Other links:
 
 "Criado de servir era um termo mais aplicado aos empregados que trabalhavam na Casa ou em serviços mais ligados à Casa (Jardim, cavalos, recados, etc.) ."
 
-
-
 \parencite[p.~142]{De_Oliveira_Andrade1980-xz}
 
 \subsection{Treaty of Tordesillas}
-
-
 
 \subsection{Other}
 
 \section{Results}
 
+\subsection{Matching}
 
-\subsection{1872}
+\section{Heterogeneity}
 
-\subsection{1970-2010}
+\subsection{Regional Variation}
 
-\subsection{Agricultural Census}
+\subsection{Economic Activity}
 
-\autoref{fig:livestock_area_1995}, \autoref{fig:occupied_area_1995}, \autoref{fig:leased_area_1995}, and \autoref{fig:latifundia_1995}.
+\section{Robustness}
+
+\section{Conclusion}
 
 \clearpage
 
@@ -440,279 +467,6 @@ Other links:
 
 \clearpage
 
-\begin{figure}
-  \begin{subfigure}[t]{0.45\paperwidth}\centering
-      \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_50km.png}
-  \caption{Sub figure A}
-  \end{subfigure} 
-  \begin{subfigure}[t]{0.45\paperwidth}\centering
-      \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_40km.png}
-  \caption{Sub figure B}
-  \end{subfigure}
-
-  \begin{subfigure}[t]{0.45\textwidth}\centering
-    \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_30km.png}
-  \caption{Sub figure B}
-  \end{subfigure}
-  \begin{subfigure}[t]{0.45\textwidth}\centering
-    \includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_bandwidth_20km.png}
-  \caption{Sub figure B}
-  \end{subfigure}
-
-  \caption{Figure in landscape orientation}
-  \label{fig:sub2}
-\end{figure}
-
-\clearpage
-
-\subsection*{1872 RDD Plots}
-
-\begin{figure}[h!]
-  \caption{Coastal RDD Estimates for Total Parish Population}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_total_population_RDD.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:1872_RDD_Population}
-\end{figure}
-
-\begin{figure}
-  \caption{Coastal RDD Estimates for Other Jobs}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_other_prof_RDD.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:1872_RDD_OtherJobs}
-\end{figure}
-
-\begin{figure}
-  \caption{Coastal RDD Estimates for Free People Working on Other Jobs}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_other_prof_RDD.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:1872_RDD_Free_OtherJobs}
-\end{figure}
-
-\begin{figure}
-  \caption{Coastal RDD Estimates for Enslaved People Working on Other Jobs}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_enslaved_other_prof_RDD.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:1872_RDD_Enslaved_OtherJobs}
-\end{figure}
-
-\begin{figure}
-  \caption{Coastal RDD Estimates for Enslaved People Working on Other Jobs}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_free_jornaleiros_RDD.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:1872_RDD_Free_Jornaleiros}
-\end{figure}
-
-\clearpage
-
-\subsection*{1970 RDD Plots}
-
-\begin{figure}[h!]
-  \caption{Coastal RDD Estimates for Percentage of People Sharecropping}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_graph_sharecropping.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:1970_RDD_Sharecropping}
-\end{figure}
-
-\clearpage
-
-\subsection*{1872 Maps}
-
-\begin{figure}[h!]
-  \caption{Coastal RDD Estimates for Percentage of People Sharecropping}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_census_ranching_map.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:1872_ranching_maps}
-\end{figure}
-
-\clearpage
-
-\subsection*{Grid Satellite Data}
-
-\begin{figure}[h!]
-  \caption{(\%) of the Grid Measured as Pastures - Grid data}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_grid_pasture.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:pasture_grid}
-\end{figure}
-
-\begin{figure}
-  \caption{(\%) of the Grid Measured as Natural Vegetation- Grid data}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_natural.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:natural_grid}
-\end{figure}
-
-\begin{figure}
-  \caption{(\%) of the Grid Measured as Sugarcane - Grid data}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:sugarcane_grid}
-\end{figure}
-
-\begin{figure}
-  \caption{(\%) of the Grid Measured as Sugarcane - Grid data}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps//coastal_rdd_grid_sugarcane_area.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:sugarcane_area_grid}
-\end{figure}
-
-\clearpage
-
-\subsection*{1970 Census}
-
-\begin{figure}[h!]
-  \caption{1970 Municipalities and Sharecropping}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_population.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:sharecropping_1970}
-\end{figure}
-
-\begin{figure}[h!]
-  \caption{1970 Municipalities and Sharecropping}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sharecropping.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:sharecropping_1970}
-\end{figure}
-
-\begin{figure}
-  \caption{1970 Municipalities and Land Ownership}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_rural_land.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:land_ownership_1970}
-\end{figure}
-
-\begin{figure}
-  \caption{1970 Municipalities and Sugarcane}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_sugarcane.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:sugarcane_1970}
-\end{figure}
-
-\begin{figure}
-  \caption{1872 Municipalities and Proximity to the Coast}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_cotton.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:cotton_1970}
-\end{figure}
-
-\begin{figure}
-  \caption{1872 Municipalities and Proximity to the Coast}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/coastal_rdd_1970_pecuaria.png}}
-  \textit{Notes:} This figure considers whether or not any part of the municipality was within 80km of the coast.
-  \end{center}
-  \label{fig:sugarcane_1970}
-\end{figure}
-\clearpage
-
-\subsection*{Brazilian 1995 Agricultural Census}
-
-\begin{figure}[h!]
-  \caption{1995 Agricultural Census - Area Dedicated to Livestock}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_livestock_map.png}}
-  \textit{Notes:} 
-  \end{center}
-  \label{fig:livestock_area_1995}
-\end{figure}
-\clearpage
-
-\begin{figure}[h!]
-  \caption{1995 Agricultural Census - Occupied Agricultural Land}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_occupied_map.png}}
-  \textit{Notes:} Occupied means that the person who uses the land does not own, nor is paying anyone for the use.  
-  \end{center}
-  \label{fig:occupied_area_1995}
-\end{figure}
-\clearpage
-
-\begin{figure}[h!]
-  \caption{1995 Agricultural Census - Leased Agricultural Land}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_leased_map.png}}
-  \textit{Notes:} 
-  \end{center}
-  \label{fig:leased_area_1995}
-\end{figure}
-\clearpage
-
-\begin{figure}[h!]
-  \caption{1995 Agricultural Census - Share of Agricultural Land in establishments over 2000ha}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_latifundia_map.png}}
-  \textit{Notes:} 
-  \end{center}
-  \label{fig:latifundia_1995}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[h!]
-  \caption{1995 Agricultural Census - Productive Land Not Used (\%)}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/ag_census_1995_productive_land_not_used_map.png}}
-  \textit{Notes:} 
-  \end{center}
-  \label{fig:productive_land_not_used_1995}
-\end{figure}
-
-\clearpage
-
 \section*{Tables}
 
 \subsection{Summary Statistics}
@@ -723,31 +477,17 @@ Other links:
 
 \clearpage
 
-\subsection{Results - 1872}
-
+\subsection{Matching}
 
 \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching.tex}
 
-\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Demographics.tex}
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_Matching_Census.tex}
 
 \clearpage
 
-\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex}
-
-\clearpage
-
-\subsection{Results - 1970 Census}
-
-\clearpage
-
-\subsection{Results - 1995 Agricultural Census}
-
-\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Results.tex}
-
-\clearpage
-
-\input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/1872_OLS_Labor.tex}
-
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Matching_Grid.tex}
 
 \clearpage
 
@@ -760,6 +500,11 @@ Other links:
 \renewcommand{\thetable}{A.\arabic{table}}
 
 \section{Figures}
+
+\clearpage
+
+\section{Matching Descriptives}
+\label{app:matching_checks}
 
 \clearpage
 
