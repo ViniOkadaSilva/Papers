@@ -138,7 +138,7 @@ However, land inequality is something that has persisted in Brazil ever since it
 
 This paper analyzes the historical colonial causes of land inequality in Brazil, by exploiting geographical and economic variation in the request for land grants, called \textit{sesmarias}.
 
-I exploit the geographical and time variation of the grants 
+I exploit the geographical, time, and economic variation of the grants to study their persistent effect in the economic development of
 
 I first describe how the grants themselves were distributed and describe the process of learning that ...
 
@@ -151,7 +151,7 @@ The paper provides a novel georeferenced dataset of colonial grants in Brazil.
 First, there are no empirical papers studying the direct causes of colonial land distribution in Brazil. 
 Previous literature has found negative long-term effects of colonial land usage in Africa and South America \parencites{Dell2010-qt}{Lowes2021-ww}. 
 However, there exists evidence that not all land regimes led to negative effects and instead led to economic development, with examples in India and Indonesia \parencites{Banerjee2005-ki}{Dell2019-np}{Ratnoo2023-vw}.  
-Other studies have analyzed the effect of land grants in the United states \parencites{Akee2014-uw}{Allen2019-kh}{Smith2023-ip}
+Other studies have analyzed the effect of land grants in the United States \parencites{Akee2014-uw}{Allen2019-kh}{Smith2023-ip}
 
 This paper also contributes to the understanding of the historical economic development of Brazil by trying to explain the diverging paths in development in each region. 
 The land regime and size in each region, as measured by the land grants could have differential impacts on development.
@@ -162,8 +162,6 @@ Related literature has also analyzed the effect of the Spanish-Portuguese border
 \parencite{Dell2010-qt}
 \parencite{Sokoloff2000-mb}
 
-
-
 \textcite{Ratnoo2023-vw} [Paper about land tenure in India]
 
 \textcite{Albertus2018-bf}
@@ -172,6 +170,8 @@ Related literature has also analyzed the effect of the Spanish-Portuguese border
 \section{Historical Background}
 
 \subsection{Land Grant Implementation in Brazil}
+
+https://www.taipu.rn.leg.br/a-cidade/
 
 Portuguese presence in Brazil began in 1500, when [...].
 
@@ -280,6 +280,16 @@ When available, information such as the year, the reason for the request, etc. a
 For the states of Sao Paulo and Minas Gerais the information [...]
 The sesmarias are then georeferenced based on the geographical information present in the text, allowing us to trace them back to Brazilian municipalities.\footnote{A more in-depth description on how the sources of the letters and how the sesmarias were georeferenced is available in \autoref{app:appendix_data}}
 
+[Need to add the citations here.]
+
+The sesmarias from Sao Paulo are obtained from three volumes from the \textcite{noauthor_1921-qd}
+
+For Minas it is from [add citation]
+
+For Ceara the land grants come from \textcite{Pereira1971-cs}.
+
+More information on the sources used for this project is available in \autoref{app:data_source_appendix}.
+
 \footnote{More information on the description based on the 1872 census data is available on \autoref{app:variable_construction_1872}}
 
 Data for current land tenure in 2021 in Brazil is obtained from \textcite{Sparovek2019-dn}.\footnote{
@@ -329,7 +339,7 @@ To study the effects of the land grants I use a propensity score matching proced
   LandGrant_m = X_{m,s} + \mu_s + \epsilon_{m,s}
 \end{equation}
 
-The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops\footnote{Proxied by the measures of \textcite{Galor2016-ba}.}, potential sugarcane output from the FAO, and the distance to the coast. These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
+The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops\footnote{Proxied by the measures of \textcite{Galor2016-ba}.}, potential sugarcane output from the FAO, and the distance to the coast.\footnote{In Appendix ? I show that the results are robust to a different set of control variable.} These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
 
 From the matched sample I then estimate the following equation:
 
@@ -342,14 +352,6 @@ The assumption for the matched sample is that conditional on the set of controls
 The results are found in tables X, Y, and Z. In each Panel, I consider whether the given municipality had any land grants, a land grant pre-1700 and a land grant only post-1700. The 1700 cutoff is chosen due to two historical factors: First, in 1698 it was imposed a limit on the size of the grants to be 3x1 leagues maximum [add citation here]. Additionally, in 1701 there was a ban on livestock grazing within 80km of the coast. The 1700 cutoff, therefore, chooses the combination of the two. Ideally, we would expect that the effects on land usage would change in favor to [add here] and [blah blah blah] 
 
 \subsection{Dutch Brazil}
-
-\subsection{Instrumental Variable - Distance to Salvador and Olinda}
-
-The main ports in the region were... 
-
-The radiation points for cattle were also...
-
-First-stage indicates that ...
 
 \subsection{Coastal Ban on Livestock}
 
@@ -420,6 +422,14 @@ Other links:
 
 \subsection{Other}
 
+\subsection{Instrumental Variable - Distance to Salvador and Olinda}
+
+The main ports in the region were... 
+
+The radiation points for cattle were also...
+
+First-stage indicates that ...
+
 \section{Results}
 
 \subsection{Matching}
@@ -428,9 +438,25 @@ Other links:
 
 \subsection{Regional Variation}
 
+The effects between the Northeast and Southeast of Brazil [...]
+
+In Table [...] I show that for the 1985 Agricultural census in the Northeast municipalities, the presence of a land grant is associated with an increase in [...]
+
+In Table [...] the effects for the Southeastern states of Sao Paulo and Minas Gerais are [...]
+
+\parencite{Mueller1995-gi}
+
 \subsection{Economic Activity}
 
 \section{Robustness}
+
+In this section explore the heterogeneity of the economic activity. 
+
+\subsection{Coefficient Bounds}
+
+I use the methodology from to estimate how much unobservables could be impacting the main estimates \textcite{Masten2022-bg}.
+
+\subsection{Randomization Inference}
 
 \section{Conclusion}
 
@@ -501,6 +527,9 @@ Other links:
 
 \section{Figures}
 
+[add picture for the matching and how it looks]
+[common support]
+
 \clearpage
 
 \section{Matching Descriptives}
@@ -508,8 +537,62 @@ Other links:
 
 \clearpage
 
+
+\section{Data Source Appendix}
+\label{app:data_source_appendix}
+
+Below I describe the sources to which the land grants were compiled from. The states with a $^*$ indicate that the works was done by the researchers at SILB.
+
+\textbf{Pernambuco$^*$}
+\begin{itemize}
+\item Documentação Histórica Pernambucana. Recife: Imprensa Oficial, 1954. Vol. 1-2
+\item Documentação Histórica Pernambucana: sesmarias. Recife: Secretaria de Educação e Cultura. Biblioteca Pública, 1959. Vol. 1-4
+\item Coleção Documentos Históricos Biblioteca Nacional do Rio de Janeiro. Vol. 20-22
+\item Arquivo Nacional do Rio de Janeiro. Códice 427
+\item Arquivo Nacional do Rio de Janeiro. Códice 155
+\item Livro do Tombo do Mosteiro de São Bento de Olinda, Imprensa Oficial - Recife, 1948
+\item Livros do Tombo de São Bento. Book 1-3
+\item Revista do Instituto Arqueológico, Histórico e Geográfico Pernambucano, 1896.
+\item Revista do Instituto Histórico de Goiana, 1871.
+\end{itemize}
+
+\textbf{Rio Grande do Norte$^*$}
+\begin{itemize}
+  \item O Treslado do auto e mais diligências que se fizeram sobre as datas de terras da capitania do Rio Grande, que se tinham dado. Fortaleza: Revista do Instituto do Ceará, 1909, Ano XXIII.
+  \item IHGRN - Fundo Sesmarias - Books 1-9
+  \item Documentos Históricos da Biblioteca Nacional do Rio de Janeiro..Vol. 23
+  \item Documentos Históricos da Biblioteca Nacional do Rio de Janeiro..Vol. 24 Arquivo Nacional Rio de Janeiro, Códice 427
+\end{itemize}
+
+\textbf{Bahia$^*$}
+\begin{itemize}
+\item a
+\end{itemize}
+
+\textbf{Paraiba$^*$}
+\begin{itemize}
+\item A
+\end{itemize}
+
+
+\textbf{Sao Paulo}
+\begin{itemize}
+\item \textcite{noauthor_1921-qd} Vols. 1-3 
+\end{itemize}
+
+\textbf{Minas Gerais}
+\begin{itemize}
+\item c 
+\end{itemize}
+
+\clearpage
+
 \section{Description of Letters and Georeferencing}
 \label{app:appendix_data}
+\clearpage
+
+\section{Coastal RDD - Results}
+\label{app:coastal_rdd}
 \clearpage
 
 \section{Data Appendix - 1872}
