@@ -122,7 +122,7 @@
 \vspace{.1cm}
 
 \begin{abstract}
-  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called \textit{sesmarias}. These land grants were often given to people with substantial financial means, restricting land access to most of the population. By collecting a novel dataset on the location of these land grants alongside a matching procedure, I study the long-term effects of land grants on Brazil's economic development. Preliminary results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
+  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called \textit{sesmarias}. These land grants were often given to people with substantial financial means, restricting land access to most of the population. I contribute to the understanding of colonial land tenure in Brazil by collecting a novel dataset on the location of these land grants alongside a matching procedure, I study the long-term effects of land grants on Brazil's economic development. Preliminary results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
 \end{abstract}
 
 \clearpage
@@ -135,6 +135,9 @@ This issue is compounded by the fact that large agricultural lands in Brazil are
 The combination of land concentration and low levels of utilization are spread through the economy as it depresses rural wages, keeping those people away from the consumer markets \parencite[p.~1]{De_Oliveira_Andrade1980-xz}.
 % However, this is not a recent issue as even in the 1920 census, average land inequality per municipality was already high \parencite{Wigton-Jones2020-ex}. 
 However, land inequality is something that has persisted in Brazil ever since its colonization.
+As most of the more suitable land had been taken in large estates that were not intensely cultivated \parencite[p.~53]{Mueller1995-gi}. 
+
+[This added to the lack of sharecropping or wage labor].
 
 This paper analyzes the historical colonial causes of land inequality in Brazil, by exploiting geographical and economic variation in the request for land grants, called \textit{sesmarias}.
 
@@ -273,58 +276,62 @@ While the land grants themselves
 
 \section{Data}
 
-The main source of data comes from both a collaboration with the \textit{Sesmarias of the Luso-Brazilian Empire Database} and my own work \footnote{
-  Information on the content of the letters is available at \url{http://plataformasilb.cchla.ufrn.br/}. The georeferencing process was done in collaboration but as a separate project for this paper.}.
-The database uses archival data from either state records or original manuscripts to obtain data on the concessions of sesmarias in Brazil. 
-When available, information such as the year, the reason for the request, etc. are coded. 
-For the states of Sao Paulo and Minas Gerais the information [...]
-The sesmarias are then georeferenced based on the geographical information present in the text, allowing us to trace them back to Brazilian municipalities.\footnote{A more in-depth description on how the sources of the letters and how the sesmarias were georeferenced is available in \autoref{app:appendix_data}}
+\subsection{Land Grant Dataset}
 
-[Need to add the citations here.]
+Given the nature of the grant application, the requirement of a letter to be sent to the governor and approved, a vast number of the letters are [...]
 
-The sesmarias from Sao Paulo are obtained from three volumes from the \textcite{noauthor_1921-qd}
+The main source of historical data comes from both a collaboration with the \textit{Sesmarias of the Luso-Brazilian Empire Database} and my own work.\footnote{
+  Information on the content of the letters is available at \url{http://plataformasilb.cchla.ufrn.br/}. The georeferencing process was done in collaboration but as a separate project for this paper.}
+The database uses archival data from state records, original manuscripts, or other historical data sources to obtain information on the historical concession of land grants in Brazil.\footnote{An example of an original manuscript can be found in \autoref{fig:example_letter_other}, while an example of a transcribed manuscript published by the state archives is available at \autoref{fig:example_letter_sp}.}
 
-For Minas it is from [add citation]
+When available in the text, information such as the year, the reason for the request, etc. are coded. 
+The sesmarias are then georeferenced based on the geographical information present in the text, allowing us to trace them approximately to a geographical point measured as a latitude and longitude coordinate.\footnote{A more in-depth description on how the sources of the letters and how the sesmarias were georeferenced is available in \autoref{app:appendix_data}}\textsuperscript{,}\footnote{More information on the sources used for this project is available in \autoref{app:data_source_appendix}.} \autoref{fig:land_grants_distribution} shows the geographical distribution of the land grants across the states from which I gathered information. 
 
-For Ceara the land grants come from \textcite{Pereira1971-cs}.
+\subsection{Other Sources}
 
-More information on the sources used for this project is available in \autoref{app:data_source_appendix}.
+The main outcome economic variables come from a variety of different sources.
+To study the effects of the grants at an earlier time period, I use the 1872 Brazilian Imperial census, which happened only 50 years after the formal ban of land grants in Brazil.
+Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
+  Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
+The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. 
+Additional work was done to get a novel database at a finer geographical level for the 1872 census.
+At that time, the lowest geographical unit at which the census was taken was at the parish level and each municipality included at least one parish.
+I then georeference the parishes, allowing me to study the effects with the 1872 census at a smaller geographical unit allowing for better precision of the estimates.\footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes. Information on how the parishes were georeferenced is available at \autoref{app:georeferencing_parishes}}\textsuperscript{,}\footnote{More information on the description based on the 1872 census data is available on \autoref{app:variable_construction_1872}}. \autoref{fig:parishes_1872} shows the geographical distribution of the parishes alongside their municipality boundaries. 
 
-\footnote{More information on the description based on the 1872 census data is available on \autoref{app:variable_construction_1872}}
+To study the persistance of these effects I use data from other censuses from 1970-2010 are obtained from the IBGE (\textit{}).\footnote{Microcensus is available through the IBGE but the data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
 
+To study the effect of land usage and tenure I combine satellite data alongside Brazilian Agricultural Censuses. 
+Land usage from 1985-2010 is obtained from Mapbiomas \parencite{Souza2020-kb}\footnote{
+  Available at \url{https://brasil.mapbiomas.org/en/}}.
 Data for current land tenure in 2021 in Brazil is obtained from \textcite{Sparovek2019-dn}.\footnote{
   Available at \url{https://atlasagropecuario.imaflora.org/}}
 
-Land usage from 1985-2010 is obtained from Mapbiomas \parencite{Souza2020-kb}\footnote{
-  Available at \url{https://brasil.mapbiomas.org/en/}}.
-
-Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
-  Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
-The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. \footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes.}
-
-Other census data is obtained from the IBGE (\textit{}).\footnote{Microcensus is available through the IBGE but the data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
+In addition, I obtain geographical characteristics and shapefiles at the municipality level from a variety of sources. 
+Shapefiles for the coast of Brazil, municipality seats, and municipality boundaries from 1872-2010 are obtained from IBGE through \textcite{Pereira2023-qq}.
+Information on the slope comes from the European Environment Agency
+\footnote{
+  Available at \url{https://www.eea.europa.eu/data-and-maps/data/world-digital-elevation-model-etopo5}}, and elevation comes from \textcite{Amatulli2018-gl}.
+Data on the maximum amount of calories based on pre-Columbian and post-Columbian crops are obtained from \textcite{Galor2016-ba}. 
 
 \section{Descriptive}
 
 \subsection{Summary Statistics}
 
-Following \textcite{Lowes2021-ww} I show balance on geographical characteristics at the 10 x 10km grid level in [reference to table here].
+Following \textcite{Lowes2021-ww} I show balance on geographical characteristics at the 0.5 x 0.5 (55 x 55km) grid level in [reference to table here].
 
 Summary statistics for the 1872 censuses are available in \autoref{tab:1872summary}. Overall, we can see that municipalities farther from the coast 
 
-\subsection{OLS Descriptive}
-
-First I show descriptively through the 1872 census that the interior of Brazil was more likely to be [...] \parencite{Laudares2022-vy}.
-
-\begin{equation}
-  Y_{p,s} = \beta_1 \cdot Morethan80km_{p,s} + \mu_s + \epsilon_{p,s}
-\end{equation}
-
-Results can be found in \autoref{tab:1872_OLS_Demographics} and \autoref{tab:1872_OLS_Labor}. Descriptively, it indicates that parishes more than 80km from the coast had a lower proportion of slaves to the total population and lower amounts of freed black people as a total of the population.
-
-Similarly, matching to the historical evidence, these places have a higher proportion of people who report ranching as the primary occupation, and were less likely to have jobs in the industry, liberal, or other professions. 
-
 \section{Methodology}
+
+[probably cite \parencite{Rocha2017-yq} and compare what he does to us.]
+
+[Can also try the Piabiru for SP \parencite{Barsanetti2021-hp}]
+
+[Or, indigenous tribes \parencite{Barsanetti2023-xq}] -> Also has a very good way of explaining the threats to identification and how I'm dealing with them.
+
+\subsection{Challanges to Identification}
+
+The main concerns about the estimates deal with the endogeneity of the location of the grants. 
 
 %\subsection{Checkerboard pattern}
 %Something about the grants past some year needing to have one league between them. 
@@ -341,7 +348,7 @@ To study the effects of the land grants I use a propensity score matching proced
 
 The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops\footnote{Proxied by the measures of \textcite{Galor2016-ba}.}, potential sugarcane output from the FAO, and the distance to the coast.\footnote{In Appendix ? I show that the results are robust to a different set of control variable.} These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
 
-From the matched sample I then estimate the following equation:
+For the matched sample I then estimate the following equation:
 
 \begin{equation}
   Y_{m,s} = LandGrant_m + X_{m,s} + \mu_s + \epsilon_{m,s}
@@ -349,7 +356,7 @@ From the matched sample I then estimate the following equation:
 
 The assumption for the matched sample is that conditional on the set of controls, the municipalities that received a land grant are as good as random since the control municipalities had similar geographical characteristics. 
 
-The results are found in tables X, Y, and Z. In each Panel, I consider whether the given municipality had any land grants, a land grant pre-1700 and a land grant only post-1700. The 1700 cutoff is chosen due to two historical factors: First, in 1698 it was imposed a limit on the size of the grants to be 3x1 leagues maximum [add citation here]. Additionally, in 1701 there was a ban on livestock grazing within 80km of the coast. The 1700 cutoff, therefore, chooses the combination of the two. Ideally, we would expect that the effects on land usage would change in favor to [add here] and [blah blah blah] 
+The results are found in tables X, Y, and Z. In each Panel, I consider whether the given municipality had any land grants, a land grant pre-1700 and a land grant only post-1700. The 1700 cutoff is chosen due to two historical factors: First, in 1698 it was imposed a limit on the size of the grants to be 3x1 leagues maximum [add citation here]. Additionally, in 1701 there was a ban on livestock grazing within 80km of the coast. The 1700 cutoff, therefore, chooses the combination of the two. Ideally, we would expect that the effects on land usage would change in favor to [add here] and [blah blah blah].
 
 \subsection{Dutch Brazil}
 
@@ -383,7 +390,16 @@ First, I provide evidence that [...] In the first-stage I check whether post-170
 
 Secondly, using the 1872 I analyze whether or not there were any effects of the coastal livestock ban on the demographics and economic activities at that time.
 
-\footnote{While this setting would be ideal for a Regression Discontinuity Design, the lack of sample, especially for the early 1872 census results in noisier estimates. Estimations based on it can be found in Appendix ???}
+\footnote{While this setting would be ideal for a Regression Discontinuity Design, the lack of sample size, especially for the early 1872 census results in noisier estimates. Estimations based on it can be found in Appendix ???}
+
+\textcite{Mueller1995-gi} 
+
+"Sesmarias  remained the only way through  which the  Crown granted  land apart from the tolerance  of squatting" 
+
+"In Brazil land was abundant  and did not represent a constraint  for the production  of sugar   Any individual who 
+possessed the capital  and slaves to establish a sugar mill could readily obtain a sesmaria  in which to do so   In fact,  in   many instances  it became necessary to have the means to establish a sugar mill  in order to be granted a sesmaria"
+
+"By squatting the settler risked being expelled as the frontier  advanced, yet this was often  far  in the future   Furthermore,  increasingly   through time, there was the possibility that through occupation and cultivation of the land the settler could acquire  property rights, either through  informal  recognition of those rights or through the ex-post granting of a  sesmaria"
 
 [Move this to the appendix]
 
@@ -434,6 +450,10 @@ First-stage indicates that ...
 
 \subsection{Matching}
 
+\subsection{Human Capital Accumulation}
+
+Following \parencite{Galor2009-bc} I test whether there are associated effects of land concentration on education and human capital accumulation [Something to test].
+
 \section{Heterogeneity}
 
 \subsection{Regional Variation}
@@ -472,12 +492,22 @@ I use the methodology from to estimate how much unobservables could be impacting
 \section*{Figures}
 
 \begin{figure}[h!]
+  \caption{Land Grant Distribution}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grants_distribution_1991.png}}
+  \end{center}
+  \textit{Notes:} Geographical distribution of the land grants across the states. Municipalities for the 1991 census are highlighted in red. Each point indicates an unique land grant. 
+  \label{fig:land_grants_distribution}
+\end{figure}
+
+\begin{figure}[h!]
   \caption{1872 Municipalities and Parish Locations}
   \begin{center}
      \makebox[\textwidth]			 
-     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
-  \textit{Notes:} Geographical distribution of 1872 parishes alongside 1872 municipality boundaries.
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
   \end{center}
+  \textit{Notes:} Geographical distribution of 1872 parishes alongside 1872 municipality and state boundaries. The states to which I have information on the land grants are highlighted in red. This map shows that several municipalities, especially in the Southeastern states have more than one parish per municipality. The sample increases by using parish-level information instead of municipalities from 337 to 815.
   \label{fig:parishes_1872}
 \end{figure}
 
@@ -527,13 +557,107 @@ I use the methodology from to estimate how much unobservables could be impacting
 
 \section{Figures}
 
-[add picture for the matching and how it looks]
-[common support]
+\begin{figure}[h!]
+  \begin{center}
+  \caption{Example letter from \textcite{noauthor_1921-qd}}
+  \label{fig:example_letter_sp}
+  \vspace{3mm}
+  \makebox[\textwidth]	
+  {\includegraphics[width = 0.6\textwidth]{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Documents/Sao Paulo/example.png}}
+  \end{center}
+  \textit{Notes:} Example letter for the state of Sao Paulo, obtained from \textcite[p.~47]{noauthor_1921-qd}. Based on the letter we extract information on the geographical location, alongside year of concession, economic activity, and etc. This letter extends another page which includes more information.
+\end{figure}
+
+\begin{landscape}
+\begin{figure}[htbp]
+  \begin{center}
+  \caption{Example original letter alongside its transcribed version}
+  \label{fig:example_letter_other}
+  \begin{subfigure}[b]{0.5\textwidth}
+  \centering
+  \vspace{-20cm}
+  \includegraphics[width = \textwidth]
+  {~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures/0167f614a7c3b3fd38127f1545dbee7c.pdf}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.6\textwidth}
+  \centering
+  %\vspace{-7.4cm}
+  \includegraphics[page = 1, width = \textwidth]
+  {~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures/ea71ea6ac7c5ec3cefa24ded60ac6438.pdf}
+  \end{subfigure}
+  \end{center}
+  \textit{Notes:} Example of an original manuscript and its transcribed version. Obtained from \textit{SILB} with the original source being from ...
+\end{figure}
+\end{landscape}
+
+\clearpage
+
+[add here the 1872 parishes]
 
 \clearpage
 
 \section{Matching Descriptives}
 \label{app:matching_checks}
+
+\begin{landscape}
+  \begin{figure}[htbp]
+    \begin{center}
+    \caption{Example original letter alongside its transcribed version}
+    \label{fig:matching_1995}
+
+    \begin{subfigure}[b]{0.3\linewidth}
+    \centering
+    \includegraphics[scale = 0.5]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/02. Figures/00.Maps/Matching_1995_All.png}
+    \end{subfigure}
+
+    \hfill
+
+    \begin{subfigure}[b]{0.3\linewidth}
+    \centering
+    %\vspace{-7.4cm}
+    \includegraphics[scale = 0.5]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/02. Figures/00.Maps/Matching_1995_1600.png}
+    \end{subfigure}
+
+    \hfill
+
+    \begin{subfigure}[b]{0.3\linewidth}
+    \centering
+    %\vspace{-7.4cm}
+    \includegraphics[scale = 0.5]
+    {~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/02. Figures/00.Maps/Matching_1995_1700.png}
+    \end{subfigure}
+
+    \end{center}
+    \textit{Notes:} Example of an original manuscript and its transcribed version. Obtained from \textit{SILB} with the original source being from ...
+  \end{figure}
+\end{landscape}
+
+\begin{landscape}
+  \begin{figure}[htbp]
+    \begin{center}
+    \caption{Example original letter alongside its transcribed version}
+
+    \begin{subfigure}[b]{0.75\textwidth}
+      \centering
+      %\vspace{-7.4cm}
+      \includegraphics[scale = 0.75]
+      {~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/02. Figures/00.Maps/Matching_1995_1600.png}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.75\textwidth}
+      \centering
+      %\vspace{-7.4cm}
+      \includegraphics[scale = 0.75]
+      {~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/02. Figures/00.Maps/Matching_1995_1700.png}
+    \end{subfigure}
+
+    \end{center}
+    \textit{Notes:} Example of an original manuscript and its transcribed version. Obtained from \textit{SILB} with the original source being from ...
+  \end{figure}
+  \end{landscape}
+
 
 \clearpage
 
@@ -542,6 +666,8 @@ I use the methodology from to estimate how much unobservables could be impacting
 \label{app:data_source_appendix}
 
 Below I describe the sources to which the land grants were compiled from. The states with a $^*$ indicate that the works was done by the researchers at SILB.
+
+\vspace{2mm}
 
 \textbf{Pernambuco$^*$}
 \begin{itemize}
@@ -566,7 +692,12 @@ Below I describe the sources to which the land grants were compiled from. The st
 
 \textbf{Bahia$^*$}
 \begin{itemize}
-\item a
+  \item Códice 427 - Rio de Janeiro
+  \item FREIRE, Felisbello. História territorial do Brasil. Salvador: Secretaria da Cultura e Turismo, Instituto Geográfico e Histórico da Bahia, 1998
+  \item DHBN - cartas publicadas na coleção Documentos Históricos da Biblioteca Nacional - DHBN, volumes 13 a 22
+  \item  Anais do Arquivo Público do Estado da Bahia - Publicação dos anais do APEB - Anais do Arquivo Público do Estado da Bahia. Volumes 3 e 11
+  \item Códice 155 - Rio de Janeiro
+  \item Mosteiro de São Bento - Cartas publicadas nos Livros do Tombo do Mosteiro de São Bento  
 \end{itemize}
 
 \textbf{Paraiba$^*$}
@@ -589,6 +720,12 @@ Below I describe the sources to which the land grants were compiled from. The st
 
 \section{Description of Letters and Georeferencing}
 \label{app:appendix_data}
+\clearpage
+
+\clearpage
+
+\section{Parish Level Georeferencing}
+\label{app:georeferencing_parishes}
 \clearpage
 
 \section{Coastal RDD - Results}
