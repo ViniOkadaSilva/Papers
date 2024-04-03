@@ -213,6 +213,72 @@
       \field{pages}{180040}
       \range{pages}{1}
     \endentry
+    \entry{Andrade1980-zd}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfe2ca8fe650891f00f654487b230386}{%
+           family={Andrade},
+           familyi={A\bibinitperiod},
+           given={Manuel\bibnamedelimb Correia\bibnamedelimb de\bibnamedelima Oliveira},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Livraria Duas Cidades}%
+      }
+      \strng{namehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{fullhash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{bibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorbibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authornamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorfullhash}{dfe2ca8fe650891f00f654487b230386}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Coleção História e sociedade.}
+      \field{title}{Latifúndio e reforma agrária no Brasil}
+      \field{year}{1980}
+      \keyw{Land tenure -- Brazil}
+    \endentry
+    \entry{Baer2014-gh}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=26c2ed0a6a18aa2755f831796c5a2373}{%
+           family={Baer},
+           familyi={B\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Lynne Rienner Publishers, Incorporated}%
+      }
+      \strng{namehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{fullhash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{bibnamehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{authorbibnamehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{authornamehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{authorfullhash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this thorough description and analysis of Latin America's largest economy, Werner Baer traces the trajectory of Brazil's economic development and performance from the colonial period through the early years (2011-2012) of the administration of Dilma Rousseff. In addition to updated information, the seventh edition includes entirely new chapters on the challenges and accomplishments of the Lula/Rousseff period and also on the nature of human capital and the role of the education system in Brazil. With Brazil playing an increasingly major role on the global economic stage, this edition will be valuable both in the classroom and as an authoritative reference resource.}
+      \field{title}{The Brazilian Economy: Growth and Development}
+      \field{year}{2014}
+    \endentry
     \entry{Banerjee2005-ki}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=027abafc894615db04e1c3f3dc5931c4}{%
@@ -587,6 +653,36 @@
       \field{year}{1959}
       \keyw{Land tenure -- Brazil}
     \endentry
+    \entry{Diffie1987-bw}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a1b8b64c04314c686b4c2b254b1e5b3e}{%
+           family={Diffie},
+           familyi={D\bibinitperiod},
+           given={Bailey\bibnamedelima Wallys},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {R.E. Krieger Publishing Company}%
+      }
+      \strng{namehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{fullhash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{bibnamehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{authorbibnamehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{authornamehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{authorfullhash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A History of Colonial Brazil, 1500-1792}
+      \field{year}{1987}
+    \endentry
     \entry{Fausto2014-bh}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d569fc63042aed8fd5cb86dddbc6b7a1}{%
@@ -782,6 +878,31 @@
       \field{note}{Accessed: 2024-1-24}
       \field{title}{{IBGE}}
     \endentry
+    \entry{Instituto-Historico-e-Geografico-de-Sao-Paulo1928-ej}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c9c86e779f021d2dd184a4baad6a98b}{%
+           family={{Instituto Histórico e Geográfico de São Paulo}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Instituto histórico e Geográfico de São Paulo}%
+      }
+      \strng{namehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{fullhash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{bibnamehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{authorbibnamehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{authornamehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{authorfullhash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Vol. 22: Consagrado á passagem do 1.̊ centenario da independencia do Brasil em São Paulo; v. 29: Conferencias commemorativas do IV centenario da fundaçao de São Vicente.}
+      \field{title}{Revista do Instituto histórico e geográfico de São Paulo}
+      \field{year}{1928}
+    \endentry
     \entry{Junior1967-jv}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=04cd3d1f2700075eae09d99a87769355}{%
@@ -811,6 +932,61 @@
       \field{labeltitlesource}{title}
       \field{title}{The Colonial Background of Modern Brazil}
       \field{year}{1967}
+    \endentry
+    \entry{Klein_Goldewijk2017-mr}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3db531b736c94d9a0e79bccc78cda765}{%
+           family={Klein\bibnamedelima Goldewijk},
+           familyi={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Kees},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b68adf465f12dddf414aab8ba41fd1b}{%
+           family={Beusen},
+           familyi={B\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae0e7d8049945d9576ccf318a68f66b0}{%
+           family={Doelman},
+           familyi={D\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de59fe5511a91d3a138ef967230a5a2c}{%
+           family={Stehfest},
+           familyi={S\bibinitperiod},
+           given={Elke},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Copernicus GmbH}%
+      }
+      \strng{namehash}{552c6443bfa88ebfb34b4a4fa786511f}
+      \strng{fullhash}{e95979874939f302880134941f803f19}
+      \strng{bibnamehash}{552c6443bfa88ebfb34b4a4fa786511f}
+      \strng{authorbibnamehash}{552c6443bfa88ebfb34b4a4fa786511f}
+      \strng{authornamehash}{552c6443bfa88ebfb34b4a4fa786511f}
+      \strng{authorfullhash}{e95979874939f302880134941f803f19}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. This paper presents an update and extension of HYDE, the History Database of the Global Environment (HYDE version 3.2). HYDE is an internally consistent combination of historical population estimates and allocation algorithms with time-dependent weighting maps for land use. Categories include cropland, with new distinctions for irrigated and rain-fed crops (other than rice) and irrigated and rain-fed rice. Grazing lands are also provided, divided into more intensively used pasture and less intensively used rangeland, and further specified with respect to conversion of natural vegetation to facilitate global change modellers. Population is represented by maps of total, urban, rural population, population density and built-up area. The period covered is 10 000 before Common Era (BCE) to 2015 Common Era (CE). All data can be downloaded from https://doi.org/10.17026/dans-25g-gez3. We estimate that global population increased from 4.4 million people (we also estimate a lower range}
+      \field{journaltitle}{Earth Syst. Sci. Data}
+      \field{month}{12}
+      \field{number}{2}
+      \field{title}{Anthropogenic land use estimates for the Holocene – {HYDE} 3.2}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{927\bibrangedash 953}
+      \range{pages}{27}
     \endentry
     \entry{Laudares2022-vy}{misc}{}
       \name{author}{2}{}{%
@@ -844,6 +1020,42 @@
       \field{note}{Accessed: 2022-10-3}
       \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
       \field{year}{2022}
+    \endentry
+    \entry{Lima1954-td}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d14c224f083d914947a86cf64bf9b33}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Ruy\bibnamedelima Cirne},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {Pôrto Alegre}%
+      }
+      \list{publisher}{1}{%
+        {Livraria Sulina}%
+      }
+      \strng{namehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{fullhash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{bibnamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authorbibnamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authornamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authorfullhash}{0d14c224f083d914947a86cf64bf9b33}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. ed.}
+      \field{series}{Estante ``Revista jurídica,'' 3}
+      \field{title}{Pequena história territorial do Brasil; sesmarias e terras devolutas}
+      \field{year}{1954}
+      \keyw{Land tenure -- Brazil -- Law}
     \endentry
     \entry{Lowes2021-ww}{article}{}
       \name{author}{2}{}{%
@@ -1063,6 +1275,46 @@
       \field{pages}{393\bibrangedash 422}
       \range{pages}{30}
     \endentry
+    \entry{Nunn2012-hb}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a52c87709bd77de696f4795f327ccce6}{%
+           family={Nunn},
+           familyi={N\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df48badcd48acbe3766261e4d6d39fe4}{%
+           family={Puga},
+           familyi={P\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{e183731845a38241ad7eb73151484433}
+      \strng{fullhash}{a4ea3dd4ca3095dbeb25fbe8ae2c13aa}
+      \strng{bibnamehash}{a4ea3dd4ca3095dbeb25fbe8ae2c13aa}
+      \strng{authorbibnamehash}{a4ea3dd4ca3095dbeb25fbe8ae2c13aa}
+      \strng{authornamehash}{e183731845a38241ad7eb73151484433}
+      \strng{authorfullhash}{a4ea3dd4ca3095dbeb25fbe8ae2c13aa}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show that geography, through its impact on history, can have important effects on economic development today. The analysis focuses on the historic interaction between ruggedness and Africa's slave trades. Although rugged terrain hinders trade and most productive activities, negatively affecting income globally, rugged terrain within Africa afforded protection to those being raided during the slave trades. Since the slave trades retarded subsequent economic development, ruggedness within Africa has also had a historic indirect positive effect on income. Studying all countries worldwide, we estimate the differential effect of ruggedness on income for Africa. We show that the differential effect of ruggedness is statistically significant and economically meaningful, it is found in Africa only, it cannot be explained by other factors like Africa's unique geographic environment, and it is fully accounted for by the history of the slave trades.}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Ruggedness: The Blessing of Bad Geography in Africa}
+      \field{volume}{94}
+      \field{year}{2012}
+      \field{pages}{20\bibrangedash 36}
+      \range{pages}{17}
+    \endentry
     \entry{De_Oliveira_Andrade1980-xz}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=52be14099bd98fa7b1e2acbc28c645a9}{%
@@ -1192,6 +1444,42 @@
       \field{labeltitlesource}{title}
       \field{title}{geobr: Download Official Spatial Data Sets of Brazil}
       \field{year}{2023}
+    \endentry
+    \entry{Poppino1968-ab}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5fc7d68bb3beb0376df589d56649c3b}{%
+           family={Poppino},
+           familyi={P\bibinitperiod},
+           given={Rollie\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{fullhash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{bibnamehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{authorbibnamehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{authornamehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{authorfullhash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An economic and social history of Brazil, from the time of Portuguese sttlement to the late 1960's. Includes a political chronology from 1493 to 1967 and an extensive annotated guide to literature on Brazil, covering travel accounts, history, society, the economy, and bibliographies and periodicals. Also has tables of economic information from 1907 to 1960.}
+      \field{series}{Latin American histories}
+      \field{title}{Brazil: the land and people}
+      \field{year}{1968}
+      \keyw{Brésil -- Histoire}
     \endentry
     \entry{Ratnoo2023-vw}{article}{}
       \name{author}{1}{}{%
@@ -1424,6 +1712,42 @@
       \field{title}{Land concentration and Long-run development in the frontier United States}
       \field{year}{2023}
     \endentry
+    \entry{Smith1972-dv}{book}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=f3a71e41875b51f7b09496fdbaf388f6}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={T\bibnamedelima Lynn},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Baton Rouge}%
+      }
+      \list{publisher}{1}{%
+        {Louisiana State University Press}%
+      }
+      \strng{namehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{fullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{bibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorbibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authornamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorfullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4th ed.}
+      \field{title}{Brazil; people and institutions}
+      \field{year}{1972}
+      \keyw{Brazil -- Social conditions -- 1964-}
+    \endentry
     \entry{Smith1944-oi}{article}{}
       \name{author}{1}{}{%
         {{un=1,uniquepart=given,hash=f3a71e41875b51f7b09496fdbaf388f6}{%
@@ -1442,6 +1766,7 @@
       \strng{authorbibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
       \strng{authornamehash}{f3a71e41875b51f7b09496fdbaf388f6}
       \strng{authorfullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \field{extraname}{2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}

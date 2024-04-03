@@ -122,7 +122,7 @@
 \vspace{.1cm}
 
 \begin{abstract}
-  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called \textit{sesmarias}. These land grants were often given to people with substantial financial means, restricting land access to most of the population. I contribute to the understanding of colonial land tenure in Brazil by collecting a novel dataset on the location of these land grants alongside a matching procedure, I study the long-term effects of land grants on Brazil's economic development. Preliminary results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
+  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called \textit{sesmarias}. These land grants were often given to people with substantial financial means, restricting land access to most of the population. I contribute to the understanding of colonial land tenure in Brazil by collecting a novel dataset on the location of these land grants alongside a matching procedure. Preliminary results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
 \end{abstract}
 
 \clearpage
@@ -130,16 +130,23 @@
 
 \section{Introduction}
 
+\begin{displayquote}
+  ``In the \textit{sesmarialismo}, thus, is the base to all of [Brazil's] land evolution ."
+  \\ 
+  \smallskip
+  - O Sistema Sesmarial no Brasil, \textcite[p.~25]{Da_Costa_Porto1979-dz}
+  \end{displayquote}
+
 Brazil has one of the highest levels of land inequality in the world, with ``an estimated 1\% of the population own[ing] 45\% of all land" \parencite{Usaid2016-xs}. 
 This issue is compounded by the fact that large agricultural lands in Brazil are often unproductive, with the Brazilian agrarian reform agency indicating that in 2010 ``72\% of all land occupied by large holdings was considered unproductive'' \parencite{Carlson2019-mk}.
 The combination of land concentration and low levels of utilization are spread through the economy as it depresses rural wages, keeping those people away from the consumer markets \parencite[p.~1]{De_Oliveira_Andrade1980-xz}.
 % However, this is not a recent issue as even in the 1920 census, average land inequality per municipality was already high \parencite{Wigton-Jones2020-ex}. 
-However, land inequality is something that has persisted in Brazil ever since its colonization.
-As most of the more suitable land had been taken in large estates that were not intensely cultivated \parencite[p.~53]{Mueller1995-gi}. 
+However, land inequality is something that has existed in Brazil ever since its colonization, as most of the more suitable land had been taken in large estates that were not intensely cultivated \parencite[p.~53]{Mueller1995-gi}. 
 
 [This added to the lack of sharecropping or wage labor].
 
-This paper analyzes the historical colonial causes of land inequality in Brazil, by exploiting geographical and economic variation in the request for land grants, called \textit{sesmarias}.
+This paper analyzes the historical colonial causes of land inequality in Brazil, by exploiting geographical and economic variation in the request for land grants, called \textit{sesmarias}. 
+These land grants were often given to people with direct financial means, and were large in size. 
 
 I exploit the geographical, time, and economic variation of the grants to study their persistent effect in the economic development of
 
@@ -169,12 +176,14 @@ Related literature has also analyzed the effect of the Spanish-Portuguese border
 
 \textcite{Albertus2018-bf}
 
+Lastly, this paper contributes by providing a novel georeferenced dataset describing historical colonial land grants in Brazil. 
+Other papers such as [...] have studied and georeferenced datasets that study the effects in the United States, however, that data is lacking for Brazil.
+While, currently, the dataset does not have full coverage in all the states, it does contain most of the coastal states that were first colonized and are the most likely to have any effects of colonial land distribution.
+
 
 \section{Historical Background}
 
 \subsection{Land Grant Implementation in Brazil}
-
-https://www.taipu.rn.leg.br/a-cidade/
 
 Portuguese presence in Brazil began in 1500, when [...].
 
@@ -184,9 +193,29 @@ Quote about how the captains had to give land grants.
 
 Implementation in the following years.
 
-Portugal tried to implement in Brazil a similar system of land distribution they had successfully done in the Azores and in Portugal.
+Portugal tried to implement in Brazil a similar system of land distribution they had successfully done in the Azores and in Portugal. 
+According to \textcite{Smith1944-oi} the only way Portugal knew how to distribute the lands in Brazil, were through the large \textit{sesmarias}.
+However, while the legislation for granting the land was the same two main issues differentiated on how they were applied in Portugal and Brazil. 
+Portugal, as a smaller state, the \textit{sesmarias} led to small properties. 
+Meanwhile, in Brazil, by the need of colonization and the large area of the country, the implementation of the \textit{sesmaria} system led to the creation of the large estates than the ones seen in portugal \parencites[p.~58-59]{Da_Costa_Porto1979-dz}[p.~28]{Diffie1987-bw}[p.~23-24]{Panini1990-rj}.
 
-\textcite[p.~58-59]{Da_Costa_Porto1979-dz} ``Enquanto, no Portugal de D. Fernando, de D.João e de D. Duarte, a distribuição de terra de sesmaria gerou, em regra, a pequena propriedade, no Brasil foi a causa principal do latifúndio"
+While technically anyone could apply to get a land grant, the requirement to develop the land often led to people of great wealth to apply. 
+In practice, that led to the applications being done only by a select few, those that had the money or political connections \parencite[p~434]{Diffie1987-bw}
+In the letter descriptions, the applicants would boast about their wealth and connections in order to be able to get a grant \parencite[p.~36]{Lima1954-td}. 
+% Land belonged to the state until apportioned, or until seized through squatter sovereignty with the hope of recognition by the state at some later date. Both Portuguese and Spanish colonization entailed immediate concessions of land. In the Portuguese case the sesmaria was for a privileged few [p. 434].
+Those applicants that had the financial means to get a land grant would often get large estates, ``customarily one to three leagues in extent (16.7 to 50.1 square miles)" \parencite{Dean1971-iq}.
+\textcite[p.~36]{Lima1954-td} indicates how those people would become the ``future sugar engine owners and farmers that would create the economic aristocracy of the colonial society''.\footnote{Additionally, \textcite[p.~47]{Lima1954-td} states that the ``The \textit{sesmaria} is the large estate, inaccessible to the farmer without resources.''} 
+Further, those who did not have the means to get a land grant, would often be marginalized at the colonial society \parencite{Simonsen2005-ps}.
+Contemporary evidence from the French botanist Augustin Saint-Hilaire, describes how ``the poor that couldn't have titles, establish themselves in land that they don't know if it is owned; they plant, build small houses, raise chickens, and when the least expected, a rich man appears with a title, expels them and enjoys the fruits of their labor" \parencite[p.~143]{Da_Costa_Porto1979-dz}.\footnote{More evidence from the issues of squatting is further described in the letter by two grantees em 1702, who requested land alongside a river but claims people were living there without a \textit{sesmaria} grant \parencite[p.~142]{Da_Costa_Porto1979-dz}. In the interior of the Northeast when land was full of squatters or bandits they would often grant them away \parencite[p.~88]{Poppino1968-ab}.}
+
+% Casos destes viu-os, com frequencia, Saint-Hilaire, em suas viagens pelo interior: 'os pobres, que nao podem ter titulos, se estabelecem nos terrenos que sabem nao terem dono; plantam, constroem pequenas casas, criam galinhas, e, quando menos esperam, aparacem-lhes um homem rico, com o titulo que recebeu na vespera, expulsa-os e aproveita o fruto de seu trabalho' [p. 143]
+
+% \parencite{Simonsen2005-ps} - ``the ones that don't possess sesmarias or can't own land are disowned by the own society they live in"
+
+% \textcite[p.~58-59]{Da_Costa_Porto1979-dz} ``Enquanto, no Portugal de D. Fernando, de D.João e de D. Duarte, a distribuição de terra de sesmaria gerou, em regra, a pequena propriedade, no Brasil foi a causa principal do latifúndio"
+
+% Some about the dynamics of power and how squatting was risky:
+% Ordinarily, however, when it was learned that a section of the sertao was infested with bandits or that an appreciable number of squatters had settled there, the area in question was awarded in a huge tract, or sesmaria, as a veritable feudal domain to a powerful cattleman (p. 88).[Poppino]
 
 \parencite{Carlson2019-mk}
 ``For many Latin American scholars seeking to explain their region’s backwardness in the first half of the  twentieth century, the prevalence of latifundio-dominated agrarian structures was key. The latifundio was  seen  as a  fundamental  impediment  to  economic  development  due  to  its  feudal-like  social  relations,  its   tendency for monocropping, and its negative impact on the formation of domestic markets. However, it  was these scholars’ emphasis on the labor regimes that were characteristic of the latifundio that prevented  them from fully grasping the nature of the problem.''
@@ -195,35 +224,20 @@ Portugal tried to implement in Brazil a similar system of land distribution they
 ``Going back to colonial times, land in Latin America has often been acquired outside of market mechanisms.  This typically occurred through massive land grants from the crown such as the merced, or the sesmaria in  Brazil, or, after independence, through free or low-cost land concessions from national or local governments  (Furtado  2003,  68–80).''
 
 \parencite{Carlson2019-mk}
-``These findings are further supported by information from Brazil’s agrarian reform 
-agency, which reported in 2010 that more than 50 percent of all large landholdings and 72 percent of all  land  occupied  by  large  holdings  was  considered  “unproductive”  according  to  agency  parameters  (INCRA   2011).''
-
-\parencite{Carlson2019-mk}
 ``Not only do extensive activities predominate, but land use statistics reveal the low-investment and low- productivity nature of these types of production. On grazing land, for example, if we divide the total number  of animals on large farms by total hectares of pasture, Brazil’s large farms have only 0.65 animals per hectare  of grazing land, while in Peru it is an incredibly low 0.06 animals per hectare (IBGE 2012; INEI 2012).''
+
+
+\footnote{Some municipalities were directly created and first settled because of the land grants. For example, the municipality of Taipu in the state of Rio Grande do Norte is described as being "first settled because of a land grant in 1608". In total 17 grants were given in this municipality, being a primary cause of its creation. More information is available at \url{https://www.taipu.rn.leg.br/a-cidade/}.}
 
 \parencite{Carlson2019-mk}
 ``As Edelman (1992, 22) explains: “the important point is that the dynamics of accumulation are 
 radically different than those of classical capitalist development. Rather than investing heavily in improved  technologies,  employing  productive  human  labor,  attempting  to  capture  increased  market  shares,  or   developing linkages with other production processes, latifundistas could become wealthy from harvesting  natural and quasi-natural products of the land.”''
 
-\parencite{Carlson2019-mk} ``Extensive  activities  like  
-cattle grazing continued to operate largely as before, as Bicalho and Hoefle (1990, 57) explain for northeast  Brazil: “While the new system of cattle raising uses such technical innovations as planted pasture, pasture  divisions with rotation of use, purchased animal feed, improved breeds and the greater use of vaccines, which  together  with  the  use  of  waged  labour,  satisfy  the  most  demanding  definitions  of  capitalized  agriculture,   the productivity per hectare has not increased significantly. Mere pseudo-modernisation has occurred. The  ranches have all the trappings of being highly productive but the pastures only have one or two steers per  hectare.”"
-
 \textcite{Diegues_Junior1959-ba}
 
-\textcite{Smith1944-oi} ``The only way to distribute the lands was by grants of large tracts as sesmarias''
+% \textcite{Smith1944-oi} ``The only way to distribute the lands was by grants of large tracts as sesmarias''
 
-\textcite{Dean1971-iq} - ``Anyone who claimed to have the means and desire to make use of the land was given a grant, customarily one to three leagues in extent (16.7 to 50.1 square miles).''
-
-\textcite{Simonsen2005-ps} - ``the ones that don't possess sesmarias or can't own land are disowned by the own society they live in"
-
-\textcite[p.~1]{De_Oliveira_Andrade1980-xz}
-``The agrarian problem is one of the most serious the country has, because of the great concentration of land ownership and the low level of utilization by the large and medium property owners. A majority of the rural population receives very low wages, which practically puts them outside the consumer market''
-
-\textcite[p.~34-35]{De_Oliveira_Andrade1980-xz} argues that 
-``one of the causes that most aggravate the problem [the considerable increase in population, without a corresponding increase in possibilities for employment, is much more a swelling than an orderly growth] is the system of land tenure, dominant since colonization. It tends to contribute to the concentration of property and the lack of guarantees, of written and respected contracts, that would give greater stability to the sharecroppers in the Agreste and the Sertao and to the agricultural workers in the Zona da Mata."
-
-\textcite[p.~36]{De_Oliveira_Andrade1980-xz}
-``The concentration of landholdings in the Northeast is a consequence of the essentially commercial character of agriculture there. This character has manifested itself since the start of colonization. Even today, despite the perceptible growth of the middle class and the internal markets, it os predominant. Its control manifests itself in the protection bestowed by the government agencies on the large farms, and in the complete disdain for subsistence farming''
+% \textcite{Dean1971-iq} - ``Anyone who claimed to have the means and desire to make use of the land was given a grant, customarily one to three leagues in extent (16.7 to 50.1 square miles).''
 
 \textcite[p.~113]{De_Oliveira_Andrade1980-xz}
 ``Extensive cattle raising, with open grazing, did not require much attention or labor. For that reason, the number of slaves in the region was small''
@@ -236,12 +250,17 @@ This paper describes the history of land usage in Brazil and discusses the roles
 \textcite[p.~157]{De_Oliveira_Andrade1980-xz}
 ``Cattle raising is today, as in the past, the source of great wealth in the Sertao [...] The system of cattle raising on the large fazendas of the Sertao has changed little in recent years''
 
-``The slaves in Brazil were at least partially integrated into society and possessed rights, quite a legal contrast to the plight of the slaves in the United States. Hence their transition from slave to freedman was facilitated. One paramount privilege the slaves enjoyed was their ability to purchase their
-own freedom. Blacks, taking advantage of the many Catholic holidays to work on their own, saved money for that purpose. They occasionally formed their own mutual aid societies to facilitate their purchase of freedom.''
+``The slaves in Brazil were at least partially integrated into society and possessed rights, quite a legal contrast to the plight of the slaves in the United States. Hence their transition from slave to freedman was facilitated. One paramount privilege the slaves enjoyed was their ability to purchase their own freedom. Blacks, taking advantage of the many Catholic holidays to work on their own, saved money for that purpose. They occasionally formed their own mutual aid societies to facilitate their purchase of freedom.''
 
 \subsection{End of the Land Grants and the 1850 Land Act}
 
-Between 1822 and 1850 there was no clear way on how to obtain lands in Brazil.
+Land concentration in Brazil in the brink of Brazil's independence in 1822, was high as a result from the land grants throughout its colonial period \parencite{Smith1972-dv}.
+Contemporaries describe that a key issue of the sesmaria system was a lot of the land had already been given which led to a lot of poor families which were not able to claim land \parencite[p.~42-43]{Lima1954-td}
+
+
+% The concentration of landownership, resulting from the grants of sesmarias, had already reached a high degree in 1822, when Brazil gained her independence
+
+Between 1822 and 1850 there was no clear way on how to obtain lands in Brazil. 
 
 1850 Land Law allowed [...]
 
@@ -263,22 +282,37 @@ Dutch Brazil ? "dois fatores contribuíram para a penetração do gado para o in
 \parencite[p.~118]{De_Geografia1970-nk}
 
 
-``Nos  sertões  da  Bahia,  Pernambuco,  Paraíba,  Rio  Grande  do  Norte,  Ceará,  Piauí, as primeiras estradas foram os  caminhos das boiadas.  Assim  é  que nume- rosas  povoações  - núcleos  de  futuras  vilas  e  cidades  - estabeleceram-15e  às  margens dos rios,  nos lugares onde  êstes ofereciam passagem mais fácil  aos ani- mais,  e  à  beira  dos  caminhos,  nos  pontos  em  que  as  boiadas  paravam  para  descansar.''
+``Nos  sertões  da  Bahia,  Pernambuco,  Paraíba,  Rio  Grande  do  Norte,  Ceará,  Piauí, as primeiras estradas foram os  caminhos das boiadas.  Assim  é  que nume- rosas  povoações  - núcleos  de  futuras  vilas  e  cidades  - estabeleceram-15e  às  margens dos rios,  nos lugares onde  êstes ofereciam passagem mais fácil  aos anji- mais,  e  à  beira  dos  caminhos,  nos  pontos  em  que  as  boiadas  paravam  para  descansar.''
 \parencite[p.~164]{De_Geografia1970-nk}
 
 \parencite{Panini1990-rj}
 
-Maybe can combine the Sao Paulo ones with the immigration that happened there and contrast.
+Maybe can combine the Sao Paulo ones with the immigration that happened there and contrast with data from \parencite{Rocha2017-yq}.
 
 \subsection{Present Day System}
 
-While the land grants themselves 
+\textcite[p.~1]{De_Oliveira_Andrade1980-xz}
+``The agrarian problem is one of the most serious the country has, because of the great concentration of land ownership and the low level of utilization by the large and medium property owners. A majority of the rural population receives very low wages, which practically puts them outside the consumer market''
+
+While a lot has changed about access to land, and land redistribution throughout the past century some of the effects can be traced to colonial times.
+\textcite[p.~36]{De_Oliveira_Andrade1980-xz} states how in the Northeast 
+``The concentration of landholdings [...] is a consequence of the essentially commercial character of agriculture there. This character has manifested itself since the start of colonization". 
+% Even today, despite the perceptible growth of the middle class and the internal markets, it os predominant. Its control manifests itself in the protection bestowed by the government agencies on the large farms, and in the complete disdain for subsistence farming''
+
+\textcite[p.~34-35]{De_Oliveira_Andrade1980-xz} argues that 
+``one of the causes that most aggravate the problem [the considerable increase in population, without a corresponding increase in possibilities for employment, is much more a swelling than an orderly growth] is the system of land tenure, dominant since colonization. It tends to contribute to the concentration of property and the lack of guarantees, of written and respected contracts, that would give greater stability to the sharecroppers in the Agreste and the Sertao and to the agricultural workers in the Zona da Mata."
+
+\textcite[p.~18]{Andrade1980-zd} describes the actual system of land ownership in Brazil as ``continuation of the colonial system, with the \textit{sesmaria} becoming the [large private estates]"
+
+\textcite[p.~16]{Baer2014-gh} describes largely negative effects of the sugar economy, especially in the Northeast, which led to the concentration of wealth and economic backwardness of the region.
+
+Some of the same issues of large estates and poor utilization of land persist to the present. \textcite{Carlson2019-mk} based on INCRA data indicates how even up to 2010 ``more than 50 percent of all large landholdings and 72 percent of all land occupied by large holdings was considered 'unproductive' according to agency parameters".
 
 \section{Data}
 
 \subsection{Land Grant Dataset}
 
-Given the nature of the grant application, the requirement of a letter to be sent to the governor and approved, a vast number of the letters are [...]
+Given the nature of the grant application, and the requirement of a letter to be sent to the governor and approved, a vast number of the letters were stored in archives throughout Brazil. 
 
 The main source of historical data comes from both a collaboration with the \textit{Sesmarias of the Luso-Brazilian Empire Database} and my own work.\footnote{
   Information on the content of the letters is available at \url{http://plataformasilb.cchla.ufrn.br/}. The georeferencing process was done in collaboration but as a separate project for this paper.}
@@ -290,21 +324,22 @@ The sesmarias are then georeferenced based on the geographical information prese
 \subsection{Other Sources}
 
 The main outcome economic variables come from a variety of different sources.
-To study the effects of the grants at an earlier time period, I use the 1872 Brazilian Imperial census, which happened only 50 years after the formal ban of land grants in Brazil.
+To study the effects of the grants at an earlier period, I use the 1872 Brazilian Imperial census, which happened only 50 years after the formal ban of land grants in Brazil.
 Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
   Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
 The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. 
 Additional work was done to get a novel database at a finer geographical level for the 1872 census.
 At that time, the lowest geographical unit at which the census was taken was at the parish level and each municipality included at least one parish.
-I then georeference the parishes, allowing me to study the effects with the 1872 census at a smaller geographical unit allowing for better precision of the estimates.\footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes. Information on how the parishes were georeferenced is available at \autoref{app:georeferencing_parishes}}\textsuperscript{,}\footnote{More information on the description based on the 1872 census data is available on \autoref{app:variable_construction_1872}}. \autoref{fig:parishes_1872} shows the geographical distribution of the parishes alongside their municipality boundaries. 
+I then georeference the parishes, allowing me to study the effects with the 1872 census at a smaller geographical unit allowing for better precision of the estimates.\footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes. Information on how the parishes were georeferenced is available at \autoref{app:georeferencing_parishes}}\textsuperscript{,}\footnote{More information on the construction of the variables based on the 1872 census data is available on \autoref{app:variable_construction_1872}}. \autoref{fig:parishes_1872} shows the geographical distribution of the parishes alongside their municipality boundaries. 
 
-To study the persistance of these effects I use data from other censuses from 1970-2010 are obtained from the IBGE (\textit{}).\footnote{Microcensus is available through the IBGE but the data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
+To study the persistence of these effects I use data from other censuses from 1970-2010 are obtained from the IBGE (\textit{}).\footnote{Microcensus is available through the IBGE but the data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
 
 To study the effect of land usage and tenure I combine satellite data alongside Brazilian Agricultural Censuses. 
 Land usage from 1985-2010 is obtained from Mapbiomas \parencite{Souza2020-kb}\footnote{
   Available at \url{https://brasil.mapbiomas.org/en/}}.
 Data for current land tenure in 2021 in Brazil is obtained from \textcite{Sparovek2019-dn}.\footnote{
-  Available at \url{https://atlasagropecuario.imaflora.org/}}
+  Available at \url{https://atlasagropecuario.imaflora.org/}}.
+Data for the 1920 Agricultural Census is originally from the IBGE.\footnote{I would like to thank XXX for sharing this data with me.}
 
 In addition, I obtain geographical characteristics and shapefiles at the municipality level from a variety of sources. 
 Shapefiles for the coast of Brazil, municipality seats, and municipality boundaries from 1872-2010 are obtained from IBGE through \textcite{Pereira2023-qq}.
@@ -312,14 +347,33 @@ Information on the slope comes from the European Environment Agency
 \footnote{
   Available at \url{https://www.eea.europa.eu/data-and-maps/data/world-digital-elevation-model-etopo5}}, and elevation comes from \textcite{Amatulli2018-gl}.
 Data on the maximum amount of calories based on pre-Columbian and post-Columbian crops are obtained from \textcite{Galor2016-ba}. 
+Soil types in Brazil is obtained from EMBRAPA (Brazilian Agricultural Research Corporation).
+Terrain ruggedness comes from \textcite{Nunn2012-hb}.
+Rivers and streams [...].\footnote{\url{https://metadados.snirh.gov.br/geonetwork/srv/api/records/a01764d3-4742-4f7d-b867-01bf544dde6d}}
+
+Land conflict in Brazil comes from the CPT (Comissao Pastoral das Terras) from the years of 2014-2018.\footnote{Annual reports from 2015-2022 are available to download at \href{https://www.cptnacional.org.br/downlods/category/4-areas-em-conflito}.}\textsuperscript{,}\footnote{Geographical distribution of the conflicts on the selected states is \autoref{fig:cpt_conflict}.}
+
+\parencite{Klein_Goldewijk2017-mr}
 
 \section{Descriptive}
 
 \subsection{Summary Statistics}
 
-Following \textcite{Lowes2021-ww} I show balance on geographical characteristics at the 0.5 x 0.5 (55 x 55km) grid level in [reference to table here].
-
 Summary statistics for the 1872 censuses are available in \autoref{tab:1872summary}. Overall, we can see that municipalities farther from the coast 
+
+\section{Historical Selection of the Land Grants Location}
+
+\subsection{Geographical Information on the Land Grants}
+
+[add here summary statistics of the land grants]
+
+Following \textcite{Lowes2021-ww} I show balance on geographical characteristics at the 0.5 x 0.5 (55 x 55km) grid level in [reference to table here]. [add here summary statistics at the grid level]. 
+Overall, some patterns seem to emerge 
+When comparing 
+
+\subsection{Challenges to Identification}
+
+Given the descriptives of the previous subsection, we see that the land grants were mainly located in [...]. The main concerns about the estimates deal with the endogeneity of the location of the grants. 
 
 \section{Methodology}
 
@@ -329,9 +383,7 @@ Summary statistics for the 1872 censuses are available in \autoref{tab:1872summa
 
 [Or, indigenous tribes \parencite{Barsanetti2023-xq}] -> Also has a very good way of explaining the threats to identification and how I'm dealing with them.
 
-\subsection{Challanges to Identification}
 
-The main concerns about the estimates deal with the endogeneity of the location of the grants. 
 
 %\subsection{Checkerboard pattern}
 %Something about the grants past some year needing to have one league between them. 
@@ -346,7 +398,7 @@ To study the effects of the land grants I use a propensity score matching proced
   LandGrant_m = X_{m,s} + \mu_s + \epsilon_{m,s}
 \end{equation}
 
-The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops\footnote{Proxied by the measures of \textcite{Galor2016-ba}.}, potential sugarcane output from the FAO, and the distance to the coast.\footnote{In Appendix ? I show that the results are robust to a different set of control variable.} These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
+The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops \parencite{Galor2016-ba}, potential sugarcane output from the FAO, and the distance to the coast.\footnote{In Appendix ? I show that the results are robust to a different set of control variable.} These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
 
 For the matched sample I then estimate the following equation:
 
@@ -357,6 +409,40 @@ For the matched sample I then estimate the following equation:
 The assumption for the matched sample is that conditional on the set of controls, the municipalities that received a land grant are as good as random since the control municipalities had similar geographical characteristics. 
 
 The results are found in tables X, Y, and Z. In each Panel, I consider whether the given municipality had any land grants, a land grant pre-1700 and a land grant only post-1700. The 1700 cutoff is chosen due to two historical factors: First, in 1698 it was imposed a limit on the size of the grants to be 3x1 leagues maximum [add citation here]. Additionally, in 1701 there was a ban on livestock grazing within 80km of the coast. The 1700 cutoff, therefore, chooses the combination of the two. Ideally, we would expect that the effects on land usage would change in favor to [add here] and [blah blah blah].
+
+For the states in the Northeast, the results are available in \autoref{tab:matching_1995_ag_northeast}
+
+When exploring the heterogeneity by the economic activity of the request, we see that in \autoref{tab:matching_1995_ag_northeast_livestock}.
+
+[Can do what \parencite{Rocha2017-yq} did and create a pseudo-panel for variables that can be traced in time]
+
+\subsection{Bandeirantes Exploration}
+
+``Owing in large measure to the intrepid Paulistas of the seventeenth century, the menace of Indian attacks from the interior was largely eliminated, and the lands themselves were appropriated in extremely large tracts for the purposes of cattle raising" \parencite[p.~320]{Smith1972-dv}.
+\autoref{fig:Bandeiras} shows the geographical expansion of the Bandeiras, as they expanded from Sao Paulo, Minas Gerais, and Bahia.
+
+Combine that with the \parencite{Barsanetti2023-xq} paper on where 
+
+\textcite[p.~44]{Lima1954-td} indicates that at the time of independence, Goncalves Chaves reported that [...]
+
+First, I test whether or not we observe in the data the expansion of the land grants after the Bandeirantes exploration.
+Results can be found on \dots
+
+For this analysis, I select only the states of Sao Paulo and Minas Gerais the states which had Bandeirantes explorations.\footnote{The focus of this section is on the Bandeiras Paulistas, which radiated from Sao Paulo. Expansion to the West on the other states was due to other factors, unlike the selected states in the Southeast in which Bandeirantes were looking for gold towards the center of Brazil.}
+
+The first-stage equation:
+\begin{equation}
+  \label{eqn:firststage}
+  LandGrant_{m,s} = \delta \cdot ExplorersDist_{m,s} +  X_{m,s} + \mu_s  + \epsilon_{m,s}
+\end{equation}
+
+The second-stage would be as follows:
+\begin{equation}
+  \label{eqn:ivequation}
+  Y_{m,s} = \beta \cdot \widehat{LandGrant}_{m,s} + X_{m,s} + \mu_s +  \epsilon_{m,s}
+\end{equation}
+
+
 
 \subsection{Dutch Brazil}
 
@@ -374,6 +460,8 @@ As \textcite[p~.41]{Fausto2014-bh} indicates, the need for large lands to allow 
 Even with restrictions on the sizes of the land grants taking into effect in 1698, due to the lack of government oversight the  ``sesmarias on which cattle ranches were established sometimes exceeded hundreds of thousands of acres'' \parencite{Bethell1984-of}.
 % ``Landholding in the [interior] was truly extensive. Although there was legislation limiting the size of sesmarias to three square leagues, this restriction was simply disregarded. The sesmarias on which cattle ranches were established sometimes exceeded hundreds of thousands of acres"
 
+\parencite{Carlson2019-mk} ``Extensive  activities  like  
+cattle grazing continued to operate largely as before, as Bicalho and Hoefle (1990, 57) explain for northeast  Brazil: “While the new system of cattle raising uses such technical innovations as planted pasture, pasture  divisions with rotation of use, purchased animal feed, improved breeds and the greater use of vaccines, which  together  with  the  use  of  waged  labour,  satisfy  the  most  demanding  definitions  of  capitalized  agriculture,   the productivity per hectare has not increased significantly. Mere pseudo-modernisation has occurred. The  ranches have all the trappings of being highly productive but the pastures only have one or two steers per  hectare.”"
 
 \parencite[p~.]{Boxer1962-bj}
 
@@ -401,19 +489,7 @@ possessed the capital  and slaves to establish a sugar mill could readily obtain
 
 "By squatting the settler risked being expelled as the frontier  advanced, yet this was often  far  in the future   Furthermore,  increasingly   through time, there was the possibility that through occupation and cultivation of the land the settler could acquire  property rights, either through  informal  recognition of those rights or through the ex-post granting of a  sesmaria"
 
-[Move this to the appendix]
-
 Historically livestock-raising areas were [...]
-
-\begin{equation}
-  Y_{m,s} = \beta \cdot CoastDist_{m,s} + f(D_{m,s})+ \mu_s + X_{m,s} + \epsilon_{m,s}
-\end{equation}
-
-For the 1970-2010 census, given that I have information at the individual level I estimate:
-
-\begin{equation}
-  Y_{i,m,s} = \beta \cdot CoastDist_{m} + f(D_{m})+ \mu_s + X_{i,m,s} + \epsilon_{i,m,s}
-\end{equation}
 
 With the standard errors being clustered at the municipality level. 
 
@@ -434,31 +510,47 @@ Other links:
 
 \parencite[p.~142]{De_Oliveira_Andrade1980-xz}
 
+Or maybe, following \textcite{Barsanetti2021-hp} do a differences-in-differences estimator where there are two sources of geographical variation: the 1701 law and where the grants themselves are located. Therefore, the estimating equation is as follows:
+\begin{equation}
+  \label{eqn:livestock}
+  Y_{m,s} = \beta \cdot (Grant_m  * More80km_m) + \beta \cdot (Grant_m * Less80km_m) + \delta \cdot  Less80km_m + X_{m} + \mu_s + \epsilon_{m,s}
+\end{equation}
+
+\subsection{Comparison against Settlement Municipalities in Sao Paulo}
+
+Based on \textcite{Rocha2017-yq} I define municipalities that received a state-sponsored settlement. I estimate the following equation:
+\begin{equation}
+  \label{eqn:settlement}
+  Y_m = \beta^g \cdot LandGrant_m + \beta^s \cdot Settlement_m + \beta_3 \cdot (LandGrant_m * Settlement_m) + X_m + \epsilon_m
+\end{equation}
+
 \subsection{Treaty of Tordesillas}
+
+In \autoref{fig:Tordesillas}, I show the treaty line alongside the land grants in the states of Sao Paulo and Minas Gerais.\footnote{Those states are selected, since out of my sample they are the only ones that have municipalities on both sides of the line.}
 
 \subsection{Other}
 
-\subsection{Instrumental Variable - Distance to Salvador and Olinda}
-
-The main ports in the region were... 
-
-The radiation points for cattle were also...
-
-First-stage indicates that ...
-
 \section{Results}
 
-\subsection{Matching}
+\subsection{Land Inequality}
+
+\subsection{Land Conflicts}
+
+\subsection{Land Usage}
+
+\section{Mechanisms}
 
 \subsection{Human Capital Accumulation}
 
-Following \parencite{Galor2009-bc} I test whether there are associated effects of land concentration on education and human capital accumulation [Something to test].
+Following \textcite{Galor2009-bc} I test whether there are associated effects of land concentration on education and human capital accumulation [Something to test].
 
 \section{Heterogeneity}
 
 \subsection{Regional Variation}
 
 The effects between the Northeast and Southeast of Brazil [...]
+
+``Facil, assim, compreender por que houve tanto latifundio, sobretudo no Nordeste: areas imensas dadas de sesmaria ao mesmo morador" \parencite[p.~53]{Da_Costa_Porto1979-dz}
 
 In Table [...] I show that for the 1985 Agricultural census in the Northeast municipalities, the presence of a land grant is associated with an increase in [...]
 
@@ -492,23 +584,23 @@ I use the methodology from to estimate how much unobservables could be impacting
 \section*{Figures}
 
 \begin{figure}[h!]
+  \caption{Land Grant Year Histogram}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.75\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/year_distribution.png}}
+  \end{center}
+  \textit{Notes:} Histogram describing the yearly distribution of the land grants used in the dataset.  
+  \label{fig:year_distribution}
+\end{figure}
+
+\begin{figure}[h!]
   \caption{Land Grant Distribution}
   \begin{center}
      \makebox[\textwidth]			 
      {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/land_grants_distribution_1991.png}}
   \end{center}
-  \textit{Notes:} Geographical distribution of the land grants across the states. Municipalities for the 1991 census are highlighted in red. Each point indicates an unique land grant. 
+  \textit{Notes:} Geographical distribution of the land grants across the states. Municipalities for the 1991 census for the states which information on the land grants is available are highlighted in red. Each point indicates a unique land grant. 
   \label{fig:land_grants_distribution}
-\end{figure}
-
-\begin{figure}[h!]
-  \caption{1872 Municipalities and Parish Locations}
-  \begin{center}
-     \makebox[\textwidth]			 
-     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
-  \end{center}
-  \textit{Notes:} Geographical distribution of 1872 parishes alongside 1872 municipality and state boundaries. The states to which I have information on the land grants are highlighted in red. This map shows that several municipalities, especially in the Southeastern states have more than one parish per municipality. The sample increases by using parish-level information instead of municipalities from 337 to 815.
-  \label{fig:parishes_1872}
 \end{figure}
 
 \begin{figure}
@@ -520,6 +612,28 @@ I use the methodology from to estimate how much unobservables could be impacting
   \end{center}
   \label{fig:SesmariasDistribution}
 \end{figure}
+
+\begin{figure}
+  \caption{Distribution of Land Grants alongside Bandeiras}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/sesmarias_bandeirantes.png}}
+  \textit{Notes:} This figure shows the distribution of the land grants alongside the \textit{bandeiras} routes.
+  \end{center}
+  \label{fig:Bandeiras}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}
+  \caption{Distribution of Land Grants in Minas Gerais and Sao Paulo alongside the Treaty of Tordesillas line}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/sesmarias_tordesillas.png}}
+  \end{center}
+  \textit{Notes:} This figure shows the distribution of land grants in the states of Minas Gerais and Sao Paulo alongside the Treaty of Tordesillas. The definition of the Treaty of Tordesillas line follows \textcite{Laudares2022-vy}, being located at 48.7 W.
+  \label{fig:Tordesillas}
+\end{figure}
+\end{landscape}
 
 \clearpage
 
@@ -535,7 +649,23 @@ I use the methodology from to estimate how much unobservables could be impacting
 
 \subsection{Matching}
 
-\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching.tex}
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_All.tex}
+
+\subsection{Region Heterogeneity}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_SE.tex}
+
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_NE.tex}
+
+\clearpage
+
+%\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching.tex}
+
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_Livestock.tex}
 
 \clearpage
 
@@ -592,7 +722,76 @@ I use the methodology from to estimate how much unobservables could be impacting
 
 \clearpage
 
-[add here the 1872 parishes]
+\begin{figure}[h!]
+  \caption{Gridded Dataset for the Selected States}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/gridded_dataset.png}}
+  \end{center}
+  \textit{Notes:} Gridded dataset. Each square represents 0.1 x 0.1 degrees, which is approximately 10 x 10 km.  
+  \label{fig:gridded_dataset}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{Geographical distribution of Land Conflicts in Brazil}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.75\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/cpt_conflict_data.png}}
+  \end{center}
+  \textit{Notes:} Geographical distribution of Land Conflicts in Brazil from 2014-2018 from [add source here]. Red dots indicate a conflict as reported on [add source here] alongside with 2010 municipality boundaries.
+  \label{fig:cpt_conflict}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{Land Grant Year Histogram}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.75\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/slave_travels.png}}
+  \end{center}
+  \textit{Notes:} Histogram describing the yearly distribution of slave arrival ships from [add source here].  
+  \label{fig:slave_distribution}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{Land Grant Year Histogram}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.75\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/slave_travels_region.png}}
+  \end{center}
+  \textit{Notes:} Histogram describing the yearly distribution of slave arrival ships from [add source here].  
+  \label{fig:slave_distribution_region}
+\end{figure}
+
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{1872 Municipalities and Parish Locations}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
+  \end{center}
+  \textit{Notes:} Geographical distribution of 1872 parishes alongside 1872 municipality and state boundaries. The states to which I have information on the land grants are highlighted in red. This map shows that several municipalities, especially in the Southeastern states have more than one parish per municipality. The sample increases by using parish-level information instead of municipalities from 337 to 815.
+  \label{fig:parishes_1872}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+  \caption{\textit{Bandeira} Routes and 2010 Municipalities}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png}}
+  \end{center}
+  \textit{Notes:} Proximity to a \textit{Bandeira} route and 2010 municipalities boundaries in the states of Sao Paulo and Minas Gerais. Red dots indicates the grants in those two states.
+  \label{fig:bandeiras_SE}
+\end{figure}
 
 \clearpage
 
@@ -654,7 +853,7 @@ I use the methodology from to estimate how much unobservables could be impacting
     \end{subfigure}
 
     \end{center}
-    \textit{Notes:} Example of an original manuscript and its transcribed version. Obtained from \textit{SILB} with the original source being from ...
+    \textit{Notes:} Propensity Score Matching municipality selection for the 1995 Agricultural census. Blue municipalities represent municipalities that had at least one land grant within its boundaries, red represents the control municipalities. 
   \end{figure}
   \end{landscape}
 
@@ -702,34 +901,91 @@ Below I describe the sources to which the land grants were compiled from. The st
 
 \textbf{Paraiba$^*$}
 \begin{itemize}
-\item A
+  \item British Library: Livro 1 (Land Grants (sesmarias) / Land Registers, 1757 - 1764); Livro 2: (Plots of Land 1722-1727 / Land Grants (sesmarias) 1722-1727); Livro 3: (Land Grants (sesmarias), 1785 -1787); Livro 4: (Land Grants (sesmarias), 1728 -1738); Livro 5: (Land Grants (sesmarias), 1816 - 1824); Livro 6: (Land Grants (sesmarias), 1747 - 1755); Livro 7: (Land Grants (sesmarias), 1789 - 1808); Livro 8: (Plots of Land - 1714-1717 / Land grants (sesmarias); Livro 9: (Land Grant - Various Parishes, 1768 - 1776); Livro 10: (Land Grants 1704-1722 / Sesmarias 1704-1722)
+  \item TAVARES, João de Lira. Apontamentos para a História territorial da Parahyba. ed. Facsimilar. Brasília: Senado Federal, 1982. vol. CCXLV.
+  \item Documentação Histórica Pernambucana: sesmarias. Recife:
+  \item SECRETARIA DE EDUCAÇÃO E CULTURA BIBLIOTECA PÚBLICA, 1959
+  \item Documentos Históricos da Biblioteca Nacional (DHBN): DHBN, V. 23. P.402-405.
+  \item Códice 427 - Arquivo Nacional - Rio de Janeiro
+  PUBLICAÇÕES DO ARCHIVO NACIONAL. VOL XXVII RIO DE
+  JANEIRO Officinas Graphicas do ARCHIVO NACIONAL 1931. (Códice 155)
+  \item Biblioteca Pública do Estado de Pernambuco (BPE) - Recife
+  
 \end{itemize}
 
 
 \textbf{Sao Paulo}
 \begin{itemize}
 \item \textcite{noauthor_1921-qd} Vols. 1-3 
+\item \textcite{Instituto-Historico-e-Geografico-de-Sao-Paulo1928-ej}
 \end{itemize}
 
 \textbf{Minas Gerais}
 \begin{itemize}
-\item c 
+  \item Revista do Arquivo Publico Mineiro - Inventory of the sesmarias letters on the Public Archive Codex - Volume 37 (1988)
+  \item Revista do Arquivo Publico Mineiro - Volumes 10-24 (1905-1933). 
 \end{itemize}
 
 \clearpage
 
 \section{Description of Letters and Georeferencing}
 \label{app:appendix_data}
-\clearpage
+
+Below is a description on how the process used to georeference the land grants.
+
+\begin{enumerate}
+  \item Based on the letter information, since a location was required in order for the land to be granted, the geographical information on where the land was requested and who it was their neighbors is extracted.
+  \item For example, the sesmaria of 
+  \item It is also possible to georeference based on who the neighbors of the person were. 
+  \begin{enumerate}
+    \item For example, the sesmaria of Matheus Ferndandes Ramos which was granted in 1698, is described as being close to the sesmaria of Lucas Pedroso which was granted in 1638. 
+  \end{enumerate}
+  \item When not possible to georeference based on the above, the location is approximated at the municipality level. 
+  \begin{enumerate}
+    \item For example, in Minas Gerais, [...]
+  \end{enumerate}
+\end{enumerate}
 
 \clearpage
 
 \section{Parish Level Georeferencing}
 \label{app:georeferencing_parishes}
+
+The 1872 census was conducted at the parish level. For the 1872 census, the seven states that had a total of X municipalities, I georeferenced the information at the parish level for that census increasing the total sample size to X.
+
+Below is a description of how the georeferencing was done:
+
+\begin{enumerate}
+  \item If the municipalities only had one parish, then the parish location is the same as the municipality seat.
+  \begin{enumerate}
+    \item The municipality of Serpa in Amazonas has only one parish, ``Nossa Senhora do Rosário de Serpa", therefore it is georeferenced to the municipality seat of Serpa.
+  \end{enumerate}
+  \item If a municipality has more than one parish, first I checked based on the name whether or not the parish level can be traced to a present-day city.
+  \begin{enumerate}
+    \item The municipality of Vigia in Para has three parishes: ``Nossa Senhora de Nazaré da Vigia", ``Nossa Senhora do Rosário de Collares", and ``São Caetano de Odivellas". 
+    \item All of these parishes can be traced down to present-day cities, ``Nossa Senhora de Nazaré da Vigia" is the present-day municipality of Vigia, ``Nossa Senhora do Rosário de Collares" is the present-day municipality of Collares, and ``São Caetano de Odivellas" is the present-day municipality of São Caetano de Odivellas
+  \end{enumerate}
+  \item If the parish cannot be traced down based on the name to a present-day municipality then I took a look at other sources.\footnote{https://cidades.ibge.gov.br/ includes information on historical names for municipalities, based on their history.}
+    \begin{enumerate}
+      \item For example, the parish of [...] in the state of RJ cannot be traced by name to a present-day municipality, however, the church of the same name remains in the same place.
+      \item Other maps such as [add the historical minas one here] were also used to identify old names of places.
+    \end{enumerate}
+\end{enumerate}
+
 \clearpage
 
 \section{Coastal RDD - Results}
 \label{app:coastal_rdd}
+Given the setting of the coastal ban I estimate the following set of equations:
+\begin{equation}
+  Y_{m,s} = \beta \cdot CoastDist_{m,s} + f(D_{m,s})+ \mu_s + X_{m,s} + \epsilon_{m,s}
+\end{equation}
+
+For the 1970-2010 census, given that I have information at the individual level I estimate:
+\begin{equation}
+  Y_{i,m,s} = \beta \cdot CoastDist_{m} + f(D_{m})+ \mu_s + X_{i,m,s} + \epsilon_{i,m,s}
+\end{equation}
+
 \clearpage
 
 \section{Data Appendix - 1872}
