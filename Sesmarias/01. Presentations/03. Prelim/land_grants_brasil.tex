@@ -1,0 +1,389 @@
+\documentclass[aspectratio=1610]{beamer}
+%\linespread{1.5}\selectfont
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{dcolumn}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{lscape} 
+\usepackage{tikz}
+\usepackage[export]{adjustbox}
+\usepackage{ragged2e}
+\usepackage{centernot}
+\justifying
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{caption}
+%\captionsetup{labelformat=empty}
+%\captionsetup{font=footnotesize}
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true, 
+    linkcolor = red, 
+    urlcolor = teal, 
+    citecolor = blue}
+
+%\usepackage{caption}
+%\captionsetup{labelformat=empty}
+\usepackage{appendixnumberbeamer}
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=20pt plus 0cm}
+
+\DeclareUnicodeCharacter{0301}{\'{e}}
+\DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{0327}{\c}
+
+\usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1]{biblatex}
+
+\addbibresource{citations_sesmarias.bib}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Projects/Sesmarias Brazil/Figures/Descriptive/}}
+
+%\addbibresource[location = remote]{https://raw.githubusercontent.com/ViniOkadaSilva/Papers/master/Sesmarias/citations_sesmarias.bib}
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+\usepackage{setspace}
+\usepackage{graphicx}
+
+\newcommand{\tinytable}[1]{\textcolor{black}{\tiny \input{#1}}}
+
+\graphicspath{{~/OneDrive - University of Illinois - Urbana/Research/Writing/git/Sesmarias/Pictures/}}
+
+\beamertemplatenavigationsymbolsempty
+
+%Information to be included in the title page:
+\title{Portuguese Colonial Land Grants in Brazil: Long-term Effects on Inequality and Economic Development}
+\author{Vinicius Okada da Silva}
+\date{\today}
+
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+
+\setbeamertemplate{itemize items}[circle]
+
+\begin{frame}[plain, noframenumbering]
+	\titlepage
+\end{frame}
+
+\begin{frame}{Background and Motivation}
+    \begin{outline}
+        \1 Inequality in access to land is a key issue in Brazil.
+            \vspace{2mm}
+            \2 ``\textcolor{red}{\textbf{Brazil has one of the highest levels of inequality of land distribution in the world}} [...] \textcolor{red}{\textbf{An estimated 1\% of the population owns 45\% of all land in Brazil}}.'' \parencite{Usaid2016-xs}
+        \vspace{2mm}
+        \pause 
+        \1 ``The agrarian problem is one of the most serious problems [Brazil] has, because of the great concentration of land ownership and the low level of utilization by the large and medium property owners" \parencite[p.~1]{De_Oliveira_Andrade1980-xz}
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Research Question}
+    \begin{outline}
+        \1 How much of economic development and inequality can be traced to historical land grants in Brazil?
+        \vspace{2mm}
+        \pause 
+        \1 Identification:
+        \vspace{2mm}
+            \2 Exploit a 1701 Royal Decree that banned livestock grazing within 80km of the coast of Brazil.
+        \vspace{2mm}
+            \2 Created a separation between where the land grants for livestock could be assigned.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Contribution}
+    \begin{outline}
+        \1 Understanding the historical effects of land distribution and usage in Brazil.
+        \vspace{2mm}
+            \2 Americas: 
+            \cite{Wigton-Jones2020-ex} (JEG),
+            \cite{Sellars2018-yp} (JDE),
+            \cite{Smith2023-ip} (WP)
+            \vspace{2mm}
+            \2 India and Africa: 
+            \cites{Banerjee2005-ki} (AER)
+        \vspace{2mm}
+        \1 Understand the persistent effects of colonial Brazil's economic structure on the present.
+        \vspace{2mm}
+        \2 Institutional and Natural Endowments: 
+        \cite{Acemoglu2001-dz} (AER), 
+        \cite{Sokoloff2000-mb} (JEP).
+        \vspace{2mm}
+        \2 
+        \cite{Naritomi2012-or} (JEH), 
+        \cite{Musacchio2014-pq} (JEH),
+        \cite{Laudares2022-vy} (WP). 
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Background}
+    \begin{outline}
+        \1 Goal was to encourage Portuguese settlement of Brazil.
+        \vspace{2mm}
+        \1 One of the few ways to have access to land in colonial Brazil and given to people who could afford to develop the land \parencites{Smith1944-oi}{Dean1971-iq}.
+        \vspace{-1mm}
+        \1 People without direct access to it were often marginalized \parencite{Simonsen2005-ps}.
+        \vspace{2mm}
+        \1 Lasted until 1822.
+        \vspace{2mm}
+        \1 Historical and anecdotal evidence of the land grants having permanent effects in Brazilian economic structure:
+        \vspace{2mm}
+            \2 Early studies argued it led to the development of the ``\textcolor{red}{\textbf{economic aristocracy of the colonial society}}'' and the ``\textcolor{red}{\textbf{principal cause of the [large estates]}}'' in Brazil \parencites[p.~36]{Lima1954-td}[p.~48]{Da_Costa_Porto1979-dz}. 
+    \end{outline}    
+\end{frame}
+
+
+%\begin{frame}{Channels}
+%    \begin{outline}
+%        \1 \textbf{Labor Outcomes} $\Rightarrow$ Land distribution could lead to different specialization (sugarcane vs. livestock).
+%        \pause 
+%        \vspace{2mm}
+%        \1 \textbf{Land Tenure} $\Rightarrow$ Different sizes of land grants could lead to different utilization of land, and how owners would exploit it.
+%        \pause 
+%        \vspace{2mm}
+%        \1 \textbf{Demographic Differences} $\Rightarrow$ Land grants often required African slaves, which could skew the demographics of a location.
+%    \end{outline}
+%\end{frame}
+
+\begin{frame}{Identification Strategy}
+    \begin{outline}
+        \1 
+        \1 IV
+        \1 Coastal Ban on Livestock
+    \end{outline}
+\end{frame}
+
+\begin{frame}{\hypertarget{data}Data}
+    \begin{outline}
+        \1 Land Grant Locations:
+        \vspace{2mm}
+            \2 Information on the land grants from the \href{http://plataformasilb.cchla.ufrn.br/}{Sesmarias of the Luso-Brazilian Empire Database} [\textbf{Novel Data}]
+        \vspace{2mm}
+        \1 Check whether they had an effect in the past:
+        \vspace{2mm}
+            \2 1872 Brazilian Census [\textbf{Novel Data at a Finer Geographical Level}] \hyperlink{parishes}{\beamerbutton{Parishes}}
+        \vspace{2mm}
+        %\1 Present-Day Effects on Land Usage (10 x 10km Grid)
+        %\vspace{2mm}
+        %    \2 1985 LandSat data from MapBiomas
+        %\vspace{2mm}
+        \1 Present-Day Effects on Land Tenure (1995 Municipalities)
+        \vspace{2mm}
+            \2 1995 Brazilian Agricultural Census
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Identification Strategy I}{Matching}
+    \begin{equation}
+        LandGrant_m = X_{m} + \mu_s + \epsilon_{m,s}
+    \end{equation}
+
+    \begin{equation}
+        Y_{m,s} = LandGrant1600_m + LandGrant1700_m + X_{m} + \mu_s + \epsilon_{m,s}
+    \end{equation}
+
+    \vspace{2mm}
+
+    \begin{outline}
+        \1 Variables used to match: latitude, longitude, mean elevation, mean slope, soil quality for food crops \parencite{Galor2016-ba}, potential sugarcane output from the FAO, the distance to the coast, distance to the nearest river, and the presence of four types of soil.
+        \vspace{2mm}
+            \2 All important geographical measures of settler presence.
+    \end{outline}   
+\end{frame}
+
+\begin{frame}{Matching Results}{Land Size}
+    \setbeamerfont{caption}{size=\scriptsize}
+    \small
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_All.tex}
+\end{frame}
+
+\begin{frame}{Matching Results}{Land Size - Different Cutoffs}
+    \small
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Size_Varying.tex}
+\end{frame}
+
+
+\begin{frame}{Matching Results}{Land Size - Northeast}
+    \setbeamerfont{caption}{size=\scriptsize}
+    \small
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_NE.tex}
+\end{frame}
+
+\begin{frame}{Matching Results}{Land Size - Southeast}
+    \setbeamerfont{caption}{size=\scriptsize}
+    \small
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_SE.tex}
+\end{frame}
+
+\begin{frame}{Instrumental Variable}{Distance to Explorer Routes}
+    \begin{outline}
+        \1 ``Owing in large measure to the intrepid Paulistas of the seventeenth century, the menace of Indian attacks from the interior was largely eliminated, and the lands themselves were appropriated in extremely large tracts for the purposes of cattle raising" \parencite[p.~320]{Smith1972-dv}.
+        \vspace{2mm}
+            \2 
+        \vspace{2mm}
+        \1 Focused only on the Southeastern states of Sao Paulo and Minas Gerais.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Visualization}{First Stage Map}
+    \begin{figure}[h!]
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.75\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png}}
+        \end{center}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{Visualization}{First Stage Graph}
+    \begin{figure}[h!]
+        \begin{center}
+           \makebox[\textwidth]			 
+           {\includegraphics[width=0.75\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png}}
+        \end{center}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{Identification Strategy II}{Instrumental Variable}
+    \begin{equation}
+        \label{eqn:firststage}
+        LandGrant_{m,s} = \delta \cdot BandeiraDist_{m,s} +  X_{m,s} + \mu_s  + \epsilon_{m,s}
+      \end{equation}
+
+      \begin{equation}
+        \label{eqn:ivequation}
+        Y_{m,s} = \beta \cdot \widehat{LandGrant}_{m,s} + X_{m,s} + \mu_s +  \epsilon_{m,s}
+      \end{equation}
+
+    \vspace{2mm}
+      
+    \begin{outline}
+        \1 \textbf{Exclusion Restriction:} Conditional on the set of controls, the proximity to the Bandeirantes routes only affects the outcomes through the increased presence of land grants.
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Matching and IV Results}{Land Distribution - 1995}
+    \footnotesize
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_IV_All_Lands.tex}
+\end{frame}
+
+\begin{frame}{Mechanisms I}{Human Capital}
+    \begin{outline}
+        \1 Effects of land concentration on human capital accumulation - \parencite{Galor2009-bc}  
+           
+    \end{outline}
+\end{frame}
+
+\begin{frame}{Mechanisms}{Literacy - 1872}
+    \footnotesize
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Literacy.tex}
+\end{frame}
+
+\begin{frame}{Mechanisms}{School Attendance - 1872}
+    \tiny
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Attendance.tex}
+\end{frame}
+
+\begin{frame}{Mechanisms}{Literacy - 1872}
+    \footnotesize
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_IV_HumanCapital.tex}
+\end{frame}
+
+\begin{frame}{Mechanisms}{Literacy - 1970}
+    [Will probably combine all the censuses into one table]
+    \footnotesize
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_OLS_IV_Literacy.tex}
+\end{frame}
+
+\begin{frame}{Mechanisms}{Literacy - Other Censuses}
+    [Add table for 1980, 1991, ...]
+\end{frame}
+
+\begin{frame}{Mechanism II}{Slavery}
+    \tiny
+    \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Slavery.tex}
+\end{frame}
+
+\begin{frame}[allowframebreaks, t, noframenumbering, plain]{References}
+    \printbibliography
+\end{frame}
+
+\appendix
+
+\begin{frame}{History/Background}{Request Process}
+    \begin{outline}
+        \1 Petitioner submits a letter for an unoccupied land detailing their qualifications (captain, governor, etc.)
+        \vspace{1mm}
+        \1 Governor reads it, and if accepted returns back a letter with the requirements for the petitioner to satisfy.
+        \vspace{1mm}
+        \1 Five years to develop the land
+        \vspace{1mm}
+        \1 If successful, upon an inspection, land was transferred to the \textit{sesmeiro}.
+        \vspace{1mm}
+        \1 Able to sell, pass down as inheritance, etc. 
+    \end{outline}
+\end{frame}
+
+    
+\begin{frame}{\hypertarget{parishes}1872 Parish Level Information }{[New Data] \hyperlink{data}{\beamerbutton{Back}}}
+        \begin{figure}[h!]
+            \begin{center}
+               \makebox[\textwidth]			 
+               {\includegraphics[width=0.85\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png}}
+            \end{center}
+            \label{fig:parishes_1872}
+          \end{figure}
+\end{frame}
+
+\end{document}

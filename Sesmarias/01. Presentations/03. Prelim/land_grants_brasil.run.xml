@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>SummerResearchProposal.bcf</file>
+      <file>land_grants_brasil.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>SummerResearchProposal.bbl</file>
+      <file>land_grants_brasil.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -64,19 +64,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>SummerResearchProposal</infile>
+      <infile>land_grants_brasil</infile>
     </cmdline>
     <input>
-      <file>SummerResearchProposal.bcf</file>
+      <file>land_grants_brasil.bcf</file>
     </input>
     <output>
-      <file>SummerResearchProposal.bbl</file>
+      <file>land_grants_brasil.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>SummerResearchProposal.bbl</file>
+      <file>land_grants_brasil.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>SummerResearchProposal.bcf</file>
+      <file>land_grants_brasil.bcf</file>
     </requires>
     <requires type="editable">
       <file>citations_sesmarias.bib</file>

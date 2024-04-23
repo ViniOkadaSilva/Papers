@@ -56,7 +56,7 @@
 \usepackage{todonotes}
 \setlength{\marginparwidth}{2cm}
 
-\usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1]{biblatex}
+\usepackage[backend = biber, style=authoryear, sorting = nty, maxcitenames=1, bibencoding=utf8]{biblatex}
 
 \addbibresource{citations_sesmarias.bib}
 
@@ -122,7 +122,7 @@
 \vspace{.1cm}
 
 \begin{abstract}
-  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called \textit{sesmarias}. These land grants were often given to people with substantial financial means, restricting land access to most of the population. I contribute to the understanding of colonial land tenure in Brazil by collecting a novel dataset on the location of these land grants alongside a matching procedure. Preliminary results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
+  Land access in Brazil has been a key political issue for the past century. The concentration of land in large estates that are often unproductive is argued to be a factor in the low social mobility and inequality of the rural population. However, restricted land access in Brazil has its roots in colonial times. Large plots of land were granted from 1530-1822 through land grants called \textit{sesmarias}. These land grants were often given to people with substantial financial means, restricting land access to most of the population. I contribute to the understanding of colonial land tenure in Brazil by collecting a novel dataset on the location of these land grants alongside a matching procedure. Results indicate that the land grants had persistent effects on land concentration, tenure, and usage until the 20th century.
 \end{abstract}
 
 \clearpage
@@ -138,27 +138,55 @@
   \end{displayquote}
 
 Brazil has one of the highest levels of land inequality in the world, with ``an estimated 1\% of the population own[ing] 45\% of all land" \parencite{Usaid2016-xs}. 
-This issue is compounded by the fact that large agricultural lands in Brazil are often unproductive, with the Brazilian agrarian reform agency indicating that in 2010 ``72\% of all land occupied by large holdings was considered unproductive'' \parencite{Carlson2019-mk}.
+This issue is compounded by the fact that large agricultural lands in Brazil are often unproductive, with the Brazilian Agrarian Reform Agency (INCRA) indicating that in 2010 ``72\% of all land occupied by large holdings was considered unproductive'' \parencite{Carlson2019-mk}.
 The combination of land concentration and low levels of utilization are spread through the economy as it depresses rural wages, keeping those people away from the consumer markets \parencite[p.~1]{De_Oliveira_Andrade1980-xz}.
 % However, this is not a recent issue as even in the 1920 census, average land inequality per municipality was already high \parencite{Wigton-Jones2020-ex}. 
 However, land inequality is something that has existed in Brazil ever since its colonization, as most of the more suitable land had been taken in large estates that were not intensely cultivated \parencite[p.~53]{Mueller1995-gi}. 
 
-[This added to the lack of sharecropping or wage labor].
-
 This paper analyzes the historical colonial causes of land inequality in Brazil, by exploiting geographical and economic variation in the request for land grants, called \textit{sesmarias}. 
 These land grants were often given to people with direct financial means, and were large in size. 
 
-I exploit the geographical, time, and economic variation of the grants to study their persistent effect in the economic development of
+[This added to the lack of sharecropping or wage labor].
 
-I first describe how the grants themselves were distributed and describe the process of learning that ...
+I exploit the geographical, time, and economic variation of the grants to study their persistent effect on the economic development of Brazil.  
+Given the prominence of land grants in colonial Brazil and the variation on why the land was granted, this paper studies the long-term effects of the role of colonial land assignment in development.  
 
-I use a matching algorithm to show that the land grants in Brazil are associated with... . These effects are seen in 1872 and have persisted up to ... 
+I first describe how the grants themselves were distributed and describe the process of their geographical expansion.
+
+In order to estimate the long-term effect of the grants I use a matching algorithm to show that the land grants in Brazil are associated with increased land concentration in Brazil in 1995. 
+Results indicate that municipalities that had a colonial land grant within their boundary see an increase in the percentage of farms that are above 2000 hectares. Similar results hold if considering different cutoffs such as 5000, or 10.0000 ha. 
+
+To address the issue of endogeneity, I use an instrumental variable approach, similar to \textcite{Duranton2011-rv}. 
+I use the explorer routes of the \textit{Bandeira Paulistas} as an exogenous determinant of the grand locations. 
+Given their historical context on how the \textit{bandeirates} further expanded Brazil's territory to the West, and historically how they would often request land grants in the areas they have claimed to discover, that gives a possible exogenous determinant of the land grant locations in the Southeast. 
+Consistent with the previous results, I find that the effects of land concentration remain in the Southeast on those municipalities that had a colonial land grant. 
+
+I further address endogeneity by comparing the effects in different regions in which different colonization styles were established.
+First, I consider the Tordesillas Treaty which split Brazil between Spain and Portugal until 1750. 
+Second, I consider a ban on livestock within 80km of the coast.
+Both offer sources of variation that would lead to the differential impact of the grants themselves.
+I find that the [write here abour the Tordesillas results].
+When considering the coastal ban on livestock, the results indicate that only in areas further than 80km from the coast and that received a land grant there is persistence in land inequality.
+
 
 I then turn to understand what are the mechanisms that are driving the results. 
+First, I measure effects in 1872, through a novel georeferenced dataset at the parish level. 
 
-Given the prominence of land grants in colonial Brazil and the variation on why the land was granted, this paper studies the long-term effects of the role of colonial land assignment in long-term development.  
-The paper provides a novel georeferenced dataset of colonial grants in Brazil. 
-First, there are no empirical papers studying the direct causes of colonial land distribution in Brazil. 
+Second, .
+Using Brazilian microcensus data from 1970-2010 I find that [...]
+
+I additionally check for other potential channels to which land inequality could have persisted. 
+I find that [...]
+
+This paper contributes to the literature in several ways. 
+First, the paper provides a novel georeferenced dataset of colonial grants in Brazil for a total of eight states in the Northeast and Southeast of Brazil.
+Through archival work, and collaboration with researchers in Brazil over 4,000 land grants were successfully georeferenced providing a novel dataset that allows researchers to study and understand the patterns of colonization in Brazil.
+The eight states in which this works is focused on constitute X\% of the total area and X\% of the population of Brazil.
+Further, these states were also historically where colonization began, making the study of the colonial past especially relevant.\footnote{Further work must be done to collect and georeference data for the rest of Brazil.}
+
+Second, this paper contributes to the further understanding of colonial institutions and their long-term effects on development. \parencite{Acemoglu2005-ti}
+
+Third, there are no empirical papers studying the direct causes of colonial land distribution in Brazil. 
 Previous literature has found negative long-term effects of colonial land usage in Africa and South America \parencites{Dell2010-qt}{Lowes2021-ww}. 
 However, there exists evidence that not all land regimes led to negative effects and instead led to economic development, with examples in India and Indonesia \parencites{Banerjee2005-ki}{Dell2019-np}{Ratnoo2023-vw}.  
 Other studies have analyzed the effect of land grants in the United States \parencites{Akee2014-uw}{Allen2019-kh}{Smith2023-ip}
@@ -166,7 +194,7 @@ Other studies have analyzed the effect of land grants in the United States \pare
 This paper also contributes to the understanding of the historical economic development of Brazil by trying to explain the diverging paths in development in each region. 
 The land regime and size in each region, as measured by the land grants could have differential impacts on development.
 \textcite{Wigton-Jones2020-ex} studies the effects of 1920 agricultural census land inequality and how it still has persisted to the present.
-The literature has analyzed how different economic cycles and how immigration have led to differential educational outcomes in Brazil \parencites{Musacchio2014-pq}{Rocha2017-yq}.
+The literature has analyzed how different economic cycles and how immigration led to differential educational outcomes in Brazil \parencites{Musacchio2014-pq}{Rocha2017-yq}{de-Carvalho-Filho2012-pc}.
 Related literature has also analyzed the effect of the Spanish-Portuguese borders in South America, the role of sugarcane, and gold mining in Brazil \parencites{Laudares2022-vy}{Naritomi2012-or}.
 
 \parencite{Dell2010-qt}
@@ -176,12 +204,10 @@ Related literature has also analyzed the effect of the Spanish-Portuguese border
 
 \textcite{Albertus2018-bf}
 
-Lastly, this paper contributes by providing a novel georeferenced dataset describing historical colonial land grants in Brazil. 
-Other papers such as [...] have studied and georeferenced datasets that study the effects in the United States, however, that data is lacking for Brazil.
-While, currently, the dataset does not have full coverage in all the states, it does contain most of the coastal states that were first colonized and are the most likely to have any effects of colonial land distribution.
-
+In \autoref{sec:historical_background} I briefly describe the history of land in Brazil, from its colonial times to the present-day system. In \autoref{sec:data} I describe the land grant dataset, its collection, and the other datasets used.
 
 \section{Historical Background}
+\label{sec:historical_background}
 
 \subsection{Land Grant Implementation in Brazil}
 
@@ -289,6 +315,10 @@ Dutch Brazil ? "dois fatores contribuíram para a penetração do gado para o in
 
 Maybe can combine the Sao Paulo ones with the immigration that happened there and contrast with data from \parencite{Rocha2017-yq}.
 
+A report to the Minister of Agriculture in 1873 already had stated that \parencite[p.~324]{Smith1972-dv}
+
+``The major part of the land in our province is divided into great properties, remains of the ancient sesmarias, of which few have been subdivided. The proprietor or the renter occupies a part of them and abandons, for a small payment, the right to live on and cultivate the other portions to one hundred, two hundred and sometimes to four hundred families of free mulattoes or blacks, of whom he becomes the protector but from whom he demands complete obedience and over whom he exercises the most complete despotism''\parencite[p.~325]{Smith1972-dv}
+
 \subsection{Present Day System}
 
 \textcite[p.~1]{De_Oliveira_Andrade1980-xz}
@@ -309,6 +339,7 @@ While a lot has changed about access to land, and land redistribution throughout
 Some of the same issues of large estates and poor utilization of land persist to the present. \textcite{Carlson2019-mk} based on INCRA data indicates how even up to 2010 ``more than 50 percent of all large landholdings and 72 percent of all land occupied by large holdings was considered 'unproductive' according to agency parameters".
 
 \section{Data}
+\label{sec:data}
 
 \subsection{Land Grant Dataset}
 
@@ -323,23 +354,26 @@ The sesmarias are then georeferenced based on the geographical information prese
 
 \subsection{Other Sources}
 
-The main outcome economic variables come from a variety of different sources.
+The main outcome economic variables come from a variety of different sources. 
+To study the long-term effects of the grants on land inequality the main dataset used is the 1995 Brazilian Agricultural Census.
+It provides information at the municipality level on the distribution of size of agricultural holdings, their usage, and their tenure type in Brazil.\footnote{Earlier agricultural censuses such as 1920, 1940, and 1960 existed, however, to the best of my knowledge they have either not been digitized or made available online.}
+
 To study the effects of the grants at an earlier period, I use the 1872 Brazilian Imperial census, which happened only 50 years after the formal ban of land grants in Brazil.
 Census data for 1872 is obtained from the Nucleus of Research in Economic and Geographic History from the Federal University of Minas Gerais.\footnote{
   Available at \url{http://www.nphed.cedeplar.ufmg.br/}}
 The 1872 Imperial Census contains demographic data at the municipality and parish level and was the last census taken before the abolition of slavery in Brazil. 
 Additional work was done to get a novel database at a finer geographical level for the 1872 census.
 At that time, the lowest geographical unit at which the census was taken was at the parish level and each municipality included at least one parish.
-I then georeference the parishes, allowing me to study the effects with the 1872 census at a smaller geographical unit allowing for better precision of the estimates.\footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes. Information on how the parishes were georeferenced is available at \autoref{app:georeferencing_parishes}}\textsuperscript{,}\footnote{More information on the construction of the variables based on the 1872 census data is available on \autoref{app:variable_construction_1872}}. \autoref{fig:parishes_1872} shows the geographical distribution of the parishes alongside their municipality boundaries. 
+I then georeference the parishes, allowing me to study the effects with the 1872 census at a smaller geographical unit allowing for better precision of the estimates.\footnote{Distribution of the 1872 parishes alongside the municipality boundaries is available at \autoref{fig:parishes_1872}. For the sample used, I have 469 municipalities and 1,115 parishes. Information on how the parishes were georeferenced alongside how their borders were constructed are available at \autoref{app:georeferencing_parishes}}\textsuperscript{,}\footnote{More information on the construction of the variables based on the 1872 census data is available on \autoref{app:variable_construction_1872}} 
+\autoref{fig:parishes_1872} shows the geographical distribution of the parishes alongside their municipality boundaries. 
 
-To study the persistence of these effects I use data from other censuses from 1970-2010 are obtained from the IBGE (\textit{}).\footnote{Microcensus is available through the IBGE but the data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
+To study the persistence of these effects I use data from other censuses from 1970-2010 are obtained from the Brazilian Institute of Geography and Statistics (IBGE).\footnote{Microcensus is available through the IBGE but the data downloaded through the R package \textit{censobr} from \textcite{Pereira2023-qv}}
 
 To study the effect of land usage and tenure I combine satellite data alongside Brazilian Agricultural Censuses. 
 Land usage from 1985-2010 is obtained from Mapbiomas \parencite{Souza2020-kb}\footnote{
   Available at \url{https://brasil.mapbiomas.org/en/}}.
 Data for current land tenure in 2021 in Brazil is obtained from \textcite{Sparovek2019-dn}.\footnote{
-  Available at \url{https://atlasagropecuario.imaflora.org/}}.
-Data for the 1920 Agricultural Census is originally from the IBGE.\footnote{I would like to thank XXX for sharing this data with me.}
+  Available at \url{https://atlasagropecuario.imaflora.org/}.}
 
 In addition, I obtain geographical characteristics and shapefiles at the municipality level from a variety of sources. 
 Shapefiles for the coast of Brazil, municipality seats, and municipality boundaries from 1872-2010 are obtained from IBGE through \textcite{Pereira2023-qq}.
@@ -371,11 +405,34 @@ Following \textcite{Lowes2021-ww} I show balance on geographical characteristics
 Overall, some patterns seem to emerge 
 When comparing 
 
-\subsection{Challenges to Identification}
+\section{Challenges to Identification}
 
-Given the descriptives of the previous subsection, we see that the land grants were mainly located in [...]. The main concerns about the estimates deal with the endogeneity of the location of the grants. 
+Given the descriptives of the previous subsection, we see that the land grants were mainly located in [...]. 
+Below I describe the main concerns with any possible identification strategy:
 
-\section{Methodology}
+\begin{enumerate}
+  \item The main concern is the selection of the location of the land grants. Given that the people requesting the grant would want to select the best location possible. 
+  For example, historically it is known that sugarcane plantations, and therefore the grants, were located in areas suitable for it. 
+  Farmers would often look for the \textit{terra roxa} in order to decide whether the soil was of quality for sugarcane.
+  In order to partially deal with this concern, all regressions include a large set of geographical controls which are proxies to what farmers during the colonial period would be likely looking for when requesting a grant. 
+  I further address this concern using the method from [add citation here].
+  \item The second concern is the selection of the sample that reflects the actual distribution of the land grants. 
+  Given the sources used in this paper, for the states chosen, I was able to successfully georeference X\% of the total land grants found in the archives. 
+  Many of the missing ones either lack sufficient geographical information, or the letter itself is mostly illegible with only fragments left.  
+  While I cannot fully address the potential for missing data, I conduct randomization exercises in which I assume the existence of missing land grants and show how the results are affected by it. 
+  \item The third concern is how precise the georeferencing of the land grants was done. 
+  In some cases, the letters themselves give precise information on the location of the grants, which allows precise georeferencing of the grants.
+  However, in some situations, the grants could not have been precisely georeferenced due to the broad definition of the geographical characteristics in the letter. 
+  In those cases, the grants are approximated to the level of the closest municipality.  
+  This is done since the definition of the treatment in the specifications is done at the municipality level.
+  I further address this concern by [...]
+\end{enumerate}
+
+Additionally, any estimates in the following specifications are likely not the full causal estimates of the grants themselves. 
+Given the large period that happened between the grant distribution to the observations in the datasets used, other historical events could have caused the effects seen. 
+Therefore, any interpretation of the coefficients should be interpreted more as the long-term total effect of the grants, but not the direct causal effect.
+
+\section{Matching}
 
 [probably cite \parencite{Rocha2017-yq} and compare what he does to us.]
 
@@ -390,15 +447,15 @@ Given the descriptives of the previous subsection, we see that the land grants w
 
 %``Desde  começos  do  século  XVIII,  as   sesmarias  tinham sido limitadas ao máximo de três léguas separadas por uma devoluta" \parencite[p.~201]{Simonsen2005-ps}
 
-\subsection{Matching}
-
-To study the effects of the land grants I use a propensity score matching procedure to select control municipalities that are similar in geographical characteristics to those that received at least one land grant. In the first step, I estimate the following:
+To first study the effects of the land grants I use a propensity score matching procedure to select control municipalities that are similar in geographical characteristics to those that received at least one land grant. In the first step, I estimate the following:
 
 \begin{equation}
   LandGrant_m = X_{m,s} + \mu_s + \epsilon_{m,s}
 \end{equation}
 
-The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops \parencite{Galor2016-ba}, potential sugarcane output from the FAO, and the distance to the coast.\footnote{In Appendix ? I show that the results are robust to a different set of control variable.} These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
+The set of variables used to match are: latitude, longitude, mean elevation, mean slope, soil quality for food crops \parencite{Galor2016-ba}, potential sugarcane output from the FAO, the distance to the coast, distance to the nearest river, and the presence of four types of soil.\footnote{In Appendix ? I show that the results are robust to a different set of control variable.} 
+These variables are selected because they are proxies for agricultural output, geographical location, market access, and the main export of Brazil during the colonial times which was sugarcane. 
+For each treated municipality I select one untreated municipality to be its control, which generates the matched sample.
 
 For the matched sample I then estimate the following equation:
 
@@ -408,45 +465,112 @@ For the matched sample I then estimate the following equation:
 
 The assumption for the matched sample is that conditional on the set of controls, the municipalities that received a land grant are as good as random since the control municipalities had similar geographical characteristics. 
 
-The results are found in tables X, Y, and Z. In each Panel, I consider whether the given municipality had any land grants, a land grant pre-1700 and a land grant only post-1700. The 1700 cutoff is chosen due to two historical factors: First, in 1698 it was imposed a limit on the size of the grants to be 3x1 leagues maximum [add citation here]. Additionally, in 1701 there was a ban on livestock grazing within 80km of the coast. The 1700 cutoff, therefore, chooses the combination of the two. Ideally, we would expect that the effects on land usage would change in favor to [add here] and [blah blah blah].
+I further compare the effects of the early grants, defined as pre-1700, and later grants, defined as post-1700 grants with the following equation:
 
-For the states in the Northeast, the results are available in \autoref{tab:matching_1995_ag_northeast}
+\begin{equation}
+  Y_{m,s} = LandGrant1600_m + LandGrant1700_m + X_{m,s} + \mu_s + \epsilon_{m,s}
+\end{equation}
 
-When exploring the heterogeneity by the economic activity of the request, we see that in \autoref{tab:matching_1995_ag_northeast_livestock}.
+% [Can do what \parencite{Rocha2017-yq} did and create a pseudo-panel for variables that can be traced in time]
 
-[Can do what \parencite{Rocha2017-yq} did and create a pseudo-panel for variables that can be traced in time]
+\subsection{Results - Land Inequality}
 
-\subsection{Bandeirantes Exploration}
+The main results for land inequality come directly from the 1995 Agricultural Census, in which I measure the proportion of agricultural land over a certain area cutoff. 
+For the main definition used throughout the paper, I define a large farm as one whose area exceeds 2000ha. 
+Given the historical context of the land grants, it would be expected that municipalities that have received a grant are more likely to have larger farms which implies a higher concentration of land. 
 
-``Owing in large measure to the intrepid Paulistas of the seventeenth century, the menace of Indian attacks from the interior was largely eliminated, and the lands themselves were appropriated in extremely large tracts for the purposes of cattle raising" \parencite[p.~320]{Smith1972-dv}.
+Matching with the historical records, the results of \autoref{tab:land_1995_gini_combined} indicate that municipalities with a grant, either it pre-1700 or post-1700 are associated with a higher share of total agricultural land assigned to farms over 2000 hectares. 
+Even without any controls, the presence of a colonial land grant in a 1995 municipality is associated with an increase of the percentage of farms over 2000 hectares.
+When adding geographical controls, or through the matching approach the coefficients indicate that municipalities with grants pre-1700 are associated with a 4\% increase in the share of farms over 2000 hectares in a municipality and post-1700 grants with a 2\% increase. 
+Both results are of economic importance, since the mean of municipalities that did not receive a grant is of 9\%, indicating that the presence of historical land grants is associated with a 25 to 50\% increase in the share of large estates in a municipality. 
+
+Results are consistent with either OLS or matching estimates. 
+% have to change this.
+
+\autoref{tab:ag_census_1995_varying_land} provides further results by varying the proportion of agricultural land above a certain cutoff. 
+Instead of considering 2000 hectares and the main cutoff, I use cutoffs for both 5,000 and 10,000 hectares. 
+Results are consistent throughout, with municipalities with a grant post-1700 have a higher proportion of lands above each individual cutoff. 
+The coefficients vary between 1 to 2\% depending on the estimation method used. 
+Overall, the results are robust to different definitions of a large agricultural estate.
+
+\subsection{Heterogeneity by Region}
+
+The effects between the Northeast and Southeast of Brazil [...]
+
+``Facil, assim, compreender por que houve tanto latifundio, sobretudo no Nordeste: areas imensas dadas de sesmaria ao mesmo morador" \parencite[p.~53]{Da_Costa_Porto1979-dz}
+
+In [ref] I show that for the 1905 Agricultural census in the Northeast municipalities, the presence of a land grant is still associated with an increase in the proportion of large farms in a municipality. 
+This result persists for both pre-1700 and post-1700 grants, indicating that 
+
+In [ref] the effects for the Southeastern states of Sao Paulo and Minas Gerais are similar. 
+While municipalities with a pre-1700 grant indicate no effects on the land distribution across those two states, municipalities with a grant post-1700 have a significant increase of large estates between 2.4 and 3.3\%. 
+
+[Talk here why the results are expected to be different]
+
+
+\parencite{Mueller1995-gi}
+
+\section{Instrumental Variable - Bandeirantes Exploration}
+
+The bandeirantes explorations were one of the key events in the 17$^{\text{th}}$ and 18$^\text{th}$ century in the Southeast \parencite[p.~46-47]{Fausto2014-bh}. 
+These explorations were often motivated by the search for minerals or indigenous slaves. 
+They would often start from the city of Sao Paulo and spread towards the interior of Brazil, which at the time was still unexplored. 
+
+
+``Owing in large measure to the intrepid Paulistas of the seventeenth century, the menace of Indian attacks from the interior was largely eliminated, and the lands themselves were appropriated in extremely large tracts for the purposes of cattle raising" \parencite[p.~320]{Smith1972-dv}. 
+These same explorers would often ask land in the form of land grants of the maximum size for their entire family \parencite[p.~320]{Smith1972-dv}.
+
 \autoref{fig:Bandeiras} shows the geographical expansion of the Bandeiras, as they expanded from Sao Paulo, Minas Gerais, and Bahia.
 
-Combine that with the \parencite{Barsanetti2023-xq} paper on where 
+% Combine that with the \parencite{Barsanetti2023-xq} paper on where 
 
 \textcite[p.~44]{Lima1954-td} indicates that at the time of independence, Goncalves Chaves reported that [...]
 
-First, I test whether or not we observe in the data the expansion of the land grants after the Bandeirantes exploration.
-Results can be found on \dots
+For this analysis, I select only the states of Sao Paulo and Minas Gerais the states which had Bandeirantes explorations.\footnote{The focus of this section is on the Bandeiras Paulistas, which radiated from Sao Paulo. Expansion to the West on the other states was due to other factors, unlike the selected states in the Southeast in which Bandeirantes were looking for gold or indigenous people to slave towards the center of Brazil.}
 
-For this analysis, I select only the states of Sao Paulo and Minas Gerais the states which had Bandeirantes explorations.\footnote{The focus of this section is on the Bandeiras Paulistas, which radiated from Sao Paulo. Expansion to the West on the other states was due to other factors, unlike the selected states in the Southeast in which Bandeirantes were looking for gold towards the center of Brazil.}
+The Bandeirantes I consider are as follows: Antonio Raposo Tavares, Fernao Dias Pais (who was the father-in-law of the famous Manuel de Borba Gato), Manuel Preto, and Pascoal Moreira Cabral Leme.\footnote{Most of them are described as the most noteworthy Bandeirantes \parencite[p.~43]{Prestes_Filho2012-dp}}
 
-The first-stage equation:
+[Have to add here their history and why they are the most important ones].
+
+The most famous one, Raposo Tavares was a bandeirante that [...] 
+\parencite{Franco1954-bk}
+
+\footnote{The exploration routes have also been crosschecked with [add citation here from below once it complies] and \textcite{Santos2022-rv}}
+%\parencite{Cortesao1958-hm} }
+%\parencite{Cortesao1958-hm}
+
+First, I show that there is a strong negative correlation between the proximity to a bandeirante route and the probability of a municipality receiving a land grant. 
+\autoref{fig:bandeira_dist} and \autoref{fig:bandeira_dist_graph} show the geographical distribution of the grants alongside the explorer routes with a binned version indicating the probability of a municipality getting a grant based on how close it is to the explorer route. 
+Given this strong evidence of a first stage, I estimate the following equation:
 \begin{equation}
   \label{eqn:firststage}
-  LandGrant_{m,s} = \delta \cdot ExplorersDist_{m,s} +  X_{m,s} + \mu_s  + \epsilon_{m,s}
+  LandGrant_{m,s} = \delta \cdot BandeiraDist_{m,s} +  X_{m,s} + \mu_s  + \epsilon_{m,s}
 \end{equation}
 
-The second-stage would be as follows:
+The second stage would be as follows:
+
 \begin{equation}
   \label{eqn:ivequation}
   Y_{m,s} = \beta \cdot \widehat{LandGrant}_{m,s} + X_{m,s} + \mu_s +  \epsilon_{m,s}
 \end{equation}
 
+The exclusion restriction assumes that conditional on the set of controls, the proximity to the Bandeirantes routes that the Bandeirantes only affects the outcomes through the increased presence of land grants.
 
+[Mention that the first-stage is weak for grants pre-1700 and only shows up after 1700.]
+[Have to make a map showing the expansion of both.]
 
-\subsection{Dutch Brazil}
+The estimates of the first-stage between municipalities that were crossed by the Bandeirantes and the location of land grants vary between 15\% to 20\% more likely for those municipalities crossed to have a land grant. 
+In all cases the F-statistic is sufficiently above 20, indicating that the instrument is valid [add the table here]. 
 
-\subsection{Coastal Ban on Livestock}
+\subsection{Results}
+
+[Keep in mind that the IV is the LATE, not the ATE which is what the OLS + the matching is giving. Which implies that we are comparing the compliers vs. the general population.]
+
+Overall, the results seem to indicate that there is a bias towards zero in the traditional OLS estimates for the Southeastern region of Brazil. 
+
+% \subsection{Dutch Brazil}
+
+\section{Coastal Ban on Livestock}
 
 In 1701, the Portuguese Crown enacted a ban on cattle ranching from 80km of the coast (10 leagues) \parencites[p~.40]{Fausto2014-bh}[p~.198]{Simonsen2005-ps}[p~.460]{Bethell1984-of}. 
 The law went into effect after complaints from local farmers that cattle grazing was destroying the sugar plantations in the area. 
@@ -471,10 +595,6 @@ cattle grazing continued to operate largely as before, as Bicalho and Hoefle (19
 
 
 Given the nature of this ban, I exploit the cutoff of 80 km to use a regression discontinuity design to measure the economic effects of this ban. 
-
-First, I provide evidence that [...] In the first-stage I check whether post-1701 we see an increasing number of land grants dedicated to livestock in municipalities farther than 80 km from the coast. 
-
-[Have to think this as an ITT, same with part of the land grants.]
 
 Secondly, using the 1872 I analyze whether or not there were any effects of the coastal livestock ban on the demographics and economic activities at that time.
 
@@ -510,60 +630,105 @@ Other links:
 
 \parencite[p.~142]{De_Oliveira_Andrade1980-xz}
 
-Or maybe, following \textcite{Barsanetti2021-hp} do a differences-in-differences estimator where there are two sources of geographical variation: the 1701 law and where the grants themselves are located. Therefore, the estimating equation is as follows:
+Or maybe, following \textcite{Barsanetti2021-hp} do a differences-in-differences estimator where there are two sources of geographical variation: the 1701 law and where the grants themselves are located. Therefore, the estimating equation is as follows. 
+
+Given the policy, I estimate the following regression to estimate the heterogeneous effects of the grants:
 \begin{equation}
   \label{eqn:livestock}
-  Y_{m,s} = \beta \cdot (Grant_m  * More80km_m) + \beta \cdot (Grant_m * Less80km_m) + \delta \cdot  Less80km_m + X_{m} + \mu_s + \epsilon_{m,s}
+  Y_{m,s} = \beta_1 \cdot (Grant_m  * More80km_m) + \beta_2 \cdot (Grant_m * Less80km_m) + \delta \cdot  Less80km_m + X_{m} + \mu_s + \epsilon_{m,s}
 \end{equation}
 
-\subsection{Comparison against Settlement Municipalities in Sao Paulo}
 
-Based on \textcite{Rocha2017-yq} I define municipalities that received a state-sponsored settlement. I estimate the following equation:
-\begin{equation}
-  \label{eqn:settlement}
-  Y_m = \beta^g \cdot LandGrant_m + \beta^s \cdot Settlement_m + \beta_3 \cdot (LandGrant_m * Settlement_m) + X_m + \epsilon_m
-\end{equation}
+\subsection{Results}
 
-\subsection{Treaty of Tordesillas}
+Results for the differential effects can be found in \autoref{tab:coastal_effects}. 
+Consistent in every Panel, the percentage of farms that are above 2000ha is strictly lower in municipalities that are more than 80km from the coast. However, the effect of land concentration only shows up in municipalities that are further from the coast and received a colonial land grant. 
+
+I further consider the differential effects between when the municipalities received the earliest grant. 
+Given that the law only took effect in 1701, it would be expected that the effects would be concentrated in [...]
+
+[add those tables here]
+% Probably have to do here the difference between pre-1700 and post-1700 grants.
+
+
+%\subsection{Comparison against Settlement Municipalities in Sao Paulo}
+
+%Based on \textcite{Rocha2017-yq} I define municipalities that received a state-sponsored settlement. I estimate the following equation:
+%\begin{equation}
+%  \label{eqn:settlement}
+%  Y_m = \beta^g \cdot LandGrant_m + \beta^s \cdot Settlement_m + \beta_3 \cdot (LandGrant_m * Settlement_m) + X_m + \epsilon_m
+%\end{equation}
+
+\section{Treaty of Tordesillas}
+
+Another source for the heterogeneous effects of the grants comes from is the Treaty of Tordesillas, which split Brazil between a Spanish and a Portuguese side. 
+The treaty established \textit{de jure} that the Portuguese would not be allowed to settle west of the line, however, in practice that was not the case.\footnote{In \autoref{fig:Tordesillas}, I show that even before 1750, some land grants were already located in the Spanish side.}
+The treaty would end in 1750 with the Treaty of Madrid, when Brazil's boundaries were officially expanded.
+
+Given the natural geographical assignment of land in Brazil for the Portuguese and Spanish, it offers a natural source of variation for the presence of the grants.
+Portuguese grants could have only been assigned to the 
+I follow the definition of the Treaty line being at 48.7W from  \textcite{Laudares2022-vy}.\footnote{The authors of the paper describe this cutoff as the one agreed by most historians.}
+Therefore, the time of the presence of the grants is going to be located for municipalities to the east of the line.
 
 In \autoref{fig:Tordesillas}, I show the treaty line alongside the land grants in the states of Sao Paulo and Minas Gerais.\footnote{Those states are selected, since out of my sample they are the only ones that have municipalities on both sides of the line.}
+I estimate the following equation:
 
-\subsection{Other}
+\begin{equation}
+  \label{eqn:tordesillas}
+  Y_{m,s} = \beta_1 \cdot (Grant_m  * East_m) + \beta_2 \cdot (Grant_m * West_m) + \delta \cdot  East_m + X_{m} + \mu_s + \epsilon_{m,s}
+\end{equation}
 
-\section{Results}
-
-\subsection{Land Inequality}
-
-\subsection{Land Conflicts}
-
-\subsection{Land Usage}
+\subsection{Results}
 
 \section{Mechanisms}
 
-\subsection{Human Capital Accumulation}
+Having established that there are persistent effects of the land grants in present-day land inequality in Brazil. The next question is through what mechanisms it has persisted, and what are their subsequent effects. This section addresses both issues:
 
-Following \textcite{Galor2009-bc} I test whether there are associated effects of land concentration on education and human capital accumulation [Something to test].
+\subsection{Land Usage}
 
-\section{Heterogeneity}
 
-\subsection{Regional Variation}
-
-The effects between the Northeast and Southeast of Brazil [...]
-
-``Facil, assim, compreender por que houve tanto latifundio, sobretudo no Nordeste: areas imensas dadas de sesmaria ao mesmo morador" \parencite[p.~53]{Da_Costa_Porto1979-dz}
-
-In Table [...] I show that for the 1985 Agricultural census in the Northeast municipalities, the presence of a land grant is associated with an increase in [...]
-
-In Table [...] the effects for the Southeastern states of Sao Paulo and Minas Gerais are [...]
-
-\parencite{Mueller1995-gi}
 
 \subsection{Economic Activity}
 
+\subsection{Human Capital Accumulation}
+
+%A big question in the context of Brazil is what are the effects of land inequality on human capital accumulation. 
+Following \textcite{Galor2009-bc} I test whether there are associated effects of land concentration on education and human capital accumulation.
+
+[Also add about the role of specific institutions \parencite{Acemoglu2005-ti}]
+
+First, I test whether there are any effects in literacy or school attendance in 1872. \autoref{tab:iv_education_1872}
+
+Overall, there are no persistent effects in
+
+\subsection{Land Conflicts}
+
+Another possible mechanism by which the grants, through land inequality, themselves could affect present-day outcomes is through an increase in land conflicts. 
+Land conflicts in Brazil are frequent, with the Comissao Pastoral da Terra reporting about XXX incidents a year.
+Most of these conflicts occur as clashes between large estate owners with smallholders or people without farms.
+They either occur through the occupation of vacant land [...] or through large farmers expropriating land from smaller farms. 
+
+Given that land inequality is a driver on why these conflicts exist, I study whether, the presence of historical grants affects the present-day conflict over land in Brazil. 
+
+\parencite{Albertus2018-bf}
+
+\footnote{For the measure of land conflicts, I use the 2010 municipality boundaries since they are the ones used to track down where the conflict was located.}
+
+\subsection{Effects on Slavery}
+
+A possible mechanism by which the grants themselves are affecting present-day outcomes is through the presence of slavery in the region. 
+The expansion of the Bandeirantes, 
+
+Results using the 1872 census can be found in \autoref{tab:ols_iv_slavery_1872}.
+Similar to previous results, the OLS estimates indicate that there are null results b
+
+
+\section{Heterogeneity}
+
+This section explores the heterogeneity of the economic activity. 
+
+
 \section{Robustness}
-
-In this section explore the heterogeneity of the economic activity. 
-
 \subsection{Coefficient Bounds}
 
 I use the methodology from to estimate how much unobservables could be impacting the main estimates \textcite{Masten2022-bg}.
@@ -572,8 +737,12 @@ I use the methodology from to estimate how much unobservables could be impacting
 
 \section{Conclusion}
 
-\clearpage
+This paper focuses solely on the Northeast and Southeast of Brazil, however, those grants were present in the entirety of the territory.
+Further work can be conducted to understand how these grants operated differently in Northern and Central Brazil. 
+Both regions were occupied later in comparison to the Northeast and Southeast, so the presence of grants there might not have been as pervasive, however, due to their distance to the coast that allowed, and still allows, a vast amount of land to be squatted. 
+Understanding the interactions between the historical roots of colonization alongside the present-day expansion towards the West could help us better understand the effects on issues such as deforestation. 
 
+\clearpage
 
 \xpatchbibmacro{author}{\printnames{author}}{\textbf{\printnames{author}}}{}{}
 
@@ -643,21 +812,23 @@ I use the methodology from to estimate how much unobservables could be impacting
 
 \input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/summary_1872.tex}
 
-\input{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables/summary_1872_40km.tex}
-
 \clearpage
 
 \subsection{Matching}
 
 \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_All.tex}
 
-\subsection{Region Heterogeneity}
+\subsection{Regional Heterogeneity}
 
-\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_SE.tex}
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined.tex}
 
 \clearpage
 
 \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_NE.tex}
+
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Matching_SE.tex}
 
 \clearpage
 
@@ -669,13 +840,52 @@ I use the methodology from to estimate how much unobservables could be impacting
 
 \clearpage
 
-\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_Matching_Census.tex}
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_Census_Matching_All.tex}
+
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_Census_Matching_NE_All.tex}
+
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_Census_Matching_SE_All.tex}
 
 \clearpage
 
 \input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Matching_Grid.tex}
 
 \clearpage
+
+\section{Instrumental Variable Results}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_First_Stage.tex}
+
+%\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Reduced_Form.tex}
+
+\clearpage
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_IV_All_Lands.tex}
+
+\clearpage
+
+\section*{Human Capital Accumulation}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_IV_HumanCapital.tex}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Literacy.tex}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_OLS_IV_Literacy.tex}
+
+\clearpage 
+
+\section*{Slavery}
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Slavery.tex}
+
+\clearpage
+
+\section*{Heterogeneity by Coastal Livestock Ban}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Coastal_Heterogeneity.tex}
 
 \appendix
 
@@ -768,6 +978,18 @@ I use the methodology from to estimate how much unobservables could be impacting
   \label{fig:slave_distribution_region}
 \end{figure}
 
+\clearpage
+
+\begin{figure}[h!]
+  \caption{Distance to Explorer Route Histogram - 1872}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=0.75\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1872_IV_distance_hist.png}}
+  \end{center}
+  \textit{Notes:} Histogram describing the variation in the distance to the nearest explorer route for the 1872 parish level information.  
+  \label{fig:1872_iv_hist}
+\end{figure}
+
 
 \clearpage
 
@@ -783,6 +1005,10 @@ I use the methodology from to estimate how much unobservables could be impacting
 
 \clearpage
 
+[add here the image with the 1872 municipalities split alongside the parishes]
+
+\clearpage
+
 \begin{figure}[h!]
   \caption{\textit{Bandeira} Routes and 2010 Municipalities}
   \begin{center}
@@ -790,8 +1016,34 @@ I use the methodology from to estimate how much unobservables could be impacting
      {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png}}
   \end{center}
   \textit{Notes:} Proximity to a \textit{Bandeira} route and 2010 municipalities boundaries in the states of Sao Paulo and Minas Gerais. Red dots indicates the grants in those two states.
-  \label{fig:bandeiras_SE}
+  \label{fig:bandeira_dist}
 \end{figure}
+
+\begin{figure}[h!]
+  \caption{\textit{Bandeira} Routes and 2010 Municipalities \label{fig:bandeira_dist_graph}}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png}}
+  \end{center}
+  \textit{Notes:} Proximity to a \textit{Bandeira} route and 2010 municipalities boundaries in the states of Sao Paulo and Minas Gerais. Red dots indicates the grants in those two states.
+  \label{fig:bandeira_dist_graph}
+\end{figure}
+
+\begin{figure}[h!]
+  \caption{\textit{Bandeira} Intersection and 2010 Municipalities}
+  \begin{center}
+     \makebox[\textwidth]			 
+     {\includegraphics[width=\paperwidth]{/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_treat_SE.png}}
+  \end{center}
+  \textit{Notes:} Proximity to a \textit{Bandeira} route and 2010 municipalities boundaries in the states of Sao Paulo and Minas Gerais. Red dots indicates the grants in those two states.
+  \label{fig:bandeiras_SE_treat}
+\end{figure}
+
+\clearpage
+
+\section{Tables}
+
+\input{~/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Size_Varying.tex}
 
 \clearpage
 
@@ -946,6 +1198,8 @@ Below is a description on how the process used to georeference the land grants.
   \end{enumerate}
 \end{enumerate}
 
+Additionally, here are three practical examples on how each was georeferenced: 
+
 \clearpage
 
 \section{Parish Level Georeferencing}
@@ -974,19 +1228,17 @@ Below is a description of how the georeferencing was done:
 
 \clearpage
 
-\section{Coastal RDD - Results}
-\label{app:coastal_rdd}
-Given the setting of the coastal ban I estimate the following set of equations:
-\begin{equation}
-  Y_{m,s} = \beta \cdot CoastDist_{m,s} + f(D_{m,s})+ \mu_s + X_{m,s} + \epsilon_{m,s}
-\end{equation}
+%\section{Coastal RDD - Results}
+%\label{app:coastal_rdd}
+%Given the setting of the coastal ban I estimate the following set of equations:
+%\begin{equation}
+%  Y_{m,s} = \beta \cdot CoastDist_{m,s} + f(D_{m,s})+ \mu_s + X_{m,s} + \epsilon_{m,s}
+%\end{equation}
 
-For the 1970-2010 census, given that I have information at the individual level I estimate:
-\begin{equation}
-  Y_{i,m,s} = \beta \cdot CoastDist_{m} + f(D_{m})+ \mu_s + X_{i,m,s} + \epsilon_{i,m,s}
-\end{equation}
-
-\clearpage
+%For the 1970-2010 census, given that I have information at the individual level I estimate:
+%\begin{equation}
+%  Y_{i,m,s} = \beta \cdot CoastDist_{m} + f(D_{m})+ \mu_s + X_{i,m,s} + \epsilon_{i,m,s}
+%\end{equation}
 
 \section{Data Appendix - 1872}
 \label{app:variable_construction_1872}

@@ -19,6 +19,47 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Acemoglu2005-ti}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ead6a4fdd114ed9b8c4c507081d69860}{%
+           family={Acemoglu},
+           familyi={A\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=449e4426c2748ee09f2020d37bab47b2}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43fffc00dff32adf8586a8a056cedf2d}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={J\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e7b1e577eb9045ff0efb712bcdd5b943}
+      \strng{fullhash}{db5a7cef940181492a2d3ed4e3845d64}
+      \strng{bibnamehash}{db5a7cef940181492a2d3ed4e3845d64}
+      \strng{authorbibnamehash}{db5a7cef940181492a2d3ed4e3845d64}
+      \strng{authornamehash}{e7b1e577eb9045ff0efb712bcdd5b943}
+      \strng{authorfullhash}{db5a7cef940181492a2d3ed4e3845d64}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper develops the empirical and theoretical case that differences in economic institutions are the fundamental cause of differences in economic development. We first …}
+      \field{journaltitle}{Handbook of economic growth}
+      \field{title}{Institutions as a fundamental cause of long-run growth}
+      \field{year}{2005}
+    \endentry
     \entry{Akee2014-uw}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=25ed7e89501182bf68e30b1fac817325}{%
@@ -473,6 +514,52 @@
       \field{title}{Agrarian structure and underdevelopment in Latin America: Bringing the latifundio “back in”}
       \field{year}{2019}
     \endentry
+    \entry{de-Carvalho-Filho2012-pc}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bb12779ff8bdc067d0174bdf4bb05879}{%
+           family={Carvalho\bibnamedelima Filho},
+           familyi={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Irineu},
+           giveni={I\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=00266a6fa34e770425b2521fa0a74963}{%
+           family={Monasterio},
+           familyi={M\bibinitperiod},
+           given={Leonardo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{e75bcf75edf1d39b3d9cc580afe16d1c}
+      \strng{fullhash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{bibnamehash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{authorbibnamehash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{authornamehash}{e75bcf75edf1d39b3d9cc580afe16d1c}
+      \strng{authorfullhash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper studies the long-term consequences of the government-sponsored programs of European immigration to Southern Brazil before the Great War. We find that the municipalities closer to the original sites of nineteenth century government sponsored settlements (colônias) have higher per capita income, less poverty and dependence on Bolsa Família cash transfers, better health and education outcomes; and for the areas close to German colonies, also less inequality of income and educational outcomes than otherwise. Since that is a reduced form relationship, we then attempt to identify the relative importance of more egalitarian landholdings and higher initial human capital in determining those outcomes. Our findings are suggestive that more egalitarian land distribution played a more important role than higher initial human capital in achieving the good outcomes associated with closeness to a colônia.}
+      \field{journaltitle}{Reg. Sci. Urban Econ.}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Immigration and the origins of regional inequality: Government-sponsored European migration to southern Brazil before World War {I}}
+      \field{volume}{42}
+      \field{year}{2012}
+      \field{pages}{794\bibrangedash 807}
+      \range{pages}{14}
+    \endentry
     \entry{Da_Costa_Porto1979-dz}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f2aa73d4e8421240ba41c1db32b95d34}{%
@@ -683,6 +770,49 @@
       \field{title}{A History of Colonial Brazil, 1500-1792}
       \field{year}{1987}
     \endentry
+    \entry{Duranton2011-rv}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b2b06d270a769f22705c89de5da7eb07}{%
+           family={Duranton},
+           familyi={D\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8eedd774490a8ef31dc9d8d437873f1b}{%
+           family={Turner},
+           familyi={T\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{23516e01554d85c063ba73e909db914d}
+      \strng{fullhash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{bibnamehash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{authorbibnamehash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{authornamehash}{23516e01554d85c063ba73e909db914d}
+      \strng{authorfullhash}{0b7038c79c8052a25ec088e51d408e1c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Fundamental Law of Road Congestion: Evidence from US Cities by Gilles Duranton and Matthew A. Turner. Published in volume 101, issue 6, pages 2616-52 of American Economic Review, October 2011, Abstract: We investigate the effect of lane kilometers of roads on vehicle-kilometers traveled (VKT) in...}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{month}{10}
+      \field{number}{6}
+      \field{title}{The Fundamental Law of Road Congestion: Evidence from {US} Cities}
+      \field{volume}{101}
+      \field{year}{2011}
+      \field{pages}{2616\bibrangedash 2652}
+      \range{pages}{37}
+    \endentry
     \entry{Fausto2014-bh}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d569fc63042aed8fd5cb86dddbc6b7a1}{%
@@ -720,6 +850,37 @@
       \field{month}{8}
       \field{title}{A Concise History of Brazil}
       \field{year}{2014}
+    \endentry
+    \entry{Franco1954-bk}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=be166d3271be4922ef561c35718c7091}{%
+           family={Franco},
+           familyi={F\bibinitperiod},
+           given={Francisco\bibnamedelimb de\bibnamedelimb Assis\bibnamedelima Carvalho},
+           giveni={F\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Comissão do IV Centenário da Cidade de São Paulo, Serviço de Comemorações Culturais}%
+      }
+      \strng{namehash}{be166d3271be4922ef561c35718c7091}
+      \strng{fullhash}{be166d3271be4922ef561c35718c7091}
+      \strng{bibnamehash}{be166d3271be4922ef561c35718c7091}
+      \strng{authorbibnamehash}{be166d3271be4922ef561c35718c7091}
+      \strng{authornamehash}{be166d3271be4922ef561c35718c7091}
+      \strng{authorfullhash}{be166d3271be4922ef561c35718c7091}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dicionário de bandeirantes e sertanistas do Brasil : séculos {XVI}-{XVII}-{XVIII}}
+      \field{year}{1954}
+      \keyw{Explorers -- Brazil -- Biography -- Portuguese; Brazil -- Biography -- Portuguese; Pioneers -- Brazil -- Biography -- Portuguese; Brazil -- History -- 1549-1762 -- Biography -- Portuguese; São Paulo (Brazil : State) -- Portuguese; São Paulo (Brazil : State) -- History -- Portuguese; Explorers; Pioneers; Brazil; Brazil -- São Paulo (State); Dicionarios Biograficos; 1549-1762}
     \endentry
     \entry{Galdino_Dantas2008-pw}{article}{}
       \name{author}{1}{}{%
@@ -1481,6 +1642,33 @@
       \field{year}{1968}
       \keyw{Brésil -- Histoire}
     \endentry
+    \entry{Prestes_Filho2012-dp}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=43e608ef456b58d4e36dd39a26c06a4e}{%
+           family={Prestes\bibnamedelima Filho},
+           familyi={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={U\bibnamedelima d},
+           giveni={U\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Imprensa Oficial do Estado de São Paulo}%
+      }
+      \strng{namehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{fullhash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{bibnamehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{authorbibnamehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{authornamehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{authorfullhash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Câmara Municipal de São Paulo: 450 Anos de História}
+      \field{year}{2012}
+    \endentry
     \entry{Ratnoo2023-vw}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2f1b344950474a83cf5656493e27c37f}{%
@@ -1640,6 +1828,33 @@
       \field{year}{2017}
       \field{pages}{105\bibrangedash 136}
       \range{pages}{32}
+    \endentry
+    \entry{Santos2022-rv}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=358ef5156f262e260cb8ed34f86506bd}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Affonso\bibnamedelima José},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Fundação Alexandre de Gusmão}%
+      }
+      \strng{namehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{fullhash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{bibnamehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{authorbibnamehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{authornamehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{authorfullhash}{358ef5156f262e260cb8ed34f86506bd}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Historia do Brasil nos Velhos Mapas: Anexos}
+      \field{year}{2022}
     \endentry
     \entry{noauthor_1921-qd}{book}{}
       \list{language}{1}{%
