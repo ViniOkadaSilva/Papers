@@ -357,67 +357,6 @@
       \field{pages}{1190\bibrangedash 1213}
       \range{pages}{24}
     \endentry
-    \entry{Barsanetti2021-hp}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=09920e5dbc44b9c565bbefba308ac08d}{%
-           family={Barsanetti},
-           familyi={B\bibinitperiod},
-           given={Bruno},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{09920e5dbc44b9c565bbefba308ac08d}
-      \strng{fullhash}{09920e5dbc44b9c565bbefba308ac08d}
-      \strng{bibnamehash}{09920e5dbc44b9c565bbefba308ac08d}
-      \strng{authorbibnamehash}{09920e5dbc44b9c565bbefba308ac08d}
-      \strng{authornamehash}{09920e5dbc44b9c565bbefba308ac08d}
-      \strng{authorfullhash}{09920e5dbc44b9c565bbefba308ac08d}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Does the geographic distribution of pre-Columbian societies determine the location of New World cities? This paper provides evidence that a pre-colonial indigenous trail influenced the location of modern cities in southern Brazil. To distinguish the causal effects of historical settlement near the trail from the effects of geographic fundamentals that could correlate with it, I compare how population density and urbanization change with proximity to the trail in two different regions. The first region has been settled by Europeans since the 16th century, while European settlement in the second region was interrupted after a 17th-century slave raid. Proximity to the indigenous path is associated with higher population density and urbanization in the first region, but not in the second. These findings suggest a path dependence that goes back to the pre-colonial past.}
-      \field{journaltitle}{J. Urban Econ.}
-      \field{month}{3}
-      \field{title}{Cities on pre-Columbian paths}
-      \field{volume}{122}
-      \field{year}{2021}
-      \field{pages}{103317}
-      \range{pages}{1}
-      \keyw{Urbanization; city location; path dependence}
-    \endentry
-    \entry{Barsanetti2023-xq}{article}{}
-      \name{author}{2}{ul=2}{%
-        {{un=0,uniquepart=base,hash=09920e5dbc44b9c565bbefba308ac08d}{%
-           family={Barsanetti},
-           familyi={B\bibinitperiod},
-           given={Bruno},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4af333ac305e23a4cecf59ddd0a23781}{%
-           family={Ferreira},
-           familyi={F\bibinitperiod},
-           given={Alipio},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{672e969eeed6a38008b8c8362c0d7256}
-      \strng{fullhash}{672e969eeed6a38008b8c8362c0d7256}
-      \strng{bibnamehash}{672e969eeed6a38008b8c8362c0d7256}
-      \strng{authorbibnamehash}{672e969eeed6a38008b8c8362c0d7256}
-      \strng{authornamehash}{672e969eeed6a38008b8c8362c0d7256}
-      \strng{authorfullhash}{672e969eeed6a38008b8c8362c0d7256}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Historical Occupation and Modern Deforestation: Evidence from Indigenous Extinctions in the Amazon}
-      \field{year}{2023}
-    \endentry
     \entry{Bethell1984-of}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=8b455c393882fef8c3999920f8690b01}{%
@@ -916,8 +855,51 @@
       \range{pages}{15}
       \keyw{Feira; Pecuária; Região Nordeste.; Street Market; Cattle breeding; Northeastern Brazil.}
     \endentry
+    \entry{Galor2006-ws}{article}{}
+      \name{author}{2}{ul=2}{%
+        {{un=0,uniquepart=base,hash=5bd32628f8a80555d67d5ecc79ec0a6d}{%
+           family={Galor},
+           familyi={G\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3bb5cda235ff633959e38d88f3d27cfc}{%
+           family={Moav},
+           familyi={M\bibinitperiod},
+           given={Omer},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{660ca72bdf1a2ef1f94b6ef5b26221ca}
+      \strng{fullhash}{660ca72bdf1a2ef1f94b6ef5b26221ca}
+      \strng{bibnamehash}{660ca72bdf1a2ef1f94b6ef5b26221ca}
+      \strng{authorbibnamehash}{660ca72bdf1a2ef1f94b6ef5b26221ca}
+      \strng{authornamehash}{660ca72bdf1a2ef1f94b6ef5b26221ca}
+      \strng{authorfullhash}{660ca72bdf1a2ef1f94b6ef5b26221ca}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. This paper suggests that the demise of the capitalists—workers class structure was a socio-economic transformation orchestrated by the capitalist}
+      \field{journaltitle}{Rev. Econ. Stud.}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Das human-kapital: A theory of the demise of the class structure}
+      \field{volume}{73}
+      \field{year}{2006}
+      \field{pages}{85\bibrangedash 117}
+      \range{pages}{33}
+    \endentry
     \entry{Galor2009-bc}{article}{}
-      \name{author}{3}{ul=2}{%
+      \name{author}{3}{ul=3}{%
         {{un=0,uniquepart=base,hash=5bd32628f8a80555d67d5ecc79ec0a6d}{%
            family={Galor},
            familyi={G\bibinitperiod},
@@ -943,11 +925,11 @@
       \list{publisher}{1}{%
         {Oxford University Press (OUP)}%
       }
-      \strng{namehash}{63da060ff6c785faa00e345089591b65}
+      \strng{namehash}{6a049b37603d8c7735766467c4811d32}
       \strng{fullhash}{6a049b37603d8c7735766467c4811d32}
       \strng{bibnamehash}{6a049b37603d8c7735766467c4811d32}
       \strng{authorbibnamehash}{6a049b37603d8c7735766467c4811d32}
-      \strng{authornamehash}{63da060ff6c785faa00e345089591b65}
+      \strng{authornamehash}{6a049b37603d8c7735766467c4811d32}
       \strng{authorfullhash}{6a049b37603d8c7735766467c4811d32}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
@@ -1028,6 +1010,44 @@
       \field{labeltitlesource}{title}
       \field{title}{Tipos e aspectos do Brasil}
       \field{year}{1970}
+    \endentry
+    \entry{Goni2022-do}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d7f072c0f889df2cdeef3db0e3ee1b6}{%
+           family={Goñi},
+           familyi={G\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{fullhash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{bibnamehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{authorbibnamehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{authornamehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{authorfullhash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{AbstractI study the relationship between land concentration and the expansion of state education in 19C England. Using a broad range of education measures for 40 counties and 1,387 School Boards, I show a negative association between land concentration and local taxation, school expenditure, and human capital. I estimate reduced-form effects of 19C land concentration, geographic factor endowments, and the land redistribution after the Norman conquest of 1066. The negative effects on state-education supply are stronger where rural labour can easily migrate, where landowners had political power, is not offset by voluntary schooling, and not driven by a demand channel. This suggests that landowners opposed taxation in order to reduce state education provision.}
+      \field{journaltitle}{J. Econ. Growth}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Landed elites and education provision in England: evidence from school boards, 1871-99}
+      \field{volume}{28}
+      \field{year}{2022}
+      \field{pages}{125\bibrangedash 171}
+      \range{pages}{47}
     \endentry
     \entry{UnknownUnknown-ro}{misc}{}
       \field{sortinit}{I}
@@ -1292,6 +1312,80 @@
       \field{month}{8}
       \field{title}{The Effect of Omitted Variables on the Sign of Regression Coefficients}
       \field{year}{2022}
+    \endentry
+    \entry{Montero2022-ua}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{fullhash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{bibnamehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{authorbibnamehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{authornamehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{authorfullhash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In cooperative property rights systems, workers jointly own and manage production, whereas in outside-ownership systems, an owner contracts workers. Despite a rich literature on how the allocation of property rights matters for specialization, efficiency, and equity, little causal evidence exists. During a land reform in El Salvador in 1980, the military government reorganized properties owned by individuals with cumulative landholdings over 500 hectares into cooperatives; properties below this threshold remained as outside-owned properties. Using the discontinuous probability of cooperative formation, I provide evidence on the effects of cooperative property rights relative to outside ownership on specialization, productivity, and worker equity.}
+      \field{journaltitle}{J. Polit. Econ.}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Cooperative Property Rights and Development: Evidence from Land Reform in El Salvador}
+      \field{volume}{130}
+      \field{year}{2022}
+      \field{pages}{48\bibrangedash 93}
+      \range{pages}{46}
+    \endentry
+    \entry{Montero2022-vl}{article}{}
+      \name{author}{2}{ul=2}{%
+        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec5dcc8c968cea90e00182b3af9cc823}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Dean},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cdcc1573badd9d3ea389c066a2298ea7}
+      \strng{fullhash}{cdcc1573badd9d3ea389c066a2298ea7}
+      \strng{bibnamehash}{cdcc1573badd9d3ea389c066a2298ea7}
+      \strng{authorbibnamehash}{cdcc1573badd9d3ea389c066a2298ea7}
+      \strng{authornamehash}{cdcc1573badd9d3ea389c066a2298ea7}
+      \strng{authorfullhash}{cdcc1573badd9d3ea389c066a2298ea7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Religious Festivals and Economic Development: Evidence from the Timing of Mexican Saint Day Festivals by Eduardo Montero and Dean Yang. Published in volume 112, issue 10, pages 3176-3214 of American Economic Review, October 2022, Abstract: Does variation in how religious festivals are celebrated hav...}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Religious Festivals and Economic Development: Evidence from the Timing of Mexican Saint Day Festivals}
+      \field{volume}{112}
+      \field{year}{2022}
+      \field{pages}{3176\bibrangedash 3214}
+      \range{pages}{39}
     \endentry
     \entry{Mueller1995-gi}{thesis}{}
       \name{author}{1}{}{%
@@ -1705,6 +1799,40 @@
       \field{pages}{103247}
       \range{pages}{1}
       \keyw{Historical persistence; India; Institutions; Green revolution; Rural development}
+    \endentry
+    \entry{Reed2012-qy}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d201697740038411874adb06901f4dfa}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Clyde},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b86d634cccd1293c1da32abd9cc88191}{%
+           family={Bekar},
+           familyi={B\bibinitperiod},
+           given={Cliff},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Simon Fraser University}%
+      }
+      \strng{namehash}{8f8ac6a947242e3a15b26a06d390305f}
+      \strng{fullhash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{bibnamehash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{authorbibnamehash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{authornamehash}{8f8ac6a947242e3a15b26a06d390305f}
+      \strng{authorfullhash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{inequality over time. We employ a simulation strategy to analyze the impact of land markets in generating inequality in of land was the interaction between emerging land markets and}
+      \field{title}{Land Markets and Inequality: Evidence from Medieval England}
+      \field{year}{2012}
     \endentry
     \entry{Reydon2015-ff}{article}{}
       \name{author}{3}{}{%

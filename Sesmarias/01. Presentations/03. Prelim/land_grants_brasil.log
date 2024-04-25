@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  23 APR 2024 13:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.8)  25 APR 2024 09:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1269,96 +1269,127 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [9
 
-] [10
-
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_All.tex) [11
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_All.tex) [10
 
 ] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Size_Varying.tex)
 Overfull \vbox (8.85265pt too high) detected at line 255
  []
 
-[12
+[11
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_NE.tex) [13
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_NE.tex) [12
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_SE.tex) [14
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Combined_SE.tex) [13
 
-] [15
+] [14
 
 ]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png, id=158, 526.8483pt x 325.4559pt>
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png, id=153, 526.8483pt x 325.4559pt>
 File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png Graphic file (type png)
 <use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png  used on input line 287.
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png  used on input line 285.
+(pdftex.def)             Requested size: 341.43306pt x 210.9181pt.
+ [15
+
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png>]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png, id=159, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png  used on input line 294.
 (pdftex.def)             Requested size: 341.43306pt x 210.9181pt.
  [16
 
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/bandeiras_dist_SE.png>]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png, id=164, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png  used on input line 296.
-(pdftex.def)             Requested size: 341.43306pt x 210.9181pt.
- [17
+ </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png>] [17
 
- </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/1995_IV_distance_first_stage.png>] [18
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_IV_All_Lands.tex) [18
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_IV_All_Lands.tex) [19
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Livestock_Coastal.tex
+Overfull \hbox (180.48364pt too wide) in paragraph at lines 7--38
+ [] 
+ []
 
-] [20
+) [19
+
+
+
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1995_Ag_Census_Land_Inequality_Coastal.tex
+Overfull \hbox (77.81805pt too wide) in paragraph at lines 7--38
+ [] 
+ []
+
+)
+Overfull \vbox (9.24861pt too high) detected at line 327
+ []
+
+[20
+
+
+
+] [21
 
 ] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Literacy.tex
 Overfull \hbox (4.14223pt too wide) in paragraph at lines 6--25
  [] 
  []
 
-) [21
+) [22
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Attendance.tex) [22
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Attendance.tex) [23
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_IV_HumanCapital.tex) [23
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_IV_HumanCapital.tex) [24
 
 ] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1970_OLS_IV_Literacy.tex)
-Overfull \vbox (2.271pt too high) detected at line 346
+Overfull \vbox (2.271pt too high) detected at line 355
  []
 
-[24
+[25
 
-] [25
+] [26
 
-] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Slavery.tex) [26
+] (/Users/vinicius/OneDrive - University of Illinois - Urbana/Research/Projects/JMP/03. Tables/1872_OLS_IV_Slavery.tex
+Overfull \hbox (89.11354pt too wide) in paragraph at lines 7--26
+ [] 
+ []
 
-]
-Overfull \hbox (9.50392pt too wide) in paragraph at lines 359--359
-[][][]\OT1/cmss/m/n/10.95 USAID (2016).[] \OT1/cmss/m/it/10.95 US-AID COUN-TRY PRO-FILE: PROP-ERTY RIGHTS AND RE-SOURCE
+)
+Overfull \vbox (0.41107pt too high) detected at line 367
  []
 
 [27
 
- </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [28
 
 
-] [29
+]
+Overfull \hbox (9.50392pt too wide) in paragraph at lines 371--371
+[][][]\OT1/cmss/m/n/10.95 USAID (2016).[] \OT1/cmss/m/it/10.95 US-AID COUN-TRY PRO-FILE: PROP-ERTY RIGHTS AND RE-SOURCE
+ []
+
+[28
+
+ </usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [29
+
+
+] [30
 
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 361.
-
-[30
-
-]
-</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png, id=267, 526.8483pt x 325.4559pt>
-File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png Graphic file (type png)
-<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>
-Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png  used on input line 386.
-(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
-
-Overfull \vbox (10.68683pt too high) detected at line 386
- []
+(hyperref)                removing `\translate ' on input line 373.
 
 [31
+
+]
+</Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png, id=276, 526.8483pt x 325.4559pt>
+File: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png Graphic file (type png)
+<use /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>
+Package pdftex.def Info: /Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png  used on input line 398.
+(pdftex.def)             Requested size: 386.96024pt x 239.04085pt.
+
+Overfull \vbox (10.68683pt too high) detected at line 398
+ []
+
+[32
 
  </Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps/parishes_1872.png>]
 \tf@nav=\write7
@@ -1378,18 +1409,18 @@ Package logreq Info: Writing requests to 'land_grants_brasil.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40173 strings out of 476029
- 849020 string characters out of 5790167
+ 40193 strings out of 476029
+ 850260 string characters out of 5790167
  1870346 words of memory out of 5000000
- 59798 multiletter control sequences out of 15000+600000
- 526002 words of font info for 82 fonts, out of 8000000 for 9000
+ 59807 multiletter control sequences out of 15000+600000
+ 526353 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,122p,1865b,2423s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,18n,122p,1865b,2423s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/03. Prelim/land_grants_brasil.pdf" (31 pages, 1125238 bytes).
+Output written on "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Writing/git/Sesmarias/01. Presentations/03. Prelim/land_grants_brasil.pdf" (32 pages, 1131017 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 294 compressed objects within 3 object streams
- 99 named destinations out of 1000 (max. 500000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 103 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
