@@ -31,9 +31,40 @@
 }
 
 @MISC{Pereira2023-qq,
-  title  = "geobr: Download Official Spatial Data Sets of Brazil",
-  author = "Pereira, Rafael H M and Goncalves, Caio Nogueira",
-  year   =  2023
+  title       = "geobr: Easy access to official spatial data sets of Brazil in
+                 {R} and Python",
+  author      = "Pereira, Rafael H M and Goncalves, Caio Nogueira",
+  institution = "Github",
+  abstract    = "Easy access to official spatial data sets of Brazil in R and
+                 Python - ipeaGIT/geobr",
+  year        =  2023,
+  language    = "en"
+}
+
+@ARTICLE{Caum-Julio2023-ei,
+  title     = "Can colonial institutions explain differences in labour returns?
+               Evidence from rural colonial India",
+  author    = "Caum-Julio, Jordi",
+  journal   = "Econ. Hist. Rev.",
+  publisher = "John Wiley \& Sons, Ltd",
+  volume    = "n/a",
+  number    = "n/a",
+  abstract  = "Abstract This paper studies the relationship between land revenue
+               systems and returns to agricultural labour in colonial India. I
+               provide the first district-level comparative estimates of
+               agricultural labour returns relative to average income, on the
+               basis of wage/income ratios for 1916. I then use those estimates
+               to analyse the impact of the land revenue systems established by
+               the British colonial authorities. Results show that districts
+               with a larger proportion of non-landlord land revenue systems
+               presented higher relative wages, closer to the average income.
+               This effect was mainly driven by differences in land
+               concentration connected to the type of landownership introduced
+               by land revenue systems.",
+  month     =  jul,
+  year      =  2023,
+  keywords  = "agricultural labour returns; colonial history; India;
+               instrumental variable; political economy"
 }
 
 @MISC{noauthor_undated-fh,
@@ -184,42 +215,16 @@
   note         = "Accessed: 2024-1-24"
 }
 
-@ARTICLE{Montero2022-ua,
-  title     = "Cooperative Property Rights and Development: Evidence from Land
-               Reform in El Salvador",
-  author    = "Montero, Eduardo",
-  journal   = "J. Polit. Econ.",
-  publisher = "The University of Chicago Press",
-  volume    =  130,
-  number    =  1,
-  pages     = "48--93",
-  abstract  = "In cooperative property rights systems, workers jointly own and
-               manage production, whereas in outside-ownership systems, an owner
-               contracts workers. Despite a rich literature on how the
-               allocation of property rights matters for specialization,
-               efficiency, and equity, little causal evidence exists. During a
-               land reform in El Salvador in 1980, the military government
-               reorganized properties owned by individuals with cumulative
-               landholdings over 500 hectares into cooperatives; properties
-               below this threshold remained as outside-owned properties. Using
-               the discontinuous probability of cooperative formation, I provide
-               evidence on the effects of cooperative property rights relative
-               to outside ownership on specialization, productivity, and worker
-               equity.",
-  month     =  jan,
-  year      =  2022,
-  language  = "en"
-}
-
-@INCOLLECTION{Burns1993-st,
-  title     = "Modernization and Continuity",
-  author    = "Burns, E Bradford",
-  booktitle = "A History of Brazil",
-  publisher = "Columbia University Press",
-  edition   =  3,
-  pages     = "149--196",
-  abstract  = "Modernization and Continuity, A History of Brazil, pp. 149-196",
-  year      =  1993
+@BOOK{Berry1979-ct,
+  title     = "Agrarian structure and productivity in developing countries : a
+               study prepared for the International Labour Office within the
+               framework of the World Employment Programme",
+  author    = "Berry, R Albert and Cline, William R",
+  publisher = "Johns Hopkins University Press",
+  address   = "Baltimore",
+  year      =  1979,
+  keywords  = "Agriculture -- Economic aspects -- Developing countries",
+  language  = "eng"
 }
 
 @ARTICLE{Dell2018-sl,
@@ -599,8 +604,8 @@
 }
 
 @BOOK{Cortesao1958-hm,
-  title     = "Rapôso Tavares e a formac̜ão territorial do Brasil",
-  author    = "Cortesão, Jaime",
+  title     = "Raposo Tavares e a formacao territorial do Brasil",
+  author    = "Cortesao, Jaime",
   publisher = "Ministério da Educação e Cultura, Serviço de Documentação",
   address   = "Rio de Janeiro",
   year      =  1958,
@@ -655,10 +660,9 @@
   language  = "pt-BR"
 }
 
-@BOOK{Alden1973-ky,
-  title     = "Colonial roots of modern Brazil papers of the Newberry Library
-               Conference",
-  author    = "Alden, Dauril",
+@BOOK{Hall1973-vv,
+  title     = "Colonial roots of modern Brazil: Papers",
+  author    = "Hall, Frederick Arthur Holden",
   publisher = "University of California Press",
   address   = "Berkeley",
   year      =  1973,
@@ -666,7 +670,7 @@
 }
 
 @BOOK{Diffie1987-bw,
-  title     = "A History of Colonial Brazil, 1500-1792",
+  title     = "A history of colonial Brazil, 1500-1792",
   author    = "Diffie, Bailey Wallys",
   publisher = "R.E. Krieger Publishing Company",
   year      =  1987,
@@ -676,8 +680,10 @@
 @BOOK{Bethell1987-ml,
   title     = "Colonial Brazil",
   author    = "Bethell, Leslie",
+  editor    = "Bethell, Leslie",
   publisher = "Cambridge University Press",
-  address   = "Cambridge",
+  address   = "Cambridge, England",
+  month     =  may,
   year      =  1987,
   language  = "en"
 }
@@ -689,15 +695,6 @@
   publisher = "Arquivo Público do Estado do Rio de Janeiro",
   address   = "[Rio de Janeiro, Brazil]",
   year      =  1998,
-  language  = "pt"
-}
-
-@BOOK{Caldeira2017-tl,
-  title     = "História da riqueza no Brasil: cinco séculos de pessoas, costumes
-               e governos",
-  author    = "Caldeira, Jorge",
-  publisher = "Estação Brasil",
-  year      =  2017,
   language  = "pt"
 }
 
@@ -721,9 +718,11 @@
 }
 
 @BOOK{Fausto2014-bh,
-  title     = "A Concise History of Brazil",
-  author    = "Fausto, Boris and Fausto, Sergio",
+  title     = "Cambridge concise histories: A concise history of Brazil",
+  author    = "Fausto, Boris",
   publisher = "Cambridge University Press",
+  address   = "Cambridge, England",
+  edition   =  2,
   abstract  = "The second edition of A Concise History of Brazil offers a
                sweeping yet accessible history of Latin America's largest
                country. Boris Fausto examines Brazil's history from the arrival
@@ -776,6 +775,24 @@
                lifestyle.",
   month     =  sep,
   year      =  2019
+}
+
+@BOOK{Bradford_Burns1993-nw,
+  title     = "A History of Brazil",
+  author    = "Bradford Burns, E",
+  publisher = "Columbia University Press",
+  abstract  = "Here is a new edition of the book generally acclaimed as the best
+               single-volume history of Brazil. It has been thoroughly revised
+               and updated to include expanded treatment of intellectual,
+               social, and popular history, and to provide increased coverage of
+               labor, blacks, women, and the military in Brazilian history.
+               Complete in breadth and chronological span, A History of Brazil
+               is a panoramic interpretation of the Brazilian past from
+               discovery to the present that treats the economic, social,
+               cultural, and political evolution of Latin America's largest
+               nation.",
+  year      =  1993,
+  language  = "en"
 }
 
 @BOOK{Filho1971-yg,
@@ -868,34 +885,82 @@
   language  = "por"
 }
 
+@ARTICLE{Rivadeneira2024-uj,
+  title       = "Attached once, attached forever: the persistent effects of
+                 Concertaje in Ecuador",
+  author      = "Rivadeneira, Alex",
+  institution = "Banco de Mexico",
+  year        =  2024
+}
+
+@BOOK{Caldeira2017-tl,
+  title     = "História da riqueza no Brasil: cinco séculos de pessoas, costumes
+               e governos",
+  author    = "Caldeira, Jorge",
+  publisher = "Estação Brasil",
+  abstract  = "``História da riqueza no Brasil é ao mesmo tempo tão monumental
+               quanto síntese. Há algumas definitivas, como as do trio Gilberto
+               Freyre-Sérgio Buarque de Holanda-Caio Prado. A diferença? São
+               mais de quinhentos anos relidos e explicados em nova chave. Pois
+               para realizar a sua, Caldeira serviu-se de disciplinas vizinhas,
+               a antropologia e a econometria, enriquecendo interpretações que
+               já vinha consolidando em obras anteriores. A antropologia lhe
+               permitiu se aproximar do passado, iluminando objetos como a
+               família, a mestiçagem, atitudes econômicas, as alianças de poder,
+               revelando sua surpreendente permanência ao longo de cinco
+               séculos. Quanto a econometria, essa forneceu medidas e
+               estatísticas mal e pouco conhecidas de grande parte dos
+               historiadores, para apreender fatos que só mediante esta
+               abordagem são capturáveis.'' - Mary del Priore ``(Caldeira)
+               ressalta, o que para poucos era claro, que o mercado interno
+               sempre teve importância maior do que lhe foi atribuída por muitos
+               autores, mesmo de livros clássicos. Não que se deixe de
+               reconhecer o papel importantíssimo do mercado externo para a
+               inserção mundial da economia, mas desaparece o retrato
+               simplificador da sociedade brasileira do passado como se ela
+               fosse formada apenas pela grande lavoura de exportação. Em
+               segundo lugar, trata-se de obra que traz uma abordagem
+               metodológica rara: Caldeira introduz a referência a números, aos
+               grandes números, na narrativa histórica e os usa para a
+               comprovação de suas teses. Como se isso não bastasse para dar
+               singularidade e notoriedade ao livro, acrescente-se que suas
+               páginas mostram o fracasso das tentativas de acelerar o
+               crescimento econômico pela vontade política do Estado.'' -
+               Fernando Henrique Cardoso",
+  year      =  2017,
+  language  = "pt"
+}
+
 @ARTICLE{Sellars2018-yp,
-  title    = "Labor scarcity, land tenure, and historical legacy: Evidence from
-              Mexico",
-  author   = "Sellars, Emily A and Alix-Garcia, Jennifer",
-  journal  = "J. Dev. Econ.",
-  volume   =  135,
-  pages    = "504--516",
-  abstract = "How does labor scarcity shape institutional development? We
-              examine the long-term impact of Mexico's 16th-century demographic
-              collapse on landholding patterns through the present day. We show
-              that the collapse, which reduced the indigenous population by
-              between 70 and 90 percent and differed in severity across space,
-              facilitated land concentration and the rise of a landowner class
-              that dominated Mexican political economy for centuries. To
-              identify the impact of the population collapse on land
-              arrangements we use an instrumental-variables identification
-              strategy exploiting climatic shocks associated with an epidemic in
-              the 1570s that roughly halved the indigenous population. Though
-              landholding patterns were transformed following the Revolution of
-              1910, we also show that disease-impacted areas now have more land
-              in common-property institutions with limited property rights. The
-              population collapse thus had a persistent impact on Mexican
-              political economy, but the nature of this impact has changed
-              radically over time.",
-  month    =  nov,
-  year     =  2018,
-  keywords = "Economic history; Institutional development; Population dynamics;
-              Land tenure"
+  title     = "Labor scarcity, land tenure, and historical legacy: Evidence from
+               Mexico",
+  author    = "Sellars, Emily A and Alix-Garcia, Jennifer",
+  journal   = "J. Dev. Econ.",
+  publisher = "Elsevier BV",
+  volume    =  135,
+  pages     = "504--516",
+  abstract  = "How does labor scarcity shape institutional development? We
+               examine the long-term impact of Mexico's 16th-century demographic
+               collapse on landholding patterns through the present day. We show
+               that the collapse, which reduced the indigenous population by
+               between 70 and 90 percent and differed in severity across space,
+               facilitated land concentration and the rise of a landowner class
+               that dominated Mexican political economy for centuries. To
+               identify the impact of the population collapse on land
+               arrangements we use an instrumental-variables identification
+               strategy exploiting climatic shocks associated with an epidemic
+               in the 1570s that roughly halved the indigenous population.
+               Though landholding patterns were transformed following the
+               Revolution of 1910, we also show that disease-impacted areas now
+               have more land in common-property institutions with limited
+               property rights. The population collapse thus had a persistent
+               impact on Mexican political economy, but the nature of this
+               impact has changed radically over time.",
+  month     =  nov,
+  year      =  2018,
+  keywords  = "Economic history; Institutional development; Population dynamics;
+               Land tenure",
+  language  = "en"
 }
 
 @ARTICLE{Reydon2015-ff,
@@ -1000,11 +1065,26 @@
   year      =  2006
 }
 
-@BOOK{Junior1967-jv,
-  title     = "The Colonial Background of Modern Brazil",
-  author    = "Júnior, Caio Prado",
+@ARTICLE{Junior1968-iu,
+  title     = "The colonial background of modern Brazil",
+  author    = "Júnior, Caio Prado and Macedo, S",
+  journal   = "Americas",
   publisher = "University of California Press",
-  year      =  1967,
+  volume    =  48,
+  pages     = "293--295",
+  month     =  may,
+  year      =  1968,
+  language  = "en"
+}
+
+@ARTICLE{Leone2022-hj,
+  title     = "The geography of intergenerational mobility: Evidence of
+               educational persistence and the “Great Gatsby Curve” in Brazil",
+  author    = "Leone, Tharcisio",
+  journal   = "Rev. Dev. Econ.",
+  publisher = "Wiley",
+  month     =  mar,
+  year      =  2022,
   language  = "en"
 }
 
@@ -1047,14 +1127,6 @@
   year      =  2008
 }
 
-@MISC{Nozoe_undated-nl,
-  title        = "{SESMARIAS} {E} {APOSSAMENTO} {DE} {TERRAS} {NO} {BRASIL}
-                  {COLÔNIA}",
-  author       = "Nozoe, Nelson",
-  howpublished = "\url{https://www.anpec.org.br/encontro2005/artigos/A05A024.pdf}",
-  note         = "Accessed: 2023-9-15"
-}
-
 @MISC{Gabler_undated-am,
   title        = "Sesmarias",
   author       = "Gabler, Louise",
@@ -1092,6 +1164,40 @@
   language  = "en"
 }
 
+@BOOK{Bertola2017-hr,
+  title     = "Has Latin American Inequality Changed Direction?: Looking Over
+               the Long Run",
+  author    = "Bértola, Luis and Williamson, Jeffrey",
+  publisher = "Springer",
+  abstract  = "This book is open access under a CC BY 4.0 license.This book
+               brings together a range of ideas and theories to arrive at a
+               deeper understanding of inequality in Latin America and its
+               complex realities. To so, it addresses questions such as: What
+               are the origins of inequality in Latin America? How can we create
+               societies that are more equal in terms of income distribution,
+               gender equality and opportunities? How can we remedy the social
+               divide that is making Latin America one of the most unequal
+               regions on earth? What are the roles played by market forces,
+               institutions and ideology in terms of inequality?In this book, a
+               group of global experts gathered by the Institute for the
+               Integration of Latin America and the Caribbean (INTAL), part of
+               the Inter-American Development Bank (IDB), show readers how
+               various types of inequality, such as economical, educational,
+               racial and gender inequality have been practiced in countries
+               like Brazil, Bolivia, Chile, Mexico and many others through the
+               centuries.Presenting new ideas, new evidence, and new methods,
+               the book subsequently analyzes how to move forward with
+               second-generation reforms that lay the foundations for more
+               egalitarian societies. As such, it offers a valuable and
+               insightful guide for development economists, historians and Latin
+               American specialists alike, as well as students, educators,
+               policymakers and all citizens with an interest in development,
+               inequality and the Latin American region.",
+  month     =  jan,
+  year      =  2017,
+  language  = "en"
+}
+
 @ARTICLE{Motta2005-jn,
   title     = "The Sesmarias in Brazil: colonial land policies in the late
                eighteenth-century",
@@ -1106,31 +1212,41 @@
 }
 
 @ARTICLE{Eslava2023-eq,
-  title     = "Origins of Latin American inequality",
-  author    = "Eslava, Francisco and Valencia Caicedo, Felipe",
-  publisher = "International Inequalities Institute, London School of Economics
-               and Political Science",
-  address   = "London, UK",
-  number    =  95,
-  pages     =  40,
-  abstract  = "How deep are the roots of Latin America’s economic inequalities?
-               In this chapter we survey both the history and the literature
-               about the region’s extreme economic disparities, focusing on the
-               most recent academic contributions. We begin by documenting the
-               broad patterns of national and sub-national differences in income
-               and inequality, building on the seminal contributions of Engerman
-               and Sokoloff (2000; 2002, 2005) and aiming to capture different
-               dimensions of inequality. We then proceed thematically, providing
-               empirical evidence and summarizing the key recent studies on
-               colonial institutions, slavery, land reform, education and the
-               role of elites. Finally, we conduct a “replication” exercise with
-               some seminal papers in the literature, extending their economic
-               results to include different measures of inequality as outcomes.",
-  series    = "III Working Paper",
-  month     =  jul,
-  year      =  2023,
-  keywords  = "inequality, Latin America, history, colonization, persistence,
-               slavery, land reform, education, elites",
+  title    = "Origins of Latin American inequality",
+  author   = "Eslava, Francisco and Valencia Caicedo, Felipe",
+  number   =  95,
+  pages    =  40,
+  abstract = "How deep are the roots of Latin America’s economic inequalities?
+              In this chapter we survey both the history and the literature
+              about the region’s extreme economic disparities, focusing on the
+              most recent academic contributions. We begin by documenting the
+              broad patterns of national and sub-national differences in income
+              and inequality, building on the seminal contributions of Engerman
+              and Sokoloff (2000; 2002, 2005) and aiming to capture different
+              dimensions of inequality. We then proceed thematically, providing
+              empirical evidence and summarizing the key recent studies on
+              colonial institutions, slavery, land reform, education and the
+              role of elites. Finally, we conduct a “replication” exercise with
+              some seminal papers in the literature, extending their economic
+              results to include different measures of inequality as outcomes.",
+  series   = "III Working Paper",
+  month    =  jul,
+  year     =  2023,
+  keywords = "inequality, Latin America, history, colonization, persistence,
+              slavery, land reform, education, elites",
+  language = "en"
+}
+
+@ARTICLE{Morse1974-ml,
+  title     = "Brazil's urban development: Colony and empire",
+  author    = "Morse, Richard M",
+  journal   = "J. Urban Hist.",
+  publisher = "SAGE Publications",
+  volume    =  1,
+  number    =  1,
+  pages     = "39--72",
+  month     =  nov,
+  year      =  1974,
   language  = "en"
 }
 
@@ -1155,32 +1271,71 @@
 }
 
 @ARTICLE{Li2020-cc,
-  title    = "A harmonized global nighttime light dataset 1992-2018",
-  author   = "Li, Xuecao and Zhou, Yuyu and Zhao, Min and Zhao, Xia",
-  journal  = "Sci Data",
-  volume   =  7,
-  number   =  1,
-  pages    =  168,
-  abstract = "Nighttime light (NTL) data from the Defense Meteorological
-              Satellite Program (DMSP)/Operational Linescan System (OLS) and the
-              Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi
-              National Polar-orbiting Partnership satellite provide a great
-              opportunity for monitoring human activities from regional to
-              global scales. Despite the valuable records of nightscape from
-              DMSP (1992-2013) and VIIRS (2012-2018), the potential of the
-              historical archive of NTL observations has not been fully explored
-              because of the severe inconsistency between DMSP and VIIRS. In
-              this study, we generated an integrated and consistent NTL dataset
-              at the global scale by harmonizing the inter-calibrated NTL
-              observations from the DMSP data and the simulated DMSP-like NTL
-              observations from the VIIRS data. The generated global DMSP NTL
-              time-series data (1992-2018) show consistent temporal trends. This
-              temporally extended DMSP NTL dataset provides valuable support for
-              various studies related to human activities such as electricity
-              consumption and urban extent dynamics.",
-  month    =  jun,
-  year     =  2020,
-  language = "en"
+  title     = "A harmonized global nighttime light dataset 1992-2018",
+  author    = "Li, Xuecao and Zhou, Yuyu and Zhao, Min and Zhao, Xia",
+  journal   = "Sci. Data",
+  publisher = "Springer Science and Business Media LLC",
+  volume    =  7,
+  number    =  1,
+  pages     =  168,
+  abstract  = "Nighttime light (NTL) data from the Defense Meteorological
+               Satellite Program (DMSP)/Operational Linescan System (OLS) and
+               the Visible Infrared Imaging Radiometer Suite (VIIRS) on the
+               Suomi National Polar-orbiting Partnership satellite provide a
+               great opportunity for monitoring human activities from regional
+               to global scales. Despite the valuable records of nightscape from
+               DMSP (1992-2013) and VIIRS (2012-2018), the potential of the
+               historical archive of NTL observations has not been fully
+               explored because of the severe inconsistency between DMSP and
+               VIIRS. In this study, we generated an integrated and consistent
+               NTL dataset at the global scale by harmonizing the
+               inter-calibrated NTL observations from the DMSP data and the
+               simulated DMSP-like NTL observations from the VIIRS data. The
+               generated global DMSP NTL time-series data (1992-2018) show
+               consistent temporal trends. This temporally extended DMSP NTL
+               dataset provides valuable support for various studies related to
+               human activities such as electricity consumption and urban extent
+               dynamics.",
+  month     =  jun,
+  year      =  2020,
+  language  = "en"
+}
+
+@ARTICLE{Nunes2017-we,
+  title     = "Direitos de propriedade, agricultura e controle social:
+               representações oficiais sobre aldeamentos de índios e colônias
+               agrícolas da Amazônia, décadas de 1840-80",
+  author    = "Nunes, Francivaldo Alves",
+  journal   = "Historia Agraria. Revista de Agricultura e Historia Rural",
+  publisher = "Sociedad EspaÃ±ola de Historia Agraria",
+  number    =  71,
+  pages     = "79--107",
+  abstract  = "Downloadable! This article aims to determine the public agents’
+               understanding of land rights granted to Indian settlements
+               (aldeamentos) and settlers in agricultural colonies in nineteenth
+               century Amazonia. A grant of the right to use the land, that is,
+               the legal warrant granting the permanence of the Indians’ and the
+               settlers’ rights to use the land resources allocated to the
+               settlements and colonies was contingent on regular cultivation of
+               the land and on agricultural activities. Based on the reports and
+               correspondence of the provincial administrations, we will show
+               that both the Indian settlements and the agricultural colonies
+               were represented as model spaces for socialization, evidencing a
+               governmental policy of institutionalizing land usage rights
+               subject to the requirement of agricultural work. This
+               relationship is represented as one of social stratification, in
+               which the settlers were afforded the social status of autonomous
+               farmers and granted individual but initially conditional property
+               rights, while the Indians were allocated the status of apprentice
+               labourers on collective land managed by an appointed settlement
+               director; they could earn autonomous farmer status through
+               gradual and conditional acquisition of the property rights of
+               parcels of land. Finally, we offer some instances of conflict,
+               resistance and difficulties in implementation of this policy, as
+               found in official communications.",
+  year      =  2017,
+  keywords  = "Agricultural colonies; colonization; indian settlements; property
+               rights; Amazonia-Brazil; nineteenth century"
 }
 
 @ARTICLE{Goni2022-do,
@@ -1218,6 +1373,33 @@
                the impact of land markets in generating inequality in of land
                was the interaction between emerging land markets and",
   year      =  2012
+}
+
+@ARTICLE{Montero2022-ua,
+  title     = "Cooperative Property Rights and Development: Evidence from Land
+               Reform in El Salvador",
+  author    = "Montero, Eduardo",
+  journal   = "J. Polit. Econ.",
+  publisher = "The University of Chicago Press",
+  volume    =  130,
+  number    =  1,
+  pages     = "48--93",
+  abstract  = "In cooperative property rights systems, workers jointly own and
+               manage production, whereas in outside-ownership systems, an owner
+               contracts workers. Despite a rich literature on how the
+               allocation of property rights matters for specialization,
+               efficiency, and equity, little causal evidence exists. During a
+               land reform in El Salvador in 1980, the military government
+               reorganized properties owned by individuals with cumulative
+               landholdings over 500 hectares into cooperatives; properties
+               below this threshold remained as outside-owned properties. Using
+               the discontinuous probability of cooperative formation, I provide
+               evidence on the effects of cooperative property rights relative
+               to outside ownership on specialization, productivity, and worker
+               equity.",
+  month     =  jan,
+  year      =  2022,
+  language  = "en"
 }
 
 @ARTICLE{Galor2006-ws,
@@ -1987,12 +2169,12 @@
 }
 
 @ARTICLE{Musacchio2014-pq,
-  title     = "Colonial Institutions, Trade Shocks, and the Diffusion of
-               Elementary Education in Brazil, {1889–1930}",
+  title     = "Colonial institutions, trade shocks, and the diffusion of
+               elementary education in Brazil, {1889–1930}",
   author    = "Musacchio, Aldo and Fritscher, André Martínez and Viarengo,
                Martina",
   journal   = "J. Econ. Hist.",
-  publisher = "Cambridge University Press",
+  publisher = "Cambridge University Press (CUP)",
   volume    =  74,
   number    =  3,
   pages     = "730--766",
@@ -2007,64 +2189,87 @@
                was muted in states that either had more slaves before abolition
                or cultivated cotton during colonial times.",
   month     =  sep,
-  year      =  2014
+  year      =  2014,
+  language  = "en"
 }
 
 @ARTICLE{Banerjee2005-ki,
-  title    = "History, Institutions, and Economic Performance: The Legacy of
-              Colonial Land Tenure Systems in India",
-  author   = "Banerjee, Abhijit and Iyer, Lakshmi",
-  journal  = "Am. Econ. Rev.",
-  volume   =  95,
-  number   =  4,
-  pages    = "1190--1213",
-  abstract = "History, Institutions, and Economic Performance: The Legacy of
-              Colonial Land Tenure Systems in India by Abhijit Banerjee and
-              Lakshmi Iyer. Published in volume 95, issue 4, pages 1190-1213 of
-              American Economic Review, September 2005, Abstract: We analyze the
-              colonial land revenue institutions set up...",
-  month    =  sep,
-  year     =  2005
+  title     = "History, institutions, and economic performance: The legacy of
+               colonial land tenure systems in India",
+  author    = "Banerjee, Abhijit and Iyer, Lakshmi",
+  journal   = "Am. Econ. Rev.",
+  publisher = "American Economic Association",
+  volume    =  95,
+  number    =  4,
+  pages     = "1190--1213",
+  abstract  = "History, Institutions, and Economic Performance: The Legacy of
+               Colonial Land Tenure Systems in India by Abhijit Banerjee and
+               Lakshmi Iyer. Published in volume 95, issue 4, pages 1190-1213 of
+               American Economic Review, September 2005, Abstract: We analyze
+               the colonial land revenue institutions set up...",
+  month     =  aug,
+  year      =  2005
 }
 
 @ARTICLE{Dell2010-qt,
-  title     = "{THE} {PERSISTENT} {EFFECTS} {OF} {PERU}'{S} {MINING} ``{MITA}''",
+  title     = "The persistent effects of Peru's mining Mita",
   author    = "Dell, Melissa",
-  journal   = "Econometrica",
+  journal   = "Latin American Economics eJournal",
   publisher = "[Wiley, Econometric Society]",
   volume    =  78,
   number    =  6,
   pages     = "1863--1903",
-  abstract  = "[This study utilizes regression discontinuity to examine the
+  abstract  = "This study utilizes regression discontinuity to examine the
                long-run impacts of the mita, an extensive forced mining labor
                system in effect in Peru and Bolivia between 1573 and 1812.
                Results indicate that a mita effect lowers household consumption
                by around 25\% and increases the prevalence of stunted growth in
-               children by around 6 percentage points in subjected districts
+               children by around six percentage points in subjected districts
                today. Using data from the Spanish Empire and Peruvian Republic
                to trace channels of institutional persistence, I show that the
                mita's influence has persisted through its impacts on land tenure
                and public goods provision. Mita districts historically had fewer
                large landowners and lower educational attainment. Today, they
-               are less integrated into road networks and their residents are
-               substantially more likely to be subsistence farmers.]",
+               are less integrated into road networks, and their residents are
+               substantially more likely to be subsistence farmers.",
+  month     =  jan,
   year      =  2010
 }
 
-@ARTICLE{Dell2019-np,
-  title     = "The Development Effects of the Extractive Colonial Economy: The
+@ARTICLE{Dell2020-zo,
+  title     = "The development effects of the extractive colonial economy: The
                Dutch Cultivation System in Java",
   author    = "Dell, Melissa and Olken, Benjamin A",
   journal   = "Rev. Econ. Stud.",
-  publisher = "Oxford Academic",
+  publisher = "Oxford University Press (OUP)",
   volume    =  87,
   number    =  1,
   pages     = "164--203",
-  abstract  = "Abstract. Colonial powers typically organized economic activity
-               in the colonies to maximize their economic returns. While the
-               literature has emphasized long-run",
-  month     =  mar,
-  year      =  2019,
+  abstract  = "AbstractColonial powers typically organized economic activity in
+               the colonies to maximize their economic returns. While the
+               literature has emphasized long-run negative economic impacts via
+               institutional quality, the changes in economic organization
+               implemented to spur production historically could also directly
+               influence economic organization in the long-run, exerting
+               countervailing effects. We examine these in the context of the
+               Dutch Cultivation System, the integrated industrial and
+               agricultural system for producing sugar that formed the core of
+               the Dutch colonial enterprise in 19th century Java. We show that
+               areas close to where the Dutch established sugar factories in the
+               mid-19th century are today more industrialized, have better
+               infrastructure, are more educated, and are richer than nearby
+               counterfactual locations that would have been similarly suitable
+               for colonial sugar factories. We also show, using a spatial
+               regression discontinuity design on the catchment areas around
+               each factory, that villages forced to grow sugar cane have more
+               village-owned land and also have more schools and substantially
+               higher education levels, both historically and today. The results
+               suggest that the economic structures implemented by colonizers to
+               facilitate production can continue to promote economic activity
+               in the long run, and we discuss the contexts where such effects
+               are most likely to be important.",
+  month     =  jan,
+  year      =  2020,
   language  = "en"
 }
 
@@ -2156,6 +2361,15 @@
   year     =  2023
 }
 
+@BOOK{Leal2012-gj,
+  title     = "Coronelismo, enxada e voto: o município e o regime representativo
+               no Brasil",
+  author    = "Leal, V N",
+  publisher = "Editora Companhia das Letras",
+  edition   = "7th Edition",
+  year      =  2012
+}
+
 @ARTICLE{Gelman2014-tl,
   title       = "Why High-order Polynomials Should not be Used in Regression
                  Discontinuity Designs",
@@ -2172,6 +2386,71 @@
   series      = "Working Paper Series",
   month       =  aug,
   year        =  2014
+}
+
+@ARTICLE{Lee2022-jw,
+  title     = "Valid \textit{t}-ratio inference for {IV}",
+  author    = "Lee, David S and McCrary, Justin and Moreira, Marcelo J and
+               Porter, Jack",
+  journal   = "Am. Econ. Rev.",
+  publisher = "American Economic Association",
+  volume    =  112,
+  number    =  10,
+  pages     = "3260--3290",
+  abstract  = "In the single-IV model, researchers commonly rely on
+               t-ratio-based inference, even though the literature has
+               quantified its potentially severe large-sample distortions.
+               Building on Stock and Yogo (2005), we introduce the tF critical
+               value function, leading to a standard error adjustment that is a
+               smooth function of the first-stage F-statistic. For one-quarter
+               of specifications in 61 AER papers, corrected standard errors are
+               at least 49 and 136 percent larger than conventional 2SLS
+               standard errors at the 5 percent and 1 percent significance
+               levels, respectively. tF confidence intervals have shorter
+               expected length than those of Anderson and Rubin (1949), whenever
+               both are bounded. (JEL C13, C26)",
+  month     =  oct,
+  year      =  2022,
+  language  = "en"
+}
+
+@ARTICLE{Anderson1949-aa,
+  title     = "Estimation of the parameters of a single equation in a complete
+               system of stochastic equations",
+  author    = "Anderson, T W and Rubin, H",
+  journal   = "Annals of Mathematical Statistics",
+  publisher = "Institute of Mathematical Statistics",
+  volume    =  20,
+  number    =  1,
+  pages     = "46--63",
+  abstract  = "[A method is given for estimating the coefficients of a single
+               equation in a complete system of linear stochastic equations (see
+               expression (2.1)), provided that a number of the coefficients of
+               the selected equation are known to be zero. Under the assumption
+               of the knowledge of all variables in the system and the
+               assumption that the disturbances in the equations of the system
+               are normally distributed, point estimates are derived from the
+               regressions of the jointly dependent variables on the
+               predetermined variables (Theorem 1). The vector of the estimates
+               of the coefficients of the jointly dependent variables is the
+               characteristic vector of a matrix involving the regression
+               coefficients and the estimate of the covariance matrix of the
+               residuals from the regression functions. The vector corresponding
+               to the smallest characteristic root is taken. An efficient method
+               of computing these estimates is given in section 7. The
+               asymptotic theory of these estimates is given in a following
+               paper [2]. When the predetermined variables can be considered as
+               fixed, confidence regions for the coefficients can be obtained on
+               the basis of small sample theory (Theorem 3). A statistical test
+               for the hypothesis of over-identification of the single equation
+               can be based on the characteristic root associated with the
+               vector of point estimates (Theorem 2) or on the expression for
+               the small sample confidence region (Theorem 4). This hypothesis
+               is equivalent to the hypothesis that the coefficients assumed to
+               be zero actually are zero. The asymptotic distribution of the
+               criterion is shown in a following paper [2] to be that of χ2.]",
+  month     =  mar,
+  year      =  1949
 }
 
 @ARTICLE{Greschuk2023-fa,
@@ -2335,10 +2614,10 @@
 }
 
 @ARTICLE{Naritomi2012-or,
-  title     = "Institutional Development and Colonial Heritage within Brazil",
+  title     = "Institutional development and colonial heritage within Brazil",
   author    = "Naritomi, Joana and Soares, Rodrigo R and Assunção, Juliano J",
   journal   = "J. Econ. Hist.",
-  publisher = "Cambridge University Press",
+  publisher = "Cambridge University Press (CUP)",
   volume    =  72,
   number    =  2,
   pages     = "393--422",
@@ -2359,43 +2638,78 @@
 }
 
 @ARTICLE{Barsanetti2021-hp,
-  title    = "Cities on pre-Columbian paths",
-  author   = "Barsanetti, Bruno",
-  journal  = "J. Urban Econ.",
-  volume   =  122,
-  pages    =  103317,
-  abstract = "Does the geographic distribution of pre-Columbian societies
-              determine the location of New World cities? This paper provides
-              evidence that a pre-colonial indigenous trail influenced the
-              location of modern cities in southern Brazil. To distinguish the
-              causal effects of historical settlement near the trail from the
-              effects of geographic fundamentals that could correlate with it, I
-              compare how population density and urbanization change with
-              proximity to the trail in two different regions. The first region
-              has been settled by Europeans since the 16th century, while
-              European settlement in the second region was interrupted after a
-              17th-century slave raid. Proximity to the indigenous path is
-              associated with higher population density and urbanization in the
-              first region, but not in the second. These findings suggest a path
-              dependence that goes back to the pre-colonial past.",
-  month    =  mar,
-  year     =  2021,
-  keywords = "Urbanization; city location; path dependence"
+  title     = "Cities on pre-Columbian paths",
+  author    = "Barsanetti, Bruno",
+  journal   = "J. Urban Econ.",
+  publisher = "Elsevier BV",
+  volume    =  122,
+  number    =  103317,
+  pages     =  103317,
+  abstract  = "Does the geographic distribution of pre-Columbian societies
+               determine the location of New World cities? This paper provides
+               evidence that a pre-colonial indigenous trail influenced the
+               location of modern cities in southern Brazil. To distinguish the
+               causal effects of historical settlement near the trail from the
+               effects of geographic fundamentals that could correlate with it,
+               I compare how population density and urbanization change with
+               proximity to the trail in two different regions. The first region
+               has been settled by Europeans since the 16th century, while
+               European settlement in the second region was interrupted after a
+               17th-century slave raid. Proximity to the indigenous path is
+               associated with higher population density and urbanization in the
+               first region, but not in the second. These findings suggest a
+               path dependence that goes back to the pre-colonial past.",
+  month     =  mar,
+  year      =  2021,
+  keywords  = "Urbanization; city location; path dependence",
+  language  = "en"
 }
 
 @ARTICLE{Maloney2016-qv,
-  title     = "The Persistence of (Subnational) Fortune",
+  title     = "The persistence of (subnational) fortune",
   author    = "Maloney, William F and Valencia Caicedo, Felipe",
-  journal   = "Econ J",
-  publisher = "Oxford Academic",
+  journal   = "Econ. J. (London)",
+  publisher = "Oxford University Press (OUP)",
   volume    =  126,
   number    =  598,
   pages     = "2363--2401",
-  abstract  = "Abstract. Using newly collected subnational data, this article
-               establishes the within‐country persistence of economic activity
-               in the New World over the last ha",
-  month     =  jan,
+  abstract  = "Using subnational historical data, this paper establishes the
+               within country persistence of economic activity in the New World
+               over the last half millennium, a period including the trauma of
+               the European colonization, the decimation of the native
+               populations, and the imposition of potentially growth inhibiting
+               institutions. We construct a data set incorporating measures of
+               pre-colonial population density, new measures of present regional
+               per capita income and population, and a comprehensive set of
+               locational fundamentals. These fundamentals are shown to have
+               explanatory power: native populations throughout the hemisphere
+               were found in more livable and productive places. We then show
+               that high pre-colonial density areas tend to be dense today:
+               population agglomerations persist. The data and historical
+               evidence suggest this is due partly to locational fundamentals,
+               but also to classic agglomeration effects: colonialists
+               established settlements near existing native populations for
+               reasons of labor, trade, knowledge and defense. The paper then
+               shows that high density (historically prosperous) areas also tend
+               to have higher incomes today, and largely due to agglomeration
+               effects: fortune persists for the United States and most of Latin
+               America.",
+  month     =  dec,
   year      =  2016,
+  language  = "en"
+}
+
+@ARTICLE{Bruhn2012-cc,
+  title     = "Good, bad, and ugly colonial activities: Do they matter for
+               economic development?",
+  author    = "Bruhn, Miriam and Gallego, Francisco A",
+  journal   = "Rev. Econ. Stat.",
+  publisher = "MIT Press - Journals",
+  volume    =  94,
+  number    =  2,
+  pages     = "433--461",
+  month     =  may,
+  year      =  2012,
   language  = "en"
 }
 
@@ -2688,28 +3002,29 @@
 }
 
 @ARTICLE{Nunn2011-na,
-  title    = "The potato's contribution to population and urbanization: evidence
-              from a historical experiment",
-  author   = "Nunn, Nathan and Qian, Nancy",
-  journal  = "Q. J. Econ.",
-  volume   =  126,
-  number   =  2,
-  pages    = "593--650",
-  abstract = "We exploit regional variation in suitability for cultivating
-              potatoes, together with time variation arising from their
-              introduction to the Old World from the Americas, to estimate the
-              impact of potatoes on Old World population and urbanization. Our
-              results show that the introduction of the potato was responsible
-              for a significant portion of the increase in population and
-              urbanization observed during the eighteenth and nineteenth
-              centuries. According to our most conservative estimates, the
-              introduction of the potato accounts for approximately one-quarter
-              of the growth in Old World population and urbanization between
-              1700 and 1900. Additional evidence from within-country comparisons
-              of city populations and adult heights also confirms the
-              cross-country findings.",
-  year     =  2011,
-  language = "en"
+  title     = "The potato's contribution to population and urbanization:
+               evidence from a historical experiment",
+  author    = "Nunn, Nathan and Qian, Nancy",
+  journal   = "Q. J. Econ.",
+  publisher = "Oxford University Press (OUP)",
+  volume    =  126,
+  number    =  2,
+  pages     = "593--650",
+  abstract  = "We exploit regional variation in suitability for cultivating
+               potatoes, together with time variation arising from their
+               introduction to the Old World from the Americas, to estimate the
+               impact of potatoes on Old World population and urbanization. Our
+               results show that the introduction of the potato was responsible
+               for a significant portion of the increase in population and
+               urbanization observed during the eighteenth and nineteenth
+               centuries. According to our most conservative estimates, the
+               introduction of the potato accounts for approximately one-quarter
+               of the growth in Old World population and urbanization between
+               1700 and 1900. Additional evidence from within-country
+               comparisons of city populations and adult heights also confirms
+               the cross-country findings.",
+  year      =  2011,
+  language  = "en"
 }
 
 @ARTICLE{Nozoe2014-gm,
@@ -2734,6 +3049,14 @@
                algumas questoes atinentes a sua aplicacao em territorio
                brasileiro",
   year      =  2014
+}
+
+@PHDTHESIS{Vicario2017-ll,
+  title     = "The formation of human capital in pre-modern Latin America",
+  author    = "Vicario, C",
+  publisher = "tobias-lib.ub.uni-tuebingen.de",
+  year      =  2017,
+  school    = "Universität Tübingen"
 }
 
 @ARTICLE{Souza2020-kb,
@@ -2805,6 +3128,13 @@
   language  = "en"
 }
 
+@BOOK{Azevedo1944-gs,
+  title  = "A Cultura Brasileira — Introdução ao Estudo da Cultura no Brasil",
+  author = "Azevedo, Fernando de",
+  editor = "{COMPANHIA EDITORA NACIONAL}",
+  year   =  1944
+}
+
 @ARTICLE{Abdalla2022-bc,
   title     = "Statistically enriched geospatial datasets of Brazilian
                municipalities for data-driven modeling",
@@ -2845,7 +3175,7 @@
   author   = "Amatulli, Giuseppe and Domisch, Sami and Tuanmu, Mao-Ning and
               Parmentier, Benoit and Ranipeta, Ajay and Malczyk, Jeremy and
               Jetz, Walter",
-  journal  = "Sci Data",
+  journal  = "Sci. Data",
   volume   =  5,
   pages    =  180040,
   abstract = "Topographic variation underpins a myriad of patterns and processes
@@ -2875,19 +3205,41 @@
 }
 
 @ARTICLE{Galor2016-ba,
-  title    = "The Agricultural Origins of Time Preference",
+  title    = "The agricultural origins of time preference<sup/>",
   author   = "Galor, Oded and Özak, Ömer",
   journal  = "Am. Econ. Rev.",
   volume   =  106,
   number   =  10,
   pages    = "3064--3103",
-  abstract = "The Agricultural Origins of Time Preference by Oded Galor and Ömer
-              Özak. Published in volume 106, issue 10, pages 3064-3103 of
-              American Economic Review, October 2016, Abstract: This research
-              explores the origins of observed differences in time preference
-              across countries and regions. Exploiting a...",
+  abstract = "This research explores the origins of observed differences in time
+              preference across countries and regions. Exploiting a natural
+              experiment associated with the expansion of suitable crops for
+              cultivation in the course of the Columbian Exchange, the research
+              establishes that pre-industrial agro-climatic characteristics that
+              were conducive to higher return to agricultural investment,
+              triggered selection, adaptation and learning processes that
+              generated a persistent positive effect on the prevalence of
+              long-term orientation in the contemporary era. Furthermore, the
+              research establishes that these agro-climatic characteristics have
+              had a culturally embodied impact on economic behavior such as
+              technological adoption, education, saving, and smoking.",
   month    =  oct,
-  year     =  2016
+  year     =  2016,
+  keywords = "Comparative Development; Cultural Evolution; D14; D90; Delayed
+              Gratification; E21; Economic Development; Education; Human
+              Capital; I12; I25; J24; J26; O10; O33; O40; Saving; Smoking; Time
+              preference; Z1",
+  language = "en"
+}
+
+@ARTICLE{Occupation2002-we,
+  title   = "{OCUPAÇÃO} {DO} {TERRITÓRIO} {E} A {CRIAÇÃO} {DE} {MUNICÍPIOS} {NO}
+             {PERÍODO} {IMPERIAL} {BRASILEIRO}",
+  author  = "Occupation, Territory",
+  journal = "ISSN",
+  volume  =  1984,
+  pages   =  2201,
+  year    =  2002
 }
 
 @MISC{With_undated-hy,
@@ -3036,9 +3388,9 @@
                typologies; Vila Leopoldina"
 }
 
-@BOOK{Boxer1962-bj,
-  title     = "The Golden Age of Brazil 1695-1750: Growing Pains of a Colonial
-               Society",
+@BOOK{Boxer2023-yu,
+  title     = "The golden age of Brazil 1695-1750: Growing pains of a colonial
+               society",
   author    = "Boxer, C R",
   publisher = "University of California Press",
   address   = "Berkeley, CA",
@@ -3050,7 +3402,8 @@
                makes high-quality, peer-reviewed scholarship accessible once
                again using print-on-demand technology. This title was originally
                published in 1962.",
-  year      =  1962
+  month     =  nov,
+  year      =  2023
 }
 
 @ARTICLE{Carlson2019-mk,
@@ -3107,7 +3460,7 @@
   year    =  2021
 }
 
-@ARTICLE{Klein_Goldewijk2017-mr,
+@ARTICLE{Klein-Goldewijk2017-qc,
   title     = "Anthropogenic land use estimates for the Holocene – {HYDE} 3.2",
   author    = "Klein Goldewijk, Kees and Beusen, Arthur and Doelman, Jonathan
                and Stehfest, Elke",
@@ -3278,31 +3631,14 @@
   year      =  1976
 }
 
-@MISC{Laudares2022-vy,
-  title        = "Tordesillas, slavery and the origins of Brazilian inequality",
-  author       = "Laudares, Humberto and Caicedo, Felipe Valencia",
-  abstract     = "This article documents the long-term impact of slavery on
-                  inequality at the receiving end. We focus on Brazil, the
-                  largest receiver of African slaves and the last country to
-                  abolish this institution in the Western Hemisphere, in 1888.
-                  To deal with the endogeneity of slavery placement, we use a
-                  spatial Regression Discontinuity Design (RDD), exploiting the
-                  Tordesillas Treaty, which established the colonial boundaries
-                  between the Portuguese and Spanish empires within Brazil. We
-                  find that the number of slaves in 1872 is discontinuously
-                  higher on the Portuguese side of the border, consistent with
-                  this power's comparative advantage in transatlantic slavery.
-                  We then show how this differential slave rate led to higher
-                  modern income inequality of 0.04 points (of the Gini Index),
-                  close to 10\% of the average income inequality in the country.
-                  In terms of mechanisms, we find a wider income gap, and
-                  important differences in education, employment and prejudice
-                  for blacks in modern times. We rule out the role of colonizer
-                  identity and other mechanisms proposed in the historical
-                  literature.",
-  year         =  2022,
-  howpublished = "\url{https://conference.nber.org/conf\_papers/f164242.pdf}",
-  note         = "Accessed: 2022-10-3"
+@BOOK{Laudares2023-wl,
+  title     = "Tordesillas, slavery and the origins of Brazilian inequality",
+  author    = "Laudares, Humberto and Caicedo, Felipe Valencia",
+  publisher = "Centre for Economic Policy Research",
+  abstract  = "of slavery on inequality at the receiving end. We focus on
+               Brazil, the largest importer of African slaves To deal with the
+               endogeneity of slavery placement, we use a spatial Regression",
+  year      =  2023
 }
 
 @ARTICLE{Motta2005-kg,
@@ -3375,19 +3711,12 @@
                Latin America; public finance"
 }
 
-@MISC{Nozoe_undated-yn,
-  title        = "Sesmarias e Apossamento de Terras no Brasil Colˆonia",
-  author       = "Nozoe, Nelson and Economia, Revista",
-  howpublished = "\url{https://www.anpec.org.br/revista/vol7/vol7n3p587\_605.pdf}",
-  note         = "Accessed: 2023-1-31"
-}
-
 @ARTICLE{Chambouleyron2020-fx,
   title     = "Ruralidades indígenas na Amazônia colonial",
   author    = "Chambouleyron, Rafael and Arenz, Karl Heinz and Melo, Vanice
                Siqueira de",
-  journal   = "Bol. Mus. Para. Emílio Goeldi. Ciênc. hum.",
-  publisher = "MCTI/Museu Paraense Emílio Goeldi",
+  journal   = "Bol. Mus. Para. Emílio Goeldi Ciênc. Humanas",
+  publisher = "FapUNIFESP (SciELO)",
   volume    =  15,
   number    =  1,
   abstract  = "Resumo Este artigo tem por tema a questão da terra e os índios na
@@ -3428,8 +3757,8 @@
 @ARTICLE{Wigton-Jones2020-ex,
   title     = "Legacies of inequality: the case of Brazil",
   author    = "Wigton-Jones, Evan",
-  journal   = "J. Econ. Growth",
-  publisher = "Springer",
+  journal   = "J. Econ. Growth (Boston)",
+  publisher = "Springer Science and Business Media LLC",
   volume    =  25,
   number    =  4,
   pages     = "455--501",
@@ -3461,7 +3790,8 @@
                sector, and this sector itself constitutes a larger share of
                local GDP.",
   month     =  dec,
-  year      =  2020
+  year      =  2020,
+  language  = "en"
 }
 
 @MISC{Lambais_undated-nd,
@@ -3473,19 +3803,27 @@
 }
 
 @ARTICLE{Rocha2017-yq,
-  title    = "Human Capital Persistence and Development",
-  author   = "Rocha, Rudi and Ferraz, Claudio and Soares, Rodrigo R",
-  journal  = "Am. Econ. J. Appl. Econ.",
-  volume   =  9,
-  number   =  4,
-  pages    = "105--136",
-  abstract = "Human Capital Persistence and Development by Rudi Rocha, Claudio
-              Ferraz and Rodrigo R. Soares. Published in volume 9, issue 4,
-              pages 105-36 of American Economic Journal: Applied Economics,
-              October 2017, Abstract: This paper documents the persistence of
-              human capital over time and its association wit...",
-  month    =  oct,
-  year     =  2017
+  title     = "Human capital persistence and development",
+  author    = "Rocha, Rudi and Ferraz, Claudio and Soares, Rodrigo R",
+  journal   = "Am. Econ. J. Appl. Econ.",
+  publisher = "American Economic Association",
+  volume    =  9,
+  number    =  4,
+  pages     = "105--136",
+  abstract  = "This paper examines the role of human capital persistence in
+               explaining long-term development. We exploit variation induced by
+               a state-sponsored settlement policy that attracted a pool of
+               immigrants with higher levels of schooling to particular regions
+               of Brazil in the late 19th and early 20th century. We show that
+               municipalities that received settlements experienced increases in
+               schooling that persisted over time. One century after the policy,
+               localities that received state-sponsored settlements had higher
+               levels of schooling and income per capita. We provide evidence
+               that long-run effects were driven by persistently higher supply
+               and use of educational inputs and shifts in the structure of
+               occupations towards skill-intensive sectors.",
+  month     =  oct,
+  year      =  2017
 }
 
 @ARTICLE{Ferraz2020-rs,
@@ -3531,7 +3869,8 @@
 }
 
 @BOOK{Alston2010-cn,
-  title     = "Titles, conflict, and land use",
+  title     = "Titles, conflict, and land use: The development of property
+               rights and land reform on the Brazilian Amazon frontier",
   author    = "Alston, Lee J and Libecap, Gary D and Mueller, Bernardo",
   publisher = "University of Michigan Press",
   address   = "Ann Arbor, MI",
@@ -3565,7 +3904,8 @@
                Universidade de Brasilia.",
   series    = "Economics, Cognition, and Society",
   month     =  may,
-  year      =  2010
+  year      =  2010,
+  language  = "en"
 }
 
 @ARTICLE{Dye2020-ih,
@@ -3621,30 +3961,71 @@
 }
 
 @ARTICLE{Sokoloff2000-mb,
-  title    = "Institutions, Factor Endowments, and Paths of Development in the
-              New World",
-  author   = "Sokoloff, Kenneth L and Engerman, Stanley L",
-  journal  = "J. Econ. Perspect.",
-  volume   =  14,
-  number   =  3,
-  pages    = "217--232",
-  abstract = "Institutions, Factor Endowments, and Paths of Development in the
-              New World by Kenneth L. Sokoloff and Stanley L. Engerman.
-              Published in volume 14, issue 3, pages 217-232 of Journal of
-              Economic Perspectives, Summer 2000, Abstract: The explanations
-              offered for the contrasting records of long-run growt...",
-  month    =  sep,
-  year     =  2000
+  title     = "History lessons: Institutions, factor endowments, and paths of
+               development in the New World",
+  author    = "Sokoloff, Kenneth L and Engerman, Stanley L",
+  journal   = "J. Econ. Perspect.",
+  publisher = "American Economic Association",
+  volume    =  14,
+  number    =  3,
+  pages     = "217--232",
+  abstract  = "The explanations offered for the contrasting records of long-run
+               growth and development among the societies of North and South
+               America most often focus on institutions. The traditional
+               explanations for the sources of these differences in
+               institutions, typically highlight the significance of national
+               heritage or religion. We, in contrast, argue that a hemispheric
+               perspective across the wide range of colonies established in the
+               New World by the Europeans suggests that although there were many
+               influences, factor endowments or initial conditions had profound
+               and enduring effects on the long-run paths of institutional and
+               economic development followed by the respective economies.",
+  month     =  aug,
+  year      =  2000,
+  language  = "en"
 }
 
 @ARTICLE{Acemoglu2005-ti,
-  title     = "Institutions as a fundamental cause of long-run growth",
-  author    = "Acemoglu, D and Johnson, S and Robinson, J A",
-  journal   = "Handbook of economic growth",
+  title     = "Institutions as a fundamental cause of Long-Run growth",
+  author    = "Acemoglu, D and Johnson, Simon and Robinson, James A",
+  journal   = "National Bureau of Economic Research",
   publisher = "Elsevier",
+  pages     = "385--472",
   abstract  = "This paper develops the empirical and theoretical case that
                differences in economic institutions are the fundamental cause of
-               differences in economic development. We first …",
+               differences in economic development. We first document the
+               empirical importance of institutions by focusing on two
+               ``quasi-natural experiments'' in history, the division of Korea
+               into two parts with very different economic institutions and the
+               colonization of much of the world by European powers starting in
+               the fifteenth century. We then develop the basic outline of a
+               framework for thinking about why economic institutions differ
+               across countries. Economic institutions determine the incentives
+               of and the constraints on economic actors, and shape economic
+               outcomes. As such, they are social decisions, chosen for their
+               consequences. Because different groups and individuals typically
+               benefit from different economic institutions, there is generally
+               a conflict over these social choices, ultimately resolved in
+               favor of groups with greater political power. The distribution of
+               political power in society is in turn determined by political
+               institutions and the distribution of resources. Political
+               institutions allocate de jure political power, while groups with
+               greater economic might typically possess greater de facto
+               political power. We therefore view the appropriate theoretical
+               framework as a dynamic one with political institutions and the
+               distribution of resources as the state variables. These variables
+               themselves change over time because prevailing economic
+               institutions affect the distribution of resources, and because
+               groups with de facto political power today strive to change
+               political institutions in order to increase their de jure
+               political power in the future. Economic institutions encouraging
+               economic growth emerge when political institutions allocate power
+               to groups with interests in broad-based property rights
+               enforcement, when they create effective constraints on
+               power-holders, and when there are relatively few rents to be
+               captured by power-holders. We illustrate the assumptions, the
+               workings and the implications of this framework using a number of
+               historical examples.",
   year      =  2005
 }
 
@@ -3653,6 +4034,34 @@
             States",
   author = "Smith, Cory",
   year   =  2023
+}
+
+@ARTICLE{Palitot2022-rm,
+  title     = "{MARCOS}, {RUMOS}, {POSSES} {E} {BRAÇAS} {QUADRADAS}: refazendo
+               os caminhos da demarcação da Sesmaria dos Índios de Monte-Mór –
+               Província da Parahyba do Norte (1866-67)",
+  author    = "Palitot, Estêvão Martins",
+  journal   = "Outros Tempos – Pesqui. em Foco - Hist.",
+  publisher = "Universidade Estadual do Maranhao",
+  volume    =  19,
+  number    =  34,
+  pages     = "139--169",
+  abstract  = "Neste artigo analisamos a situação histórica da demarcação das
+               terras da Sesmaria dos Índios de Monte-Mór, na Província da
+               Parahyba do Norte, realizada pelo engenheiro Antônio Gonçalves da
+               Justa Araújo nos anos de 1866 e 1867. Partimos das memórias
+               indígenas contemporâneas para analisar o processo demarcatório do
+               século XIX. Tomamos como pano de fundo os duradouros efeitos
+               sociais desse processo de (des)territorialização perpetrado num
+               contexto de negação da condição étnica dos povos indígenas
+               naquele período. Ao longo do artigo refazemos os caminhos do
+               processo demarcatório, propondo ao final uma interpretação
+               cartográfica da atuação do engenheiro e da presença indígena na
+               sesmaria.",
+  month     =  jul,
+  year      =  2022,
+  keywords  = "Terras Indígenas; Engenheiros; Cartografia Histórica",
+  language  = "pt"
 }
 
 @MISC{noauthor_undated-ue,
@@ -3741,4 +4150,175 @@
   author    = "Prestes Filho, U d",
   publisher = "Imprensa Oficial do Estado de São Paulo",
   year      =  2012
+}
+
+@ARTICLE{Angeles2017-do,
+  title     = "Pre-colonial institutions and socioeconomic development: The case
+               of Latin America",
+  author    = "Angeles, Luis and Elizalde, Aldo",
+  journal   = "J. Dev. Econ.",
+  publisher = "Elsevier BV",
+  volume    =  124,
+  pages     = "22--40",
+  abstract  = "We study the effects of pre-colonial institutions on present-day
+               socioeconomic outcomes for Latin America. Our thesis is that more
+               advanced pre-colonial institutions relate to better socioeconomic
+               outcomes today. We advance that pre-colonial institutions
+               survived to our days thanks to the existence of largely
+               self-governed Amerindian communities in rural Latin America.
+               Amerindians groups with more advanced institutional capacity
+               would have been able to organize and defend their interests in
+               front of national governments; leading to better development
+               outcomes for themselves and for the population at large. We test
+               our thesis with a dataset of 324 sub-national administrative
+               units covering all mainland Latin American countries. Our
+               extensive range of controls covers factors such as climate,
+               location, natural resources, colonial activities and pre-colonial
+               characteristics – plus country fixed effects. Results strongly
+               support our thesis.",
+  month     =  jan,
+  year      =  2017,
+  language  = "en"
+}
+
+@ARTICLE{Newson1993-ch,
+  title     = "The demographic collapse of native peoples of the Americas,
+               1492-1650",
+  author    = "Newson, L",
+  journal   = "Proceedings of the British Academy",
+  publisher = "thebritishacademy.ac.uk",
+  volume    =  81,
+  pages     = "247--288",
+  abstract  = "Un declin demographique a touche variablement les indigenes
+               americains entre 1492 et 1650. Cela est du en grande partie aux
+               maladies apportees par les Europeens qui toucherent differemment
+               les populations. Mais les conquetes, l'asservissement, le mauvais
+               traitement expliquent aussi ce declin malgre le developpement
+               d'une legislation prenant en compte la question indigene. Les
+               methodes portugaises et espagnoles de controle et d'exploitation
+               influencerent aussi les changements culturels : si les
+               communautes productives exploitees par les « encomienda »
+               connurent un changement progressif sans destruction de leur
+               culture, ailleurs les missions et l'asservissement rendirent les
+               chances de survie plus dures.",
+  year      =  1993
+}
+
+@TECHREPORT{Genicot2024-cy,
+  title       = "Upward mobility in developing countries",
+  author      = "Genicot, Garance and Ray, Debraj and Concha-Arriagada, Carolina",
+  publisher   = "National Bureau of Economic Research",
+  institution = "National Bureau of Economic Research",
+  address     = "Cambridge, MA",
+  number      = "w32391",
+  abstract    = "Founded in 1920, the NBER is a private, non-profit,
+                 non-partisan organization dedicated to conducting economic
+                 research and to disseminating research findings among
+                 academics, public policy makers, and business professionals.",
+  month       =  apr,
+  year        =  2024
+}
+
+@ARTICLE{Faguet2022-sr,
+  title     = "Constructive extraction? Encomienda, the colonial state, and
+               development in Colombia",
+  author    = "Faguet, Jean-Paul and Matajira, Camilo and Sánchez Torres, Fabio",
+  journal   = "SSRN Electron. J.",
+  publisher = "Elsevier BV",
+  abstract  = "The Spanish encomienda, a colonial forced-labor institution that
+               lasted three centuries, killed many indigenous people and caused
+               others to flee into nomadism.",
+  month     =  may,
+  year      =  2022,
+  keywords  = "Encomienda, forced labor, state capacity, extraction,
+               colonialism, development, Colombia",
+  language  = "en"
+}
+
+@ARTICLE{Benjamin1995-ca,
+  title     = "Can unobserved land quality explain the inverse productivity
+               relationship?",
+  author    = "Benjamin, Dwayne",
+  journal   = "J. Dev. Econ.",
+  publisher = "Elsevier BV",
+  volume    =  46,
+  number    =  1,
+  pages     = "51--84",
+  abstract  = "An inverse relationship between both farm productivity and labor
+               intensity, and farm size, is a common empirical finding in
+               developing country agriculture. The traditional explanation has
+               been imperfect labor markets. Recently, it has been suggested
+               instead that the inverse relationship is a statistical artifact
+               resulting from omitted land quality. Using a farm-level data set
+               from Java, I investigate whether omitted variable bias can
+               explain the inverse relationship. I show that the inverse
+               relationship and accompanying wage responses are inconsistent
+               with a model of neoclassical farm behavior that ignores omitted
+               variable bias. Instrumental variables techniques yield parameter
+               estimates in which the inverse relationship is eliminated and the
+               estimated wage elasticities are more in line with economic
+               theory. Further econometric investigation hints that a model of
+               omitted land quality may be a possible source of the inverse
+               relationship. These results emphasize the importance of
+               considering the sources of cross-sectional variation in
+               estimating microeconomic relationships.",
+  month     =  feb,
+  year      =  1995,
+  language  = "en"
+}
+
+@ARTICLE{Benjamin1992-tk,
+  title     = "Household composition, labor markets, and labor demand: Testing
+               for separation in agricultural household models",
+  author    = "Benjamin, Dwayne",
+  journal   = "Econometrica",
+  publisher = "JSTOR",
+  volume    =  60,
+  number    =  2,
+  pages     =  287,
+  abstract  = "This paper tests the separation of farm labor supply and labor
+               demand decisions, using the observation that household
+               composition is an important determinant of farm labor use with
+               nonseparation. After assessing the conditions under which the
+               test has power against several alternatives, an empirical model
+               is developed to test the proposition that farm employment is
+               independent of family composition. The model is estimated on a
+               data set from rural Java. The null hypothesis that farm labor
+               allocation decisions are independent of household structure is
+               not rejected. The results are robust to different specifications
+               of the labor demand function. Copyright 1992 by The Econometric
+               Society.",
+  month     =  mar,
+  year      =  1992
+}
+
+@ARTICLE{Carter1984-aj,
+  title     = "Identification of the inverse relationship between farm size and
+               productivity: An empirical analysis of peasant agricultural
+               production",
+  author    = "Carter, M",
+  journal   = "Oxford Economic Papers",
+  publisher = "Oxford University Press",
+  volume    =  36,
+  number    =  1,
+  pages     = "131--145",
+  abstract  = "The data for this study are from farm management surveys taken in
+               the Indian state of Haryana during the agricultural years
+               1969I70-1971I72.2 For each of the three years, 162 holdings were
+               selected through a multi- stage stratified random sampling
+               procedure. However, no data were ob- tained from 22\% of the
+               selected holdings because of the unwillingness or inability of
+               the farmers to keep the required records. Illiteracy was given as
+               the major reason these observations were lost. The potentially
+               pernicious effect of this non-random selection process, and a
+               procedure which corrects for it, will be discussed below. In
+               total, data is available on 376 holdings. Each observation is
+               identified only by its district and village location, and it
+               cannot be determined if any individual holding was repeatedly
+               sampled over time. But, there are at least two observations on
+               all but fifteen of the 94 villages represented in the total
+               sample. In anticipation of later analysis which requires multiple
+               observations",
+  month     =  mar,
+  year      =  1984
 }

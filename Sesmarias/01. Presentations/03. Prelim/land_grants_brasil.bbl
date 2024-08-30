@@ -60,6 +60,54 @@
       \field{title}{The colonial origins of comparative development: An empirical investigation}
       \field{year}{2001}
     \endentry
+    \entry{Alston2010-cn}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7b8aabee11e4b6d9617c673739a57e2b}{%
+           family={Alston},
+           familyi={A\bibinitperiod},
+           given={Lee\bibnamedelima J},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55c31113d6ca2b1a3d499a08f7056364}{%
+           family={Libecap},
+           familyi={L\bibinitperiod},
+           given={Gary\bibnamedelima D},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=711e27d73bca8b195b6e2eaf7e92aecf}{%
+           family={Mueller},
+           familyi={M\bibinitperiod},
+           given={Bernardo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Ann Arbor, MI}%
+      }
+      \list{publisher}{1}{%
+        {University of Michigan Press}%
+      }
+      \strng{namehash}{0313dc7b7b270e165d234f263d10df61}
+      \strng{fullhash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \strng{bibnamehash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \strng{authorbibnamehash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \strng{authornamehash}{0313dc7b7b270e165d234f263d10df61}
+      \strng{authorfullhash}{c7d793bf3cd66292ed4a4572a7df61ca}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Amazon, the world's largest rain forest, is the last frontier in Brazil. The settlement of large and small farmers, squatters, miners, and loggers in this frontier during the past thirty years has given rise to violent conflicts over land as well as environmental duress. Titles, Conflict, and Land Use examines the institutional development involved in the process of land use and ownership in the Amazon and shows how this phenomenon affects the behavior of the economic actors. It explores the way in which the absence of well-defined property rights in the Amazon has led to both economic and social problems, including lost investment opportunities, high costs in protecting claims, and violence. The relationship between land reform and violence is given special attention. The book offers an important application of the New Institutional Economics by examining a rare instance where institutional change can be empirically observed. This allows the authors to study property rights as they emerge and evolve and to analyze the effects of Amazon development on the economy. In doing so they illustrate well the point that often the evolution of economic institutions will not lead to efficient outcomes. This book will be important not only to economists but also to Latin Americanists, political scientists, anthropologists, and scholars in disciplines concerned with the environment. Lee Alston is Professor of Economics, University of Illinois, and Research Associate for the National Bureau of Economic Research. Gary Libecap is Professor of Economics and Law, University of Arizona, and Research Associate for the National Bureau of Economic Research. Bernardo Mueller is Assistant Professor, Universidade de Brasilia.}
+      \field{month}{5}
+      \field{series}{Economics, Cognition, and Society}
+      \field{title}{Titles, conflict, and land use: The development of property rights and land reform on the Brazilian Amazon frontier}
+      \field{year}{2010}
+    \endentry
     \entry{Banerjee2005-ki}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=027abafc894615db04e1c3f3dc5931c4}{%
@@ -75,6 +123,9 @@
            giveni={L\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
       \strng{namehash}{18edac96fea31ae12a7b321c919f67db}
       \strng{fullhash}{b7b9e42a898196fe3d292b5e10bee176}
       \strng{bibnamehash}{b7b9e42a898196fe3d292b5e10bee176}
@@ -89,13 +140,85 @@
       \field{labeltitlesource}{title}
       \field{abstract}{History, Institutions, and Economic Performance: The Legacy of Colonial Land Tenure Systems in India by Abhijit Banerjee and Lakshmi Iyer. Published in volume 95, issue 4, pages 1190-1213 of American Economic Review, September 2005, Abstract: We analyze the colonial land revenue institutions set up...}
       \field{journaltitle}{Am. Econ. Rev.}
-      \field{month}{9}
+      \field{month}{8}
       \field{number}{4}
-      \field{title}{History, Institutions, and Economic Performance: The Legacy of Colonial Land Tenure Systems in India}
+      \field{title}{History, institutions, and economic performance: The legacy of colonial land tenure systems in India}
       \field{volume}{95}
       \field{year}{2005}
       \field{pages}{1190\bibrangedash 1213}
       \range{pages}{24}
+    \endentry
+    \entry{Barsanetti2021-hp}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=09920e5dbc44b9c565bbefba308ac08d}{%
+           family={Barsanetti},
+           familyi={B\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{09920e5dbc44b9c565bbefba308ac08d}
+      \strng{fullhash}{09920e5dbc44b9c565bbefba308ac08d}
+      \strng{bibnamehash}{09920e5dbc44b9c565bbefba308ac08d}
+      \strng{authorbibnamehash}{09920e5dbc44b9c565bbefba308ac08d}
+      \strng{authornamehash}{09920e5dbc44b9c565bbefba308ac08d}
+      \strng{authorfullhash}{09920e5dbc44b9c565bbefba308ac08d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Does the geographic distribution of pre-Columbian societies determine the location of New World cities? This paper provides evidence that a pre-colonial indigenous trail influenced the location of modern cities in southern Brazil. To distinguish the causal effects of historical settlement near the trail from the effects of geographic fundamentals that could correlate with it, I compare how population density and urbanization change with proximity to the trail in two different regions. The first region has been settled by Europeans since the 16th century, while European settlement in the second region was interrupted after a 17th-century slave raid. Proximity to the indigenous path is associated with higher population density and urbanization in the first region, but not in the second. These findings suggest a path dependence that goes back to the pre-colonial past.}
+      \field{journaltitle}{J. Urban Econ.}
+      \field{month}{3}
+      \field{number}{103317}
+      \field{title}{Cities on pre-Columbian paths}
+      \field{volume}{122}
+      \field{year}{2021}
+      \field{pages}{103317}
+      \range{pages}{1}
+      \keyw{Urbanization; city location; path dependence}
+    \endentry
+    \entry{Bethell1984-of}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b455c393882fef8c3999920f8690b01}{%
+           family={Bethell},
+           familyi={B\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Cambridge, England ;}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{fullhash}{8b455c393882fef8c3999920f8690b01}
+      \strng{bibnamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authorbibnamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authornamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authorfullhash}{8b455c393882fef8c3999920f8690b01}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Cambridge history of Latin America}
+      \field{year}{1984}
+      \keyw{Latin America -- History}
     \endentry
     \entry{Da_Costa_Porto1979-dz}{book}{}
       \name{author}{1}{}{%
@@ -167,57 +290,44 @@
       \field{pages}{606\bibrangedash 625}
       \range{pages}{20}
     \endentry
-    \entry{Galor2009-bc}{article}{}
-      \name{author}{3}{ul=2}{%
-        {{un=0,uniquepart=base,hash=5bd32628f8a80555d67d5ecc79ec0a6d}{%
-           family={Galor},
-           familyi={G\bibinitperiod},
-           given={Oded},
-           giveni={O\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3bb5cda235ff633959e38d88f3d27cfc}{%
-           family={Moav},
-           familyi={M\bibinitperiod},
-           given={Omer},
-           giveni={O\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1220e7b2fdf66fe97b158e379b079b28}{%
-           family={Vollrath},
-           familyi={V\bibinitperiod},
-           given={Dietrich},
-           giveni={D\bibinitperiod},
+    \entry{Fausto2014-bh}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d569fc63042aed8fd5cb86dddbc6b7a1}{%
+           family={Fausto},
+           familyi={F\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
            givenun=0}}%
       }
       \list{language}{1}{%
         {en}%
       }
-      \list{publisher}{1}{%
-        {Oxford University Press (OUP)}%
+      \list{location}{1}{%
+        {Cambridge, England}%
       }
-      \strng{namehash}{63da060ff6c785faa00e345089591b65}
-      \strng{fullhash}{6a049b37603d8c7735766467c4811d32}
-      \strng{bibnamehash}{6a049b37603d8c7735766467c4811d32}
-      \strng{authorbibnamehash}{6a049b37603d8c7735766467c4811d32}
-      \strng{authornamehash}{63da060ff6c785faa00e345089591b65}
-      \strng{authorfullhash}{6a049b37603d8c7735766467c4811d32}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{fullhash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{bibnamehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{authorbibnamehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{authornamehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{authorfullhash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This paper suggests that inequality in the distribution of landownership adversely affected the emergence of human-capital promoting institutions (e.g. public schooling), and thus the pace and the nature of the transition from an agricultural to an industrial economy, contributing to the emergence of the great divergence in income per capita across countries. The prediction of the theory regarding the adverse effect of the concentration of landownership on education expenditure is established empirically based on evidence from the beginning of the 20th century in the U.S.}
-      \field{journaltitle}{Rev. Econ. Stud.}
-      \field{month}{1}
-      \field{number}{1}
-      \field{title}{Inequality in landownership, the emergence of human-capital promoting institutions, and the great divergence}
-      \field{volume}{76}
-      \field{year}{2009}
-      \field{pages}{143\bibrangedash 179}
-      \range{pages}{37}
+      \field{abstract}{The second edition of A Concise History of Brazil offers a sweeping yet accessible history of Latin America's largest country. Boris Fausto examines Brazil's history from the arrival of the Portuguese in the New World through the long and sometimes rocky transition from independence in 1822 to democracy in the twentieth century. In a completely new chapter, his son Sergio Fausto, a prominent political scientist, brings the history up to the present, focusing on Brazil's increasing global economic importance as well as its continued democratic development and the challenges the country faces to meet the higher expectations of its people.}
+      \field{edition}{2}
+      \field{month}{8}
+      \field{title}{Cambridge concise histories: A concise history of Brazil}
+      \field{year}{2014}
     \endentry
     \entry{Galor2016-ba}{article}{}
-      \name{author}{2}{ul=2}{%
+      \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=5bd32628f8a80555d67d5ecc79ec0a6d}{%
            family={Galor},
            familyi={G\bibinitperiod},
@@ -231,11 +341,14 @@
            giveni={Ö\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{783760bd13d4b604989e9ac6c19333ed}
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f8a318281e2fe821ac68f83ddce55163}
       \strng{fullhash}{783760bd13d4b604989e9ac6c19333ed}
       \strng{bibnamehash}{783760bd13d4b604989e9ac6c19333ed}
       \strng{authorbibnamehash}{783760bd13d4b604989e9ac6c19333ed}
-      \strng{authornamehash}{783760bd13d4b604989e9ac6c19333ed}
+      \strng{authornamehash}{f8a318281e2fe821ac68f83ddce55163}
       \strng{authorfullhash}{783760bd13d4b604989e9ac6c19333ed}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
@@ -243,48 +356,16 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The Agricultural Origins of Time Preference by Oded Galor and Ömer Özak. Published in volume 106, issue 10, pages 3064-3103 of American Economic Review, October 2016, Abstract: This research explores the origins of observed differences in time preference across countries and regions. Exploiting a...}
+      \field{abstract}{This research explores the origins of observed differences in time preference across countries and regions. Exploiting a natural experiment associated with the expansion of suitable crops for cultivation in the course of the Columbian Exchange, the research establishes that pre-industrial agro-climatic characteristics that were conducive to higher return to agricultural investment, triggered selection, adaptation and learning processes that generated a persistent positive effect on the prevalence of long-term orientation in the contemporary era. Furthermore, the research establishes that these agro-climatic characteristics have had a culturally embodied impact on economic behavior such as technological adoption, education, saving, and smoking.}
       \field{journaltitle}{Am. Econ. Rev.}
       \field{month}{10}
       \field{number}{10}
-      \field{title}{The Agricultural Origins of Time Preference}
+      \field{title}{The agricultural origins of time preference<sup/>}
       \field{volume}{106}
       \field{year}{2016}
       \field{pages}{3064\bibrangedash 3103}
       \range{pages}{40}
-    \endentry
-    \entry{Laudares2022-vy}{misc}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=dc40e09e42fc26210abcee874e06f9a6}{%
-           family={Laudares},
-           familyi={L\bibinitperiod},
-           given={Humberto},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a361acc489cd2a17f4ebc3f269bed664}{%
-           family={Caicedo},
-           familyi={C\bibinitperiod},
-           given={Felipe\bibnamedelima Valencia},
-           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e9a83d2de851b099fee214d4c623b5e4}
-      \strng{fullhash}{5ed6d6165bfdae227fc8990e8e069305}
-      \strng{bibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
-      \strng{authorbibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
-      \strng{authornamehash}{e9a83d2de851b099fee214d4c623b5e4}
-      \strng{authorfullhash}{5ed6d6165bfdae227fc8990e8e069305}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This article documents the long-term impact of slavery on inequality at the receiving end. We focus on Brazil, the largest receiver of African slaves and the last country to abolish this institution in the Western Hemisphere, in 1888. To deal with the endogeneity of slavery placement, we use a spatial Regression Discontinuity Design (RDD), exploiting the Tordesillas Treaty, which established the colonial boundaries between the Portuguese and Spanish empires within Brazil. We find that the number of slaves in 1872 is discontinuously higher on the Portuguese side of the border, consistent with this power's comparative advantage in transatlantic slavery. We then show how this differential slave rate led to higher modern income inequality of 0.04 points (of the Gini Index), close to 10\% of the average income inequality in the country. In terms of mechanisms, we find a wider income gap, and important differences in education, employment and prejudice for blacks in modern times. We rule out the role of colonizer identity and other mechanisms proposed in the historical literature.}
-      \field{howpublished}{\url{https://conference.nber.org/conf\_papers/f164242.pdf}}
-      \field{note}{Accessed: 2022-10-3}
-      \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
-      \field{year}{2022}
+      \keyw{Comparative Development; Cultural Evolution; D14; D90; Delayed Gratification; E21; Economic Development; Education; Human Capital; I12; I25; J24; J26; O10; O33; O40; Saving; Smoking; Time preference; Z1}
     \endentry
     \entry{Lima1954-td}{book}{}
       \name{author}{1}{}{%
@@ -343,8 +424,11 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
       }
+      \list{language}{1}{%
+        {en}%
+      }
       \list{publisher}{1}{%
-        {Cambridge University Press}%
+        {Cambridge University Press (CUP)}%
       }
       \strng{namehash}{7c3d890828f43d37274d4555d56d3baa}
       \strng{fullhash}{4109067c9abd85b53a5cbc5c8f1e0207}
@@ -362,7 +446,7 @@
       \field{journaltitle}{J. Econ. Hist.}
       \field{month}{9}
       \field{number}{3}
-      \field{title}{Colonial Institutions, Trade Shocks, and the Diffusion of Elementary Education in Brazil, {1889–1930}}
+      \field{title}{Colonial institutions, trade shocks, and the diffusion of elementary education in Brazil, {1889–1930}}
       \field{volume}{74}
       \field{year}{2014}
       \field{pages}{730\bibrangedash 766}
@@ -393,7 +477,7 @@
         {en}%
       }
       \list{publisher}{1}{%
-        {Cambridge University Press}%
+        {Cambridge University Press (CUP)}%
       }
       \strng{namehash}{ec18a61a2e4127cb9ba6202ee06f8ac0}
       \strng{fullhash}{e833784bf4dbac8c793b0acc9826ac40}
@@ -411,7 +495,7 @@
       \field{journaltitle}{J. Econ. Hist.}
       \field{month}{5}
       \field{number}{2}
-      \field{title}{Institutional Development and Colonial Heritage within Brazil}
+      \field{title}{Institutional development and colonial heritage within Brazil}
       \field{volume}{72}
       \field{year}{2012}
       \field{pages}{393\bibrangedash 422}
@@ -451,6 +535,43 @@
       \field{title}{The Land and People of Northeast Brazil}
       \field{year}{1980}
     \endentry
+    \entry{Ribeiro2012-lb}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cb41ac7c0964443fdaf111eaefba097e}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Ricardo\bibnamedelima Ferreira},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{fullhash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{bibnamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authorbibnamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authornamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authorfullhash}{cb41ac7c0964443fdaf111eaefba097e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{During the twentieth century, Brazil developed its beef industry, acquiring in the last decade great importance in the international market. This article considers four exotic factors that contributed to its moving from importer of beef to the largest exporter: the raising of cattle of Iberian origin, since the sixteenth century; the Zebu breed brought from India at the end of the nineteenth century; the grass brought from Africa, for the cattle to graze; and barbed wire, invented in the United States, which deepened land concentration in the country. Each factor has distinct geographical origins, but all acted together, like the four ‘legs’ that sustain this immense bovine, to enable its adaptation to Brazilian lands. These four factors, before obtaining success and hegemony, encountered resistance and created controversy, not only for ideological and technical reasons, but also the conflicts of interest that their arrival represented.}
+      \field{journaltitle}{Agrar. S. J. Polit. Econ.}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{The ox from the Four Corners of the world: The historic origins of the Brazilian beef industry}
+      \field{volume}{1}
+      \field{year}{2012}
+      \field{pages}{315\bibrangedash 340}
+      \range{pages}{26}
+    \endentry
     \entry{Sellars2018-yp}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c4d813e1ac55d19bcbbab156ed9d9c12}{%
@@ -465,6 +586,12 @@
            given={Jennifer},
            giveni={J\bibinitperiod},
            givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
       }
       \strng{namehash}{02a40ed9cc840e8125b1397a912791ca}
       \strng{fullhash}{0602fb91d8b45700f1b40557a08ccc12}
@@ -624,6 +751,12 @@
            giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
            givenun=0}}%
       }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
       \strng{namehash}{be99902df7ce689e312440fd123aee97}
       \strng{fullhash}{472a2e99c451fcad4176a506130d4f17}
       \strng{bibnamehash}{472a2e99c451fcad4176a506130d4f17}
@@ -636,11 +769,11 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Institutions, Factor Endowments, and Paths of Development in the New World by Kenneth L. Sokoloff and Stanley L. Engerman. Published in volume 14, issue 3, pages 217-232 of Journal of Economic Perspectives, Summer 2000, Abstract: The explanations offered for the contrasting records of long-run growt...}
+      \field{abstract}{The explanations offered for the contrasting records of long-run growth and development among the societies of North and South America most often focus on institutions. The traditional explanations for the sources of these differences in institutions, typically highlight the significance of national heritage or religion. We, in contrast, argue that a hemispheric perspective across the wide range of colonies established in the New World by the Europeans suggests that although there were many influences, factor endowments or initial conditions had profound and enduring effects on the long-run paths of institutional and economic development followed by the respective economies.}
       \field{journaltitle}{J. Econ. Perspect.}
-      \field{month}{9}
+      \field{month}{8}
       \field{number}{3}
-      \field{title}{Institutions, Factor Endowments, and Paths of Development in the New World}
+      \field{title}{History lessons: Institutions, factor endowments, and paths of development in the New World}
       \field{volume}{14}
       \field{year}{2000}
       \field{pages}{217\bibrangedash 232}
@@ -680,8 +813,12 @@
            giveni={E\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {Springer}%
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
       }
       \strng{namehash}{06408d5540b193d6cc53b24dbdb9bb10}
       \strng{fullhash}{06408d5540b193d6cc53b24dbdb9bb10}
@@ -696,7 +833,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This research examines the effects of inequality on long-run development within Brazil. I first exploit variation in temperature and precipitation to instrument for the local distribution of land in 1920 using a two stage least squares instrumental variables framework. My instrument is an index quantifying the suitability of local climatic conditions for plantation versus smallholder agriculture. I construct this index using information on the growing conditions of crops within certain plant taxonomies that are more biologically suited for smallholder or plantation production. I argue that this index more fully identifies the optimal environmental conditions for these two types of agricultural production, and I show that it serves as a robust predictor of local land inequality in the year 1920. IV estimates then reveal that greater inequality is associated with less local government spending on welfare and public goods over the 1995-2005 time period, as well as reductions in measures of local government quality and per-child education spending. It is also associated with lower levels of development, as measured by the local Human Development Index (HDI) for the year 2000. Inequality primarily affects the HDI through shorter life expectancies and lower incomes. I argue that the latter is consistent with the agrarian elite obstructing the transition of the local economy from agriculture to industry/services, as historically unequal municipalities contain a greater percentage of workers in the lower-wage agriculture sector, and this sector itself constitutes a larger share of local GDP.}
-      \field{journaltitle}{J. Econ. Growth}
+      \field{journaltitle}{J. Econ. Growth (Boston)}
       \field{month}{12}
       \field{number}{4}
       \field{title}{Legacies of inequality: the case of Brazil}
@@ -706,6 +843,7 @@
       \range{pages}{47}
     \endentry
   \enddatalist
+  \missing{Laudares2022-vy}
 \endrefsection
 \endinput
 

@@ -1,0 +1,78 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+rm(list = ls())
+
+library(ggplot2)
+library(ggspatial)
+library(tidyr)
+library(dplyr)
+library(sf)
+library(raster)
+library(nngeo)
+library(geobr)
+library(terra)
+library(readxl)
+library(exactextractr)
+library(modelsummary) 
+config_modelsummary(factory_default = 'kableExtra')
+options(modelsummary_factory_latex = 'kableExtra')
+library(kableExtra)
+library(stringr)
+library(plyr)
+library(stringr)
+library(gtools)
+library(censobr)
+library(MatchIt)
+library(estimatr)
+
+'%!in%' <- function(x,y)!('%in%'(x,y))
+
+if (.Platform$OS.type == "windows") {
+  path = 'C:/Users/vo10/OneDrive - University of Illinois - Urbana'
+  
+} else if (.Platform$OS.type == "unix") {
+  path = '~/OneDrive - University of Illinois - Urbana'
+  
+      images <- "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/02. Figures/00.Maps"
+      
+      tables <- "/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research/Projects/JMP/03. Tables"
+}
+
+municipalities = 
+  read_sf(paste0(path, "/Research Data/Brazil/Shapefiles/Municipalities_1997/Municipios_1997_x_Planilha_Vini/Municipios_1997_x_Planilha_Vini.shp"))
+
+source(paste0(path, "/Research/Functions/Geographical_Extraction.R"))
+
+source(paste0(path,"/Research/Functions/Sesmarias_Extractor.R"))
+```
+
+```{r}
+gini_1920 <- haven::read_dta("/Users/vinicius/Library/CloudStorage/OneDrive-UniversityofIllinois-Urbana/Research Data/Brazil/Censo 1920/land_gini1920.dta")
+colnames(gini_1920)[1] <- "code_muni"
+
+municipalities <- geobr::read_municipality(year = 1920)
+
+municipalities <- merge(municipalities, gini_1920, by = c("code_muni"))
+
+sesmaria_states <- c("BA", "PB", "RN", "PE", "AL", "MG", "SP")
+
+municipalities <- subset(municipalities, abbrev_state %in% sesmaria_states)
+
+k <- sesmarias_extractor(municipalities)
+
+municipalities <- k[[1]]
+
+municipalities <- 
+  geography_extractor(municipalities)
+
+municipalities <- cbind(municipalities, st_coordinates(st_centroid(municipalities)))
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = municipalities, fill = "red")
+```

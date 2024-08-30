@@ -1,0 +1,3042 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Acemoglu2005-ti}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ead6a4fdd114ed9b8c4c507081d69860}{%
+           family={Acemoglu},
+           familyi={A\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38e00ab25a60509b785c20ef8caa89b9}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=974873287a7760126350afac970c1e81}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e7b1e577eb9045ff0efb712bcdd5b943}
+      \strng{fullhash}{215c63a6d8897429770713c6ff5fc605}
+      \strng{bibnamehash}{215c63a6d8897429770713c6ff5fc605}
+      \strng{authorbibnamehash}{215c63a6d8897429770713c6ff5fc605}
+      \strng{authornamehash}{e7b1e577eb9045ff0efb712bcdd5b943}
+      \strng{authorfullhash}{215c63a6d8897429770713c6ff5fc605}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper develops the empirical and theoretical case that differences in economic institutions are the fundamental cause of differences in economic development. We first document the empirical importance of institutions by focusing on two ``quasi-natural experiments'' in history, the division of Korea into two parts with very different economic institutions and the colonization of much of the world by European powers starting in the fifteenth century. We then develop the basic outline of a framework for thinking about why economic institutions differ across countries. Economic institutions determine the incentives of and the constraints on economic actors, and shape economic outcomes. As such, they are social decisions, chosen for their consequences. Because different groups and individuals typically benefit from different economic institutions, there is generally a conflict over these social choices, ultimately resolved in favor of groups with greater political power. The distribution of political power in society is in turn determined by political institutions and the distribution of resources. Political institutions allocate de jure political power, while groups with greater economic might typically possess greater de facto political power. We therefore view the appropriate theoretical framework as a dynamic one with political institutions and the distribution of resources as the state variables. These variables themselves change over time because prevailing economic institutions affect the distribution of resources, and because groups with de facto political power today strive to change political institutions in order to increase their de jure political power in the future. Economic institutions encouraging economic growth emerge when political institutions allocate power to groups with interests in broad-based property rights enforcement, when they create effective constraints on power-holders, and when there are relatively few rents to be captured by power-holders. We illustrate the assumptions, the workings and the implications of this framework using a number of historical examples.}
+      \field{journaltitle}{National Bureau of Economic Research}
+      \field{title}{Institutions as a fundamental cause of Long-Run growth}
+      \field{year}{2005}
+      \field{pages}{385\bibrangedash 472}
+      \range{pages}{88}
+    \endentry
+    \entry{Akee2014-uw}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=25ed7e89501182bf68e30b1fac817325}{%
+           family={Akee},
+           familyi={A\bibinitperiod},
+           given={Randall},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01fe30d248e48f7bab2774f427edc79a}{%
+           family={Jorgensen},
+           familyi={J\bibinitperiod},
+           given={Miriam},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{6391909cf2a3a2c44a18335d532550f1}
+      \strng{fullhash}{6391909cf2a3a2c44a18335d532550f1}
+      \strng{bibnamehash}{6391909cf2a3a2c44a18335d532550f1}
+      \strng{authorbibnamehash}{6391909cf2a3a2c44a18335d532550f1}
+      \strng{authornamehash}{6391909cf2a3a2c44a18335d532550f1}
+      \strng{authorfullhash}{6391909cf2a3a2c44a18335d532550f1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We test the hypothesis that property institutions are responsible for the persistent low levels of business and economic development on American Indian reservations. American Indian lands are held in trust by the US Federal government and may not be used as collateral. We exploit the uniform and equal distribution of land between the Agua Caliente tribe and non-Indians in Palm Springs, CA in our analysis. Due to the General Allotment Act of 1887, the land was divided in a checkerboard pattern with even-numbered parcels provided to Agua Caliente government or individual tribal members and odd-numbered parcels (held in fee-simple status) were sold to non-Indians. Because of this, we overcome the usual land quality selection problem between the two types of property institutions. We find that holding local amenities and other characteristics of the parcel constant, there is no difference in the level of business investment on trust and fee simple properties. These results indicate that the inability to use American Indian land as collateral does not drive the low levels of observed business investment; other mechanisms and institutions may be the culprit.}
+      \field{journaltitle}{Reg. Sci. Urban Econ.}
+      \field{month}{5}
+      \field{title}{Property institutions and business investment on American Indian reservations}
+      \field{volume}{46}
+      \field{year}{2014}
+      \field{pages}{116\bibrangedash 125}
+      \range{pages}{10}
+    \endentry
+    \entry{Allen2019-kh}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=03906f8f9ec86a54bb146c9aac218ed0}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Douglas\bibnamedelima W},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{03906f8f9ec86a54bb146c9aac218ed0}
+      \strng{fullhash}{03906f8f9ec86a54bb146c9aac218ed0}
+      \strng{bibnamehash}{03906f8f9ec86a54bb146c9aac218ed0}
+      \strng{authorbibnamehash}{03906f8f9ec86a54bb146c9aac218ed0}
+      \strng{authornamehash}{03906f8f9ec86a54bb146c9aac218ed0}
+      \strng{authorfullhash}{03906f8f9ec86a54bb146c9aac218ed0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The first land grant act for a transcontinental railroad and the Homestead Act were both passed in 1862. Each gave away massive federal lands, created incentives to rush construction and settlement, and (at least partly) dissipated land values. I argue that these apparently wealth-reducing actions rationally utilized railroads and settlers to establish meaningful federal ownership over the frontier and allowed for future federal land sales to take place. This paper examines the tenuous US sovereignty in the West, the institutional details of the land grants, and (using newly digitized records) the relationship among railroads, homesteads, and cash sales to test the theory that “giving away an empire” was a rational strategy to establish economic property rights through quick occupation.}
+      \field{journaltitle}{J. Law Econ.}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Establishing economic property rights by giving away an empire}
+      \field{volume}{62}
+      \field{year}{2019}
+      \field{pages}{251\bibrangedash 280}
+      \range{pages}{30}
+    \endentry
+    \entry{Amatulli2018-gl}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=85f192d753a308774e16b710ed845446}{%
+           family={Amatulli},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5f44ce630522792e51551ff3b30f126}{%
+           family={Domisch},
+           familyi={D\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2cd6fa4a07854d8bdff169cc59be4d}{%
+           family={Tuanmu},
+           familyi={T\bibinitperiod},
+           given={Mao-Ning},
+           giveni={M\bibinithyphendelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3eb3bb168f070e8a527eac540dfe9f6d}{%
+           family={Parmentier},
+           familyi={P\bibinitperiod},
+           given={Benoit},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ba912be6b292f270961a9c5698bf213}{%
+           family={Ranipeta},
+           familyi={R\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f55ccf40ef924155d99c4ecc86a1d99a}{%
+           family={Malczyk},
+           familyi={M\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20ac2735e7001c0b59816963e36a40ef}{%
+           family={Jetz},
+           familyi={J\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{640637358728f315cfdc40909594830e}
+      \strng{fullhash}{0876f53527473e1bdbe1f720d5ce0a8a}
+      \strng{bibnamehash}{0876f53527473e1bdbe1f720d5ce0a8a}
+      \strng{authorbibnamehash}{0876f53527473e1bdbe1f720d5ce0a8a}
+      \strng{authornamehash}{640637358728f315cfdc40909594830e}
+      \strng{authorfullhash}{0876f53527473e1bdbe1f720d5ce0a8a}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Topographic variation underpins a myriad of patterns and processes in hydrology, climatology, geography and ecology and is key to understanding the variation of life on the planet. A fully standardized and global multivariate product of different terrain features has the potential to support many large-scale research applications, however to date, such datasets are unavailable. Here we used the digital elevation model products of global 250 m GMTED2010 and near-global 90 m SRTM4.1dev to derive a suite of topographic variables: elevation, slope, aspect, eastness, northness, roughness, terrain roughness index, topographic position index, vector ruggedness measure, profile/tangential curvature, first/second order partial derivative, and 10 geomorphological landform classes. We aggregated each variable to 1, 5, 10, 50 and 100 km spatial grains using several aggregation approaches. While a cross-correlation underlines the high similarity of many variables, a more detailed view in four mountain regions reveals local differences, as well as scale variations in the aggregated variables at different spatial grains. All newly-developed variables are available for download at Data Citation 1 and for download and visualization at http://www.earthenv.org/topography.}
+      \field{journaltitle}{Sci. Data}
+      \field{month}{3}
+      \field{title}{A suite of global, cross-scale topographic variables for environmental and biodiversity modeling}
+      \field{volume}{5}
+      \field{year}{2018}
+      \field{pages}{180040}
+      \range{pages}{1}
+    \endentry
+    \entry{Anderson1949-aa}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9f551bf4b2ca69aea9ce920ba4cd1357}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={T\bibnamedelima W},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17377820d822f081130e79bb2745d0f6}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{5e90dc3629504255bc7494836162d1d5}
+      \strng{fullhash}{5e90dc3629504255bc7494836162d1d5}
+      \strng{bibnamehash}{5e90dc3629504255bc7494836162d1d5}
+      \strng{authorbibnamehash}{5e90dc3629504255bc7494836162d1d5}
+      \strng{authornamehash}{5e90dc3629504255bc7494836162d1d5}
+      \strng{authorfullhash}{5e90dc3629504255bc7494836162d1d5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{[A method is given for estimating the coefficients of a single equation in a complete system of linear stochastic equations (see expression (2.1)), provided that a number of the coefficients of the selected equation are known to be zero. Under the assumption of the knowledge of all variables in the system and the assumption that the disturbances in the equations of the system are normally distributed, point estimates are derived from the regressions of the jointly dependent variables on the predetermined variables (Theorem 1). The vector of the estimates of the coefficients of the jointly dependent variables is the characteristic vector of a matrix involving the regression coefficients and the estimate of the covariance matrix of the residuals from the regression functions. The vector corresponding to the smallest characteristic root is taken. An efficient method of computing these estimates is given in section 7. The asymptotic theory of these estimates is given in a following paper [2]. When the predetermined variables can be considered as fixed, confidence regions for the coefficients can be obtained on the basis of small sample theory (Theorem 3). A statistical test for the hypothesis of over-identification of the single equation can be based on the characteristic root associated with the vector of point estimates (Theorem 2) or on the expression for the small sample confidence region (Theorem 4). This hypothesis is equivalent to the hypothesis that the coefficients assumed to be zero actually are zero. The asymptotic distribution of the criterion is shown in a following paper [2] to be that of χ2.]}
+      \field{journaltitle}{Annals of Mathematical Statistics}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Estimation of the parameters of a single equation in a complete system of stochastic equations}
+      \field{volume}{20}
+      \field{year}{1949}
+      \field{pages}{46\bibrangedash 63}
+      \range{pages}{18}
+    \endentry
+    \entry{Andrade1980-zd}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfe2ca8fe650891f00f654487b230386}{%
+           family={Andrade},
+           familyi={A\bibinitperiod},
+           given={Manuel\bibnamedelimb Correia\bibnamedelimb de\bibnamedelima Oliveira},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Livraria Duas Cidades}%
+      }
+      \strng{namehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{fullhash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{bibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorbibnamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authornamehash}{dfe2ca8fe650891f00f654487b230386}
+      \strng{authorfullhash}{dfe2ca8fe650891f00f654487b230386}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Coleção História e sociedade.}
+      \field{title}{Latifúndio e reforma agrária no Brasil}
+      \field{year}{1980}
+      \keyw{Land tenure -- Brazil}
+    \endentry
+    \entry{Azevedo1944-gs}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=11d2dd588b45705d2ad6a417a6349ef2}{%
+           family={Azevedo},
+           familyi={A\bibinitperiod},
+           given={Fernando\bibnamedelima de},
+           giveni={F\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=f652e2acd0390ad9f72ed7983ff027dc}{%
+           family={{COMPANHIA EDITORA NACIONAL}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{11d2dd588b45705d2ad6a417a6349ef2}
+      \strng{fullhash}{11d2dd588b45705d2ad6a417a6349ef2}
+      \strng{bibnamehash}{11d2dd588b45705d2ad6a417a6349ef2}
+      \strng{authorbibnamehash}{11d2dd588b45705d2ad6a417a6349ef2}
+      \strng{authornamehash}{11d2dd588b45705d2ad6a417a6349ef2}
+      \strng{authorfullhash}{11d2dd588b45705d2ad6a417a6349ef2}
+      \strng{editorbibnamehash}{f652e2acd0390ad9f72ed7983ff027dc}
+      \strng{editornamehash}{f652e2acd0390ad9f72ed7983ff027dc}
+      \strng{editorfullhash}{f652e2acd0390ad9f72ed7983ff027dc}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Cultura Brasileira — Introdução ao Estudo da Cultura no Brasil}
+      \field{year}{1944}
+    \endentry
+    \entry{Baer2014-gh}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=26c2ed0a6a18aa2755f831796c5a2373}{%
+           family={Baer},
+           familyi={B\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Lynne Rienner Publishers, Incorporated}%
+      }
+      \strng{namehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{fullhash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{bibnamehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{authorbibnamehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{authornamehash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \strng{authorfullhash}{26c2ed0a6a18aa2755f831796c5a2373}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this thorough description and analysis of Latin America's largest economy, Werner Baer traces the trajectory of Brazil's economic development and performance from the colonial period through the early years (2011-2012) of the administration of Dilma Rousseff. In addition to updated information, the seventh edition includes entirely new chapters on the challenges and accomplishments of the Lula/Rousseff period and also on the nature of human capital and the role of the education system in Brazil. With Brazil playing an increasingly major role on the global economic stage, this edition will be valuable both in the classroom and as an authoritative reference resource.}
+      \field{title}{The Brazilian Economy: Growth and Development}
+      \field{year}{2014}
+    \endentry
+    \entry{Banerjee2005-ki}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=027abafc894615db04e1c3f3dc5931c4}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Abhijit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d323edec08b9cdfccb11d18daa72806}{%
+           family={Iyer},
+           familyi={I\bibinitperiod},
+           given={Lakshmi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{fullhash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{bibnamehash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{authorbibnamehash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{authornamehash}{b7b9e42a898196fe3d292b5e10bee176}
+      \strng{authorfullhash}{b7b9e42a898196fe3d292b5e10bee176}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{History, Institutions, and Economic Performance: The Legacy of Colonial Land Tenure Systems in India by Abhijit Banerjee and Lakshmi Iyer. Published in volume 95, issue 4, pages 1190-1213 of American Economic Review, September 2005, Abstract: We analyze the colonial land revenue institutions set up...}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{History, institutions, and economic performance: The legacy of colonial land tenure systems in India}
+      \field{volume}{95}
+      \field{year}{2005}
+      \field{pages}{1190\bibrangedash 1213}
+      \range{pages}{24}
+    \endentry
+    \entry{Benjamin1995-ca}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fdde3e4892dde5a2b4c54cfacc263672}{%
+           family={Benjamin},
+           familyi={B\bibinitperiod},
+           given={Dwayne},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{fullhash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{bibnamehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{authorbibnamehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{authornamehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{authorfullhash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An inverse relationship between both farm productivity and labor intensity, and farm size, is a common empirical finding in developing country agriculture. The traditional explanation has been imperfect labor markets. Recently, it has been suggested instead that the inverse relationship is a statistical artifact resulting from omitted land quality. Using a farm-level data set from Java, I investigate whether omitted variable bias can explain the inverse relationship. I show that the inverse relationship and accompanying wage responses are inconsistent with a model of neoclassical farm behavior that ignores omitted variable bias. Instrumental variables techniques yield parameter estimates in which the inverse relationship is eliminated and the estimated wage elasticities are more in line with economic theory. Further econometric investigation hints that a model of omitted land quality may be a possible source of the inverse relationship. These results emphasize the importance of considering the sources of cross-sectional variation in estimating microeconomic relationships.}
+      \field{journaltitle}{J. Dev. Econ.}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Can unobserved land quality explain the inverse productivity relationship?}
+      \field{volume}{46}
+      \field{year}{1995}
+      \field{pages}{51\bibrangedash 84}
+      \range{pages}{34}
+    \endentry
+    \entry{Benjamin1992-tk}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fdde3e4892dde5a2b4c54cfacc263672}{%
+           family={Benjamin},
+           familyi={B\bibinitperiod},
+           given={Dwayne},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{fullhash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{bibnamehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{authorbibnamehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{authornamehash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \strng{authorfullhash}{fdde3e4892dde5a2b4c54cfacc263672}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper tests the separation of farm labor supply and labor demand decisions, using the observation that household composition is an important determinant of farm labor use with nonseparation. After assessing the conditions under which the test has power against several alternatives, an empirical model is developed to test the proposition that farm employment is independent of family composition. The model is estimated on a data set from rural Java. The null hypothesis that farm labor allocation decisions are independent of household structure is not rejected. The results are robust to different specifications of the labor demand function. Copyright 1992 by The Econometric Society.}
+      \field{journaltitle}{Econometrica}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Household composition, labor markets, and labor demand: Testing for separation in agricultural household models}
+      \field{volume}{60}
+      \field{year}{1992}
+      \field{pages}{287}
+      \range{pages}{1}
+    \endentry
+    \entry{Berry1979-ct}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9e8bc62f06faea41b1c4c2cecfc09f91}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={R\bibnamedelima Albert},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dd32c28fbf3c6e98a6923fddbaad020}{%
+           family={Cline},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima R},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Baltimore}%
+      }
+      \list{publisher}{1}{%
+        {Johns Hopkins University Press}%
+      }
+      \strng{namehash}{0f4e1209a765b06bdf00bb4cd1c484ee}
+      \strng{fullhash}{0f4e1209a765b06bdf00bb4cd1c484ee}
+      \strng{bibnamehash}{0f4e1209a765b06bdf00bb4cd1c484ee}
+      \strng{authorbibnamehash}{0f4e1209a765b06bdf00bb4cd1c484ee}
+      \strng{authornamehash}{0f4e1209a765b06bdf00bb4cd1c484ee}
+      \strng{authorfullhash}{0f4e1209a765b06bdf00bb4cd1c484ee}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Agrarian structure and productivity in developing countries : a study prepared for the International Labour Office within the framework of the World Employment Programme}
+      \field{year}{1979}
+      \keyw{Agriculture -- Economic aspects -- Developing countries}
+    \endentry
+    \entry{Bertola2017-hr}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ff0c74293cf26270cd1d860625fda2c0}{%
+           family={Bértola},
+           familyi={B\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1aed2a2bb100fde8d9016665895fc853}{%
+           family={Williamson},
+           familyi={W\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e0b5077d04f8ab80895d3b1ca789495e}
+      \strng{fullhash}{e0b5077d04f8ab80895d3b1ca789495e}
+      \strng{bibnamehash}{e0b5077d04f8ab80895d3b1ca789495e}
+      \strng{authorbibnamehash}{e0b5077d04f8ab80895d3b1ca789495e}
+      \strng{authornamehash}{e0b5077d04f8ab80895d3b1ca789495e}
+      \strng{authorfullhash}{e0b5077d04f8ab80895d3b1ca789495e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This book is open access under a CC BY 4.0 license.This book brings together a range of ideas and theories to arrive at a deeper understanding of inequality in Latin America and its complex realities. To so, it addresses questions such as: What are the origins of inequality in Latin America? How can we create societies that are more equal in terms of income distribution, gender equality and opportunities? How can we remedy the social divide that is making Latin America one of the most unequal regions on earth? What are the roles played by market forces, institutions and ideology in terms of inequality?In this book, a group of global experts gathered by the Institute for the Integration of Latin America and the Caribbean (INTAL), part of the Inter-American Development Bank (IDB), show readers how various types of inequality, such as economical, educational, racial and gender inequality have been practiced in countries like Brazil, Bolivia, Chile, Mexico and many others through the centuries.Presenting new ideas, new evidence, and new methods, the book subsequently analyzes how to move forward with second-generation reforms that lay the foundations for more egalitarian societies. As such, it offers a valuable and insightful guide for development economists, historians and Latin American specialists alike, as well as students, educators, policymakers and all citizens with an interest in development, inequality and the Latin American region.}
+      \field{month}{1}
+      \field{title}{Has Latin American Inequality Changed Direction?: Looking Over the Long Run}
+      \field{year}{2017}
+    \endentry
+    \entry{Bethell1984-of}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b455c393882fef8c3999920f8690b01}{%
+           family={Bethell},
+           familyi={B\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Cambridge, England ;}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{fullhash}{8b455c393882fef8c3999920f8690b01}
+      \strng{bibnamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authorbibnamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authornamehash}{8b455c393882fef8c3999920f8690b01}
+      \strng{authorfullhash}{8b455c393882fef8c3999920f8690b01}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Cambridge history of Latin America}
+      \field{year}{1984}
+      \keyw{Latin America -- History}
+    \endentry
+    \entry{Bianchi-Vimercati2022-jy}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=dfe871bc119cf94cc4560d234ac13b53}{%
+           family={Bianchi-Vimercati},
+           familyi={B\bibinithyphendelim V\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=120ecfb9f0a55e174df0b962b9fde945}{%
+           family={Lecce},
+           familyi={L\bibinitperiod},
+           given={Giampaolo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eec4ec6ee1d51430475c8715f6f2c3ac}{%
+           family={Magnaricotte},
+           familyi={M\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1bf4cc6434893855f8dcb6feb7b678d4}
+      \strng{fullhash}{20afc5449d9c987d2e891ae9db547ea3}
+      \strng{bibnamehash}{20afc5449d9c987d2e891ae9db547ea3}
+      \strng{authorbibnamehash}{20afc5449d9c987d2e891ae9db547ea3}
+      \strng{authornamehash}{1bf4cc6434893855f8dcb6feb7b678d4}
+      \strng{authorfullhash}{20afc5449d9c987d2e891ae9db547ea3}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Land distribution has ambiguous effects on structural transformation: large landowners can slow industrialization by limiting the provision of education, but larger scale and local market power might accelerate the mechanization of production. We examine the effects of redistribution following the Italian 1950 land reform and ﬁnd that redistribution led to less industrialization. We explain this ﬁnding with a reduction in the scale of operations and a more intensive use of family labor. Agricultural specialization persisted for at least 50 years, consistent with models of occupational inheritance. Finally, we show that expropriated areas had lower growth during 1970-2000}
+      \field{title}{Persistent specialization and growth: The Italian land reform}
+      \field{year}{2022}
+    \endentry
+    \entry{Bradford_Burns1993-nw}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ab5cfad328819daf3c9d466bd07480a9}{%
+           family={Bradford\bibnamedelima Burns},
+           familyi={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Columbia University Press}%
+      }
+      \strng{namehash}{ab5cfad328819daf3c9d466bd07480a9}
+      \strng{fullhash}{ab5cfad328819daf3c9d466bd07480a9}
+      \strng{bibnamehash}{ab5cfad328819daf3c9d466bd07480a9}
+      \strng{authorbibnamehash}{ab5cfad328819daf3c9d466bd07480a9}
+      \strng{authornamehash}{ab5cfad328819daf3c9d466bd07480a9}
+      \strng{authorfullhash}{ab5cfad328819daf3c9d466bd07480a9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Here is a new edition of the book generally acclaimed as the best single-volume history of Brazil. It has been thoroughly revised and updated to include expanded treatment of intellectual, social, and popular history, and to provide increased coverage of labor, blacks, women, and the military in Brazilian history. Complete in breadth and chronological span, A History of Brazil is a panoramic interpretation of the Brazilian past from discovery to the present that treats the economic, social, cultural, and political evolution of Latin America's largest nation.}
+      \field{title}{A History of Brazil}
+      \field{year}{1993}
+    \endentry
+    \entry{Bruhn2012-cc}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9ab0fe82356e9792201c8d0959bc769b}{%
+           family={Bruhn},
+           familyi={B\bibinitperiod},
+           given={Miriam},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8af233d7b6c87bbcc472ae48ab490179}{%
+           family={Gallego},
+           familyi={G\bibinitperiod},
+           given={Francisco\bibnamedelima A},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press - Journals}%
+      }
+      \strng{namehash}{4eab4b4e82cb7012c219d23354987965}
+      \strng{fullhash}{4eab4b4e82cb7012c219d23354987965}
+      \strng{bibnamehash}{4eab4b4e82cb7012c219d23354987965}
+      \strng{authorbibnamehash}{4eab4b4e82cb7012c219d23354987965}
+      \strng{authornamehash}{4eab4b4e82cb7012c219d23354987965}
+      \strng{authorfullhash}{4eab4b4e82cb7012c219d23354987965}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Econ. Stat.}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Good, bad, and ugly colonial activities: Do they matter for economic development?}
+      \field{volume}{94}
+      \field{year}{2012}
+      \field{pages}{433\bibrangedash 461}
+      \range{pages}{29}
+    \endentry
+    \entry{Carlson2019-mk}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d896c6e6c83794652f726ebc7b5ac304}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {cambridge.org}%
+      }
+      \strng{namehash}{d896c6e6c83794652f726ebc7b5ac304}
+      \strng{fullhash}{d896c6e6c83794652f726ebc7b5ac304}
+      \strng{bibnamehash}{d896c6e6c83794652f726ebc7b5ac304}
+      \strng{authorbibnamehash}{d896c6e6c83794652f726ebc7b5ac304}
+      \strng{authornamehash}{d896c6e6c83794652f726ebc7b5ac304}
+      \strng{authorfullhash}{d896c6e6c83794652f726ebc7b5ac304}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Latin American scholars in the twentieth century often pointed to the agrarian question and the dominance of the large latifundio estates as the key to explaining their countries’ underdevelopment. Yet, in more recent years, the emphasis on agrarian structures has declined and the latifundio is no longer seen as a relevant factor to economic development. In its place have emerged explanations that emphasize international trade relations, institutions, or the capacity of local states. This study makes a case for bringing the latifundio “back in” to explanations of underdevelopment in Latin America, and points to the persistence of particular property relations, low-intensity land use, and low-risk productive strategies throughout the region as barriers to development. Agricultural census data and various other sources on land use suggest that large latifundio estates are still a relevant factor throughout the region, and I argue that they continue to represent a significant barrier for the deepening of industrialization. Resumen Intelectuales latinoamericanos en el siglo veinte frecuentemente senalaban a la cuestion agraria y la dominacion latifundiaria como la clave para explicar el subdesarrollo de sus paises. Sin embargo, en anos recientes el enfasis en estructuras agrarias ha disminuido, y el latifundio ya no es visto como un factor relevante para el desarrollo economico. En su lugar, han surgido explicaciones que enfatizan el comercio internacional, las instituciones nacionales y la capacidad del estado de promover el desarrollo. El presente estudio argumenta que debemos volver a poner enfasis en el latifundio como explicacion para el subdesarrollo en America Latina. Se senala la persistencia de ciertas relaciones de propiedad, el bajo uso de la tierra, y estrategias productivas extensivas a lo largo de la region como barreras al desarrollo economico. Datos estadisticos de censos agrarios y otras fuentes sobre el uso de la tierra sugieren que el problema del latifundio es todavia un factor relevante en la region, y continua representando una barrera importante para la profundizacion de la industrializacion.}
+      \field{journaltitle}{Lat. Am. Res. Rev.}
+      \field{month}{9}
+      \field{title}{Agrarian structure and underdevelopment in Latin America: Bringing the latifundio “back in”}
+      \field{year}{2019}
+    \endentry
+    \entry{Carter1984-aj}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd3c8c53dda09ecbc2ffcaec6e81303c}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{fd3c8c53dda09ecbc2ffcaec6e81303c}
+      \strng{fullhash}{fd3c8c53dda09ecbc2ffcaec6e81303c}
+      \strng{bibnamehash}{fd3c8c53dda09ecbc2ffcaec6e81303c}
+      \strng{authorbibnamehash}{fd3c8c53dda09ecbc2ffcaec6e81303c}
+      \strng{authornamehash}{fd3c8c53dda09ecbc2ffcaec6e81303c}
+      \strng{authorfullhash}{fd3c8c53dda09ecbc2ffcaec6e81303c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The data for this study are from farm management surveys taken in the Indian state of Haryana during the agricultural years 1969I70-1971I72.2 For each of the three years, 162 holdings were selected through a multi- stage stratified random sampling procedure. However, no data were ob- tained from 22\% of the selected holdings because of the unwillingness or inability of the farmers to keep the required records. Illiteracy was given as the major reason these observations were lost. The potentially pernicious effect of this non-random selection process, and a procedure which corrects for it, will be discussed below. In total, data is available on 376 holdings. Each observation is identified only by its district and village location, and it cannot be determined if any individual holding was repeatedly sampled over time. But, there are at least two observations on all but fifteen of the 94 villages represented in the total sample. In anticipation of later analysis which requires multiple observations}
+      \field{journaltitle}{Oxford Economic Papers}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Identification of the inverse relationship between farm size and productivity: An empirical analysis of peasant agricultural production}
+      \field{volume}{36}
+      \field{year}{1984}
+      \field{pages}{131\bibrangedash 145}
+      \range{pages}{15}
+    \endentry
+    \entry{de-Carvalho-Filho2012-pc}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bb12779ff8bdc067d0174bdf4bb05879}{%
+           family={Carvalho\bibnamedelima Filho},
+           familyi={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Irineu},
+           giveni={I\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=00266a6fa34e770425b2521fa0a74963}{%
+           family={Monasterio},
+           familyi={M\bibinitperiod},
+           given={Leonardo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{fullhash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{bibnamehash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{authorbibnamehash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{authornamehash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \strng{authorfullhash}{9f6afaf4eb9f4bf41c86437840ae8c14}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper studies the long-term consequences of the government-sponsored programs of European immigration to Southern Brazil before the Great War. We find that the municipalities closer to the original sites of nineteenth century government sponsored settlements (colônias) have higher per capita income, less poverty and dependence on Bolsa Família cash transfers, better health and education outcomes; and for the areas close to German colonies, also less inequality of income and educational outcomes than otherwise. Since that is a reduced form relationship, we then attempt to identify the relative importance of more egalitarian landholdings and higher initial human capital in determining those outcomes. Our findings are suggestive that more egalitarian land distribution played a more important role than higher initial human capital in achieving the good outcomes associated with closeness to a colônia.}
+      \field{journaltitle}{Reg. Sci. Urban Econ.}
+      \field{month}{9}
+      \field{number}{5}
+      \field{title}{Immigration and the origins of regional inequality: Government-sponsored European migration to southern Brazil before World War {I}}
+      \field{volume}{42}
+      \field{year}{2012}
+      \field{pages}{794\bibrangedash 807}
+      \range{pages}{14}
+    \endentry
+    \entry{Caum-Julio2023-ei}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=35901e7c59169e7dd843014053b55e9c}{%
+           family={Caum-Julio},
+           familyi={C\bibinithyphendelim J\bibinitperiod},
+           given={Jordi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd}%
+      }
+      \strng{namehash}{35901e7c59169e7dd843014053b55e9c}
+      \strng{fullhash}{35901e7c59169e7dd843014053b55e9c}
+      \strng{bibnamehash}{35901e7c59169e7dd843014053b55e9c}
+      \strng{authorbibnamehash}{35901e7c59169e7dd843014053b55e9c}
+      \strng{authornamehash}{35901e7c59169e7dd843014053b55e9c}
+      \strng{authorfullhash}{35901e7c59169e7dd843014053b55e9c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract This paper studies the relationship between land revenue systems and returns to agricultural labour in colonial India. I provide the first district-level comparative estimates of agricultural labour returns relative to average income, on the basis of wage/income ratios for 1916. I then use those estimates to analyse the impact of the land revenue systems established by the British colonial authorities. Results show that districts with a larger proportion of non-landlord land revenue systems presented higher relative wages, closer to the average income. This effect was mainly driven by differences in land concentration connected to the type of landownership introduced by land revenue systems.}
+      \field{journaltitle}{Econ. Hist. Rev.}
+      \field{month}{7}
+      \field{number}{n/a}
+      \field{title}{Can colonial institutions explain differences in labour returns? Evidence from rural colonial India}
+      \field{volume}{n/a}
+      \field{year}{2023}
+      \keyw{agricultural labour returns; colonial history; India; instrumental variable; political economy}
+    \endentry
+    \entry{Cline1970-pk}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2dd32c28fbf3c6e98a6923fddbaad020}{%
+           family={Cline},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima R},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {North Holland Pub. Co.}%
+      }
+      \strng{namehash}{2dd32c28fbf3c6e98a6923fddbaad020}
+      \strng{fullhash}{2dd32c28fbf3c6e98a6923fddbaad020}
+      \strng{bibnamehash}{2dd32c28fbf3c6e98a6923fddbaad020}
+      \strng{authorbibnamehash}{2dd32c28fbf3c6e98a6923fddbaad020}
+      \strng{authornamehash}{2dd32c28fbf3c6e98a6923fddbaad020}
+      \strng{authorfullhash}{2dd32c28fbf3c6e98a6923fddbaad020}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Contributions to economic analysis, 67}
+      \field{title}{Economic consequences of a land reform in Brazil}
+      \field{year}{1970}
+      \keyw{Land reform -- Brazil}
+    \endentry
+    \entry{Cortesao1958-hm}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff39541c22bd7dca81e13532d472115c}{%
+           family={Cortesao},
+           familyi={C\bibinitperiod},
+           given={Jaime},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{publisher}{1}{%
+        {Ministério da Educação e Cultura, Serviço de Documentação}%
+      }
+      \strng{namehash}{ff39541c22bd7dca81e13532d472115c}
+      \strng{fullhash}{ff39541c22bd7dca81e13532d472115c}
+      \strng{bibnamehash}{ff39541c22bd7dca81e13532d472115c}
+      \strng{authorbibnamehash}{ff39541c22bd7dca81e13532d472115c}
+      \strng{authornamehash}{ff39541c22bd7dca81e13532d472115c}
+      \strng{authorfullhash}{ff39541c22bd7dca81e13532d472115c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Raposo Tavares e a formacao territorial do Brasil}
+      \field{year}{1958}
+      \keyw{Tavares,Antonio Raposo,1598 (ca.)-1658; Bandeiras; Brazil -- History -- 1549-1762; Tavares,Raposo; Entradas e Bandeiras (1634-1728),-- Brasil}
+    \endentry
+    \entry{Da_Costa_Porto1979-dz}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f2aa73d4e8421240ba41c1db32b95d34}{%
+           family={Costa\bibnamedelima Porto},
+           familyi={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{language}{1}{%
+        {pt-BR}%
+      }
+      \list{publisher}{1}{%
+        {Editora Universidade de Brasília}%
+      }
+      \strng{namehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{fullhash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{bibnamehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{authorbibnamehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{authornamehash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \strng{authorfullhash}{f2aa73d4e8421240ba41c1db32b95d34}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{O} sistema sesmarial no Brasil}
+      \field{year}{1979}
+    \endentry
+    \entry{Da_Cruz2023-gg}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ec5e9fc5361fac5a02030a338a4de83e}{%
+           family={Cruz},
+           familyi={C\bibinitperiod},
+           given={Aline},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=989f4c6e610c47e46459d5831c0a70d2}{%
+           family={Ghidorsi},
+           familyi={G\bibinitperiod},
+           given={Josiane\bibnamedelimb Dillor\bibnamedelima Brugnera},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {pt}%
+      }
+      \list{publisher}{1}{%
+        {revistaconsinter.com}%
+      }
+      \strng{namehash}{336117c940a49678487a9d6f33dd4f70}
+      \strng{fullhash}{336117c940a49678487a9d6f33dd4f70}
+      \strng{bibnamehash}{336117c940a49678487a9d6f33dd4f70}
+      \strng{authorbibnamehash}{336117c940a49678487a9d6f33dd4f70}
+      \strng{authornamehash}{336117c940a49678487a9d6f33dd4f70}
+      \strng{authorfullhash}{336117c940a49678487a9d6f33dd4f70}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{O objetivo deste trabalho é analisar a legislação fundiária no Brasil desde o período colonial, bem como, os reflexos do sistema sesmarial na estrutura fundiária brasileira contemporânea, haja vista que durante o período colonial se iniciou a constituição dos latifúndios e a exclusão de pessoas das classes menos favorecidas. Assim, a hipótese de pesquisa buscou compreender as razões pelas quais a concentração de terras, a desigualdade e a exclusão social ainda assombram a realidade brasileira. No que tange ao resultado alcançado, a ineficácia governamental em demarcar o território nacional reflete a impossibilidade de entender a realidade das áreas rurais do país, e consequentemente dificulta a realização de políticas públicas capazes de efetivamente promover a reforma agrária e a regularização fundiária que tornariam o país de fato livre do sistema sesmarial que ainda persiste e influencia a estrutura fundiária no Brasil República. Adotou-se como metodologia dedutiva de analise exploratória, investigativa e pesquisa bibliográfica.}
+      \field{journaltitle}{Rev. Consinter}
+      \field{month}{7}
+      \field{title}{A influência das sesmarias na estrutura fundiária do Brasil República}
+      \field{year}{2023}
+      \field{pages}{141\bibrangedash 141}
+      \range{pages}{1}
+      \keyw{Sesmarias; Latifúndios; Imóveis Rurais; Desigualdade Social; Reforma Agrária}
+    \endentry
+    \entry{Dean1971-iq}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b100b40f29115cac5afc9796e584dda9}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Werren},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Duke University Press}%
+      }
+      \strng{namehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{fullhash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{bibnamehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{authorbibnamehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{authornamehash}{b100b40f29115cac5afc9796e584dda9}
+      \strng{authorfullhash}{b100b40f29115cac5afc9796e584dda9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{… Some Portuguese did remain on the sesmarias of others as tenants of a sort, but because … the principal institutions of Brazilian society. The sesmarias were granted unsystematically and …}
+      \field{journaltitle}{Hisp. Am. Hist. Rev.}
+      \field{month}{11}
+      \field{number}{4}
+      \field{title}{Latifundia and land policy in nineteenth-century Brazil}
+      \field{volume}{51}
+      \field{year}{1971}
+      \field{pages}{606\bibrangedash 625}
+      \range{pages}{20}
+    \endentry
+    \entry{Dell2010-qt}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8185990c5393dc7868ca18973b150ae}{%
+           family={Dell},
+           familyi={D\bibinitperiod},
+           given={Melissa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{fullhash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{bibnamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authorbibnamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authornamehash}{d8185990c5393dc7868ca18973b150ae}
+      \strng{authorfullhash}{d8185990c5393dc7868ca18973b150ae}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study utilizes regression discontinuity to examine the long-run impacts of the mita, an extensive forced mining labor system in effect in Peru and Bolivia between 1573 and 1812. Results indicate that a mita effect lowers household consumption by around 25\% and increases the prevalence of stunted growth in children by around six percentage points in subjected districts today. Using data from the Spanish Empire and Peruvian Republic to trace channels of institutional persistence, I show that the mita's influence has persisted through its impacts on land tenure and public goods provision. Mita districts historically had fewer large landowners and lower educational attainment. Today, they are less integrated into road networks, and their residents are substantially more likely to be subsistence farmers.}
+      \field{journaltitle}{Latin American Economics eJournal}
+      \field{month}{1}
+      \field{number}{6}
+      \field{title}{The persistent effects of Peru's mining Mita}
+      \field{volume}{78}
+      \field{year}{2010}
+      \field{pages}{1863\bibrangedash 1903}
+      \range{pages}{41}
+    \endentry
+    \entry{Dell2020-zo}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d8185990c5393dc7868ca18973b150ae}{%
+           family={Dell},
+           familyi={D\bibinitperiod},
+           given={Melissa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce891fd22770d34da4cd958320f9356f}{%
+           family={Olken},
+           familyi={O\bibinitperiod},
+           given={Benjamin\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{fullhash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{bibnamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authorbibnamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authornamehash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \strng{authorfullhash}{c2d2f4024fbfb564715e00c04d8674bd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{AbstractColonial powers typically organized economic activity in the colonies to maximize their economic returns. While the literature has emphasized long-run negative economic impacts via institutional quality, the changes in economic organization implemented to spur production historically could also directly influence economic organization in the long-run, exerting countervailing effects. We examine these in the context of the Dutch Cultivation System, the integrated industrial and agricultural system for producing sugar that formed the core of the Dutch colonial enterprise in 19th century Java. We show that areas close to where the Dutch established sugar factories in the mid-19th century are today more industrialized, have better infrastructure, are more educated, and are richer than nearby counterfactual locations that would have been similarly suitable for colonial sugar factories. We also show, using a spatial regression discontinuity design on the catchment areas around each factory, that villages forced to grow sugar cane have more village-owned land and also have more schools and substantially higher education levels, both historically and today. The results suggest that the economic structures implemented by colonizers to facilitate production can continue to promote economic activity in the long run, and we discuss the contexts where such effects are most likely to be important.}
+      \field{journaltitle}{Rev. Econ. Stud.}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{The development effects of the extractive colonial economy: The Dutch Cultivation System in Java}
+      \field{volume}{87}
+      \field{year}{2020}
+      \field{pages}{164\bibrangedash 203}
+      \range{pages}{40}
+    \endentry
+    \entry{Diffie1987-bw}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a1b8b64c04314c686b4c2b254b1e5b3e}{%
+           family={Diffie},
+           familyi={D\bibinitperiod},
+           given={Bailey\bibnamedelima Wallys},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {R.E. Krieger Publishing Company}%
+      }
+      \strng{namehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{fullhash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{bibnamehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{authorbibnamehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{authornamehash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \strng{authorfullhash}{a1b8b64c04314c686b4c2b254b1e5b3e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A history of colonial Brazil, 1500-1792}
+      \field{year}{1987}
+    \endentry
+    \entry{Duranton2011-rv}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b2b06d270a769f22705c89de5da7eb07}{%
+           family={Duranton},
+           familyi={D\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8eedd774490a8ef31dc9d8d437873f1b}{%
+           family={Turner},
+           familyi={T\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{fullhash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{bibnamehash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{authorbibnamehash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{authornamehash}{0b7038c79c8052a25ec088e51d408e1c}
+      \strng{authorfullhash}{0b7038c79c8052a25ec088e51d408e1c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Fundamental Law of Road Congestion: Evidence from US Cities by Gilles Duranton and Matthew A. Turner. Published in volume 101, issue 6, pages 2616-52 of American Economic Review, October 2011, Abstract: We investigate the effect of lane kilometers of roads on vehicle-kilometers traveled (VKT) in...}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{month}{10}
+      \field{number}{6}
+      \field{title}{The Fundamental Law of Road Congestion: Evidence from {US} Cities}
+      \field{volume}{101}
+      \field{year}{2011}
+      \field{pages}{2616\bibrangedash 2652}
+      \range{pages}{37}
+    \endentry
+    \entry{Ehrl2019-zp}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0683a0a8c354b896eb00e2861155050a}{%
+           family={Ehrl},
+           familyi={E\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00266a6fa34e770425b2521fa0a74963}{%
+           family={Monasterio},
+           familyi={M\bibinitperiod},
+           given={Leonardo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{cb5485a7785323eba3dcef2ab33a3c4f}
+      \strng{fullhash}{cb5485a7785323eba3dcef2ab33a3c4f}
+      \strng{bibnamehash}{cb5485a7785323eba3dcef2ab33a3c4f}
+      \strng{authorbibnamehash}{cb5485a7785323eba3dcef2ab33a3c4f}
+      \strng{authornamehash}{cb5485a7785323eba3dcef2ab33a3c4f}
+      \strng{authorfullhash}{cb5485a7785323eba3dcef2ab33a3c4f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The scale of an industrial plant depends on the demand for its products. … Since it takes machines to produce machines, and these are themselves the product of many different factories and worksh...}
+      \field{journaltitle}{Reg. Stud.}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Skill concentration and persistence in Brazil}
+      \field{volume}{53}
+      \field{year}{2019}
+      \field{pages}{1544\bibrangedash 1554}
+      \range{pages}{11}
+    \endentry
+    \entry{Engerman2002-ju}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=58c02deaa8fcafadec98d12a31f3796b}{%
+           family={Engerman},
+           familyi={E\bibinitperiod},
+           given={Stanley\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7923ad4ceaeb53a2f3bd2a1dc66c725a}{%
+           family={Sokoloff},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima Lee},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Project Muse}%
+      }
+      \strng{namehash}{71933bb589100786306687e97a2bd450}
+      \strng{fullhash}{71933bb589100786306687e97a2bd450}
+      \strng{bibnamehash}{71933bb589100786306687e97a2bd450}
+      \strng{authorbibnamehash}{71933bb589100786306687e97a2bd450}
+      \strng{authornamehash}{71933bb589100786306687e97a2bd450}
+      \strng{authorfullhash}{71933bb589100786306687e97a2bd450}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Whereas traditional explanations of differences in long-run paths of development across the Americas generally point to the significance of differences in national heritage or religion, we highlight the relevance of stark contrasts in the degree of inequality in wealth, human capital, and political power in accounting for how fundamental economic institutions evolved over time. We argue, moreover, that the roots of these disparities in the extent of inequality lay in differences in the initial factor endowments (dating back to the era of European colonization). We document -- through comparative studies of suffrage, public land, and schooling policies -- systematic patterns by which societies in the Americas that began with more extreme inequality or heterogeneity in the population were more likely to develop institutional structures that greatly advantaged members of elite classes (and disadvantaging the bulk of the population) by providing them with more political influence and access to economic opportunities. The clear implication is that institutions should not be presumed to be exogenous; economists need to learn more about where they come from to understand their relation to economic development. Our findings not only contribute to our knowledge of why extreme differences in the extent of inequality across New World economies have persisted for centuries, but also to the study of processes of long-run economic growth past and present.}
+      \field{journaltitle}{Economía}
+      \field{number}{1}
+      \field{title}{Factor endowments, inequality, and paths of development among new world economies}
+      \field{volume}{3}
+      \field{year}{2002}
+      \field{pages}{41\bibrangedash 109}
+      \range{pages}{69}
+    \endentry
+    \entry{Eslava2023-eq}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=28ee4c61562259c097e1873af211903f}{%
+           family={Eslava},
+           familyi={E\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0429d2ead9e2d592635ebbce59fabb7d}{%
+           family={Valencia\bibnamedelima Caicedo},
+           familyi={V\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{aeb399e79102f23f99920987683b9fa6}
+      \strng{fullhash}{aeb399e79102f23f99920987683b9fa6}
+      \strng{bibnamehash}{aeb399e79102f23f99920987683b9fa6}
+      \strng{authorbibnamehash}{aeb399e79102f23f99920987683b9fa6}
+      \strng{authornamehash}{aeb399e79102f23f99920987683b9fa6}
+      \strng{authorfullhash}{aeb399e79102f23f99920987683b9fa6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{How deep are the roots of Latin America’s economic inequalities? In this chapter we survey both the history and the literature about the region’s extreme economic disparities, focusing on the most recent academic contributions. We begin by documenting the broad patterns of national and sub-national differences in income and inequality, building on the seminal contributions of Engerman and Sokoloff (2000; 2002, 2005) and aiming to capture different dimensions of inequality. We then proceed thematically, providing empirical evidence and summarizing the key recent studies on colonial institutions, slavery, land reform, education and the role of elites. Finally, we conduct a “replication” exercise with some seminal papers in the literature, extending their economic results to include different measures of inequality as outcomes.}
+      \field{month}{7}
+      \field{number}{95}
+      \field{series}{III Working Paper}
+      \field{title}{Origins of Latin American inequality}
+      \field{year}{2023}
+      \field{pages}{40}
+      \range{pages}{1}
+      \keyw{inequality,Latin America,history,colonization,persistence,slavery,land reform,education,elites}
+    \endentry
+    \entry{Faguet2022-sr}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4f55540b362b6d37aabb4776d7c9b643}{%
+           family={Faguet},
+           familyi={F\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abb3fa513e128b8a496d1c40b5390e5c}{%
+           family={Matajira},
+           familyi={M\bibinitperiod},
+           given={Camilo},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3594d68cf6565b256450749718c06462}{%
+           family={Sánchez\bibnamedelima Torres},
+           familyi={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{ff94bc8d47a389e3781081230c96548a}
+      \strng{fullhash}{9bc163be58e7cc7709dfedde3eca056d}
+      \strng{bibnamehash}{9bc163be58e7cc7709dfedde3eca056d}
+      \strng{authorbibnamehash}{9bc163be58e7cc7709dfedde3eca056d}
+      \strng{authornamehash}{ff94bc8d47a389e3781081230c96548a}
+      \strng{authorfullhash}{9bc163be58e7cc7709dfedde3eca056d}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Spanish encomienda, a colonial forced-labor institution that lasted three centuries, killed many indigenous people and caused others to flee into nomadism.}
+      \field{journaltitle}{SSRN Electron. J.}
+      \field{month}{5}
+      \field{title}{Constructive extraction? Encomienda, the colonial state, and development in Colombia}
+      \field{year}{2022}
+      \keyw{Encomienda,forced labor,state capacity,extraction,colonialism,development,Colombia}
+    \endentry
+    \entry{Fausto2014-bh}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d569fc63042aed8fd5cb86dddbc6b7a1}{%
+           family={Fausto},
+           familyi={F\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, England}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{fullhash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{bibnamehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{authorbibnamehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{authornamehash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \strng{authorfullhash}{d569fc63042aed8fd5cb86dddbc6b7a1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The second edition of A Concise History of Brazil offers a sweeping yet accessible history of Latin America's largest country. Boris Fausto examines Brazil's history from the arrival of the Portuguese in the New World through the long and sometimes rocky transition from independence in 1822 to democracy in the twentieth century. In a completely new chapter, his son Sergio Fausto, a prominent political scientist, brings the history up to the present, focusing on Brazil's increasing global economic importance as well as its continued democratic development and the challenges the country faces to meet the higher expectations of its people.}
+      \field{edition}{2}
+      \field{month}{8}
+      \field{title}{Cambridge concise histories: A concise history of Brazil}
+      \field{year}{2014}
+    \endentry
+    \entry{Franco1954-bk}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=be166d3271be4922ef561c35718c7091}{%
+           family={Franco},
+           familyi={F\bibinitperiod},
+           given={Francisco\bibnamedelimb de\bibnamedelimb Assis\bibnamedelima Carvalho},
+           giveni={F\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Comissão do IV Centenário da Cidade de São Paulo, Serviço de Comemorações Culturais}%
+      }
+      \strng{namehash}{be166d3271be4922ef561c35718c7091}
+      \strng{fullhash}{be166d3271be4922ef561c35718c7091}
+      \strng{bibnamehash}{be166d3271be4922ef561c35718c7091}
+      \strng{authorbibnamehash}{be166d3271be4922ef561c35718c7091}
+      \strng{authornamehash}{be166d3271be4922ef561c35718c7091}
+      \strng{authorfullhash}{be166d3271be4922ef561c35718c7091}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dicionário de bandeirantes e sertanistas do Brasil : séculos {XVI}-{XVII}-{XVIII}}
+      \field{year}{1954}
+      \keyw{Explorers -- Brazil -- Biography -- Portuguese; Brazil -- Biography -- Portuguese; Pioneers -- Brazil -- Biography -- Portuguese; Brazil -- History -- 1549-1762 -- Biography -- Portuguese; São Paulo (Brazil : State) -- Portuguese; São Paulo (Brazil : State) -- History -- Portuguese; Explorers; Pioneers; Brazil; Brazil -- São Paulo (State); Dicionarios Biograficos; 1549-1762}
+    \endentry
+    \entry{Galor2016-ba}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5bd32628f8a80555d67d5ecc79ec0a6d}{%
+           family={Galor},
+           familyi={G\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6644bf4e68e9410bd6ec9e3f03a3a75c}{%
+           family={Özak},
+           familyi={Ö\bibinitperiod},
+           given={Ömer},
+           giveni={Ö\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{783760bd13d4b604989e9ac6c19333ed}
+      \strng{fullhash}{783760bd13d4b604989e9ac6c19333ed}
+      \strng{bibnamehash}{783760bd13d4b604989e9ac6c19333ed}
+      \strng{authorbibnamehash}{783760bd13d4b604989e9ac6c19333ed}
+      \strng{authornamehash}{783760bd13d4b604989e9ac6c19333ed}
+      \strng{authorfullhash}{783760bd13d4b604989e9ac6c19333ed}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This research explores the origins of observed differences in time preference across countries and regions. Exploiting a natural experiment associated with the expansion of suitable crops for cultivation in the course of the Columbian Exchange, the research establishes that pre-industrial agro-climatic characteristics that were conducive to higher return to agricultural investment, triggered selection, adaptation and learning processes that generated a persistent positive effect on the prevalence of long-term orientation in the contemporary era. Furthermore, the research establishes that these agro-climatic characteristics have had a culturally embodied impact on economic behavior such as technological adoption, education, saving, and smoking.}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{The agricultural origins of time preference<sup/>}
+      \field{volume}{106}
+      \field{year}{2016}
+      \field{pages}{3064\bibrangedash 3103}
+      \range{pages}{40}
+      \keyw{Comparative Development; Cultural Evolution; D14; D90; Delayed Gratification; E21; Economic Development; Education; Human Capital; I12; I25; J24; J26; O10; O33; O40; Saving; Smoking; Time preference; Z1}
+    \endentry
+    \entry{Goni2022-do}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d7f072c0f889df2cdeef3db0e3ee1b6}{%
+           family={Goñi},
+           familyi={G\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{fullhash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{bibnamehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{authorbibnamehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{authornamehash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \strng{authorfullhash}{1d7f072c0f889df2cdeef3db0e3ee1b6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{AbstractI study the relationship between land concentration and the expansion of state education in 19C England. Using a broad range of education measures for 40 counties and 1,387 School Boards, I show a negative association between land concentration and local taxation, school expenditure, and human capital. I estimate reduced-form effects of 19C land concentration, geographic factor endowments, and the land redistribution after the Norman conquest of 1066. The negative effects on state-education supply are stronger where rural labour can easily migrate, where landowners had political power, is not offset by voluntary schooling, and not driven by a demand channel. This suggests that landowners opposed taxation in order to reduce state education provision.}
+      \field{journaltitle}{J. Econ. Growth}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{Landed elites and education provision in England: evidence from school boards, 1871-99}
+      \field{volume}{28}
+      \field{year}{2022}
+      \field{pages}{125\bibrangedash 171}
+      \range{pages}{47}
+    \endentry
+    \entry{UnknownUnknown-ro}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Conheça a história das cidades, vendo também as suas fotografias históricas (cidade: Ruy Barbosa | estado: Bahia).}
+      \field{howpublished}{\url{https://cidades.ibge.gov.br/brasil/ba/ruy-barbosa/historico}}
+      \field{note}{Accessed: 2024-1-24}
+      \field{title}{{IBGE}}
+    \endentry
+    \entry{Instituto-Historico-e-Geografico-de-Sao-Paulo1928-ej}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c9c86e779f021d2dd184a4baad6a98b}{%
+           family={{Instituto Histórico e Geográfico de São Paulo}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Instituto histórico e Geográfico de São Paulo}%
+      }
+      \strng{namehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{fullhash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{bibnamehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{authorbibnamehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{authornamehash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \strng{authorfullhash}{1c9c86e779f021d2dd184a4baad6a98b}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Vol. 22: Consagrado á passagem do 1.̊ centenario da independencia do Brasil em São Paulo; v. 29: Conferencias commemorativas do IV centenario da fundaçao de São Vicente.}
+      \field{title}{Revista do Instituto histórico e geográfico de São Paulo}
+      \field{year}{1928}
+    \endentry
+    \entry{Junior1968-iu}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=04cd3d1f2700075eae09d99a87769355}{%
+           family={Júnior},
+           familyi={J\bibinitperiod},
+           given={Caio\bibnamedelima Prado},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b93336f5f30d012c1a0cfe56c12347d3}{%
+           family={Macedo},
+           familyi={M\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {University of California Press}%
+      }
+      \strng{namehash}{937b61184302e0c043f226b1eac2d783}
+      \strng{fullhash}{937b61184302e0c043f226b1eac2d783}
+      \strng{bibnamehash}{937b61184302e0c043f226b1eac2d783}
+      \strng{authorbibnamehash}{937b61184302e0c043f226b1eac2d783}
+      \strng{authornamehash}{937b61184302e0c043f226b1eac2d783}
+      \strng{authorfullhash}{937b61184302e0c043f226b1eac2d783}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Americas}
+      \field{month}{5}
+      \field{title}{The colonial background of modern Brazil}
+      \field{volume}{48}
+      \field{year}{1968}
+      \field{pages}{293\bibrangedash 295}
+      \range{pages}{3}
+    \endentry
+    \entry{Laudares2023-wl}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dc40e09e42fc26210abcee874e06f9a6}{%
+           family={Laudares},
+           familyi={L\bibinitperiod},
+           given={Humberto},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a361acc489cd2a17f4ebc3f269bed664}{%
+           family={Caicedo},
+           familyi={C\bibinitperiod},
+           given={Felipe\bibnamedelima Valencia},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Centre for Economic Policy Research}%
+      }
+      \strng{namehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{fullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{bibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authorbibnamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authornamehash}{5ed6d6165bfdae227fc8990e8e069305}
+      \strng{authorfullhash}{5ed6d6165bfdae227fc8990e8e069305}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{of slavery on inequality at the receiving end. We focus on Brazil, the largest importer of African slaves To deal with the endogeneity of slavery placement, we use a spatial Regression}
+      \field{title}{Tordesillas, slavery and the origins of Brazilian inequality}
+      \field{year}{2023}
+    \endentry
+    \entry{Lee2022-jw}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=95a248b56768f250923ee04ec474cf6c}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima S},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74747235a7c978a6735c95127004b4a4}{%
+           family={McCrary},
+           familyi={M\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3be8c74e3db1754509e79a188c19077}{%
+           family={Moreira},
+           familyi={M\bibinitperiod},
+           given={Marcelo\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba467abd4949a5168c1da3e1c06a060b}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{2f5293e54027ce2e810a77ad701e3940}
+      \strng{fullhash}{1a99d6b2ed95d6c8362a58f742a1560d}
+      \strng{bibnamehash}{1a99d6b2ed95d6c8362a58f742a1560d}
+      \strng{authorbibnamehash}{1a99d6b2ed95d6c8362a58f742a1560d}
+      \strng{authornamehash}{2f5293e54027ce2e810a77ad701e3940}
+      \strng{authorfullhash}{1a99d6b2ed95d6c8362a58f742a1560d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the single-IV model, researchers commonly rely on t-ratio-based inference, even though the literature has quantified its potentially severe large-sample distortions. Building on Stock and Yogo (2005), we introduce the tF critical value function, leading to a standard error adjustment that is a smooth function of the first-stage F-statistic. For one-quarter of specifications in 61 AER papers, corrected standard errors are at least 49 and 136 percent larger than conventional 2SLS standard errors at the 5 percent and 1 percent significance levels, respectively. tF confidence intervals have shorter expected length than those of Anderson and Rubin (1949), whenever both are bounded. (JEL C13, C26)}
+      \field{journaltitle}{Am. Econ. Rev.}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Valid \textit{t}-ratio inference for {IV}}
+      \field{volume}{112}
+      \field{year}{2022}
+      \field{pages}{3260\bibrangedash 3290}
+      \range{pages}{31}
+    \endentry
+    \entry{Lima1954-td}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d14c224f083d914947a86cf64bf9b33}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Ruy\bibnamedelima Cirne},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {Pôrto Alegre}%
+      }
+      \list{publisher}{1}{%
+        {Livraria Sulina}%
+      }
+      \strng{namehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{fullhash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{bibnamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authorbibnamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authornamehash}{0d14c224f083d914947a86cf64bf9b33}
+      \strng{authorfullhash}{0d14c224f083d914947a86cf64bf9b33}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. ed.}
+      \field{series}{Estante ``Revista jurídica,'' 3}
+      \field{title}{Pequena história territorial do Brasil; sesmarias e terras devolutas}
+      \field{year}{1954}
+      \keyw{Land tenure -- Brazil -- Law}
+    \endentry
+    \entry{Lowes2021-ww}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cc60d54c195d34926ef4540497702730}{%
+           family={Lowes},
+           familyi={L\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Academic}%
+      }
+      \strng{namehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{fullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{bibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authorbibnamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authornamehash}{a86718519fc8d4418a55d2dfd904006e}
+      \strng{authorfullhash}{a86718519fc8d4418a55d2dfd904006e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract. All colonial powers granted concessions to private companies to extract natural resources during the colonial era. In Africa, these concessions were c}
+      \field{journaltitle}{Q. J. Econ.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Concessions, Violence, and Indirect Rule: Evidence from the Congo Free State}
+      \field{volume}{136}
+      \field{year}{2021}
+      \field{pages}{2047\bibrangedash 2091}
+      \range{pages}{45}
+    \endentry
+    \entry{Maloney2016-qv}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fa3af013ae845062a131c6a390a680ba}{%
+           family={Maloney},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima F},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0429d2ead9e2d592635ebbce59fabb7d}{%
+           family={Valencia\bibnamedelima Caicedo},
+           familyi={V\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{a6a67c911157f01d142157948faa5ce2}
+      \strng{fullhash}{a6a67c911157f01d142157948faa5ce2}
+      \strng{bibnamehash}{a6a67c911157f01d142157948faa5ce2}
+      \strng{authorbibnamehash}{a6a67c911157f01d142157948faa5ce2}
+      \strng{authornamehash}{a6a67c911157f01d142157948faa5ce2}
+      \strng{authorfullhash}{a6a67c911157f01d142157948faa5ce2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using subnational historical data, this paper establishes the within country persistence of economic activity in the New World over the last half millennium, a period including the trauma of the European colonization, the decimation of the native populations, and the imposition of potentially growth inhibiting institutions. We construct a data set incorporating measures of pre-colonial population density, new measures of present regional per capita income and population, and a comprehensive set of locational fundamentals. These fundamentals are shown to have explanatory power: native populations throughout the hemisphere were found in more livable and productive places. We then show that high pre-colonial density areas tend to be dense today: population agglomerations persist. The data and historical evidence suggest this is due partly to locational fundamentals, but also to classic agglomeration effects: colonialists established settlements near existing native populations for reasons of labor, trade, knowledge and defense. The paper then shows that high density (historically prosperous) areas also tend to have higher incomes today, and largely due to agglomeration effects: fortune persists for the United States and most of Latin America.}
+      \field{journaltitle}{Econ. J. (London)}
+      \field{month}{12}
+      \field{number}{598}
+      \field{title}{The persistence of (subnational) fortune}
+      \field{volume}{126}
+      \field{year}{2016}
+      \field{pages}{2363\bibrangedash 2401}
+      \range{pages}{39}
+    \endentry
+    \entry{Manchester1931-zw}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=090ba8a16914e0af9cb19019d4bd13a4}{%
+           family={Manchester},
+           familyi={M\bibinitperiod},
+           given={A\bibnamedelima K},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{fullhash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{bibnamehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{authorbibnamehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{authornamehash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \strng{authorfullhash}{090ba8a16914e0af9cb19019d4bd13a4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{… land granted if the future should reveal the advisability of such action while wood proper for naval construction was reserved for the, crown. The holder of the grant … tion on colonial Brazil . …}
+      \field{journaltitle}{Hisp. Am. Hist. Rev.}
+      \field{title}{The rise of the Brazilian Aristocracy}
+      \field{year}{1931}
+    \endentry
+    \entry{Montero2022-ua}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ab68afcb08f6e14b62f0819fa75b929c}{%
+           family={Montero},
+           familyi={M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{fullhash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{bibnamehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{authorbibnamehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{authornamehash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \strng{authorfullhash}{ab68afcb08f6e14b62f0819fa75b929c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In cooperative property rights systems, workers jointly own and manage production, whereas in outside-ownership systems, an owner contracts workers. Despite a rich literature on how the allocation of property rights matters for specialization, efficiency, and equity, little causal evidence exists. During a land reform in El Salvador in 1980, the military government reorganized properties owned by individuals with cumulative landholdings over 500 hectares into cooperatives; properties below this threshold remained as outside-owned properties. Using the discontinuous probability of cooperative formation, I provide evidence on the effects of cooperative property rights relative to outside ownership on specialization, productivity, and worker equity.}
+      \field{journaltitle}{J. Polit. Econ.}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Cooperative Property Rights and Development: Evidence from Land Reform in El Salvador}
+      \field{volume}{130}
+      \field{year}{2022}
+      \field{pages}{48\bibrangedash 93}
+      \range{pages}{46}
+    \endentry
+    \entry{Morse1974-ml}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=2b5979729bd990acea57cad632458fb5}{%
+           family={Morse},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{2b5979729bd990acea57cad632458fb5}
+      \strng{fullhash}{2b5979729bd990acea57cad632458fb5}
+      \strng{bibnamehash}{2b5979729bd990acea57cad632458fb5}
+      \strng{authorbibnamehash}{2b5979729bd990acea57cad632458fb5}
+      \strng{authornamehash}{2b5979729bd990acea57cad632458fb5}
+      \strng{authorfullhash}{2b5979729bd990acea57cad632458fb5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Urban Hist.}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{Brazil's urban development: Colony and empire}
+      \field{volume}{1}
+      \field{year}{1974}
+      \field{pages}{39\bibrangedash 72}
+      \range{pages}{34}
+    \endentry
+    \entry{Morse1965-kw}{book}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=539b8b2d838a23467799bb56eff5880a}{%
+           family={Morse},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelimb M\bibnamedelimb (richard\bibnamedelima Mcgee)},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim (\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Knopf}%
+      }
+      \strng{namehash}{539b8b2d838a23467799bb56eff5880a}
+      \strng{fullhash}{539b8b2d838a23467799bb56eff5880a}
+      \strng{bibnamehash}{539b8b2d838a23467799bb56eff5880a}
+      \strng{authorbibnamehash}{539b8b2d838a23467799bb56eff5880a}
+      \strng{authornamehash}{539b8b2d838a23467799bb56eff5880a}
+      \strng{authorfullhash}{539b8b2d838a23467799bb56eff5880a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A treatment of Brazil's westward expansion, and of the men who were the ``pathfinders'' of the great southern republic, translated from Portuguese original writings. Unlike the North American pioneer, however, the bandeirante was usually at least part Indian, and this, along with the influence of the missionary padres, resulted in a different ``West'' for Brazil, - a vast area even today largely untouched by modern civilization. The bandeirante expeditions did not come from the European settled coastal areas but usually developed from the inland plateau country}
+      \field{edition}{1st ed.}
+      \field{series}{Borzoi Books on Latin America}
+      \field{title}{The bandeirantes : the historical role of the Brazilian pathfinders}
+      \field{year}{1965}
+      \keyw{Brazil -- History -- 1549-1762}
+    \endentry
+    \entry{Mueller1995-gi}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bb9efbea5d248e9a588125e6a4bfc816}{%
+           family={Mueller},
+           familyi={M\bibinitperiod},
+           given={Bernardo\bibnamedelimb Pinheiro\bibnamedelima M},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=7b8aabee11e4b6d9617c673739a57e2b}{%
+           family={Alston},
+           familyi={A\bibinitperiod},
+           given={Lee\bibnamedelima J},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Illinois at Urbana-Champaign}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Ann Arbor, United States}%
+      }
+      \list{publisher}{1}{%
+        {search.proquest.com}%
+      }
+      \strng{namehash}{bb9efbea5d248e9a588125e6a4bfc816}
+      \strng{fullhash}{bb9efbea5d248e9a588125e6a4bfc816}
+      \strng{bibnamehash}{bb9efbea5d248e9a588125e6a4bfc816}
+      \strng{authorbibnamehash}{bb9efbea5d248e9a588125e6a4bfc816}
+      \strng{authornamehash}{bb9efbea5d248e9a588125e6a4bfc816}
+      \strng{authorfullhash}{bb9efbea5d248e9a588125e6a4bfc816}
+      \strng{editorbibnamehash}{7b8aabee11e4b6d9617c673739a57e2b}
+      \strng{editornamehash}{7b8aabee11e4b6d9617c673739a57e2b}
+      \strng{editorfullhash}{7b8aabee11e4b6d9617c673739a57e2b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Land in Brazil is the common theme that binds together the three essays that compose this dissertation. The first essay examines the economic history of land policy in Brazil, from early colonial policy to the tardy formation of a market for land by the end of the nineteenth century. This is done by comparing the development of the Brazilian land policy with the path that was followed in the United States, where a market for land evolved much more quickly and led to a considerably less concentrated ownership structure. The second essay analyzes the political economy of agrarian reform in Brazil. The focus is on three periods when serious attempts were made to carry out an agrarian reform; the military regime, the New Republic and the writing of the Constitution in 1988. In each of these attempts there was a perception that an agrarian reform would yield important social and economic benefits. However, despite the genuine intentions of policy makers the reforms were either blocked or reversed and had little effect on the concentration of land ownership. These events provide an interesting case study of the political economy of economic reform and institutional change. Additionally this essay uses the data from the votes of the National Constituent Assembly of 1988 to test both a capture model and a capture plus ideology model for the interests concerned with agrarian reform. Finally, the third essay examines the behavior of settlers on the Amazon frontier as concerns the use of land. This is modeled dynamically focusing on the security of property rights and its effects on the settlers' decisions. The optimal paths which result from the model are illustrated through a simulation.}
+      \field{title}{The economic history, political economy and frontier settlement of land in Brazil}
+      \field{type}{phdthesis}
+      \field{year}{1995}
+    \endentry
+    \entry{Musacchio2014-pq}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6d3042b29d93c0ba5bb96e1ac4278e9b}{%
+           family={Musacchio},
+           familyi={M\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e82f3790934a5508e824ceb64617fe27}{%
+           family={Fritscher},
+           familyi={F\bibinitperiod},
+           given={André\bibnamedelima Martínez},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=055d5b7c7d98f3ef61271cbc3573be80}{%
+           family={Viarengo},
+           familyi={V\bibinitperiod},
+           given={Martina},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press (CUP)}%
+      }
+      \strng{namehash}{7c3d890828f43d37274d4555d56d3baa}
+      \strng{fullhash}{4109067c9abd85b53a5cbc5c8f1e0207}
+      \strng{bibnamehash}{4109067c9abd85b53a5cbc5c8f1e0207}
+      \strng{authorbibnamehash}{4109067c9abd85b53a5cbc5c8f1e0207}
+      \strng{authornamehash}{7c3d890828f43d37274d4555d56d3baa}
+      \strng{authorfullhash}{4109067c9abd85b53a5cbc5c8f1e0207}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the initial expansion of public schooling across Brazilian states (1889–1930) and develop an alternative explanation of how colonial institutions may affect the provision of public goods in the long run. We find that states that exported commodities undergoing international booms, between 1889 and 1930, had significantly larger export tax revenues and could spend more on education, while other states lagged behind. Yet, such positive effect of commodity booms on education expenditures was muted in states that either had more slaves before abolition or cultivated cotton during colonial times.}
+      \field{journaltitle}{J. Econ. Hist.}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Colonial institutions, trade shocks, and the diffusion of elementary education in Brazil, {1889–1930}}
+      \field{volume}{74}
+      \field{year}{2014}
+      \field{pages}{730\bibrangedash 766}
+      \range{pages}{37}
+    \endentry
+    \entry{Naritomi2012-or}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=898300b70ca47365c98d4a5214feac73}{%
+           family={Naritomi},
+           familyi={N\bibinitperiod},
+           given={Joana},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=445f41b20b023950e8f1c63ae6762fa6}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2539abf6d9800b20c91a5b376ff2f773}{%
+           family={Assunção},
+           familyi={A\bibinitperiod},
+           given={Juliano\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press (CUP)}%
+      }
+      \strng{namehash}{ec18a61a2e4127cb9ba6202ee06f8ac0}
+      \strng{fullhash}{e833784bf4dbac8c793b0acc9826ac40}
+      \strng{bibnamehash}{e833784bf4dbac8c793b0acc9826ac40}
+      \strng{authorbibnamehash}{e833784bf4dbac8c793b0acc9826ac40}
+      \strng{authornamehash}{ec18a61a2e4127cb9ba6202ee06f8ac0}
+      \strng{authorfullhash}{e833784bf4dbac8c793b0acc9826ac40}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article analyzes the determinants of local institutions in Brazil. We show that institutional quality and distribution of land are partly inherited from the colonial histories experienced by different areas of the country. The sugar cane boom—characterized by an oligarchic society—is associated with more land inequality. The gold boom—characterized by a heavily inefficient presence of the Portuguese state—is associated with worse governance and access to justice. We do not find similar effects for a postcolonial boom (coffee). We also find that the colonial episodes are correlated with lower provision of public goods.}
+      \field{journaltitle}{J. Econ. Hist.}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Institutional development and colonial heritage within Brazil}
+      \field{volume}{72}
+      \field{year}{2012}
+      \field{pages}{393\bibrangedash 422}
+      \range{pages}{30}
+    \endentry
+    \entry{De_Oliveira_Andrade1980-xz}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=52be14099bd98fa7b1e2acbc28c645a9}{%
+           family={Oliveira\bibnamedelima Andrade},
+           familyi={O\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Manuel\bibnamedelima Correia},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {University of New Mexico Press}%
+      }
+      \strng{namehash}{52be14099bd98fa7b1e2acbc28c645a9}
+      \strng{fullhash}{52be14099bd98fa7b1e2acbc28c645a9}
+      \strng{bibnamehash}{52be14099bd98fa7b1e2acbc28c645a9}
+      \strng{authorbibnamehash}{52be14099bd98fa7b1e2acbc28c645a9}
+      \strng{authornamehash}{52be14099bd98fa7b1e2acbc28c645a9}
+      \strng{authorfullhash}{52be14099bd98fa7b1e2acbc28c645a9}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Northeast: Region of contrast; Land tenure and labor in the zona da mata and eastern littoral; Property, polyculture, and Labor systems; Latifundia, division of land, and labor systems in the sertao and northern littoral; The middle north: Maranhao and Piaui; Tentative solutions to the agrarian problem.}
+      \field{title}{The Land and People of Northeast Brazil}
+      \field{year}{1980}
+    \endentry
+    \entry{Panini1990-rj}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b2f6a27ee236496ccb727dd82093160e}{%
+           family={Panini},
+           familyi={P\bibinitperiod},
+           given={Carmela},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {São Paulo-SP}%
+      }
+      \list{publisher}{1}{%
+        {Edições Paulinas}%
+      }
+      \strng{namehash}{b2f6a27ee236496ccb727dd82093160e}
+      \strng{fullhash}{b2f6a27ee236496ccb727dd82093160e}
+      \strng{bibnamehash}{b2f6a27ee236496ccb727dd82093160e}
+      \strng{authorbibnamehash}{b2f6a27ee236496ccb727dd82093160e}
+      \strng{authornamehash}{b2f6a27ee236496ccb727dd82093160e}
+      \strng{authorfullhash}{b2f6a27ee236496ccb727dd82093160e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Fermento na massa.}
+      \field{title}{Reforma agrária dentro e fora da lei : 500 anos de história inacabada}
+      \field{year}{1990}
+      \keyw{Land reform -- Law and legislation -- Brazil -- History}
+    \endentry
+    \entry{Pereira2023-qv}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e8d2d68bdd57b5d71c4b52705f83b13d}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Rafael\bibnamedelimb H\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0afb30cb2e97ab1bd9a284661b85acd3}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={Rogério\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{fullhash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{bibnamehash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{authorbibnamehash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{authornamehash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \strng{authorfullhash}{353625b4bbbc0402a33f1e6fead7dc91}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{censobr: Download Data from Brazil's Population Census}
+      \field{version}{v0.2.0}
+      \field{year}{2023}
+    \endentry
+    \entry{Pereira2023-qq}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e8d2d68bdd57b5d71c4b52705f83b13d}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Rafael\bibnamedelimb H\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67b39e8f45d6af46b3fd396b877fd030}{%
+           family={Goncalves},
+           familyi={G\bibinitperiod},
+           given={Caio\bibnamedelima Nogueira},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Github}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1fe4b375b7e5eeef17f9da0541dbbab6}
+      \strng{fullhash}{1fe4b375b7e5eeef17f9da0541dbbab6}
+      \strng{bibnamehash}{1fe4b375b7e5eeef17f9da0541dbbab6}
+      \strng{authorbibnamehash}{1fe4b375b7e5eeef17f9da0541dbbab6}
+      \strng{authornamehash}{1fe4b375b7e5eeef17f9da0541dbbab6}
+      \strng{authorfullhash}{1fe4b375b7e5eeef17f9da0541dbbab6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Easy access to official spatial data sets of Brazil in R and Python - ipeaGIT/geobr}
+      \field{title}{geobr: Easy access to official spatial data sets of Brazil in {R} and Python}
+      \field{year}{2023}
+    \endentry
+    \entry{Poppino1968-ab}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5fc7d68bb3beb0376df589d56649c3b}{%
+           family={Poppino},
+           familyi={P\bibinitperiod},
+           given={Rollie\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{fullhash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{bibnamehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{authorbibnamehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{authornamehash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \strng{authorfullhash}{e5fc7d68bb3beb0376df589d56649c3b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An economic and social history of Brazil, from the time of Portuguese sttlement to the late 1960's. Includes a political chronology from 1493 to 1967 and an extensive annotated guide to literature on Brazil, covering travel accounts, history, society, the economy, and bibliographies and periodicals. Also has tables of economic information from 1907 to 1960.}
+      \field{series}{Latin American histories}
+      \field{title}{Brazil: the land and people}
+      \field{year}{1968}
+      \keyw{Brésil -- Histoire}
+    \endentry
+    \entry{Prestes_Filho2012-dp}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=43e608ef456b58d4e36dd39a26c06a4e}{%
+           family={Prestes\bibnamedelima Filho},
+           familyi={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={U\bibnamedelima d},
+           giveni={U\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Imprensa Oficial do Estado de São Paulo}%
+      }
+      \strng{namehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{fullhash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{bibnamehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{authorbibnamehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{authornamehash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \strng{authorfullhash}{43e608ef456b58d4e36dd39a26c06a4e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Câmara Municipal de São Paulo: 450 Anos de História}
+      \field{year}{2012}
+    \endentry
+    \entry{Ratnoo2023-vw}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2f1b344950474a83cf5656493e27c37f}{%
+           family={Ratnoo},
+           familyi={R\bibinitperiod},
+           given={Vigyan\bibnamedelima D},
+           giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{2f1b344950474a83cf5656493e27c37f}
+      \strng{fullhash}{2f1b344950474a83cf5656493e27c37f}
+      \strng{bibnamehash}{2f1b344950474a83cf5656493e27c37f}
+      \strng{authorbibnamehash}{2f1b344950474a83cf5656493e27c37f}
+      \strng{authornamehash}{2f1b344950474a83cf5656493e27c37f}
+      \strng{authorfullhash}{2f1b344950474a83cf5656493e27c37f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper estimates the causal impact of land revenue institutions on long run rural development using a Spatial Regression Discontinuity framework on a new village level data set from colonial India. An early 19th century historical quirk meant that villages in close geographical proximity were assigned to different property rights systems - some falling under landlords and others under the government. Villages that were assigned to landlords in the colonial era have a higher poverty rate and lower consumption per capita in 2012. Village census data from 1961 to 2011 shows that historically rooted characteristics in landlord villages prevented them from accessing Green Revolution technologies. Analysis demonstrates that non-landlord, cultivator villages secured preferential access to public investment in the early decades. Despite some convergence in public goods availability, lower private wealth and investment in landlord villages causes continuing spatial inequalities.}
+      \field{journaltitle}{J. Dev. Econ.}
+      \field{month}{12}
+      \field{number}{103247}
+      \field{title}{Persistent effects of colonial land tenure institutions: Village-level evidence from India}
+      \field{year}{2023}
+      \field{pages}{103247}
+      \range{pages}{1}
+      \keyw{Historical persistence; India; Institutions; Green revolution; Rural development}
+    \endentry
+    \entry{Reed2012-qy}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d201697740038411874adb06901f4dfa}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Clyde},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b86d634cccd1293c1da32abd9cc88191}{%
+           family={Bekar},
+           familyi={B\bibinitperiod},
+           given={Cliff},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Simon Fraser University}%
+      }
+      \strng{namehash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{fullhash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{bibnamehash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{authorbibnamehash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{authornamehash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \strng{authorfullhash}{0c0d3fd0830606ee54e5ed2967f80353}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{inequality over time. We employ a simulation strategy to analyze the impact of land markets in generating inequality in of land was the interaction between emerging land markets and}
+      \field{title}{Land Markets and Inequality: Evidence from Medieval England}
+      \field{year}{2012}
+    \endentry
+    \entry{Ribeiro2012-lb}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cb41ac7c0964443fdaf111eaefba097e}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Ricardo\bibnamedelima Ferreira},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{fullhash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{bibnamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authorbibnamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authornamehash}{cb41ac7c0964443fdaf111eaefba097e}
+      \strng{authorfullhash}{cb41ac7c0964443fdaf111eaefba097e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{During the twentieth century, Brazil developed its beef industry, acquiring in the last decade great importance in the international market. This article considers four exotic factors that contributed to its moving from importer of beef to the largest exporter: the raising of cattle of Iberian origin, since the sixteenth century; the Zebu breed brought from India at the end of the nineteenth century; the grass brought from Africa, for the cattle to graze; and barbed wire, invented in the United States, which deepened land concentration in the country. Each factor has distinct geographical origins, but all acted together, like the four ‘legs’ that sustain this immense bovine, to enable its adaptation to Brazilian lands. These four factors, before obtaining success and hegemony, encountered resistance and created controversy, not only for ideological and technical reasons, but also the conflicts of interest that their arrival represented.}
+      \field{journaltitle}{Agrar. S. J. Polit. Econ.}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{The ox from the Four Corners of the world: The historic origins of the Brazilian beef industry}
+      \field{volume}{1}
+      \field{year}{2012}
+      \field{pages}{315\bibrangedash 340}
+      \range{pages}{26}
+    \endentry
+    \entry{Rivadeneira2024-uj}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8a795bce0d05a0dd134034e6d89e2e44}{%
+           family={Rivadeneira},
+           familyi={R\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Banco de Mexico}%
+      }
+      \strng{namehash}{8a795bce0d05a0dd134034e6d89e2e44}
+      \strng{fullhash}{8a795bce0d05a0dd134034e6d89e2e44}
+      \strng{bibnamehash}{8a795bce0d05a0dd134034e6d89e2e44}
+      \strng{authorbibnamehash}{8a795bce0d05a0dd134034e6d89e2e44}
+      \strng{authornamehash}{8a795bce0d05a0dd134034e6d89e2e44}
+      \strng{authorfullhash}{8a795bce0d05a0dd134034e6d89e2e44}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Attached once, attached forever: the persistent effects of Concertaje in Ecuador}
+      \field{year}{2024}
+    \endentry
+    \entry{Rocha2017-yq}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9e559013c90f378133caae2041324838}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Rudi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e38887bdd3fb5a306f32b90902dba88}{%
+           family={Ferraz},
+           familyi={F\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=445f41b20b023950e8f1c63ae6762fa6}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{f9b5f7650192218c740f2e6f0e1f49fe}
+      \strng{fullhash}{124e71796402bc332b65e6751fec7201}
+      \strng{bibnamehash}{124e71796402bc332b65e6751fec7201}
+      \strng{authorbibnamehash}{124e71796402bc332b65e6751fec7201}
+      \strng{authornamehash}{f9b5f7650192218c740f2e6f0e1f49fe}
+      \strng{authorfullhash}{124e71796402bc332b65e6751fec7201}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines the role of human capital persistence in explaining long-term development. We exploit variation induced by a state-sponsored settlement policy that attracted a pool of immigrants with higher levels of schooling to particular regions of Brazil in the late 19th and early 20th century. We show that municipalities that received settlements experienced increases in schooling that persisted over time. One century after the policy, localities that received state-sponsored settlements had higher levels of schooling and income per capita. We provide evidence that long-run effects were driven by persistently higher supply and use of educational inputs and shifts in the structure of occupations towards skill-intensive sectors.}
+      \field{journaltitle}{Am. Econ. J. Appl. Econ.}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Human capital persistence and development}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{105\bibrangedash 136}
+      \range{pages}{32}
+    \endentry
+    \entry{Santos2022-rv}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=358ef5156f262e260cb8ed34f86506bd}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Affonso\bibnamedelima José},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Fundação Alexandre de Gusmão}%
+      }
+      \strng{namehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{fullhash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{bibnamehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{authorbibnamehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{authornamehash}{358ef5156f262e260cb8ed34f86506bd}
+      \strng{authorfullhash}{358ef5156f262e260cb8ed34f86506bd}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Historia do Brasil nos Velhos Mapas: Anexos}
+      \field{year}{2022}
+    \endentry
+    \entry{Schwartz1985-wf}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d95ac8a5641ff2c08f946c7c1362a046}{%
+           family={Schwartz},
+           familyi={S\bibinitperiod},
+           given={Stuart\bibnamedelima B},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{d95ac8a5641ff2c08f946c7c1362a046}
+      \strng{fullhash}{d95ac8a5641ff2c08f946c7c1362a046}
+      \strng{bibnamehash}{d95ac8a5641ff2c08f946c7c1362a046}
+      \strng{authorbibnamehash}{d95ac8a5641ff2c08f946c7c1362a046}
+      \strng{authornamehash}{d95ac8a5641ff2c08f946c7c1362a046}
+      \strng{authorfullhash}{d95ac8a5641ff2c08f946c7c1362a046}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study examines the history of the sugar economy and the peculiar development of plantation society over a three hundred year period in Bahia, a major sugar plantation zone and an important terminus of the Atlantic slave trade. Drawing on little-used archival sources, plantations accounts, and notarial records, Professor Schwartz has examined through both quantitative and qualitative methods the various groups that made up plantation society. While he devotes much attention to masters and slaves, he views slavery ultimately as part of a larger structure of social and economic relations. The peculiarities of sugar-making and the nature of plantation labour are used throughout the book as keys to an understanding of roles and relationships in plantation society. A comparative perspective is also employed, so that studies of slavery elsewhere in the Americas inform the analysis, while at many points direct comparisons of the Bahian case with other plantation societies are also made.}
+      \field{title}{Sugar Plantations in the Formation of Brazilian Society: Bahia, 1550-1835}
+      \field{year}{1985}
+    \endentry
+    \entry{noauthor_1921-qd}{book}{}
+      \list{language}{1}{%
+        {por}%
+      }
+      \list{location}{1}{%
+        {S. Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Typ. Piratininga}%
+      }
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{title}{Sesmarias; documentos do Archivo do Estado de São Paulo}
+      \field{year}{1921}
+      \keyw{São Paulo (Brazil : State) -- History$$QSão Paulo (Brazil : State) -- History -- Sources}
+    \endentry
+    \entry{Simonsen2005-ps}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5d1a1636c321e8b2efdd4171f29168a7}{%
+           family={Simonsen},
+           familyi={S\bibinitperiod},
+           given={Roberto\bibnamedelima Cochrane},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Brasília : Senado Federal, Conselho Editorial}%
+      }
+      \strng{namehash}{5d1a1636c321e8b2efdd4171f29168a7}
+      \strng{fullhash}{5d1a1636c321e8b2efdd4171f29168a7}
+      \strng{bibnamehash}{5d1a1636c321e8b2efdd4171f29168a7}
+      \strng{authorbibnamehash}{5d1a1636c321e8b2efdd4171f29168a7}
+      \strng{authornamehash}{5d1a1636c321e8b2efdd4171f29168a7}
+      \strng{authorfullhash}{5d1a1636c321e8b2efdd4171f29168a7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Edições do Senado Federal ; v. 34}
+      \field{title}{História econômica do Brasil : 1500-1820}
+      \field{year}{2005}
+    \endentry
+    \entry{Smith2023-ip}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=9806584db113f694a5eafce6a9057815}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{9806584db113f694a5eafce6a9057815}
+      \strng{fullhash}{9806584db113f694a5eafce6a9057815}
+      \strng{bibnamehash}{9806584db113f694a5eafce6a9057815}
+      \strng{authorbibnamehash}{9806584db113f694a5eafce6a9057815}
+      \strng{authornamehash}{9806584db113f694a5eafce6a9057815}
+      \strng{authorfullhash}{9806584db113f694a5eafce6a9057815}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Land concentration and Long-run development in the frontier United States}
+      \field{year}{2023}
+    \endentry
+    \entry{Smith1972-dv}{book}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=f3a71e41875b51f7b09496fdbaf388f6}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={T\bibnamedelima Lynn},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Baton Rouge}%
+      }
+      \list{publisher}{1}{%
+        {Louisiana State University Press}%
+      }
+      \strng{namehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{fullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{bibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorbibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authornamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorfullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4th ed.}
+      \field{title}{Brazil; people and institutions}
+      \field{year}{1972}
+      \keyw{Brazil -- Social conditions -- 1964-}
+    \endentry
+    \entry{Smith1944-oi}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=f3a71e41875b51f7b09496fdbaf388f6}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={T\bibnamedelima Lynn},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {[Board of Regents of the University of Wisconsin System, University of Wisconsin Press]}%
+      }
+      \strng{namehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{fullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{bibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorbibnamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authornamehash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \strng{authorfullhash}{f3a71e41875b51f7b09496fdbaf388f6}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Land \& Public Utility Economics}
+      \field{number}{3}
+      \field{title}{Land Tenure in Brazil}
+      \field{volume}{20}
+      \field{year}{1944}
+      \field{pages}{194\bibrangedash 201}
+      \range{pages}{8}
+    \endentry
+    \entry{Souza2020-kb}{article}{}
+      \name{author}{33}{}{%
+        {{un=0,uniquepart=base,hash=28c51d4e672a881a36827846d97ec31d}{%
+           family={Souza},
+           familyi={S\bibinitperiod},
+           given={Carlos\bibnamedelima M},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ccc812325163ff89403746acf1d289b}{%
+           family={Z.\bibnamedelimi Shimbo},
+           familyi={Z\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=649c25b784ee89fc4716bad9ad57daff}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Marcos\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8bd1d7d59542cccd0c21283a6b04def}{%
+           family={Parente},
+           familyi={P\bibinitperiod},
+           given={Leandro\bibnamedelima L},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5aa15b81008e113dce4aafac9bf5cd1}{%
+           family={A.\bibnamedelimi Alencar},
+           familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Ane},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80c0988de9042a9825983c1935250f61}{%
+           family={Rudorff},
+           familyi={R\bibinitperiod},
+           given={Bernardo\bibnamedelimb F\bibnamedelima T},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f5ccf4493b091f6b848e80dcd095f70}{%
+           family={Hasenack},
+           familyi={H\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=628ab24e7e5f083ce35b1263a32a8d33}{%
+           family={Matsumoto},
+           familyi={M\bibinitperiod},
+           given={Marcelo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed0b486ed7e10f9cebd02a1598dbc8e7}{%
+           family={G.\bibnamedelimi Ferreira},
+           familyi={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Laerte},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20cf07c5e1029a7303317de8fd35afc1}{%
+           family={Souza-Filho},
+           familyi={S\bibinithyphendelim F\bibinitperiod},
+           given={Pedro\bibnamedelimb W\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83fc7a059e6c41b675db205d7b4cdade}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Sergio\bibnamedelima W},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=73a0c7f3fcb5b05ad3f45a6f5456c8e6}{%
+           family={Rocha},
+           familyi={R\bibinitperiod},
+           given={Washington\bibnamedelima F},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bf45dc7202f2898b9819f1cf941e996}{%
+           family={Fonseca},
+           familyi={F\bibinitperiod},
+           given={Antônio\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cdd607288f1cae7604288e78b90b82b}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={Camila\bibnamedelima B},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c11063fb086c5cc0161f5bdbd274513}{%
+           family={Diniz},
+           familyi={D\bibinitperiod},
+           given={Cesar\bibnamedelima G},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=239a14b692856111acf9a83ac69b48cb}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80d9c4d299e64fb067abe9657dd37615}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Dyeden},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cef5f8f652840e33045390cc761931b0}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Eduardo\bibnamedelima R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73670ecf289cfdf8a28ddb6da3033111}{%
+           family={Vélez-Martin},
+           familyi={V\bibinithyphendelim M\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=064a3baf23664ec536c14d4c2ab21658}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Eliseu\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61f7bf75781b8d5b7ccf1e8554087d53}{%
+           family={Lenti},
+           familyi={L\bibinitperiod},
+           given={Felipe\bibnamedelimb E\bibnamedelima B},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0651812d4995f64824ccbe6ee68a26f3}{%
+           family={Paternost},
+           familyi={P\bibinitperiod},
+           given={Fernando\bibnamedelima F},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aad8fbd9880b6f754a451fe643886226}{%
+           family={Pareyn},
+           familyi={P\bibinitperiod},
+           given={Frans\bibnamedelimb G\bibnamedelima C},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9031badf6a5a3fa51cccafc8ccc91af}{%
+           family={Siqueira},
+           familyi={S\bibinitperiod},
+           given={João\bibnamedelima V},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5eaa872acfe865fb7eddd400e6ebb816}{%
+           family={Viera},
+           familyi={V\bibinitperiod},
+           given={José\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a835519a5f4f36d978b9686dcebd0520}{%
+           family={Neto},
+           familyi={N\bibinitperiod},
+           given={Luiz\bibnamedelimb C\bibnamedelima Ferreira},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fceb7ebdd3c16c81cdbcad599eb9e518}{%
+           family={Saraiva},
+           familyi={S\bibinitperiod},
+           given={Marciano\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8215c66064117c85348ce72919abb391}{%
+           family={Sales},
+           familyi={S\bibinitperiod},
+           given={Marcio\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4ec58a930e8f1d9103936f9790455aa}{%
+           family={Salgado},
+           familyi={S\bibinitperiod},
+           given={Moises\bibnamedelimb P\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a545192534e6c8767352d782de41cbd7}{%
+           family={Vasconcelos},
+           familyi={V\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34109d448df6354fb50fe0f1bd366134}{%
+           family={Galano},
+           familyi={G\bibinitperiod},
+           given={Soltan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cffa7205846341adaea013df2fe0137}{%
+           family={Mesquita},
+           familyi={M\bibinitperiod},
+           given={Vinicius\bibnamedelima V},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f082da0c655fc4fdade325d7b448e8b}{%
+           family={Azevedo},
+           familyi={A\bibinitperiod},
+           given={Tasso},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{37ec9b9882124adab855cc62eace12d2}
+      \strng{fullhash}{7ba289c3f754b3d2b42ab5f92667ddd9}
+      \strng{bibnamehash}{7ba289c3f754b3d2b42ab5f92667ddd9}
+      \strng{authorbibnamehash}{7ba289c3f754b3d2b42ab5f92667ddd9}
+      \strng{authornamehash}{37ec9b9882124adab855cc62eace12d2}
+      \strng{authorfullhash}{7ba289c3f754b3d2b42ab5f92667ddd9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Brazil has a monitoring system to track annual forest conversion in the Amazon and most recently to monitor the Cerrado biome. However, there is still a gap of annual land use and land cover (LULC) information in all Brazilian biomes in the country. Existing countrywide efforts to map land use and land cover lack regularly updates and high spatial resolution time-series data to better understand historical land use and land cover dynamics, and the subsequent impacts in the country biomes. In this study, we described a novel approach and the results achieved by a multi-disciplinary network called MapBiomas to reconstruct annual land use and land cover information between 1985 and 2017 for Brazil, based on random forest applied to Landsat archive using Google Earth Engine. We mapped five major classes: forest, non-forest natural formation, farming, non-vegetated areas, and water. These classes were broken into two sub-classification levels leading to the most comprehensive and detailed mapping for the country at a 30 m pixel resolution. The average overall accuracy of the land use and land cover time-series, based on a stratified random sample of 75,000 pixel locations, was 89\% ranging from 73 to 95\% in the biomes. The 33 years of LULC change data series revealed that Brazil lost 71 Mha of natural vegetation, mostly to cattle ranching and agriculture activities. Pasture expanded by 46\% from 1985 to 2017, and agriculture by 172\%, mostly replacing old pasture fields. We also identified that 86 Mha of the converted native vegetation was undergoing some level of regrowth. Several applications of the MapBiomas dataset are underway, suggesting that reconstructing historical land use and land cover change maps is useful for advancing the science and to guide social, economic and environmental policy decision-making processes in Brazil.}
+      \field{journaltitle}{Remote Sensing}
+      \field{month}{8}
+      \field{number}{17}
+      \field{title}{Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian Biomes with Landsat Archive and Earth Engine}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{pages}{2735}
+      \range{pages}{1}
+    \endentry
+    \entry{Sparovek2019-dn}{article}{}
+      \name{author}{14}{}{%
+        {{un=0,uniquepart=base,hash=743f5bac0ec3d9254fbd9ba6aa084c5a}{%
+           family={Sparovek},
+           familyi={S\bibinitperiod},
+           given={Gerd},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46f97bd84419f9a25687b633b9a2afaa}{%
+           family={Reydon},
+           familyi={R\bibinitperiod},
+           given={Bastiaan\bibnamedelima Philip},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6da444a89f6b523941ce5ce9b54b4c0}{%
+           family={Guedes\bibnamedelima Pinto},
+           familyi={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Luís\bibnamedelima Fernando},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd1aa8b751775a182f3da2f9693ef216}{%
+           family={Faria},
+           familyi={F\bibinitperiod},
+           given={Vinicius},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26e43223a59570ce3c6b05a4bf36b58f}{%
+           family={Freitas},
+           familyi={F\bibinitperiod},
+           given={Flavio\bibnamedelimb Luiz\bibnamedelima Mazzaro},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=da167b71d3634468570ef93fb847d232}{%
+           family={Azevedo-Ramos},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f9d0703ce2f5ccb6c7385c03e0bee202}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={Toby},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bec02b6de93bef837fef8237962a2f6}{%
+           family={Hamamura},
+           familyi={H\bibinitperiod},
+           given={Caio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d331d88573eaca85d0cdc94057c9105}{%
+           family={Rajão},
+           familyi={R\bibinitperiod},
+           given={Raoni},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55c95acf456d68bce0078df0a580e62e}{%
+           family={Cerignoni},
+           familyi={C\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49f45a75be5a209aef4d23d2e0c4395f}{%
+           family={Siqueira},
+           familyi={S\bibinitperiod},
+           given={Gabriel\bibnamedelima Pansani},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cf85474e4b6a3cc0ce116502d5719d0}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Tomás},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c3796f208b5e407135dc60a84a88c0a}{%
+           family={Alencar},
+           familyi={A\bibinitperiod},
+           given={Ane},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2e98d8a6cb11d67751b7d363185a78b}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Vivian},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{009e722f674a8ca529defeeb8b442d9b}
+      \strng{fullhash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
+      \strng{bibnamehash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
+      \strng{authorbibnamehash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
+      \strng{authornamehash}{009e722f674a8ca529defeeb8b442d9b}
+      \strng{authorfullhash}{1f2ee3b5e7c6ef8a7a762cf65a586570}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Land tenure in many parts of Brazil remains uncertain and controversial. These problems have recently been exacerbated by changes in the legal framework regulating protected areas and the land market. A particular challenge facing attempts to improve land tenure security and governance in Brazil is the lack of a single, integrated assessment of all types of lands. Here we address this problem and present a first, integrated map of Brazilian land tenure encompassing all official data sources pertaining to both public and private lands. Of the total (8.5 million km2) 36.1\% of all lands are public (with 6.4\% officially undesignated), 44.2\% are private, and 16.6\% are unregistered or with unknown tenure. Strikingly, overlaps among land tenure categories sum to 50\% of the registered territory of Brazil. A clearer understanding of uncertainties in land tenure, and the spatial distribution of those uncertainties can help guide research and public policies focused on minimizing land conflicts and strengthening governance and territorial planning to improve economic, environmental and social outcomes from land use in Brazil.}
+      \field{journaltitle}{Land use policy}
+      \field{month}{9}
+      \field{number}{104062}
+      \field{title}{Who owns Brazilian lands?}
+      \field{volume}{87}
+      \field{year}{2019}
+      \field{pages}{104062}
+      \range{pages}{1}
+      \keyw{Brazil; Governance; Land tenure; Policy; Territorial planning}
+    \endentry
+    \entry{Usaid2016-xs}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7becc5f8f6ecc3b54949defafcb25daf}{%
+           family={{USAID}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {USAID}%
+      }
+      \strng{namehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{fullhash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{bibnamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authorbibnamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authornamehash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \strng{authorfullhash}{7becc5f8f6ecc3b54949defafcb25daf}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{USAID} {COUNTRY} {PROFILE}: {PROPERTY} {RIGHTS} {AND} {RESOURCE} {GOVERNANCE} - Brazil}
+      \field{type}{techreport}
+      \field{year}{2016}
+    \endentry
+    \entry{Wigton-Jones2020-ex}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06408d5540b193d6cc53b24dbdb9bb10}{%
+           family={Wigton-Jones},
+           familyi={W\bibinithyphendelim J\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{fullhash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{bibnamehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{authorbibnamehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{authornamehash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \strng{authorfullhash}{06408d5540b193d6cc53b24dbdb9bb10}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This research examines the effects of inequality on long-run development within Brazil. I first exploit variation in temperature and precipitation to instrument for the local distribution of land in 1920 using a two stage least squares instrumental variables framework. My instrument is an index quantifying the suitability of local climatic conditions for plantation versus smallholder agriculture. I construct this index using information on the growing conditions of crops within certain plant taxonomies that are more biologically suited for smallholder or plantation production. I argue that this index more fully identifies the optimal environmental conditions for these two types of agricultural production, and I show that it serves as a robust predictor of local land inequality in the year 1920. IV estimates then reveal that greater inequality is associated with less local government spending on welfare and public goods over the 1995-2005 time period, as well as reductions in measures of local government quality and per-child education spending. It is also associated with lower levels of development, as measured by the local Human Development Index (HDI) for the year 2000. Inequality primarily affects the HDI through shorter life expectancies and lower incomes. I argue that the latter is consistent with the agrarian elite obstructing the transition of the local economy from agriculture to industry/services, as historically unequal municipalities contain a greater percentage of workers in the lower-wage agriculture sector, and this sector itself constitutes a larger share of local GDP.}
+      \field{journaltitle}{J. Econ. Growth (Boston)}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Legacies of inequality: the case of Brazil}
+      \field{volume}{25}
+      \field{year}{2020}
+      \field{pages}{455\bibrangedash 501}
+      \range{pages}{47}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
